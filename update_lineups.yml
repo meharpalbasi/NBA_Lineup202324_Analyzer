@@ -1,21 +1,38 @@
-- name: Set up Python
-    uses: actions/setup-python@v4
-    with:
-      python-version: '3.x'
+# .github/workflows/update_lineups.yml
+name: Update NBA Lineups CSV
 
-  - name: Install dependencies
-    run: |
-      python -m pip install --upgrade pip
-      pip install nba_api pandas
+on:
+  schedule:
+    # Every 2 days at 00:00 UTC
+    - cron: '0 0 */2 * *'
+  workflow_dispatch: {}
 
-  - name: Run lineup fetch script
-    # Adjust path if your script is named differently or located elsewhere
-    run: python fetchlineups.py
+jobs:
+  update-lineups:
+    runs-on: ubuntu-latest
 
-  - name: Commit and push updated CSV
-    uses: EndBug/add-and-commit@v9
-    with:
-      author_name: github-actions[bot]
-      author_email: github-actions[bot]@users.noreply.github.com
-      message: "chore: update NBA lineup CSV"
-      add: 'NBALineup*_RegSeason_Playoffs_BaseAdvanced.csv'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install nba_api pandas
+
+      - name: Run lineup fetch script
+        # Assumes your script is at the repo root named fetch_lineups.py
+        run: python fetchlineups.py
+
+      - name: Commit and push updated CSV
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions[bot]
+          author_email: github-actions[bot]@users.noreply.github.com
+          message: "chore: update NBA lineup CSV"
+          add: 'NBALineup*_RegSeason_Playoffs_BaseAdvanced.csv'
