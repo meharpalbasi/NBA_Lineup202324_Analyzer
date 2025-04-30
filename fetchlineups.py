@@ -61,7 +61,8 @@ def get_lineups(team_id_i, measure_type="Base", season_type="Regular Season", se
                 shot_clock_range_nullable = "",
                 team_id = team_id_i,
                 vs_conference_nullable = "",
-                vs_division_nullable = ""
+                vs_division_nullable = "",
+                timeout= 60
             )
 
             df_list = lineup.get_data_frames()
