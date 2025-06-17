@@ -6,9 +6,9 @@ permissions:
   contents: write
 
 on:
-  schedule:
+ #schedule:
     # Every 2 days at 00:00 UTC
-    - cron: '0 0 */2 * *'
+   # - cron: '0 0 */2 * *'
   workflow_dispatch: {}
 
 jobs:
