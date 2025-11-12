@@ -92,7 +92,7 @@ league_lineup = pd.DataFrame()
 # Define the season types you want to fetch
 season_types_to_fetch = ["Regular Season", "Playoffs"]
 # Define the season year you are interested in
-target_season = "2024-25" # Using a completed season to ensure playoff data exists
+target_season = "2025-26" # Using a completed season to ensure playoff data exists
 
 print(f"Starting data fetch for season: {target_season}")
 print("-" * 30)
