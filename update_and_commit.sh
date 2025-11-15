@@ -8,9 +8,41 @@ python fetchlineups.py
 
 echo "Fetch complete. Checking for changes..."
 
-# Configure git
-git config user.name "${GIT_USER_NAME:-github-actions[bot]}"
-git config user.email "${GIT_USER_EMAIL:-github-actions[bot]@users.noreply.github.com}"
+# Check if we're in a git repository
+if [ ! -d ".git" ]; then
+    echo "Initializing git repository..."
+
+    # Validate required environment variables
+    if [ -z "$GITHUB_TOKEN" ] || [ -z "$GITHUB_REPO" ]; then
+        echo "Error: GITHUB_TOKEN and GITHUB_REPO environment variables are required"
+        echo "Example: GITHUB_REPO=username/nbalineup"
+        exit 1
+    fi
+
+    # Initialize git
+    git init
+    git config user.name "${GIT_USER_NAME:-Railway Bot}"
+    git config user.email "${GIT_USER_EMAIL:-bot@railway.app}"
+
+    # Add remote with authentication
+    git remote add origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
+
+    # Fetch and checkout main branch
+    echo "Fetching from GitHub..."
+    git fetch origin main
+    git checkout -b main origin/main
+else
+    echo "Git repository already initialized"
+
+    # Configure git user
+    git config user.name "${GIT_USER_NAME:-Railway Bot}"
+    git config user.email "${GIT_USER_EMAIL:-bot@railway.app}"
+
+    # Update remote URL with token if GITHUB_TOKEN is set
+    if [ -n "$GITHUB_TOKEN" ] && [ -n "$GITHUB_REPO" ]; then
+        git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
+    fi
+fi
 
 # Add the data directory
 git add data/
@@ -23,7 +55,7 @@ else
     git commit -m "chore: update NBA lineup data - $(date '+%Y-%m-%d')"
 
     echo "Pushing to GitHub..."
-    git push
+    git push origin main
 
     echo "Successfully pushed updates to GitHub!"
 fi

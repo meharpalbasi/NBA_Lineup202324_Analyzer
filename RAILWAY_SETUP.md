@@ -27,33 +27,27 @@ This guide will help you deploy the NBA Lineup data fetcher as a cron job on Rai
 
 ### 3. Configure Environment Variables
 
-In your Railway project, go to **Variables** and add:
+In your Railway project, go to **Variables** and add the following:
+
+#### Required Variables
 
 | Variable | Value | Description |
 |----------|-------|-------------|
-| `GIT_USER_NAME` | `Railway Bot` | Name for git commits (optional) |
-| `GIT_USER_EMAIL` | `bot@railway.app` | Email for git commits (optional) |
-| `NBA_SEASON` | `2025-26` | NBA season to fetch (optional, defaults to 2025-26) |
+| `GITHUB_TOKEN` | `ghp_xxxxx...` | Your GitHub Personal Access Token (from Step 1) |
+| `GITHUB_REPO` | `username/nbalineup` | Your GitHub repository in format `username/repo` |
 
-**Important:** Railway needs to authenticate with GitHub to push changes.
+#### Optional Variables
 
-#### Option A: Using GitHub Token in Remote URL
-Railway will need to push to GitHub. The script uses `git push`, which will work if:
-- Your repository is public, OR
-- You configure git credentials
+| Variable | Value | Description |
+|----------|-------|-------------|
+| `GIT_USER_NAME` | `Railway Bot` | Name for git commits (default: Railway Bot) |
+| `GIT_USER_EMAIL` | `bot@railway.app` | Email for git commits (default: bot@railway.app) |
+| `NBA_SEASON` | `2025-26` | NBA season to fetch (default: 2025-26) |
 
-To configure git credentials, you can modify the repository's remote URL to include the token:
-```bash
-git remote set-url origin https://${GITHUB_TOKEN}@github.com/yourusername/nbalineup.git
-```
-
-You'll need to add `GITHUB_TOKEN` as an environment variable in Railway with your PAT.
-
-#### Option B: Using SSH (Recommended)
-1. Generate an SSH key pair
-2. Add the private key to Railway as an environment variable
-3. Add the public key to your GitHub account's SSH keys
-4. Update `update_and_commit.sh` to configure SSH
+**Example Configuration:**
+- `GITHUB_TOKEN`: `ghp_abc123xyz...` (your actual PAT)
+- `GITHUB_REPO`: `meharpalbasi/nbalineup`
+- `NBA_SEASON`: `2025-26`
 
 ### 4. Cron Schedule
 
@@ -93,18 +87,26 @@ To modify the schedule, edit `railway.json`:
 
 ## Troubleshooting
 
-### No data being pushed
-- Check Railway logs for errors
-- Verify GitHub PAT has correct permissions
-- Ensure git remote URL includes token or SSH is configured
+### "Error: GITHUB_TOKEN and GITHUB_REPO environment variables are required"
+- Ensure both `GITHUB_TOKEN` and `GITHUB_REPO` are set in Railway Variables
+- Check that `GITHUB_REPO` is in the format `username/repository`
+- Verify `GITHUB_TOKEN` is a valid Personal Access Token
 
-### API rate limiting
+### No data being pushed to GitHub
+- Check Railway logs for git errors
+- Verify GitHub PAT has `repo` scope permissions
+- Ensure repository name in `GITHUB_REPO` is correct
+- Check that the token hasn't expired
+
+### API rate limiting or fetch errors
 - NBA API has rate limits; the script includes delays (0.6s between calls)
-- If you encounter issues, increase delays in `fetchlineups.py`
+- If you encounter 429 errors, the delays may need to be increased
+- Check Railway logs for specific API error messages
 
-### Season data not found
+### Season data not found or empty CSV
 - Update `NBA_SEASON` environment variable to current season
 - Format: `YYYY-YY` (e.g., `2025-26`)
+- Note: Playoff data only available after playoffs start
 
 ## Manual Trigger
 
