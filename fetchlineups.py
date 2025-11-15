@@ -92,8 +92,8 @@ def get_lineups(team_id_i, measure_type="Base", season_type="Regular Season", se
 league_lineup = pd.DataFrame()
 # Define the season types you want to fetch
 season_types_to_fetch = ["Regular Season", "Playoffs"]
-# Define the season year you are interested in
-target_season = "2025-26" # Using a completed season to ensure playoff data exists
+# Define the season year you are interested in (can be overridden via NBA_SEASON env var)
+target_season = os.getenv("NBA_SEASON", "2025-26")
 
 print(f"Starting data fetch for season: {target_season}")
 print("-" * 30)
