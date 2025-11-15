@@ -3,6 +3,7 @@ from nba_api.stats.endpoints import teamdashlineups
 from nba_api.stats.static import teams
 import pandas as pd
 import time
+import os
 
 # In[1]: Get Team Information
 nba_teams = teams.get_teams()
@@ -213,8 +214,11 @@ if not league_lineup.empty:
     # Sort by team name and then season type for clarity
     league_lineup = league_lineup.sort_values(by=['team', 'SEASON_TYPE', 'MIN'], ascending=[True, True, False]) # Sort by MIN descending within type
 
+    # Ensure data directory exists
+    os.makedirs('data', exist_ok=True)
+
     # Save to CSV - update filename to reflect content
-    output_filename = f'NBALineup{target_season.replace("-","")}_RegSeason_Playoffs_BaseAdvanced.csv'
+    output_filename = f'data/NBALineup{target_season.replace("-","")}_RegSeason_Playoffs_BaseAdvanced.csv'
     try:
         league_lineup.to_csv(output_filename, index=False)
         print(f"Data saved successfully to {output_filename}")
