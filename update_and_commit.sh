@@ -20,17 +20,32 @@ if [ ! -d ".git" ]; then
     fi
 
     # Initialize git
-    git init
+    git init -b main
     git config user.name "${GIT_USER_NAME:-Railway Bot}"
     git config user.email "${GIT_USER_EMAIL:-bot@railway.app}"
 
     # Add remote with authentication
     git remote add origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
 
-    # Fetch and checkout main branch
+    # Fetch from GitHub
     echo "Fetching from GitHub..."
     git fetch origin main
-    git checkout -b main origin/main
+
+    # Add all existing files and create initial commit
+    echo "Setting up repository state..."
+    git add .
+
+    # Check if there's anything to commit (might be in sync already)
+    if ! git diff --cached --quiet; then
+        git commit -m "Initial commit from Railway deployment"
+    fi
+
+    # Set upstream to track origin/main
+    git branch --set-upstream-to=origin/main main
+
+    # Pull any remote changes (should be clean if code is identical)
+    echo "Syncing with remote..."
+    git pull --rebase origin main || true
 else
     echo "Git repository already initialized"
 
@@ -42,6 +57,9 @@ else
     if [ -n "$GITHUB_TOKEN" ] && [ -n "$GITHUB_REPO" ]; then
         git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
     fi
+
+    # Make sure we're on main branch
+    git checkout main 2>/dev/null || git checkout -b main
 fi
 
 # Add the data directory
