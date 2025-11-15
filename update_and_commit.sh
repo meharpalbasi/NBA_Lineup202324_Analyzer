@@ -43,9 +43,9 @@ if [ ! -d ".git" ]; then
     # Set upstream to track origin/main
     git branch --set-upstream-to=origin/main main
 
-    # Pull any remote changes (should be clean if code is identical)
+    # Reset to match remote (safer than rebase for initial setup)
     echo "Syncing with remote..."
-    git pull --rebase origin main || true
+    git reset --hard origin/main
 else
     echo "Git repository already initialized"
 
