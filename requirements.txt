@@ -27,7 +27,7 @@ MarkupSafe==3.0.2
 matplotlib-inline==0.1.7
 mdurl==0.1.2
 narwhals==1.15.2
-nba_api==1.6.1
+nba_api==1.11.3
 nest-asyncio==1.6.0
 numpy==1.26.4
 packaging==24.2
