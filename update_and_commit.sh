@@ -25,8 +25,9 @@ if [ ! -d ".git" ]; then
     git fetch origin main
 
     # Create/reset main branch to match origin/main exactly
+    # -f forces checkout and overwrites untracked files from Railway build
     echo "Syncing with remote repository..."
-    git checkout -B main origin/main
+    git checkout -f -B main origin/main
     git branch --set-upstream-to=origin/main main
 
     echo "Git repository initialized and synced with remote"
