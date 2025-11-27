@@ -20,10 +20,14 @@ if [ ! -d ".git" ]; then
     # Add remote with authentication
     git remote add origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
 
-    # Fetch from GitHub and checkout main
+    # Fetch from GitHub
     echo "Fetching from GitHub..."
     git fetch origin main
-    git checkout -b main origin/main || git checkout main
+
+    # Create/reset main branch to match origin/main exactly
+    echo "Syncing with remote repository..."
+    git checkout -B main origin/main
+    git branch --set-upstream-to=origin/main main
 
     echo "Git repository initialized and synced with remote"
 else
