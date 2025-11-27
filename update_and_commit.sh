@@ -1,14 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Starting NBA Lineup data fetch..."
-
-# Run the Python script to fetch data
-python fetchlineups.py
-
-echo "Fetch complete. Checking for changes..."
-
-# Check if we're in a git repository
+# Initialize git repository FIRST (before fetching data)
 if [ ! -d ".git" ]; then
     echo "Initializing git repository..."
 
@@ -27,25 +20,12 @@ if [ ! -d ".git" ]; then
     # Add remote with authentication
     git remote add origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
 
-    # Fetch from GitHub
+    # Fetch from GitHub and checkout main
     echo "Fetching from GitHub..."
     git fetch origin main
+    git checkout -b main origin/main || git checkout main
 
-    # Add all existing files and create initial commit
-    echo "Setting up repository state..."
-    git add .
-
-    # Check if there's anything to commit (might be in sync already)
-    if ! git diff --cached --quiet; then
-        git commit -m "Initial commit from Railway deployment"
-    fi
-
-    # Set upstream to track origin/main
-    git branch --set-upstream-to=origin/main main
-
-    # Reset to match remote (safer than rebase for initial setup)
-    echo "Syncing with remote..."
-    git reset --hard origin/main
+    echo "Git repository initialized and synced with remote"
 else
     echo "Git repository already initialized"
 
@@ -58,9 +38,18 @@ else
         git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git"
     fi
 
-    # Make sure we're on main branch
+    # Make sure we're on main branch and pull latest changes
     git checkout main 2>/dev/null || git checkout -b main
+    echo "Pulling latest changes from GitHub..."
+    git pull origin main --rebase || true
 fi
+
+echo "Starting NBA Lineup data fetch..."
+
+# Run the Python script to fetch data
+python fetchlineups.py
+
+echo "Fetch complete. Checking for changes..."
 
 # Add the data directory
 git add data/
