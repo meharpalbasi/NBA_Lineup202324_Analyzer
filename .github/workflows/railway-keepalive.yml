@@ -12,11 +12,16 @@ jobs:
     steps:
       - name: Trigger Railway Redeploy
         run: |
-          curl -X POST "https://backboard.railway.app/graphql/v2" \
+          response=$(curl -s -X POST "https://backboard.railway.app/graphql/v2" \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer ${{ secrets.RAILWAY_API_TOKEN }}" \
             -d '{
-              "query": "mutation { serviceInstanceRedeploy(serviceId: \"${{ secrets.RAILWAY_SERVICE_ID }}\") }"
-            }'
-          echo "Railway redeploy triggered"
+              "query": "mutation { serviceInstanceRedeploy(serviceId: \"${{ secrets.RAILWAY_SERVICE_ID }}\", environmentId: \"${{ secrets.RAILWAY_ENVIRONMENT_ID }}\") }"
+            }')
+          echo "Response: $response"
+          if echo "$response" | grep -q "errors"; then
+            echo "Error detected in response"
+            exit 1
+          fi
+          echo "Railway redeploy triggered successfully"
 
