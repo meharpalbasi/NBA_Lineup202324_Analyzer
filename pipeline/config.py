@@ -33,7 +33,6 @@ GROUP_QUANTITIES: List[int] = [5, 3, 2]
 
 PER_MODES: List[str] = [
     "Totals",
-    "PerGame",
     "Per100Possessions",
 ]
 
