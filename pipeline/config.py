@@ -26,7 +26,7 @@ MEASURE_TYPES: List[str] = [
     "Misc",
     "Scoring",
     "Opponent",
-    # "Defense" — not supported by LeagueDashLineups (returns empty response)
+    "Defense",
 ]
 
 GROUP_QUANTITIES: List[int] = [5, 3, 2]
