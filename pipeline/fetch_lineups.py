@@ -1,8 +1,8 @@
-"""Core lineup data — fetch and merge multi‑measure LeagueDashLineups.
+"""Core lineup data — fetch and merge multi‑measure TeamDashLineups.
 
-Uses ``LeagueDashLineups`` (league‑wide, one call per combination) instead of
-the old team‑by‑team ``TeamDashLineups`` approach — dramatically reducing the
-total number of API calls.
+Uses ``TeamDashLineups`` (per‑team, 30 calls per combination) instead of
+``LeagueDashLineups`` which caps at 2000 rows per request and silently
+truncates data for larger group quantities.
 """
 
 from __future__ import annotations
@@ -12,11 +12,12 @@ import time
 from typing import Dict, List, Optional
 
 import pandas as pd
-from nba_api.stats.endpoints import leaguedashlineups
+from nba_api.stats.endpoints import teamdashlineups
 
 from . import config
 from .utils import (
     api_call_with_retry,
+    get_all_team_ids,
     get_team_name,
     merge_measure_types,
     pace,
@@ -27,7 +28,7 @@ logger = logging.getLogger("pipeline.fetch_lineups")
 
 
 # ---------------------------------------------------------------------------
-# Single fetch
+# Single fetch (per-team)
 # ---------------------------------------------------------------------------
 
 
@@ -40,17 +41,19 @@ def fetch_all_lineups(
 ) -> Optional[pd.DataFrame]:
     """Fetch lineups for one (season_type, group_quantity, per_mode, measure_type) combo.
 
-    A single ``LeagueDashLineups`` call returns data for **all** teams at once.
+    Loops through all 30 teams using ``TeamDashLineups`` and concatenates the
+    results.  This avoids the 2000‑row cap imposed by ``LeagueDashLineups``.
 
     Args:
         season: E.g. ``"2025-26"``.
         season_type: ``"Regular Season"`` or ``"Playoffs"``.
         group_quantity: Number of players in the lineup group (5, 3, or 2).
-        per_mode: ``"Totals"``, ``"PerGame"``, or ``"Per100Possessions"``.
+        per_mode: ``"Totals"`` or ``"Per100Possessions"``.
         measure_type: One of :data:`config.MEASURE_TYPES`.
 
     Returns:
-        A ``DataFrame`` with the lineup rows, or ``None`` on failure.
+        A concatenated ``DataFrame`` with lineup rows from all teams,
+        or ``None`` on failure.
     """
     logger.info(
         "Fetching lineups: %s | %s | %d-man | %s | %s",
@@ -60,36 +63,60 @@ def fetch_all_lineups(
         per_mode,
         measure_type,
     )
-    try:
-        result = api_call_with_retry(
-            leaguedashlineups.LeagueDashLineups,
-            params=dict(
-                group_quantity=group_quantity,
-                measure_type_detailed_defense=measure_type,
-                per_mode_detailed=per_mode,
-                season=season,
-                season_type_all_star=season_type,
-                last_n_games=0,
-                month=0,
-                opponent_team_id=0,
-                pace_adjust="N",
-                period=0,
-                plus_minus="N",
-                rank="N",
-            ),
+
+    team_ids = get_all_team_ids()
+    team_frames: List[pd.DataFrame] = []
+
+    for idx, team_id in enumerate(team_ids, 1):
+        team_name = get_team_name(team_id)
+        logger.info(
+            "  [%d/%d] %s (ID %d) — %s / %d-man / %s / %s",
+            idx,
+            len(team_ids),
+            team_name,
+            team_id,
+            season_type,
+            group_quantity,
+            per_mode,
+            measure_type,
         )
-        dfs = result.get_data_frames()
-        if dfs and not dfs[0].empty:
-            df = dfs[0]
-            logger.info(
-                "  → %d rows for %s / %s / %d-man / %s",
-                len(df),
-                measure_type,
+        try:
+            result = api_call_with_retry(
+                teamdashlineups.TeamDashLineups,
+                params=dict(
+                    group_quantity=group_quantity,
+                    measure_type_detailed_defense=measure_type,
+                    per_mode_detailed=per_mode,
+                    season=season,
+                    season_type_all_star=season_type,
+                    team_id=team_id,
+                    last_n_games=0,
+                    month=0,
+                    opponent_team_id=0,
+                    pace_adjust="N",
+                    plus_minus="N",
+                    period=0,
+                    rank="N",
+                ),
+            )
+            # TeamDashLineups returns lineup data in the SECOND DataFrame (index 1)
+            df_list = result.get_data_frames()
+            if len(df_list) > 1 and not df_list[1].empty:
+                team_frames.append(df_list[1])
+        except Exception as exc:
+            logger.error(
+                "Failed to fetch lineups for %s (%s/%s/%d-man/%s/%s): %s",
+                team_name,
+                season,
                 season_type,
                 group_quantity,
                 per_mode,
+                measure_type,
+                exc,
             )
-            return df
+        pace()  # respect rate limits between calls
+
+    if not team_frames:
         logger.warning(
             "  → 0 rows for %s / %s / %d-man / %s",
             measure_type,
@@ -99,17 +126,16 @@ def fetch_all_lineups(
         )
         return None
 
-    except Exception as exc:
-        logger.error(
-            "Failed to fetch lineups (%s/%s/%d-man/%s/%s): %s",
-            season,
-            season_type,
-            group_quantity,
-            per_mode,
-            measure_type,
-            exc,
-        )
-        return None
+    df = pd.concat(team_frames, ignore_index=True)
+    logger.info(
+        "  → %d rows for %s / %s / %d-man / %s",
+        len(df),
+        measure_type,
+        season_type,
+        group_quantity,
+        per_mode,
+    )
+    return df
 
 
 # ---------------------------------------------------------------------------
