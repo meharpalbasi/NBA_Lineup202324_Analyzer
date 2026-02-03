@@ -96,6 +96,8 @@ def fetch_on_off(season: str = config.SEASON) -> Optional[pd.DataFrame]:
         # Longer pause between teams
         time.sleep(config.API_ENDPOINT_DELAY)
 
+    # Filter out empty frames to avoid FutureWarning on concat
+    all_frames = [f for f in all_frames if not f.empty]
     if not all_frames:
         logger.error("No on/off data collected.")
         return None
@@ -158,6 +160,8 @@ def fetch_clutch(season: str = config.SEASON) -> Optional[pd.DataFrame]:
 
         pace()
 
+    # Filter out empty frames to avoid FutureWarning on concat
+    frames = [f for f in frames if not f.empty]
     if not frames:
         logger.error("No clutch data collected.")
         return None
@@ -246,6 +250,8 @@ def fetch_play_types(season: str = config.SEASON) -> Optional[pd.DataFrame]:
                         )
                     pace()
 
+    # Filter out empty frames to avoid FutureWarning on concat
+    frames = [f for f in frames if not f.empty]
     if not frames:
         logger.error("No play‑type data collected.")
         return None
@@ -322,6 +328,10 @@ def fetch_hustle(
 
     player_df: Optional[pd.DataFrame] = None
     team_df: Optional[pd.DataFrame] = None
+
+    # Filter out empty frames to avoid FutureWarning on concat
+    player_frames = [f for f in player_frames if not f.empty]
+    team_frames = [f for f in team_frames if not f.empty]
 
     if player_frames:
         player_df = pd.concat(player_frames, ignore_index=True)
@@ -400,6 +410,8 @@ def fetch_tracking(season: str = config.SEASON) -> Optional[pd.DataFrame]:
                     )
                 pace()
 
+    # Filter out empty frames to avoid FutureWarning on concat
+    frames = [f for f in frames if not f.empty]
     if not frames:
         logger.error("No tracking data collected.")
         return None
@@ -458,6 +470,8 @@ def fetch_defense_tracking(season: str = config.SEASON) -> Optional[pd.DataFrame
                 logger.error("Failed defense tracking %s/%s: %s", category, season_type, exc)
             pace()
 
+    # Filter out empty frames to avoid FutureWarning on concat
+    frames = [f for f in frames if not f.empty]
     if not frames:
         logger.error("No defense tracking data collected.")
         return None
@@ -508,6 +522,8 @@ def fetch_estimated_metrics(season: str = config.SEASON) -> Optional[pd.DataFram
             logger.error("Failed estimated metrics (%s): %s", season_type, exc)
         pace()
 
+    # Filter out empty frames to avoid FutureWarning on concat
+    frames = [f for f in frames if not f.empty]
     if not frames:
         logger.error("No estimated metrics collected.")
         return None
