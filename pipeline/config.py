@@ -17,7 +17,7 @@ from typing import List
 SEASON: str = os.getenv("NBA_SEASON", "2025-26")
 
 # ---------------------------------------------------------------------------
-# LeagueDashLineups — measure types, group quantities, per‑modes
+# TeamDashLineups — measure types, group quantities, per‑modes
 # ---------------------------------------------------------------------------
 MEASURE_TYPES: List[str] = [
     "Base",
@@ -26,7 +26,7 @@ MEASURE_TYPES: List[str] = [
     "Misc",
     "Scoring",
     "Opponent",
-    # "Defense" — not supported by LeagueDashLineups (returns empty response)
+    # "Defense" — not supported by lineup endpoints (returns empty response)
 ]
 
 GROUP_QUANTITIES: List[int] = [5, 3, 2]
@@ -97,8 +97,8 @@ DATA_DIR: Path = Path(__file__).resolve().parent.parent / "data"
 # API / rate‑limiting settings
 # ---------------------------------------------------------------------------
 API_TIMEOUT: int = 120  # seconds per request
-API_RETRIES: int = 5
+API_RETRIES: int = 7  # more retries — team-by-team makes 30× more calls
 API_BASE_DELAY: float = 3.0  # seconds — first retry wait
 API_BACKOFF_MULTIPLIER: float = 2.0  # exponential backoff factor
-API_CALL_DELAY: float = 1.5  # seconds between consecutive calls
-API_ENDPOINT_DELAY: float = 3.0  # seconds between different endpoint types
+API_CALL_DELAY: float = 2.0  # seconds between consecutive calls (was 1.5)
+API_ENDPOINT_DELAY: float = 5.0  # seconds between different endpoint types (was 3.0)
