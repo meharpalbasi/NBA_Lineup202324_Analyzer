@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.nbalineup.supplementary</string>
+
+    <!-- Adjust the repo path below if you clone the backend elsewhere on the Mac mini. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/meharpalbasi/Documents/nbalineup_backend/scripts/run_supplementary.sh</string>
+    </array>
+
+    <!-- launchd starts jobs with a bare PATH; give it git + homebrew so the
+         script can find git/python. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <!-- Weekly: Mondays at 08:00 local time. If the mini is asleep/off at that
+         moment, launchd runs the job as soon as it wakes. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/meharpalbasi/Documents/nbalineup_backend/scripts/logs/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/meharpalbasi/Documents/nbalineup_backend/scripts/logs/launchd.err.log</string>
+</dict>
+</plist>
