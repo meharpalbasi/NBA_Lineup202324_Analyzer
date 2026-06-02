@@ -4,3 +4,9 @@ __pycache__/
 .DS_Store
 .ipynb_checkpoints/
 *.log
+
+# Raw multi-man lineup exports are too large (~38MB) to serve raw to the browser.
+# Deferred until shrunk/gzipped — keep them out of git for now.
+data/lineups_2man_*.csv
+data/lineups_3man_*.csv
+data/lineups_5man_*.csv
