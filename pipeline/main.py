@@ -288,6 +288,19 @@ def run(argv: list | None = None) -> None:
             files_written.append(str(config.DATA_DIR / f"estimated_metrics_{season}.csv"))
 
     # ------------------------------------------------------------------
+    # Slim web exports (2/3-man) — needs the full lineup files; team is
+    # reconstructed from the on/off CSV, so run after both sections.
+    # ------------------------------------------------------------------
+    if not args.supplementary_only:
+        from .export_web import export_slim
+
+        try:
+            paths = export_slim(season)
+            files_written.extend(str(p) for p in paths)
+        except Exception as exc:  # never let slimming abort the run
+            logger.error("Slim export failed: %s", exc)
+
+    # ------------------------------------------------------------------
     # Summary
     # ------------------------------------------------------------------
     wall_seconds = time.time() - wall_start

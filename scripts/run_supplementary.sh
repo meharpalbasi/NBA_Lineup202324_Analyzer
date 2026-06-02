@@ -45,7 +45,7 @@ echo "[$(ts)] Fetching supplementary data…"
 # 3. Stage only the rich files. The large lineups_*man CSVs are .gitignored.
 git add data/on_off_*.csv data/clutch_*.csv data/play_types_*.csv \
         data/hustle_*.csv data/tracking_*.csv data/defense_tracking_*.csv \
-        data/estimated_metrics_*.csv
+        data/estimated_metrics_*.csv data/lineups_slim_*.csv
 
 # 4. Commit + push only if something actually changed.
 if git diff --staged --quiet; then
