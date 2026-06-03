@@ -25,7 +25,9 @@ cd nbalineup_backend
 # 2. Create the virtualenv the script expects (./venv)
 python3 -m venv venv
 ./venv/bin/pip install --upgrade pip
-./venv/bin/pip install -r requirements.txt
+# Minimal runtime deps (works on the system Python 3.9). The full
+# requirements.txt is a dev freeze that needs Python 3.10+ and isn't required.
+./venv/bin/pip install -r requirements-pipeline.txt
 
 # 3. Make sure git can PUSH non-interactively from the mini:
 #    - SSH remote (recommended): the clone URL above already uses SSH; ensure

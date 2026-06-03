@@ -1,0 +1,6 @@
+# Minimal runtime dependencies for the data pipeline (pipeline/).
+# Works on Python 3.9+. The full requirements.txt is a dev freeze
+# (jupyter / ipython / streamlit / altair) that requires Python 3.10+ and is
+# NOT needed to run the fetchers. The pipeline only imports pandas + nba_api.
+nba_api==1.6.1
+pandas==2.2.3
