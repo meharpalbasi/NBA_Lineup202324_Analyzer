@@ -236,6 +236,8 @@ def run(argv: list | None = None) -> None:
             fetch_hustle,
             fetch_on_off,
             fetch_play_types,
+            fetch_player_stats,
+            fetch_team_stats,
             fetch_tracking,
         )
 
@@ -287,6 +289,20 @@ def run(argv: list | None = None) -> None:
         results["Estimated Metrics"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"estimated_metrics_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 8. Player Stats (Base + Advanced)
+        ok, rows = _run_section("Player Stats", fetch_player_stats, season)
+        results["Player Stats"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"player_stats_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 9. Team Stats (Base + Advanced + Four Factors)
+        ok, rows = _run_section("Team Stats", fetch_team_stats, season)
+        results["Team Stats"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"team_stats_{season}.csv"))
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
@@ -300,6 +316,21 @@ def run(argv: list | None = None) -> None:
             files_written.extend(str(p) for p in paths)
         except Exception as exc:  # never let slimming abort the run
             logger.error("Slim export failed: %s", exc)
+
+    # ------------------------------------------------------------------
+    # Player index (pre-joined web table) — needs the supplementary player
+    # CSVs (player_stats + estimated_metrics + on/off), so it runs whenever
+    # supplementary data was fetched (incl. --supplementary-only).
+    # ------------------------------------------------------------------
+    if not args.lineups_only:
+        from .export_web import export_player_index
+
+        try:
+            p = export_player_index(season)
+            if p:
+                files_written.append(str(p))
+        except Exception as exc:  # never let the join abort the run
+            logger.error("Player index export failed: %s", exc)
 
     # ------------------------------------------------------------------
     # Summary

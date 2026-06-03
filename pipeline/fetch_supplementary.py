@@ -18,6 +18,7 @@ from .utils import (
     api_call_with_retry,
     get_all_team_ids,
     get_team_name,
+    merge_measure_types,
     pace,
     save_dataframe,
 )
@@ -532,4 +533,145 @@ def fetch_estimated_metrics(season: str = config.SEASON) -> Optional[pd.DataFram
     filepath = config.DATA_DIR / f"estimated_metrics_{season}.csv"
     save_dataframe(df, filepath)
     logger.info("✓ Estimated metrics: %d rows → %s", len(df), filepath)
+    return df
+
+
+# =========================================================================
+# 8. League player stats (LeagueDashPlayerStats — Base + Advanced)
+# =========================================================================
+
+
+def fetch_player_stats(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Fetch league-wide per-player stats, Base + Advanced merged into one wide row.
+
+    This is the classic per-game stat line (PTS/REB/AST/…) plus advanced rates
+    (TS%, USG%, OFF/DEF/NET rating, PIE) — one row per (PLAYER_ID, SEASON_TYPE).
+    It is the spine of the /players table and of the pre-joined player_index.
+
+    Args:
+        season: NBA season string.
+
+    Returns:
+        Combined player-stats DataFrame, or ``None`` on total failure.
+    """
+    from nba_api.stats.endpoints import leaguedashplayerstats
+
+    logger.info("Fetching player stats for season %s …", season)
+    frames: List[pd.DataFrame] = []
+
+    for season_type in config.SEASON_TYPES:
+        by_measure = {}
+        for measure in config.PLAYER_STATS_MEASURE_TYPES:
+            try:
+                result = api_call_with_retry(
+                    leaguedashplayerstats.LeagueDashPlayerStats,
+                    params=dict(
+                        season=season,
+                        season_type_all_star=season_type,
+                        measure_type_detailed_defense=measure,
+                        per_mode_detailed=config.LEAGUE_STATS_PER_MODE,
+                        last_n_games=0,
+                        month=0,
+                        opponent_team_id=0,
+                        pace_adjust="N",
+                        period=0,
+                        plus_minus="N",
+                        rank="N",
+                    ),
+                )
+                dfs = result.get_data_frames()
+                if dfs and not dfs[0].empty:
+                    by_measure[measure] = dfs[0]
+                    logger.info("  %s | %s: %d rows", season_type, measure, len(dfs[0]))
+            except Exception as exc:
+                logger.error("Failed player stats %s/%s: %s", measure, season_type, exc)
+            pace()
+
+        if not by_measure:
+            continue
+        merged = merge_measure_types(by_measure, merge_key="PLAYER_ID")
+        if merged.empty:
+            continue
+        merged["SEASON_TYPE"] = season_type
+        frames.append(merged)
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        logger.error("No player stats collected.")
+        return None
+
+    df = pd.concat(frames, ignore_index=True)
+    filepath = config.DATA_DIR / f"player_stats_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Player stats: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
+    return df
+
+
+# =========================================================================
+# 9. League team stats (LeagueDashTeamStats — Base + Advanced + Four Factors)
+# =========================================================================
+
+
+def fetch_team_stats(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Fetch league-wide per-team stats, Base + Advanced + Four Factors merged wide.
+
+    One row per (TEAM_ID, SEASON_TYPE), carrying offensive & defensive four
+    factors, efficiency ratings, and pace — the inputs for the /teams dashboard.
+
+    Args:
+        season: NBA season string.
+
+    Returns:
+        Combined team-stats DataFrame, or ``None`` on total failure.
+    """
+    from nba_api.stats.endpoints import leaguedashteamstats
+
+    logger.info("Fetching team stats for season %s …", season)
+    frames: List[pd.DataFrame] = []
+
+    for season_type in config.SEASON_TYPES:
+        by_measure = {}
+        for measure in config.TEAM_STATS_MEASURE_TYPES:
+            try:
+                result = api_call_with_retry(
+                    leaguedashteamstats.LeagueDashTeamStats,
+                    params=dict(
+                        season=season,
+                        season_type_all_star=season_type,
+                        measure_type_detailed_defense=measure,
+                        per_mode_detailed=config.LEAGUE_STATS_PER_MODE,
+                        last_n_games=0,
+                        month=0,
+                        opponent_team_id=0,
+                        pace_adjust="N",
+                        period=0,
+                        plus_minus="N",
+                        rank="N",
+                    ),
+                )
+                dfs = result.get_data_frames()
+                if dfs and not dfs[0].empty:
+                    by_measure[measure] = dfs[0]
+                    logger.info("  %s | %s: %d rows", season_type, measure, len(dfs[0]))
+            except Exception as exc:
+                logger.error("Failed team stats %s/%s: %s", measure, season_type, exc)
+            pace()
+
+        if not by_measure:
+            continue
+        merged = merge_measure_types(by_measure, merge_key="TEAM_ID")
+        if merged.empty:
+            continue
+        merged["SEASON_TYPE"] = season_type
+        frames.append(merged)
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        logger.error("No team stats collected.")
+        return None
+
+    df = pd.concat(frames, ignore_index=True)
+    filepath = config.DATA_DIR / f"team_stats_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Team stats: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
     return df

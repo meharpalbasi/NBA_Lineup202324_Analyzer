@@ -52,6 +52,21 @@ SLIM_COLUMNS: List[str] = [
 
 TeamKey = Tuple[str, int]  # (abbreviation, team_id)
 
+# Curated columns for the pre-joined player index (the /players table). Drawn
+# from player_stats (Base+Advanced) + estimated_metrics + on/off swing. Any that
+# are absent in the merged frame are simply skipped.
+PLAYER_INDEX_COLUMNS: List[str] = [
+    "PLAYER_ID", "PLAYER_NAME", "TEAM_ID", "TEAM_ABBREVIATION", "AGE", "SEASON_TYPE",
+    "GP", "MIN", "W_PCT",
+    "PTS", "REB", "OREB", "DREB", "AST", "STL", "BLK", "TOV", "PF",
+    "FG_PCT", "FG3_PCT", "FT_PCT", "EFG_PCT", "TS_PCT",
+    "USG_PCT", "AST_PCT", "AST_TO", "AST_RATIO", "TM_TOV_PCT",
+    "OREB_PCT", "DREB_PCT", "REB_PCT",
+    "OFF_RATING", "DEF_RATING", "NET_RATING", "PACE", "PIE", "PLUS_MINUS",
+    "E_OFF_RATING", "E_DEF_RATING", "E_NET_RATING", "E_USG_PCT",
+    "ON_NET_RATING", "OFF_NET_RATING", "NET_SWING",
+]
+
 
 def build_player_team_map(season: str) -> Dict[int, Set[TeamKey]]:
     """Map player id -> set of (team_abbrev, team_id) from the on/off CSV.
@@ -156,6 +171,91 @@ def export_slim(season: str = config.SEASON, min_minutes: float = 100.0) -> List
     return written
 
 
+def _onoff_swing(season: str) -> Optional[pd.DataFrame]:
+    """Per-player on/off net-rating swing (ΔNET) from the on/off CSV.
+
+    For traded players we use the team where they logged the most on-court MIN.
+    Returns a frame keyed by ``(PLAYER_ID, SEASON_TYPE)`` with ON/OFF/SWING, or
+    ``None`` if the on/off file is missing.
+    """
+    path = config.DATA_DIR / f"on_off_{season}.csv"
+    if not path.exists():
+        logger.warning("on/off file not found (%s) — NET_SWING omitted.", path)
+        return None
+
+    df = pd.read_csv(path, low_memory=False)
+    for col in ("MIN", "NET_RATING"):
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    rows: List[dict] = []
+    for (pid, stype), grp in df.groupby(["VS_PLAYER_ID", "SEASON_TYPE"]):
+        on = grp[grp["COURT_STATUS"] == "On"]
+        off = grp[grp["COURT_STATUS"] == "Off"]
+        if on.empty or on["MIN"].isna().all():
+            continue
+        on_row = on.loc[on["MIN"].idxmax()]  # the player's primary team
+        team_off = off[off["TEAM_ID"] == on_row["TEAM_ID"]]
+        on_net = on_row["NET_RATING"]
+        off_net = team_off["NET_RATING"].iloc[0] if not team_off.empty else None
+        has_off = off_net is not None and pd.notna(off_net)
+        swing = on_net - off_net if pd.notna(on_net) and has_off else None
+        try:
+            pid_int = int(pid)
+        except (TypeError, ValueError):
+            continue
+        rows.append({
+            "PLAYER_ID": pid_int,
+            "SEASON_TYPE": stype,
+            "ON_NET_RATING": round(float(on_net), 1) if pd.notna(on_net) else None,
+            "OFF_NET_RATING": round(float(off_net), 1) if has_off else None,
+            "NET_SWING": round(float(swing), 1) if swing is not None else None,
+        })
+    return pd.DataFrame(rows)
+
+
+def export_player_index(season: str = config.SEASON) -> Optional[Path]:
+    """Pre-join per-player stats + estimated metrics + on/off swing into one slim
+    table the /players page loads directly. Safe no-op if player_stats is missing.
+    """
+    logger.info("Building player index (season %s)…", season)
+    stats_path = config.DATA_DIR / f"player_stats_{season}.csv"
+    if not stats_path.exists():
+        logger.warning("player_stats not found (%s) — skipping player index.", stats_path)
+        return None
+
+    df = pd.read_csv(stats_path, low_memory=False)
+
+    # Estimated (E_*) impact metrics on (PLAYER_ID, SEASON_TYPE).
+    est_path = config.DATA_DIR / f"estimated_metrics_{season}.csv"
+    if est_path.exists():
+        est = pd.read_csv(est_path, low_memory=False)
+        e_cols = [c for c in est.columns if c.startswith("E_")]
+        keep = [c for c in ("PLAYER_ID", "SEASON_TYPE", *e_cols) if c in est.columns]
+        df = df.merge(est[keep], on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+    else:
+        logger.warning("estimated_metrics not found — E_* columns omitted.")
+
+    # On/off net swing.
+    swing = _onoff_swing(season)
+    if swing is not None and not swing.empty:
+        df = df.merge(swing, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    cols = [c for c in PLAYER_INDEX_COLUMNS if c in df.columns]
+    out = df[cols].copy()
+    if "MIN" in out.columns:
+        out = out.sort_values("MIN", ascending=False)
+
+    dest = config.DATA_DIR / f"player_index_{season}.csv"
+    save_dataframe(out, dest)
+    size_kb = dest.stat().st_size / 1024
+    logger.info(
+        "✓ Player index: %d rows × %d cols → %s (%.0f KB)",
+        len(out), len(cols), dest.name, size_kb,
+    )
+    return dest
+
+
 def _parse_args(argv=None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build slim web-ready lineup CSVs.")
     parser.add_argument("--season", default=config.SEASON)
@@ -167,3 +267,4 @@ if __name__ == "__main__":
     args = _parse_args()
     setup_logging()
     export_slim(season=args.season, min_minutes=args.min_minutes)
+    export_player_index(season=args.season)

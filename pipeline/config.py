@@ -89,6 +89,14 @@ DEFENSE_CATEGORIES: List[str] = [
 ]
 
 # ---------------------------------------------------------------------------
+# League player / team stats (LeagueDashPlayerStats / LeagueDashTeamStats)
+# ---------------------------------------------------------------------------
+PLAYER_STATS_MEASURE_TYPES: List[str] = ["Base", "Advanced"]
+TEAM_STATS_MEASURE_TYPES: List[str] = ["Base", "Advanced", "Four Factors"]
+# Per-game is the classic, user-facing line; advanced rates are per-mode agnostic.
+LEAGUE_STATS_PER_MODE: str = "PerGame"
+
+# ---------------------------------------------------------------------------
 # Output directory
 # ---------------------------------------------------------------------------
 DATA_DIR: Path = Path(__file__).resolve().parent.parent / "data"
