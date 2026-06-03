@@ -4,3 +4,7 @@
 # NOT needed to run the fetchers. The pipeline only imports pandas + nba_api.
 nba_api==1.6.1
 pandas==2.2.3
+# curl_cffi impersonates a real browser's TLS fingerprint. Required since
+# ~Feb 2026: stats.nba.com (Akamai) drops plain requests/urllib3 fingerprints.
+# See pipeline/nba_http_patch.py.
+curl_cffi==0.15.0

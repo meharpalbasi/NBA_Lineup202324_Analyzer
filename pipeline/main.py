@@ -13,6 +13,7 @@ import time
 from typing import Dict, List, Tuple
 
 from . import config
+from . import nba_http_patch  # noqa: F401  — applies curl_cffi (Chrome TLS) patch on import
 from .utils import get_api_call_count, health_check, setup_logging
 
 logger = logging.getLogger("pipeline.main")
