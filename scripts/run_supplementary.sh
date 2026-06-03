@@ -35,8 +35,10 @@ if [ ! -x "$PYTHON" ]; then
 fi
 
 # 1. Sync with remote first — Railway pushes the legacy lineup CSV to main too.
+# --autostash so a dirty tree (e.g. file-mode quirks, leftover data from a
+# previous partial run) doesn't abort the rebase.
 echo "[$(ts)] Syncing with origin/main…"
-git pull --rebase origin main
+git pull --rebase --autostash origin main
 
 # 2. Fetch supplementary data only (skips the heavy per-team lineup fetch).
 echo "[$(ts)] Fetching supplementary data…"
