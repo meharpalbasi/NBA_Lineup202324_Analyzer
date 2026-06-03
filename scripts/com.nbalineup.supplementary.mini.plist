@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.nbalineup.supplementary</string>
+
+    <!-- Mac mini paths (user: meharpal, clone dir: NBA_Lineup202324_Analyzer). -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/run_supplementary.sh</string>
+    </array>
+
+    <!-- launchd starts jobs with a bare PATH; give it git + homebrew. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <!-- Weekly: Mondays at 08:00 local. Runs on next wake if the mini was asleep. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.err.log</string>
+</dict>
+</plist>
