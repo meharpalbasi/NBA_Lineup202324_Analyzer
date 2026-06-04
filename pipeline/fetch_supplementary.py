@@ -924,3 +924,80 @@ def fetch_player_game_logs(season: str = config.SEASON) -> Optional[pd.DataFrame
     save_dataframe(df, filepath)
     logger.info("✓ Player game logs: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
     return df
+
+
+# =========================================================================
+# 13. Team game-by-game logs
+# =========================================================================
+# Team-level LeagueGameLog (one row per team-game) for the team season-trend
+# chart on /teams. PLUS_MINUS is the game margin.
+TEAM_GAME_LOG_COLUMNS = [
+    "TEAM_ID",
+    "TEAM_ABBREVIATION",
+    "TEAM_NAME",
+    "GAME_DATE",
+    "MATCHUP",
+    "WL",
+    "PTS",
+    "REB",
+    "AST",
+    "STL",
+    "BLK",
+    "TOV",
+    "FG_PCT",
+    "FG3_PCT",
+    "FT_PCT",
+    "PLUS_MINUS",
+]
+
+
+def fetch_team_game_logs(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Per-team game-by-game logs — one ``LeagueGameLog`` (team level) call per
+    season type. One row per (team, game); ``PLUS_MINUS`` is the game margin.
+    Powers the team season-trend chart on /teams.
+
+    Args:
+        season: NBA season string.
+
+    Returns:
+        Combined team game-log DataFrame, or ``None`` on total failure.
+    """
+    from nba_api.stats.endpoints import leaguegamelog
+
+    logger.info("Fetching team game logs for season %s …", season)
+    frames: List[pd.DataFrame] = []
+
+    for season_type in config.SEASON_TYPES:
+        try:
+            result = api_call_with_retry(
+                leaguegamelog.LeagueGameLog,
+                params=dict(
+                    season=season,
+                    season_type_all_star=season_type,
+                    player_or_team_abbreviation="T",
+                    sorter="DATE",
+                    direction="ASC",
+                ),
+            )
+            dfs = result.get_data_frames()
+            if dfs and not dfs[0].empty:
+                df = dfs[0]
+                keep = [c for c in TEAM_GAME_LOG_COLUMNS if c in df.columns]
+                df = df[keep].copy()
+                df["SEASON_TYPE"] = season_type
+                frames.append(df)
+                logger.info("  %s: %d team-games", season_type, len(df))
+        except Exception as exc:
+            logger.error("Failed team game logs %s: %s", season_type, exc)
+        pace()
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        logger.error("No team game-log data collected.")
+        return None
+
+    df = pd.concat(frames, ignore_index=True)
+    filepath = config.DATA_DIR / f"team_game_logs_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Team game logs: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
+    return df
