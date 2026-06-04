@@ -48,7 +48,8 @@ echo "[$(ts)] Fetching supplementary data…"
 git add data/on_off_*.csv data/clutch_*.csv data/play_types_*.csv \
         data/hustle_*.csv data/tracking_*.csv data/defense_tracking_*.csv \
         data/estimated_metrics_*.csv data/lineups_slim_*.csv \
-        data/player_stats_*.csv data/team_stats_*.csv data/player_index_*.csv
+        data/player_stats_*.csv data/team_stats_*.csv data/player_index_*.csv \
+        data/player_clutch_*.csv
 
 # 4. Commit + push only if something actually changed.
 if git diff --staged --quiet; then

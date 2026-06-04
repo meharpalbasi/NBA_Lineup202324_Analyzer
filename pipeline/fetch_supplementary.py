@@ -675,3 +675,78 @@ def fetch_team_stats(season: str = config.SEASON) -> Optional[pd.DataFrame]:
     save_dataframe(df, filepath)
     logger.info("✓ Team stats: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
     return df
+
+
+# =========================================================================
+# 10. League player clutch stats (LeagueDashPlayerClutch — Base + Advanced)
+# =========================================================================
+
+
+def fetch_player_clutch(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Fetch per-player stats in clutch time (last 5 min, within 5 pts), Base +
+    Advanced merged wide. One row per (PLAYER_ID, SEASON_TYPE).
+
+    The Advanced NET_RATING is the team's net rating per 100 while the player is
+    on the court in the clutch; compared to their overall on-court net it's the
+    leverage signal — does the player lift or sink the team late?
+
+    Args:
+        season: NBA season string.
+
+    Returns:
+        Combined player-clutch DataFrame, or ``None`` on total failure.
+    """
+    from nba_api.stats.endpoints import leaguedashplayerclutch
+
+    logger.info("Fetching player clutch stats for season %s …", season)
+    frames: List[pd.DataFrame] = []
+
+    for season_type in config.SEASON_TYPES:
+        by_measure = {}
+        for measure in config.PLAYER_STATS_MEASURE_TYPES:
+            try:
+                result = api_call_with_retry(
+                    leaguedashplayerclutch.LeagueDashPlayerClutch,
+                    params=dict(
+                        season=season,
+                        season_type_all_star=season_type,
+                        measure_type_detailed_defense=measure,
+                        per_mode_detailed="Totals",
+                        ahead_behind="Ahead or Behind",
+                        clutch_time="Last 5 Minutes",
+                        point_diff=5,
+                        last_n_games=0,
+                        month=0,
+                        opponent_team_id=0,
+                        pace_adjust="N",
+                        period=0,
+                        plus_minus="N",
+                        rank="N",
+                    ),
+                )
+                dfs = result.get_data_frames()
+                if dfs and not dfs[0].empty:
+                    by_measure[measure] = dfs[0]
+                    logger.info("  %s | %s: %d rows", season_type, measure, len(dfs[0]))
+            except Exception as exc:
+                logger.error("Failed player clutch %s/%s: %s", measure, season_type, exc)
+            pace()
+
+        if not by_measure:
+            continue
+        merged = merge_measure_types(by_measure, merge_key="PLAYER_ID")
+        if merged.empty:
+            continue
+        merged["SEASON_TYPE"] = season_type
+        frames.append(merged)
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        logger.error("No player clutch data collected.")
+        return None
+
+    df = pd.concat(frames, ignore_index=True)
+    filepath = config.DATA_DIR / f"player_clutch_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Player clutch: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
+    return df
