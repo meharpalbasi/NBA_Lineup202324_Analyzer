@@ -319,6 +319,7 @@ def run(argv: list | None = None) -> None:
         results["Player Game Logs"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"player_game_logs_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
