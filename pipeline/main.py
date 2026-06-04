@@ -236,6 +236,7 @@ def run(argv: list | None = None) -> None:
             fetch_hustle,
             fetch_on_off,
             fetch_play_types,
+            fetch_player_clutch,
             fetch_player_stats,
             fetch_team_stats,
             fetch_tracking,
@@ -303,6 +304,13 @@ def run(argv: list | None = None) -> None:
         results["Team Stats"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"team_stats_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 10. Player Clutch (Base + Advanced)
+        ok, rows = _run_section("Player Clutch", fetch_player_clutch, season)
+        results["Player Clutch"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"player_clutch_{season}.csv"))
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
