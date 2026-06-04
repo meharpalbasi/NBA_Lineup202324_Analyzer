@@ -237,6 +237,7 @@ def run(argv: list | None = None) -> None:
             fetch_on_off,
             fetch_play_types,
             fetch_player_clutch,
+            fetch_player_game_logs,
             fetch_player_stats,
             fetch_team_stats,
             fetch_tracking,
@@ -311,6 +312,13 @@ def run(argv: list | None = None) -> None:
         results["Player Clutch"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"player_clutch_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 11. Player Game Logs (game-by-game, for season-trend charts)
+        ok, rows = _run_section("Player Game Logs", fetch_player_game_logs, season)
+        results["Player Game Logs"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"player_game_logs_{season}.csv"))
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
