@@ -753,7 +753,101 @@ def fetch_player_clutch(season: str = config.SEASON) -> Optional[pd.DataFrame]:
 
 
 # =========================================================================
-# 11. Player game-by-game logs
+# 11. Player shot zones (LeagueDashPlayerShotLocations — By Zone)
+# =========================================================================
+
+# Friendly zone name → short column key for the flattened shot-zone CSV.
+_SHOT_ZONE_KEY = {
+    "Restricted Area": "RA",
+    "In The Paint (Non-RA)": "PAINT",
+    "Mid-Range": "MID",
+    "Left Corner 3": "LC3",
+    "Right Corner 3": "RC3",
+    "Above the Break 3": "ATB3",
+    "Backcourt": "BC",
+    "Corner 3": "C3",
+}
+
+
+def _flatten_shot_zone_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Flatten the (zone, stat) MultiIndex columns to ``{ZONE}_{STAT}``.
+
+    Identity columns arrive as ``("", "PLAYER_ID")`` (kept as the stat name);
+    zone columns as ``("Restricted Area", "FGM")`` → ``RA_FGM``.
+    """
+    out = df.copy()
+    flat: List[str] = []
+    for col in out.columns:
+        if isinstance(col, tuple):
+            zone, stat = col[0], col[1]
+            flat.append(stat if zone in ("", None) else f"{_SHOT_ZONE_KEY.get(zone, zone)}_{stat}")
+        else:
+            flat.append(col)
+    out.columns = flat
+    return out
+
+
+def fetch_shot_zones(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Fetch per-player FGM/FGA/FG% by court zone (restricted area, paint, mid-range,
+    left/right corner 3, above-the-break 3) via ``LeagueDashPlayerShotLocations``.
+
+    One call per season type (light) — powers the zone-shaded shot chart on the
+    player profile. League averages per zone are computed client-side from these
+    rows, so no extra call is needed.
+
+    Args:
+        season: NBA season string.
+
+    Returns:
+        Combined shot-zone DataFrame, or ``None`` on total failure.
+    """
+    from nba_api.stats.endpoints import leaguedashplayershotlocations
+
+    logger.info("Fetching player shot zones for season %s …", season)
+    frames: List[pd.DataFrame] = []
+
+    for season_type in config.SEASON_TYPES:
+        try:
+            result = api_call_with_retry(
+                leaguedashplayershotlocations.LeagueDashPlayerShotLocations,
+                params=dict(
+                    season=season,
+                    season_type_all_star=season_type,
+                    distance_range="By Zone",
+                    per_mode_detailed="Totals",
+                    last_n_games=0,
+                    month=0,
+                    opponent_team_id=0,
+                    pace_adjust="N",
+                    period=0,
+                    plus_minus="N",
+                    rank="N",
+                ),
+            )
+            dfs = result.get_data_frames()
+            if dfs and not dfs[0].empty:
+                df = _flatten_shot_zone_columns(dfs[0])
+                df["SEASON_TYPE"] = season_type
+                frames.append(df)
+                logger.info("  %s: %d players", season_type, len(df))
+        except Exception as exc:
+            logger.error("Failed shot zones (%s): %s", season_type, exc)
+        pace()
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        logger.error("No shot-zone data collected.")
+        return None
+
+    df = pd.concat(frames, ignore_index=True)
+    filepath = config.DATA_DIR / f"shot_zones_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Shot zones: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
+    return df
+
+
+# =========================================================================
+# 12. Player game-by-game logs
 # =========================================================================
 # Slim set of columns kept from LeagueGameLog — enough for season-trend line
 # charts on the profile without bloating the published CSV.
