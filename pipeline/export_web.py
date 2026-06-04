@@ -215,8 +215,9 @@ def _onoff_swing(season: str) -> Optional[pd.DataFrame]:
 
 
 def export_player_index(season: str = config.SEASON) -> Optional[Path]:
-    """Pre-join per-player stats + estimated metrics + on/off swing into one slim
-    table the /players page loads directly. Safe no-op if player_stats is missing.
+    """Pre-join per-player stats (which already include the estimated E_* metrics
+    from the Advanced measure) with on/off net swing into one slim table the
+    /players page loads directly. Safe no-op if player_stats is missing.
     """
     logger.info("Building player index (season %s)…", season)
     stats_path = config.DATA_DIR / f"player_stats_{season}.csv"
@@ -226,15 +227,9 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
 
     df = pd.read_csv(stats_path, low_memory=False)
 
-    # Estimated (E_*) impact metrics on (PLAYER_ID, SEASON_TYPE).
-    est_path = config.DATA_DIR / f"estimated_metrics_{season}.csv"
-    if est_path.exists():
-        est = pd.read_csv(est_path, low_memory=False)
-        e_cols = [c for c in est.columns if c.startswith("E_")]
-        keep = [c for c in ("PLAYER_ID", "SEASON_TYPE", *e_cols) if c in est.columns]
-        df = df.merge(est[keep], on=["PLAYER_ID", "SEASON_TYPE"], how="left")
-    else:
-        logger.warning("estimated_metrics not found — E_* columns omitted.")
+    # Note: the estimated impact metrics (E_OFF/DEF/NET/USG…) already ship inside
+    # player_stats via the Advanced measure, so we do NOT merge estimated_metrics
+    # here — doing so only collides those columns into _x/_y suffixes and drops them.
 
     # On/off net swing.
     swing = _onoff_swing(season)
