@@ -238,6 +238,7 @@ def run(argv: list | None = None) -> None:
             fetch_play_types,
             fetch_player_clutch,
             fetch_player_stats,
+            fetch_shot_zones,
             fetch_team_stats,
             fetch_tracking,
         )
@@ -311,6 +312,13 @@ def run(argv: list | None = None) -> None:
         results["Player Clutch"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"player_clutch_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 11. Shot Zones (LeagueDashPlayerShotLocations — By Zone)
+        ok, rows = _run_section("Shot Zones", fetch_shot_zones, season)
+        results["Shot Zones"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"shot_zones_{season}.csv"))
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
