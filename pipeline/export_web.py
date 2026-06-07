@@ -66,6 +66,7 @@ PLAYER_INDEX_COLUMNS: List[str] = [
     "E_OFF_RATING", "E_DEF_RATING", "E_NET_RATING", "E_USG_PCT",
     "ON_NET_RATING", "OFF_NET_RATING", "NET_SWING",
     "CLUTCH_NET_RATING", "CLUTCH_MIN",
+    "OBPM", "DBPM", "BPM", "VORP",
 ]
 
 
@@ -246,6 +247,16 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
                 columns={"NET_RATING": "CLUTCH_NET_RATING", "MIN": "CLUTCH_MIN"}
             )
             df = df.merge(cl, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    # Box Plus/Minus (BPM 2.0) + VORP — computed offline from the box stats above
+    # plus team pace/rating context. No new API calls.
+    team_path = config.DATA_DIR / f"team_stats_{season}.csv"
+    if team_path.exists():
+        from .compute_impact import compute_bpm_vorp
+
+        bpm = compute_bpm_vorp(df, pd.read_csv(team_path, low_memory=False))
+        if not bpm.empty:
+            df = df.merge(bpm, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
 
     cols = [c for c in PLAYER_INDEX_COLUMNS if c in df.columns]
     out = df[cols].copy()
