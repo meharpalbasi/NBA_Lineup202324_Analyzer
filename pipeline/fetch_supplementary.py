@@ -1001,3 +1001,75 @@ def fetch_team_game_logs(season: str = config.SEASON) -> Optional[pd.DataFrame]:
     save_dataframe(df, filepath)
     logger.info("✓ Team game logs: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
     return df
+
+
+# =========================================================================
+# 14. Closest-defender shot splits (LeagueDashPlayerPtShot)
+# =========================================================================
+# FG% / eFG% + frequency by how open the shot was — feeds the "shot-making over
+# expected" (xeFG) metric and a tight-vs-open contest card. Light: one
+# league-wide call per defender bucket per season type (8 total).
+_CLOSE_DEF_BUCKETS = {
+    "0-2 Feet - Very Tight": "VERY_TIGHT",
+    "2-4 Feet - Tight": "TIGHT",
+    "4-6 Feet - Open": "OPEN",
+    "6+ Feet - Wide Open": "WIDE_OPEN",
+}
+PT_SHOT_COLUMNS = [
+    "PLAYER_ID", "PLAYER_NAME", "PLAYER_LAST_TEAM_ABBREVIATION", "GP",
+    "FGA_FREQUENCY", "FGM", "FGA", "FG_PCT", "EFG_PCT", "FG2M", "FG3M", "FG3A",
+]
+
+
+def fetch_pt_shot(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Per-player shooting splits by closest-defender distance (4 buckets), one
+    light ``LeagueDashPlayerPtShot`` call per bucket per season type. Powers
+    expected-eFG / shot-making-over-expected + a contest card.
+
+    Args:
+        season: NBA season string.
+
+    Returns:
+        Combined shot-split DataFrame, or ``None`` on total failure.
+    """
+    from nba_api.stats.endpoints import leaguedashplayerptshot
+
+    logger.info("Fetching closest-defender shot splits for season %s …", season)
+    frames: List[pd.DataFrame] = []
+
+    for season_type in config.SEASON_TYPES:
+        for label, code in _CLOSE_DEF_BUCKETS.items():
+            try:
+                result = api_call_with_retry(
+                    leaguedashplayerptshot.LeagueDashPlayerPtShot,
+                    params=dict(
+                        season=season,
+                        season_type_all_star=season_type,
+                        close_def_dist_range_nullable=label,
+                        per_mode_simple="Totals",
+                        league_id="00",
+                    ),
+                )
+                dfs = result.get_data_frames()
+                if dfs and not dfs[0].empty:
+                    df = dfs[0]
+                    keep = [c for c in PT_SHOT_COLUMNS if c in df.columns]
+                    df = df[keep].rename(columns={"PLAYER_LAST_TEAM_ABBREVIATION": "TEAM_ABBREVIATION"}).copy()
+                    df["CLOSE_DEF"] = code
+                    df["SEASON_TYPE"] = season_type
+                    frames.append(df)
+                    logger.info("  %s | %s: %d players", season_type, code, len(df))
+            except Exception as exc:
+                logger.error("Failed pt-shot %s/%s: %s", season_type, code, exc)
+            pace()
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        logger.error("No closest-defender shot data collected.")
+        return None
+
+    df = pd.concat(frames, ignore_index=True)
+    filepath = config.DATA_DIR / f"pt_shot_defender_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Shot splits: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
+    return df
