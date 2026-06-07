@@ -240,6 +240,7 @@ def run(argv: list | None = None) -> None:
             fetch_player_game_logs,
             fetch_player_stats,
             fetch_shot_zones,
+            fetch_pt_shot,
             fetch_team_game_logs,
             fetch_team_stats,
             fetch_tracking,
@@ -335,6 +336,13 @@ def run(argv: list | None = None) -> None:
         results["Team Game Logs"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"team_game_logs_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 14. Closest-defender shot splits (for shot-making over expected)
+        ok, rows = _run_section("Shot Splits", fetch_pt_shot, season)
+        results["Shot Splits"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"pt_shot_defender_{season}.csv"))
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is

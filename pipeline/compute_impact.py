@@ -167,3 +167,55 @@ def compute_bpm_vorp(player_stats: pd.DataFrame, team_stats: pd.DataFrame) -> pd
     df = pd.concat(frames, ignore_index=True)[_RESULT_COLS]
     logger.info("✓ BPM/VORP: %d player-rows", len(df))
     return df
+
+
+_SHOT_ZONES_2P = ["RA", "PAINT", "MID"]
+_SHOT_ZONES_3P = ["LC3", "RC3", "ATB3"]
+
+
+def compute_shotmaking(shot_zones: pd.DataFrame) -> pd.DataFrame:
+    """Expected eFG% by shot LOCATION (zone) + shot-making over expected, per
+    (PLAYER_ID, SEASON_TYPE).
+
+    For each zone, league eFG = Σ(FGM·w) / Σ FGA, with w = 1.5 for the three
+    zones that are threes, else 1. A player's XEFG is the FGA-weighted blend of
+    those league zone eFGs — what a league-average shooter would post on the
+    player's shot-LOCATION mix; SHOTMAKING_OVER_XEFG = the player's own eFG minus
+    that. Controlling for *where* shots come from (rim vs mid vs three) isolates
+    finishing/shooting skill far better than closest-defender alone (which would
+    crown rim-running bigs, since a contested dunk lands in the "very tight"
+    bucket). A reproducible shot-quality / shot-making proxy.
+    """
+    cols = ["PLAYER_ID", "SEASON_TYPE", "XEFG", "SHOTMAKING_OVER_XEFG", "XEFG_FGA"]
+    zones = _SHOT_ZONES_2P + _SHOT_ZONES_3P
+    w = {z: (1.5 if z in _SHOT_ZONES_3P else 1.0) for z in zones}
+    frames = []
+    for stype, g in shot_zones.groupby("SEASON_TYPE"):
+        g = g.copy()
+        for z in zones:
+            for s in ("FGM", "FGA"):
+                g[f"{z}_{s}"] = pd.to_numeric(g.get(f"{z}_{s}"), errors="coerce").fillna(0.0)
+        league = {
+            z: (g[f"{z}_FGM"].sum() * w[z] / g[f"{z}_FGA"].sum()) if g[f"{z}_FGA"].sum() > 0 else 0.0
+            for z in zones
+        }
+        tot_fga = sum(g[f"{z}_FGA"] for z in zones)
+        denom = tot_fga.replace(0, np.nan)
+        actual = sum(g[f"{z}_FGM"] * w[z] for z in zones) / denom
+        xefg = sum((g[f"{z}_FGA"] / denom) * league[z] for z in zones)
+        res = pd.DataFrame({
+            "PLAYER_ID": g["PLAYER_ID"].to_numpy(),
+            "SEASON_TYPE": stype,
+            "XEFG": xefg.round(4),
+            "SHOTMAKING_OVER_XEFG": (actual - xefg).round(4),
+            "XEFG_FGA": tot_fga.round(0),
+        })
+        res = res[(res["XEFG_FGA"] > 0) & res["SHOTMAKING_OVER_XEFG"].notna()]
+        if not res.empty:
+            frames.append(res)
+    if not frames:
+        return pd.DataFrame(columns=cols)
+    df = pd.concat(frames, ignore_index=True)
+    df["XEFG_FGA"] = df["XEFG_FGA"].astype(int)
+    logger.info("✓ Shot-making (xeFG by zone): %d player-rows", len(df))
+    return df[cols]

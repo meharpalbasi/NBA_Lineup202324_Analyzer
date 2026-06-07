@@ -67,6 +67,7 @@ PLAYER_INDEX_COLUMNS: List[str] = [
     "ON_NET_RATING", "OFF_NET_RATING", "NET_SWING",
     "CLUTCH_NET_RATING", "CLUTCH_MIN",
     "OBPM", "DBPM", "BPM", "VORP",
+    "XEFG", "SHOTMAKING_OVER_XEFG", "XEFG_FGA",
 ]
 
 
@@ -257,6 +258,15 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
         bpm = compute_bpm_vorp(df, pd.read_csv(team_path, low_memory=False))
         if not bpm.empty:
             df = df.merge(bpm, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    # Shot-making over expected (xeFG by shot location) from shot_zones.
+    sz_path = config.DATA_DIR / f"shot_zones_{season}.csv"
+    if sz_path.exists():
+        from .compute_impact import compute_shotmaking
+
+        sm = compute_shotmaking(pd.read_csv(sz_path, low_memory=False))
+        if not sm.empty:
+            df = df.merge(sm, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
 
     cols = [c for c in PLAYER_INDEX_COLUMNS if c in df.columns]
     out = df[cols].copy()
