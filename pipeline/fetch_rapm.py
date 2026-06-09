@@ -440,39 +440,40 @@ def reconstruct_game(game_id: str) -> Tuple[List[Dict[str, Any]], "_GameRosters"
 # ---------------------------------------------------------------------------
 # Ridge regression
 # ---------------------------------------------------------------------------
-def compute_rapm(
-    matchups: Dict[Tuple[Tuple[int, ...], Tuple[int, ...]], Dict[str, float]],
-    name_by_pid: Dict[int, str],
-    team_by_pid: Dict[int, str],
-    season: str,
-    season_type: str,
-) -> pd.DataFrame:
-    """Solve ridge RAPM from accumulated (offense, defense) matchups."""
+# Matchup row: (offense five, defense five, possessions, points, weight_mult).
+# weight_mult scales the fit weight only (used for multi-season recency decay);
+# single-season rows use 1.0.
+MatchupRow = Tuple[Tuple[int, ...], Tuple[int, ...], float, int, float]
+
+# Recency decay for the pooled multi-season fit (newest first).
+MULTI_SEASON_DECAY = [1.0, 0.7, 0.4]
+
+
+def _fit_ridge(rows: List[MatchupRow]) -> Dict[str, Any]:
+    """Fit possession-weighted ridge on matchup rows; return the fit bundle."""
     from scipy import sparse
     from sklearn.linear_model import RidgeCV
 
-    players = sorted({pid for off, dfn in matchups for pid in (*off, *dfn)})
+    players = sorted({pid for off, dfn, _, _, _ in rows for pid in (*off, *dfn)})
     idx = {pid: i for i, pid in enumerate(players)}
     n_players = len(players)
-    logger.info("RAPM: %d players, %d unique matchups", n_players, len(matchups))
+    logger.info("RAPM: %d players, %d matchup rows", n_players, len(rows))
 
-    rows, cols, vals = [], [], []
+    r_idx, c_idx, vals = [], [], []
     y, weights = [], []
     poss_off = defaultdict(float)
     poss_def = defaultdict(float)
-    for r, (key, agg) in enumerate(matchups.items()):
-        off, dfn = key
-        poss, pts = agg["poss"], agg["pts"]
+    for r, (off, dfn, poss, pts, mult) in enumerate(rows):
         for pid in off:
-            rows.append(r); cols.append(idx[pid]); vals.append(1.0)
+            r_idx.append(r); c_idx.append(idx[pid]); vals.append(1.0)
             poss_off[pid] += poss
         for pid in dfn:
-            rows.append(r); cols.append(idx[pid] + n_players); vals.append(-1.0)
+            r_idx.append(r); c_idx.append(idx[pid] + n_players); vals.append(-1.0)
             poss_def[pid] += poss
         y.append(100.0 * pts / poss)
-        weights.append(poss)
+        weights.append(poss * mult)
 
-    X = sparse.csr_matrix((vals, (rows, cols)), shape=(len(matchups), 2 * n_players))
+    X = sparse.csr_matrix((vals, (r_idx, c_idx)), shape=(len(rows), 2 * n_players))
     y = np.asarray(y)
     weights = np.asarray(weights)
 
@@ -485,7 +486,23 @@ def compute_rapm(
     logger.info("RAPM: chosen alpha=%.1f (intercept/lg-avg ORtg=%.1f)",
                 model.alpha_, model.intercept_)
 
-    coef = model.coef_
+    return {
+        "model": model, "players": players, "idx": idx, "X": X, "y": y,
+        "weights": weights, "poss_off": poss_off, "poss_def": poss_def,
+    }
+
+
+def _rapm_table(
+    fit: Dict[str, Any],
+    name_by_pid: Dict[int, str],
+    team_by_pid: Dict[int, str],
+    season: str,
+    season_type: str,
+) -> pd.DataFrame:
+    """The published per-player RAPM table from a ridge fit."""
+    players = fit["players"]
+    n_players = len(players)
+    coef = fit["model"].coef_
     # Round the components, then derive the total from them so the published
     # columns are exactly additive (O_RAPM + D_RAPM == RAPM) — the profile shows
     # all three as separate bars, so they must reconcile.
@@ -498,11 +515,69 @@ def compute_rapm(
         "O_RAPM": o_rapm,
         "D_RAPM": d_rapm,
         "RAPM": np.round(o_rapm + d_rapm, 2),
-        "POSS": [round(poss_off[p] + poss_def[p]) for p in players],
+        "POSS": [round(fit["poss_off"][p] + fit["poss_def"][p]) for p in players],
         "SEASON": season,
         "SEASON_TYPE": season_type,
     })
     return out.sort_values("RAPM", ascending=False).reset_index(drop=True)
+
+
+def _chemistry_table(
+    fit: Dict[str, Any],
+    rows: List[MatchupRow],
+    name_by_pid: Dict[int, str],
+    team_by_pid: Dict[int, str],
+    season: str,
+    season_type: str,
+    min_poss_per_side: float = 100.0,
+) -> pd.DataFrame:
+    """Per-five-man "chemistry": possession-weighted ridge residuals.
+
+    The model predicts each stint's net scoring from the ten players on the
+    floor, so a lineup's weighted residual (actual minus predicted, offense and
+    defense combined) measures how far the unit outperforms the sum of its
+    parts — opponent-adjusted by construction. GROUP_ID matches the NBA lineup
+    format (``-id1-...-id5-``, ids ascending) so the frontend can join this
+    straight onto the dashboard's 5-man table.
+    """
+    from collections import Counter
+
+    y_pred = fit["model"].predict(fit["X"])
+    per5: Dict[Tuple[int, ...], Dict[str, float]] = defaultdict(
+        lambda: {"op": 0.0, "oa": 0.0, "oe": 0.0, "dp": 0.0, "da": 0.0, "de": 0.0}
+    )
+    for (off, dfn, poss, pts, _), yp in zip(rows, y_pred):
+        ya = 100.0 * pts / poss
+        o = per5[off]
+        o["op"] += poss; o["oa"] += poss * ya; o["oe"] += poss * yp
+        d = per5[dfn]
+        d["dp"] += poss; d["da"] += poss * ya; d["de"] += poss * yp
+
+    out = []
+    for five, a in per5.items():
+        if a["op"] < min_poss_per_side or a["dp"] < min_poss_per_side:
+            continue
+        ortg_act, ortg_exp = a["oa"] / a["op"], a["oe"] / a["op"]
+        drtg_act, drtg_exp = a["da"] / a["dp"], a["de"] / a["dp"]
+        net_act = ortg_act - drtg_act
+        net_exp = ortg_exp - drtg_exp
+        team = Counter(team_by_pid.get(p, "") for p in five).most_common(1)[0][0]
+        out.append({
+            "GROUP_ID": "-" + "-".join(str(p) for p in five) + "-",
+            "PLAYERS": " - ".join(name_by_pid.get(p, str(p)) for p in five),
+            "TEAM_ABBREVIATION": team,
+            "POSS_OFF": round(a["op"]),
+            "POSS_DEF": round(a["dp"]),
+            "NET_ACTUAL": round(net_act, 1),
+            "NET_EXPECTED": round(net_exp, 1),
+            "CHEMISTRY": round(net_act - net_exp, 1),
+            "SEASON": season,
+            "SEASON_TYPE": season_type,
+        })
+    df = pd.DataFrame(out)
+    if not df.empty:
+        df = df.sort_values("CHEMISTRY", ascending=False).reset_index(drop=True)
+    return df
 
 
 # ---------------------------------------------------------------------------
@@ -522,12 +597,12 @@ def fetch_game_ids(season: str, season_type: str) -> List[str]:
     return sorted({row[gi] for row in rs["rowSet"]})
 
 
-def fetch_rapm(
-    season: str = config.SEASON,
-    season_type: str = "Regular Season",
+def _season_rows(
+    season: str,
+    season_type: str,
     max_games: Optional[int] = None,
-) -> pd.DataFrame:
-    """Build the RAPM table for a season and return it (also written to CSV)."""
+) -> Tuple[List[MatchupRow], Dict[int, str], Dict[int, str], int]:
+    """Reconstruct a season into merged matchup rows (+ name/team maps)."""
     game_ids = fetch_game_ids(season, season_type)
     if max_games:
         game_ids = game_ids[:max_games]
@@ -550,19 +625,106 @@ def fetch_rapm(
         for pid, tid in rosters.team_by_pid.items():
             team_by_pid[pid] = rosters.abbr_by_team.get(tid, "")
         for rec in records:
-            key = (rec["off"], rec["def"])
-            agg = matchups[key]
+            agg = matchups[(rec["off"], rec["def"])]
             agg["poss"] += rec["poss"]
             agg["pts"] += rec["pts"]
         if n % 100 == 0:
             logger.info("RAPM: %d/%d games (%d matchups, %d failed)",
                         n, len(game_ids), len(matchups), failed)
+    if failed:
+        logger.warning("RAPM: %s — %d/%d games failed reconstruction", season, failed, len(game_ids))
 
-    df = compute_rapm(matchups, name_by_pid, team_by_pid, season, season_type)
+    rows = [(off, dfn, agg["poss"], agg["pts"], 1.0) for (off, dfn), agg in matchups.items()]
+    return rows, name_by_pid, team_by_pid, failed
+
+
+def _prior_season(season: str) -> str:
+    """'2025-26' → '2024-25'."""
+    start = int(season[:4])
+    return f"{start - 1}-{str(start)[2:]}"
+
+
+def multi_season_list(season: str = config.SEASON) -> List[str]:
+    """The seasons in the pooled fit, newest first (length = len(MULTI_SEASON_DECAY))."""
+    seasons = [season]
+    for _ in MULTI_SEASON_DECAY[1:]:
+        seasons.append(_prior_season(seasons[-1]))
+    return seasons
+
+
+def multi_cache_ready(season: str = config.SEASON, season_type: str = "Regular Season",
+                      threshold: float = 0.9) -> bool:
+    """True if the PRIOR seasons' play-by-play is already cached (≥ threshold).
+
+    Prior seasons are ~1,230 light fetches each (~2.5h) — too much to bolt
+    silently onto a scheduled weekly run, so the pooled fit only runs when the
+    cache is substantially there. Backfill once with:
+    ``NBA_SEASON=2024-25 python -m pipeline.fetch_rapm`` (and 2023-24).
+    """
+    for s in multi_season_list(season)[1:]:
+        try:
+            gids = fetch_game_ids(s, season_type)
+        except Exception as exc:
+            logger.warning("multi-season RAPM: cannot enumerate %s (%s)", s, exc)
+            return False
+        have = sum((CACHE_DIR / f"pbp_{g}.json").exists() for g in gids)
+        if have < threshold * len(gids):
+            logger.info("multi-season RAPM: %s cache %d/%d — skipping pooled fit "
+                        "(backfill with NBA_SEASON=%s python -m pipeline.fetch_rapm)",
+                        s, have, len(gids), s)
+            return False
+    return True
+
+
+def fetch_rapm(
+    season: str = config.SEASON,
+    season_type: str = "Regular Season",
+    max_games: Optional[int] = None,
+) -> pd.DataFrame:
+    """Single-season RAPM + lineup chemistry (both written to CSV)."""
+    rows, name_by_pid, team_by_pid, _ = _season_rows(season, season_type, max_games)
+    fit = _fit_ridge(rows)
+
+    df = _rapm_table(fit, name_by_pid, team_by_pid, season, season_type)
     out_path = config.DATA_DIR / f"rapm_{season}.csv"
     df.to_csv(out_path, index=False)
-    logger.info("Saved %d players → %s (%d games, %d failed)",
-                len(df), out_path, len(game_ids) - failed, failed)
+    logger.info("Saved %d players → %s", len(df), out_path)
+
+    # Lineup chemistry rides on the same fit: which five-man units outperform
+    # the sum of their parts.
+    chem = _chemistry_table(fit, rows, name_by_pid, team_by_pid, season, season_type)
+    chem_path = config.DATA_DIR / f"lineup_chemistry_{season}.csv"
+    chem.to_csv(chem_path, index=False)
+    logger.info("Saved %d lineups → %s", len(chem), chem_path)
+    return df
+
+
+def fetch_rapm_multi(
+    season: str = config.SEASON,
+    season_type: str = "Regular Season",
+) -> pd.DataFrame:
+    """Pooled multi-season RAPM (recency-weighted) → ``rapm_3yr_{season}.csv``.
+
+    Single-season RAPM is noisy; pooling three seasons of stints with decay
+    weights (newest counts most) is the standard stabilizer. Requires the prior
+    seasons' play-by-play cache (see ``multi_cache_ready``).
+    """
+    seasons = multi_season_list(season)
+    all_rows: List[MatchupRow] = []
+    name_by_pid: Dict[int, str] = {}
+    team_by_pid: Dict[int, str] = {}
+    # Oldest first so the newest season's name/team wins the map updates.
+    for s, weight in sorted(zip(seasons, MULTI_SEASON_DECAY), key=lambda x: x[0]):
+        rows, names, teams, _ = _season_rows(s, season_type)
+        all_rows.extend((off, dfn, poss, pts, weight) for off, dfn, poss, pts, _ in rows)
+        name_by_pid.update(names)
+        team_by_pid.update(teams)
+
+    fit = _fit_ridge(all_rows)
+    df = _rapm_table(fit, name_by_pid, team_by_pid, season, season_type)
+    out_path = config.DATA_DIR / f"rapm_3yr_{season}.csv"
+    df.to_csv(out_path, index=False)
+    logger.info("Saved %d players → %s (seasons: %s)", len(df), out_path, ", ".join(seasons))
     return df
 
 

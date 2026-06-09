@@ -360,12 +360,21 @@ def run(argv: list | None = None) -> None:
     # player-index export so its columns get merged in.
     # ------------------------------------------------------------------
     if args.with_rapm or args.rapm_only:
-        from .fetch_rapm import fetch_rapm
+        from .fetch_rapm import fetch_rapm, fetch_rapm_multi, multi_cache_ready
 
         ok, rows = _run_section("RAPM", fetch_rapm, season)
         results["RAPM"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"rapm_{season}.csv"))
+            files_written.append(str(config.DATA_DIR / f"lineup_chemistry_{season}.csv"))
+
+        # Pooled 3-yr RAPM — only when the prior seasons' play-by-play cache is
+        # already there (backfilling is a one-time ~5h job, not a weekly one).
+        if ok and multi_cache_ready(season):
+            ok3, rows3 = _run_section("RAPM (3-yr pooled)", fetch_rapm_multi, season)
+            results["RAPM 3yr"] = (ok3, rows3)
+            if ok3:
+                files_written.append(str(config.DATA_DIR / f"rapm_3yr_{season}.csv"))
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
