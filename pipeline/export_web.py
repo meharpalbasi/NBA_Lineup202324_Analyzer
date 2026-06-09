@@ -69,6 +69,7 @@ PLAYER_INDEX_COLUMNS: List[str] = [
     "OBPM", "DBPM", "BPM", "VORP",
     "XEFG", "SHOTMAKING_OVER_XEFG", "XEFG_FGA",
     "O_RAPM", "D_RAPM", "RAPM", "RAPM_POSS",
+    "O_RAPM_3YR", "D_RAPM_3YR", "RAPM_3YR", "RAPM_3YR_POSS",
 ]
 
 
@@ -278,6 +279,20 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
         if keep.issubset(rp.columns):
             rp = rp[list(keep)].rename(columns={"POSS": "RAPM_POSS"})
             df = df.merge(rp, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    # 3-yr pooled RAPM (recency-weighted across three seasons) — the stable
+    # variant. Note: SEASON_TYPE on the pooled file is the season type of the
+    # fit, and the join keeps current-season players only (left join).
+    rapm3_path = config.DATA_DIR / f"rapm_3yr_{season}.csv"
+    if rapm3_path.exists():
+        rp3 = pd.read_csv(rapm3_path, low_memory=False)
+        keep = {"PLAYER_ID", "SEASON_TYPE", "O_RAPM", "D_RAPM", "RAPM", "POSS"}
+        if keep.issubset(rp3.columns):
+            rp3 = rp3[list(keep)].rename(columns={
+                "O_RAPM": "O_RAPM_3YR", "D_RAPM": "D_RAPM_3YR",
+                "RAPM": "RAPM_3YR", "POSS": "RAPM_3YR_POSS",
+            })
+            df = df.merge(rp3, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
 
     cols = [c for c in PLAYER_INDEX_COLUMNS if c in df.columns]
     out = df[cols].copy()
