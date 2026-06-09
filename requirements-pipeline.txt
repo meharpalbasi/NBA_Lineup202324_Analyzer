@@ -9,3 +9,7 @@ pandas==2.2.3
 # See pipeline/nba_http_patch.py. Unpinned upper bound so it resolves on both
 # the laptop's Python 3.12 and the mini's 3.9; impersonate="chrome" works in 0.7+.
 curl_cffi>=0.7
+# RAPM (pipeline/fetch_rapm.py): sparse design matrix + ridge regression.
+# Only needed for the opt-in --with-rapm / --rapm-only runs.
+scikit-learn>=1.3
+scipy>=1.10

@@ -160,6 +160,16 @@ def _parse_args(argv: list | None = None) -> argparse.Namespace:
         help="Fetch only supplementary data, skip lineups.",
     )
     parser.add_argument(
+        "--with-rapm",
+        action="store_true",
+        help="Also compute RAPM (heavy — reconstructs every game's lineups; ~1h).",
+    )
+    parser.add_argument(
+        "--rapm-only",
+        action="store_true",
+        help="Compute RAPM and re-export the player index; skip everything else.",
+    )
+    parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Test API connectivity only (no data fetch).",
@@ -213,7 +223,7 @@ def run(argv: list | None = None) -> None:
     # ------------------------------------------------------------------
     # Core lineups
     # ------------------------------------------------------------------
-    if not args.supplementary_only:
+    if not args.supplementary_only and not args.rapm_only:
         from .fetch_lineups import fetch_and_merge_lineups
 
         ok, rows = _run_section("Lineups (5/3/2-man)", fetch_and_merge_lineups, season)
@@ -228,7 +238,7 @@ def run(argv: list | None = None) -> None:
     # ------------------------------------------------------------------
     # Supplementary data
     # ------------------------------------------------------------------
-    if not args.lineups_only:
+    if not args.lineups_only and not args.rapm_only:
         from .fetch_supplementary import (
             fetch_clutch,
             fetch_defense_tracking,
@@ -345,10 +355,23 @@ def run(argv: list | None = None) -> None:
             files_written.append(str(config.DATA_DIR / f"pt_shot_defender_{season}.csv"))
 
     # ------------------------------------------------------------------
+    # RAPM — self-computed regularized adjusted plus-minus. Heavy (reconstructs
+    # every game's lineups from play-by-play), so it's opt-in and runs before the
+    # player-index export so its columns get merged in.
+    # ------------------------------------------------------------------
+    if args.with_rapm or args.rapm_only:
+        from .fetch_rapm import fetch_rapm
+
+        ok, rows = _run_section("RAPM", fetch_rapm, season)
+        results["RAPM"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"rapm_{season}.csv"))
+
+    # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
     # reconstructed from the on/off CSV, so run after both sections.
     # ------------------------------------------------------------------
-    if not args.supplementary_only:
+    if not args.supplementary_only and not args.rapm_only:
         from .export_web import export_slim
 
         try:

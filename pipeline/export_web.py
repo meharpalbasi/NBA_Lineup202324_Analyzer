@@ -68,6 +68,7 @@ PLAYER_INDEX_COLUMNS: List[str] = [
     "CLUTCH_NET_RATING", "CLUTCH_MIN",
     "OBPM", "DBPM", "BPM", "VORP",
     "XEFG", "SHOTMAKING_OVER_XEFG", "XEFG_FGA",
+    "O_RAPM", "D_RAPM", "RAPM", "RAPM_POSS",
 ]
 
 
@@ -267,6 +268,16 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
         sm = compute_shotmaking(pd.read_csv(sz_path, low_memory=False))
         if not sm.empty:
             df = df.merge(sm, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    # RAPM (regularized adjusted plus-minus) — self-computed from play-by-play by
+    # the standalone fetch_rapm subsystem. Merge it in when its CSV is present.
+    rapm_path = config.DATA_DIR / f"rapm_{season}.csv"
+    if rapm_path.exists():
+        rp = pd.read_csv(rapm_path, low_memory=False)
+        keep = {"PLAYER_ID", "SEASON_TYPE", "O_RAPM", "D_RAPM", "RAPM", "POSS"}
+        if keep.issubset(rp.columns):
+            rp = rp[list(keep)].rename(columns={"POSS": "RAPM_POSS"})
+            df = df.merge(rp, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
 
     cols = [c for c in PLAYER_INDEX_COLUMNS if c in df.columns]
     out = df[cols].copy()
