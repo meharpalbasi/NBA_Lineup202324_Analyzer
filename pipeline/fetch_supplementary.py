@@ -1073,3 +1073,94 @@ def fetch_pt_shot(season: str = config.SEASON) -> Optional[pd.DataFrame]:
     save_dataframe(df, filepath)
     logger.info("✓ Shot splits: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
     return df
+
+
+# =========================================================================
+# 15. Defensive matchups (who guards whom)
+# =========================================================================
+
+MATCHUP_COLUMNS: List[str] = [
+    "OFF_PLAYER_ID", "OFF_PLAYER_NAME", "DEF_PLAYER_ID", "DEF_PLAYER_NAME",
+    "GP", "MATCHUP_MIN", "PARTIAL_POSS", "PLAYER_PTS",
+    "MATCHUP_FGM", "MATCHUP_FGA", "MATCHUP_FG3M", "MATCHUP_FG3A",
+    "MATCHUP_TOV", "SFL",
+]
+
+# The full league matrix is ~147k pairs / 17MB — almost all garbage-time dust.
+# A floor of 25 partial possessions keeps only real assignments and lands the
+# published CSV at a browser-friendly size (it's lazily fetched by the profile).
+MATCHUP_MIN_POSS: float = 25.0
+
+
+def _mmss_to_minutes(value: object) -> float:
+    """LeagueSeasonMatchups returns MATCHUP_MIN as 'MM:SS' strings."""
+    s = str(value)
+    if ":" in s:
+        m, sec = s.split(":", 1)
+        try:
+            return round(int(m) + int(sec) / 60.0, 1)
+        except ValueError:
+            return 0.0
+    try:
+        return round(float(s), 1)
+    except ValueError:
+        return 0.0
+
+
+def fetch_matchups(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """League-wide defensive matchups (who guards whom), slimmed for the web.
+
+    One ``LeagueSeasonMatchups`` call per season type returns every
+    offense/defense player pair with matchup minutes, partial possessions,
+    points, shooting and fouls drawn. We keep pairs above a possession floor
+    and the columns the profile's matchup card reads.
+
+    Args:
+        season: NBA season string.
+
+    Returns:
+        Combined slim matchup DataFrame, or ``None`` on total failure.
+    """
+    # nba_api's LeagueSeasonMatchups class is broken against the live API (it
+    # expects a 'resultSet' key; the endpoint returns 'resultSets'), so we hit
+    # the endpoint raw via the same curl_cffi helper the RAPM subsystem uses.
+    from .fetch_rapm import _get_json
+
+    logger.info("Fetching defensive matchups for season %s …", season)
+    frames: List[pd.DataFrame] = []
+
+    for season_type in config.SEASON_TYPES:
+        try:
+            data = _get_json(
+                "leagueseasonmatchups",
+                {
+                    "Season": season, "SeasonType": season_type, "LeagueID": "00",
+                    "PerMode": "Totals", "DefPlayerID": "", "OffPlayerID": "",
+                    "DefTeamID": "", "OffTeamID": "",
+                },
+            )
+            rs = (data.get("resultSets") or [None])[0]
+            if rs and rs.get("rowSet"):
+                df = pd.DataFrame(rs["rowSet"], columns=rs["headers"])
+                df = df[pd.to_numeric(df["PARTIAL_POSS"], errors="coerce") >= MATCHUP_MIN_POSS].copy()
+                df["MATCHUP_MIN"] = df["MATCHUP_MIN"].map(_mmss_to_minutes)
+                df["PARTIAL_POSS"] = pd.to_numeric(df["PARTIAL_POSS"], errors="coerce").round(1)
+                keep = [c for c in MATCHUP_COLUMNS if c in df.columns]
+                df = df[keep].copy()
+                df["SEASON_TYPE"] = season_type
+                frames.append(df)
+                logger.info("  %s: %d matchup pairs kept", season_type, len(df))
+        except Exception as exc:
+            logger.error("Failed matchups %s: %s", season_type, exc)
+        pace()
+
+    frames = [f for f in frames if not f.empty]
+    if not frames:
+        logger.error("No matchup data collected.")
+        return None
+
+    df = pd.concat(frames, ignore_index=True)
+    filepath = config.DATA_DIR / f"matchups_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Matchups: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
+    return df
