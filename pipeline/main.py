@@ -244,6 +244,7 @@ def run(argv: list | None = None) -> None:
             fetch_defense_tracking,
             fetch_estimated_metrics,
             fetch_hustle,
+            fetch_matchups,
             fetch_on_off,
             fetch_play_types,
             fetch_player_clutch,
@@ -353,6 +354,13 @@ def run(argv: list | None = None) -> None:
         results["Shot Splits"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"pt_shot_defender_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 15. Defensive matchups (who guards whom, for the profile matchup card)
+        ok, rows = _run_section("Matchups", fetch_matchups, season)
+        results["Matchups"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"matchups_{season}.csv"))
 
     # ------------------------------------------------------------------
     # RAPM — self-computed regularized adjusted plus-minus. Heavy (reconstructs
