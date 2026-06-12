@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0022500263,2025-11-19,POR vs. CHI,202696,N. Vučević,CHI,4,00:01.00,Vucevic 26' 3PT Jump Shot (27 PTS) (White 7 AST),0.0,0.977,0.977,Regular Season
+0022500516,2026-01-07,CHA vs. TOR,1630193,I. Quickley,TOR,4,00:00.00,Quickley 26' 3PT Jump Shot (21 PTS) (Mamukelashvili 2 AST),0.0,0.977,0.977,Regular Season
+0022500521,2026-01-07,BKN vs. ORL,1631094,P. Banchero,ORL,5,00:00.00,Banchero 26' 3PT Pullup Jump Shot (30 PTS) (Black 6 AST),0.0,0.977,0.977,Regular Season
+0022501024,2026-03-21,ORL vs. LAL,1628379,L. Kennard,LAL,4,00:01.00,Kennard 25' 3PT Jump Shot (13 PTS) (Smart 1 AST),0.0,0.977,0.977,Regular Season
+0022500136,2025-10-29,MIN vs. LAL,1630559,A. Reaves,LAL,4,00:01.10,Reaves 12' Driving Floating Jump Shot (28 PTS),0.022,0.977,0.955,Regular Season
+0022500333,2025-12-04,PHI vs. GSW,1642845,V. Edgecombe,PHI,4,00:00.90,Edgecombe 7' Tip Layup Shot (10 PTS),0.023,0.978,0.955,Regular Season
+0022500393,2025-12-20,UTA vs. ORL,1630217,D. Bane,ORL,5,00:00.90,Bane 6' Driving Finger Roll Layup (32 PTS) (Carter Jr. 4 AST),0.022,0.977,0.955,Regular Season
+0022500469,2025-12-31,MIL vs. WAS,203468,C. McCollum,WAS,4,00:01.20,McCollum 17' Pullup Jump Shot (18 PTS),0.022,0.977,0.955,Regular Season
+0022500899,2026-03-05,ORL vs. DAL,1628976,W. Carter Jr.,ORL,4,00:01.40,Carter Jr. 1' Cutting Dunk Shot (15 PTS) (Suggs 7 AST),0.023,0.978,0.955,Regular Season
+0022501013,2026-03-19,SAS vs. PHX,1641705,V. Wembanyama,SAS,4,00:01.10,Wembanyama 17' Pullup Jump Shot (34 PTS),0.023,0.978,0.955,Regular Season
+0022501027,2026-03-21,HOU vs. MIA,1641708,A. Thompson,HOU,4,00:00.20,Thompson Tip Layup Shot (24 PTS),0.023,0.978,0.955,Regular Season
+0022501066,2026-03-27,IND vs. LAC,202695,K. Leonard,LAC,4,00:01.00,Leonard 8' Pullup Jump Shot (28 PTS) (Mathurin 1 AST),0.022,0.977,0.955,Regular Season
+0022500401,2025-12-21,SAC vs. HOU,203471,D. Schröder,SAC,5,00:03.10,Schroder 27' 3PT Jump Shot (24 PTS) (DeRozan 9 AST),0.001,0.947,0.946,Regular Season
+0022500167,2025-11-04,CHI vs. PHI,202696,N. Vučević,CHI,4,00:03.20,Vucevic 24' 3PT Jump Shot (19 PTS) (Giddey 12 AST),0.057,0.999,0.942,Regular Season
+0022501225,2025-12-15,DEN vs. HOU,1630578,A. Sengun,HOU,4,00:02.30,Sengun 2' Driving Hook Shot (28 PTS),0.031,0.969,0.938,Regular Season
+0022500521,2026-01-07,BKN vs. ORL,1642856,E. Dëmin,BKN,5,00:05.30,Demin 25' 3PT Pullup Jump Shot (18 PTS),0.11,0.993,0.883,Regular Season
+0022500372,2025-12-18,IND vs. NYK,1628973,J. Brunson,NYK,4,00:05.60,Brunson 27' 3PT Step Back Jump Shot (25 PTS),0.008,0.883,0.875,Regular Season
+0022500380,2025-12-18,POR vs. SAC,201942,D. DeRozan,SAC,5,00:04.40,DeRozan 15' Turnaround Jump Shot (33 PTS),0.088,0.911,0.823,Regular Season
+0022500481,2026-01-02,MIL vs. CHA,203507,G. Antetokounmpo,MIL,4,00:04.70,G. Antetokounmpo 1' Alley Oop Dunk (30 PTS) (Porter Jr. 10 AST),0.097,0.905,0.808,Regular Season
+0022500507,2026-01-05,PHI vs. DEN,1628971,B. Brown,DEN,5,00:05.30,Brown 1' Running Layup (19 PTS),0.108,0.89,0.781,Regular Season
+0022500587,2026-01-16,BKN vs. CHI,1629008,M. Porter Jr.,BKN,4,00:05.40,Porter Jr. 1' Driving Layup (26 PTS) (Traore 7 AST),0.112,0.889,0.777,Regular Season
+0022501027,2026-03-21,HOU vs. MIA,1631323,S. Fontecchio,MIA,4,00:05.40,Fontecchio 6' Layup (21 PTS) (Herro 4 AST),0.111,0.888,0.777,Regular Season
+0022500481,2026-01-02,MIL vs. CHA,1628398,K. Kuzma,MIL,4,00:10.50,Kuzma 27' 3PT Jump Shot (18 PTS) (Rollins 8 AST),0.193,0.96,0.767,Regular Season
+0022501228,2025-12-14,PHX vs. LAL,1628415,D. Brooks,PHX,4,00:12.20,Brooks 27' 3PT Jump Shot (18 PTS) (Booker 7 AST),0.053,0.793,0.74,Regular Season
+0022500053,2025-11-21,PHX vs. MIN,1631221,C. Gillespie,PHX,4,00:06.40,Gillespie 10' Driving Floating Jump Shot (20 PTS),0.133,0.87,0.737,Regular Season

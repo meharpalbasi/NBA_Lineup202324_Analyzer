@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0022300552,2024-01-14,MIL vs. SAC,203081,D. Lillard,MIL,5,00:01.60,Lillard 32' 3PT Pullup Jump Shot (29 PTS),0.0,0.978,0.978,Regular Season
+0022300587,2024-01-19,MIA vs. ATL,1627749,D. Murray,ATL,4,00:02.00,Murray 27' 3PT Pullup Jump Shot (22 PTS),0.0,0.978,0.978,Regular Season
+0022300832,2024-02-27,CLE vs. DAL,1629622,M. Strus,CLE,4,00:00.00,Strus 59' 3PT Pullup Jump Shot (21 PTS) (Mobley 7 AST),0.022,1.0,0.978,Regular Season
+0022300082,2023-10-27,CHI vs. TOR,1627936,A. Caruso,CHI,5,00:02.30,Caruso 3PT Jump Shot (13 PTS) (LaVine 1 AST),0.0,0.97,0.97,Regular Season
+0022300757,2024-02-10,GSW vs. PHX,201939,S. Curry,GSW,4,00:02.50,Curry 33' 3PT Jump Shot (30 PTS) (Podziemski 7 AST),0.0,0.965,0.964,Regular Season
+0022300126,2023-11-01,GSW vs. SAC,202691,K. Thompson,GSW,4,00:01.60,Thompson 17' Pullup Jump Shot (14 PTS) (Green 9 AST),0.022,0.978,0.956,Regular Season
+0022300340,2023-12-16,DEN vs. OKC,1628983,S. Gilgeous-Alexander,OKC,4,00:01.40,Gilgeous-Alexander 8' Turnaround Fadeaway (25 PTS),0.022,0.978,0.956,Regular Season
+0022300653,2024-01-28,ATL vs. TOR,1630180,S. Bey,ATL,4,00:01.30,Bey Tip Dunk Shot (26 PTS),0.022,0.978,0.956,Regular Season
+0022301060,2024-03-28,ATL vs. BOS,1627749,D. Murray,ATL,5,00:00.60,Murray 22' Pullup Jump Shot (44 PTS),0.022,0.978,0.956,Regular Season
+0022301180,2024-04-12,SAS vs. DEN,1628984,D. Graham,SAS,4,00:00.90,Graham 5' Driving Floating Jump Shot (11 PTS) (Jones 10 AST),0.022,0.978,0.956,Regular Season
+0022301140,2024-04-07,SAS vs. PHI,1630577,J. Champagnie,SAS,4,00:02.80,Champagnie 24' 3PT Jump Shot (15 PTS) (Wembanyama 5 AST),0.044,1.0,0.955,Regular Season
+0022300113,2023-10-31,PHX vs. SAS,1629640,K. Johnson,SAS,4,00:02.20,Johnson 1' Driving Layup (27 PTS),0.027,0.973,0.945,Regular Season
+0022300832,2024-02-27,CLE vs. DAL,1629023,P. Washington,DAL,4,00:02.60,Washington 1' Layup (11 PTS) (Doncic 14 AST),0.038,0.961,0.923,Regular Season
+0022301082,2024-03-31,NYK vs. OKC,1628983,S. Gilgeous-Alexander,OKC,4,00:02.60,Gilgeous-Alexander 15' Turnaround Fadeaway (19 PTS) (Giddey 12 AST),0.038,0.961,0.923,Regular Season
+0022300828,2024-02-26,NYK vs. DET,1628404,J. Hart,NYK,4,00:02.80,Hart 1' Layup (22 PTS) (Brunson 12 AST),0.044,0.956,0.912,Regular Season
+0022300227,2023-11-22,ATL vs. BKN,1629661,C. Johnson,BKN,4,00:03.30,Johnson Tip Layup Shot (23 PTS),0.058,0.941,0.884,Regular Season
+0022300650,2024-01-27,GSW vs. LAL,201939,S. Curry,GSW,6,00:05.90,Curry 28' 3PT Jump Shot (46 PTS) (Podziemski 5 AST),0.01,0.881,0.871,Regular Season
+0022300696,2024-02-02,SAS vs. NOP,1629627,Z. Williamson,NOP,4,00:03.80,Williamson 1' Running Layup (33 PTS) (Alvarado 3 AST),0.071,0.928,0.857,Regular Season
+0022301159,2024-04-10,ATL vs. CHA,1628970,M. Bridges,CHA,4,00:03.80,Bridges 1' Running Finger Roll Layup (18 PTS),0.071,0.928,0.857,Regular Season
+0022301082,2024-03-31,NYK vs. OKC,1628973,J. Brunson,NYK,4,00:04.10,Brunson 2' Driving Layup (30 PTS),0.08,0.921,0.841,Regular Season
+0022301209,2023-12-06,ATL vs. BKN,1628969,M. Bridges,BKN,4,00:05.10,Bridges 18' Fadeaway Jumper (32 PTS),0.103,0.896,0.793,Regular Season
+0022300203,2023-11-18,NOP vs. MIN,1626157,K. Towns,MIN,4,00:05.20,Towns 9' Driving Floating Jump Shot (29 PTS) (Anderson 5 AST),0.105,0.894,0.789,Regular Season
+0022301140,2024-04-07,SAS vs. PHI,201587,N. Batum,PHI,4,00:09.70,Batum 26' 3PT Jump Shot (6 PTS) (Maxey 6 AST),0.033,0.819,0.786,Regular Season
+0022300280,2023-12-02,LAC vs. GSW,202331,P. George,LAC,4,00:09.90,George 27' 3PT Step Back Jump Shot (25 PTS),0.035,0.819,0.784,Regular Season
+0022300915,2024-03-08,LAL vs. MIL,1626156,D. Russell,LAL,4,00:05.90,Russell 13' Driving Floating Jump Shot (44 PTS),0.121,0.881,0.76,Regular Season

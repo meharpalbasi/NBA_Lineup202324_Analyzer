@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0022400734,2025-02-07,CHA vs. SAS,1628970,M. Bridges,CHA,4,00:01.40,Bridges 3PT Jump Shot (25 PTS) (Ball 10 AST),0.0,0.977,0.977,Regular Season
+0022400883,2025-03-04,ORL vs. TOR,1642266,J. Walter,TOR,4,00:00.50,Walter 25' 3PT Pullup Jump Shot (17 PTS) (Shead 5 AST),0.0,0.977,0.976,Regular Season
+0022400953,2025-03-12,POR vs. NYK,1628969,M. Bridges,NYK,5,00:00.40,Bridges 26' 3PT Pullup Jump Shot (33 PTS) (Hart 9 AST),0.0,0.977,0.976,Regular Season
+0022401063,2025-03-27,CHI vs. LAL,1630581,J. Giddey,CHI,4,00:00.00,Giddey 46' 3PT Driving Floating Jump Shot (25 PTS) (Williams 4 AST),0.023,1.0,0.976,Regular Season
+0022400145,2024-11-02,MIL vs. CLE,1628378,D. Mitchell,CLE,4,00:00.30,Mitchell 19' Pullup Jump Shot (30 PTS),0.023,0.977,0.953,Regular Season
+0022400159,2024-11-04,MIA vs. SAC,1627734,D. Sabonis,SAC,4,00:00.70,Sabonis 9' Floating Jump Shot (16 PTS),0.023,0.977,0.953,Regular Season
+0022400169,2024-11-06,CHA vs. DET,1641706,B. Miller,CHA,4,00:00.00,Miller Tip Layup Shot (19 PTS),0.023,0.977,0.953,Regular Season
+0022400411,2024-12-26,ORL vs. MIA,1629639,T. Herro,MIA,4,00:00.50,Herro 19' Pullup Jump Shot (20 PTS) (Adebayo 7 AST),0.023,0.977,0.953,Regular Season
+0022400436,2024-12-29,ORL vs. BKN,1630175,C. Anthony,ORL,4,00:01.30,Anthony 4' Driving Floating Bank Jump Shot (10 PTS),0.023,0.977,0.953,Regular Season
+0022400927,2025-03-09,LAC vs. SAC,202695,K. Leonard,LAC,5,00:00.00,Leonard 1' Driving Hook Shot (17 PTS),0.023,0.977,0.953,Regular Season
+0022401055,2025-03-26,IND vs. LAL,2544,L. James,LAL,4,00:00.00,James Tip Layup Shot (13 PTS),0.023,0.977,0.953,Regular Season
+0022401190,2025-04-13,MIA vs. WAS,1642267,B. Carrington,WAS,4,00:00.30,Carrington 2' Driving Floating Bank Jump Shot (15 PTS),0.023,0.977,0.953,Regular Season
+0022400762,2025-02-10,DAL vs. SAC,201942,D. DeRozan,SAC,5,00:02.10,DeRozan 14' Driving Floating Jump Shot (42 PTS),0.026,0.974,0.948,Regular Season
+0022400263,2024-11-21,LAL vs. ORL,1630532,F. Wagner,ORL,4,00:03.30,F. Wagner 26' 3PT Step Back Jump Shot (37 PTS),0.001,0.939,0.938,Regular Season
+0022400711,2025-02-04,BKN vs. HOU,1626156,D. Russell,BKN,4,00:03.40,Russell 28' 3PT Jump Shot (10 PTS) (Evbuomwan 4 AST),0.064,0.999,0.935,Regular Season
+0022400986,2025-03-17,MIN vs. IND,1630167,O. Toppin,IND,5,00:03.50,Toppin 3PT Fadeaway Jumper (34 PTS) (McConnell 13 AST),0.066,0.999,0.933,Regular Season
+0022400546,2025-01-12,UTA vs. BKN,1642268,I. Collier,UTA,5,00:02.40,Collier 4' Driving Layup (23 PTS) (Sensabaugh 3 AST),0.035,0.966,0.931,Regular Season
+0022400856,2025-02-28,MEM vs. NYK,1628384,O. Anunoby,NYK,4,00:05.30,Anunoby 26' 3PT Jump Shot (19 PTS) (Brunson 6 AST),0.007,0.888,0.881,Regular Season
+0022401063,2025-03-27,CHI vs. LAL,1630559,A. Reaves,LAL,4,00:03.30,Reaves 1' Driving Layup (30 PTS) (Doncic 8 AST),0.06,0.939,0.879,Regular Season
+0022400953,2025-03-12,POR vs. NYK,1630166,D. Avdija,POR,5,00:03.40,Avdija 2' Putback Layup (26 PTS),0.064,0.937,0.873,Regular Season
+0022401063,2025-03-27,CHI vs. LAL,1629632,C. White,CHI,4,00:06.10,White 26' 3PT Jump Shot (26 PTS) (Giddey 11 AST),0.011,0.874,0.862,Regular Season
+0022400014,2024-11-15,NYK vs. BKN,1628973,J. Brunson,NYK,4,00:06.20,Brunson 3PT Jump Shot (37 PTS),0.13,0.988,0.858,Regular Season
+0022400248,2024-11-18,MIL vs. HOU,203081,D. Lillard,MIL,4,00:03.90,Lillard 4' Driving Layup (18 PTS),0.078,0.923,0.846,Regular Season
+0022400209,2024-11-10,PHX vs. SAC,1631099,K. Murray,SAC,4,00:04.00,Murray Tip Layup Shot (14 PTS),0.079,0.92,0.84,Regular Season
+0022400334,2024-12-06,ATL vs. LAL,1629027,T. Young,ATL,5,00:08.10,Young 24' 3PT Jump Shot (31 PTS) (Hunter 2 AST),0.163,0.976,0.814,Regular Season
