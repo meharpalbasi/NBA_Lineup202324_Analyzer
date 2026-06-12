@@ -12,3 +12,4 @@ data/lineups_3man_*.csv
 data/lineups_5man_*.csv
 # RAPM raw play-by-play JSON cache (regenerable, large)
 data/rapm_cache/
+data/shotdetail_cache/
