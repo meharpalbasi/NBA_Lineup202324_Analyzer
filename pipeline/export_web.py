@@ -70,6 +70,7 @@ PLAYER_INDEX_COLUMNS: List[str] = [
     "XEFG", "SHOTMAKING_OVER_XEFG", "XEFG_FGA",
     "O_RAPM", "D_RAPM", "RAPM", "RAPM_POSS",
     "O_RAPM_3YR", "D_RAPM_3YR", "RAPM_3YR", "RAPM_3YR_POSS",
+    "WPA",
 ]
 
 
@@ -293,6 +294,15 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
                 "RAPM": "RAPM_3YR", "POSS": "RAPM_3YR_POSS",
             })
             df = df.merge(rp3, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    # Scoring WPA (win probability added by made baskets, leverage-weighted) —
+    # computed from the play-by-play cache by compute_wpa.
+    wpa_path = config.DATA_DIR / f"wpa_{season}.csv"
+    if wpa_path.exists():
+        wp = pd.read_csv(wpa_path, low_memory=False)
+        keep = {"PLAYER_ID", "SEASON_TYPE", "WPA"}
+        if keep.issubset(wp.columns):
+            df = df.merge(wp[list(keep)], on=["PLAYER_ID", "SEASON_TYPE"], how="left")
 
     cols = [c for c in PLAYER_INDEX_COLUMNS if c in df.columns]
     out = df[cols].copy()

@@ -87,6 +87,28 @@ cp scripts/com.nbalineup.supplementary.mini.plist ~/Library/LaunchAgents/com.nba
 launchctl load -w ~/Library/LaunchAgents/com.nbalineup.supplementary.plist
 ```
 
+## Install the weekly RAPM job (launchd) — Saturdays 08:00
+
+The heavy job: RAPM + lineup chemistry + WPA + biggest plays, then a refreshed
+player index (`scripts/run_rapm.sh`). Same install dance with the RAPM plist:
+
+```bash
+cp scripts/com.nbalineup.rapm.mini.plist ~/Library/LaunchAgents/com.nbalineup.rapm.plist
+launchctl load -w ~/Library/LaunchAgents/com.nbalineup.rapm.plist
+launchctl start com.nbalineup.rapm              # optional: run once now (takes ~1h+)
+tail -f scripts/logs/launchd.rapm.out.log scripts/logs/launchd.rapm.err.log
+```
+
+Notes:
+- **First run per season is a backfill** (~2.5h: it fetches + caches every game's
+  play-by-play under `data/rapm_cache/`); weekly runs after that only fetch new
+  games (~1h early season, minutes late season).
+- The **3-yr pooled RAPM** only computes once the two *prior* seasons are also
+  cached on this machine (`multi_cache_ready` guard — it logs and skips
+  otherwise). To backfill them once, overnight:
+  `NBA_SEASON=2024-25 venv/bin/python -m pipeline.fetch_rapm && NBA_SEASON=2023-24 venv/bin/python -m pipeline.fetch_rapm`
+- Saturday is deliberate: it can't race the Monday supplementary job.
+
 ## Retire the laptop's job (do this once, on the laptop)
 
 So the laptop and mini don't both push and race:
