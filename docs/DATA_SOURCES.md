@@ -38,9 +38,23 @@ flowchart LR
 | `defense_tracking_2025-26.csv` | **Mac mini** | `LeagueDashPtDefend` | ✅ |
 | `hustle_players_2025-26.csv`, `hustle_teams_2025-26.csv` | **Mac mini** | `LeagueHustleStats*` | ✅ |
 | `estimated_metrics_2025-26.csv` | **Mac mini** | `PlayerEstimatedMetrics` | ✅ |
+| `player_stats_2025-26.csv` | **Mac mini** | `LeagueDashPlayerStats` (Base+Adv) | ✅ |
+| `team_stats_2025-26.csv` | **Mac mini** | `LeagueDashTeamStats` (Base+Adv+4F) | ✅ |
+| `player_clutch_2025-26.csv` | **Mac mini** | `LeagueDashPlayerClutch` | ✅ |
+| `shot_zones_2025-26.csv` | **Mac mini** | `LeagueDashPlayerShotLocations` | ✅ |
+| `player_game_logs_2025-26.csv` | **Mac mini** | `LeagueGameLog` (player) | ✅ |
+| `team_game_logs_2025-26.csv` | **Mac mini** | `LeagueGameLog` (team) | ✅ |
+| `pt_shot_defender_2025-26.csv` | **Mac mini** | `LeagueDashPlayerPtShot` | ✅ |
+| `player_index_2025-26.csv` | **Mac mini** (computed) | join of player_stats + on/off + clutch + **BPM/VORP** + **shot-making** (+ **RAPM**), no new pull | ✅ |
+| `rapm_2025-26.csv` | **`run_rapm.sh`** (residential, ~1h) | `playbyplayv3` + `boxscoretraditionalv3` → lineup reconstruction → ridge | ✅ |
 | `lineups_slim_2man_2025-26.csv`, `lineups_slim_3man_2025-26.csv` | **Mac mini** | `TeamDashLineups` (slim) | ✅ |
 | `lineups_5man/3man/2man_2025-26.csv` (full) | Mac mini (full run) | `TeamDashLineups` | ❌ `.gitignore`d (too big) |
 | `NBALineup202425_…`, `NBALineup202324_…` | one-off historical | `TeamDashLineups` | ✅ (static) |
+
+**Computed offline (no new API calls):** BPM 2.0 + VORP and shot-making/xeFG are
+derived from the pulls above by `pipeline/compute_impact.py` and merged into
+`player_index` by `pipeline/export_web.py`. **RAPM** is the one exception that
+needs a new (heavy) pull — its own play-by-play subsystem, below.
 
 ## Producer 1 — Railway (cloud), every 2 days
 
@@ -57,6 +71,14 @@ flowchart LR
 - Output: **everything databallr-style** — on/off, clutch, play types, tracking, defense tracking, hustle, estimated metrics, and the **slim 2/3-man lineups**.
 - Why residential: it routes nba_api through `curl_cffi` (Chrome TLS impersonation) from a home IP, which `stats.nba.com` accepts. See [`pipeline/nba_http_patch.py`](../pipeline/nba_http_patch.py).
 - Setup runbook: [`scripts/SETUP_MACMINI.md`](../scripts/SETUP_MACMINI.md). (The mini was briefly mis-diagnosed as "blocked" — that was a test-command false negative; see [`docs/MINI_NBA_BLOCK_DEBUG.md`](./MINI_NBA_BLOCK_DEBUG.md).)
+
+## Producer 2b — RAPM (`run_rapm.sh`, residential, separate cadence)
+
+- [`scripts/run_rapm.sh`](../scripts/run_rapm.sh): pull `main` → `python -m pipeline.main --rapm-only` → stage `rapm_*.csv` + the refreshed `player_index_*.csv` → commit `data: refresh RAPM - <date>` → push.
+- Heavy and **separate from the weekly supplementary run**: it reconstructs every game's on-court fives from `playbyplayv3` + `boxscoretraditionalv3` (no pre-built lineup feed exists for the current season), so it's ~2,500 light per-game calls / ~1h. Run it on its own slower cadence.
+- Raw play-by-play JSON is cached under `data/rapm_cache/` (gitignored), so a re-run only fetches games it hasn't seen.
+- Residential IP only, same `curl_cffi` reason as the supplementary fetch.
+- Recipe + gotchas live in the [`pipeline/fetch_rapm.py`](../pipeline/fetch_rapm.py) module docstring.
 
 ## Producer 3 — Laptop (manual fallback)
 
@@ -76,7 +98,9 @@ flowchart LR
 | `/wowy` | `on_off_*.csv` |
 | `/clutch` | `clutch_*.csv` |
 | `/playtypes` | `play_types_*.csv` |
-| (planned `/players`, `/teams`) | tracking / estimated / hustle / play types / new pulls |
+| `/players` (table) | `player_index_*.csv` (incl. BPM/VORP, shot-making, **RAPM**) |
+| `/players/[id]` (profile) | `player_index_*` + `player_stats_*` + `shot_zones_*` + `player_game_logs_*` + `defense_tracking_*` + `hustle_players_*` + `tracking_*` + `pt_shot_defender_*` |
+| `/teams` | `team_stats_*` + `team_game_logs_*` |
 
 ## Seasons
 
