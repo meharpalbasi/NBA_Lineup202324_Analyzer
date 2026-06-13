@@ -39,8 +39,9 @@ echo "[$(ts)] Computing RAPM (this takes a while)…"
 "$PYTHON" -m pipeline.main --rapm-only
 
 # 3. Stage the RAPM tables (single-season + 3-yr pooled), lineup chemistry,
-#    and the refreshed player index.
-git add data/rapm_*.csv data/lineup_chemistry_*.csv data/player_index_*.csv
+#    WPA + biggest plays, and the refreshed player index.
+git add data/rapm_*.csv data/lineup_chemistry_*.csv data/player_index_*.csv \
+        data/wpa_*.csv data/biggest_plays_*.csv
 
 # 4. Commit + push only if something actually changed.
 if git diff --staged --quiet; then

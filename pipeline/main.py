@@ -384,6 +384,16 @@ def run(argv: list | None = None) -> None:
             if ok3:
                 files_written.append(str(config.DATA_DIR / f"rapm_3yr_{season}.csv"))
 
+        # Scoring WPA + biggest plays — pure local compute over the same cache.
+        if ok:
+            from .compute_wpa import compute_wpa
+
+            okw, rowsw = _run_section("WPA (scoring)", compute_wpa, season)
+            results["WPA"] = (okw, rowsw)
+            if okw:
+                files_written.append(str(config.DATA_DIR / f"wpa_{season}.csv"))
+                files_written.append(str(config.DATA_DIR / f"biggest_plays_{season}.csv"))
+
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
     # reconstructed from the on/off CSV, so run after both sections.

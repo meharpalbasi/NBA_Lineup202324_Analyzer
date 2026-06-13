@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.nbalineup.rapm</string>
+
+    <!-- Mac mini paths (user: meharpal, clone dir: NBA_Lineup202324_Analyzer). -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/run_rapm.sh</string>
+    </array>
+
+    <!-- launchd starts jobs with a bare PATH; give it git + homebrew. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <!-- Weekly: Saturdays at 08:00 local — a day where the ~1h RAPM job (plus
+         a one-time ~5h backfill on the first run of a season) doesn't race the
+         Monday supplementary job. Runs on next wake if the mini was asleep. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>6</integer>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.rapm.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.rapm.err.log</string>
+</dict>
+</plist>
