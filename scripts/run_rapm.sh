@@ -38,6 +38,10 @@ git pull --rebase --autostash origin main
 echo "[$(ts)] Computing RAPM (this takes a while)…"
 "$PYTHON" -m pipeline.main --rapm-only
 
+# 2b. Refresh the hex-binned shot chart (~580 light per-player calls, ~25min;
+#     raw responses cached under data/shotdetail_cache/, so re-runs are cheap).
+"$PYTHON" -m pipeline.fetch_shot_detail
+
 # 3. Stage the RAPM tables (single-season + 3-yr pooled), lineup chemistry,
 #    WPA + biggest plays, and the refreshed player index.
 git add data/rapm_*.csv data/lineup_chemistry_*.csv data/player_index_*.csv \
