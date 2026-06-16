@@ -1,0 +1,31 @@
+TeamID,TeamCity,TeamName,Conference,Division,ConferenceRecord,PlayoffRank,WINS,LOSSES,WinPCT,HOME,ROAD,L10,STREAK,GB,TEAM_ABBREVIATION,SEASON_TYPE
+1610612739,Cleveland,Cavaliers,East,Central,41-11,1,64,18,0.78,34-7,30-11,6-4,L 1,0.0,CLE,Regular Season
+1610612760,Oklahoma City,Thunder,West,Northwest,39-13,1,68,14,0.829,35-6,32-8,8-2,W 4,0.0,OKC,Regular Season
+1610612738,Boston,Celtics,East,Atlantic,39-13,2,61,21,0.744,28-13,33-8,8-2,W 2,3.0,BOS,Regular Season
+1610612745,Houston,Rockets,West,Southwest,31-21,2,52,30,0.634,29-12,23-17,6-4,L 3,16.0,HOU,Regular Season
+1610612747,Los Angeles,Lakers,West,Pacific,36-16,3,50,32,0.61,31-10,19-22,6-4,L 1,18.0,LAL,Regular Season
+1610612752,New York,Knicks,East,Atlantic,34-18,3,51,31,0.622,27-14,24-17,6-4,W 1,13.0,NYK,Regular Season
+1610612743,Denver,Nuggets,West,Northwest,32-20,4,50,32,0.61,26-15,24-17,5-5,W 3,18.0,DEN,Regular Season
+1610612754,Indiana,Pacers,East,Central,29-22,4,50,32,0.61,29-11,20-20,8-2,W 1,14.0,IND,Regular Season
+1610612749,Milwaukee,Bucks,East,Central,31-21,5,48,34,0.585,27-14,20-20,8-2,W 8,16.0,MIL,Regular Season
+1610612746,LA,Clippers,West,Pacific,29-23,5,50,32,0.61,30-11,20-21,9-1,W 8,18.0,LAC,Regular Season
+1610612750,Minnesota,Timberwolves,West,Northwest,33-19,6,49,33,0.598,25-16,24-17,8-2,W 3,19.0,MIN,Regular Season
+1610612765,Detroit,Pistons,East,Central,29-23,6,44,38,0.537,22-19,22-19,4-6,L 2,20.0,DET,Regular Season
+1610612753,Orlando,Magic,East,Southeast,31-21,7,41,41,0.5,22-19,19-22,7-3,L 1,23.0,ORL,Regular Season
+1610612744,Golden State,Warriors,West,Pacific,29-23,7,48,34,0.585,24-17,24-17,7-3,L 1,20.0,GSW,Regular Season
+1610612737,Atlanta,Hawks,East,Southeast,30-22,8,40,42,0.488,21-19,19-22,5-5,W 3,24.0,ATL,Regular Season
+1610612763,Memphis,Grizzlies,West,Southwest,27-24,8,48,34,0.585,26-15,22-19,4-6,W 1,20.0,MEM,Regular Season
+1610612758,Sacramento,Kings,West,Pacific,26-26,9,40,42,0.488,20-21,20-21,5-5,W 1,28.0,SAC,Regular Season
+1610612741,Chicago,Bulls,East,Central,28-24,9,39,43,0.476,18-23,21-20,7-3,W 3,25.0,CHI,Regular Season
+1610612742,Dallas,Mavericks,West,Southwest,23-29,10,39,43,0.476,22-18,17-25,4-6,L 1,29.0,DAL,Regular Season
+1610612748,Miami,Heat,East,Southeast,24-28,10,37,45,0.451,19-22,17-23,6-4,L 1,27.0,MIA,Regular Season
+1610612761,Toronto,Raptors,East,Atlantic,21-31,11,30,52,0.366,18-23,12-29,5-5,L 2,34.0,TOR,Regular Season
+1610612756,Phoenix,Suns,West,Pacific,22-30,11,36,46,0.439,24-17,12-29,1-9,L 1,32.0,PHX,Regular Season
+1610612757,Portland,Trail Blazers,West,Northwest,19-33,12,36,46,0.439,22-19,14-27,4-6,W 1,32.0,POR,Regular Season
+1610612751,Brooklyn,Nets,East,Atlantic,14-37,12,26,56,0.317,12-29,14-27,3-7,L 3,38.0,BKN,Regular Season
+1610612755,Philadelphia,76ers,East,Atlantic,15-37,13,24,58,0.293,12-29,12-29,1-9,L 2,40.0,PHI,Regular Season
+1610612759,San Antonio,Spurs,West,Southwest,22-30,13,34,48,0.415,20-20,13-27,3-7,W 1,34.0,SAS,Regular Season
+1610612766,Charlotte,Hornets,East,Southeast,10-42,14,19,63,0.232,12-29,7-34,1-9,L 7,45.0,CHA,Regular Season
+1610612740,New Orleans,Pelicans,West,Southwest,13-38,14,21,61,0.256,14-27,7-34,2-8,L 7,47.0,NOP,Regular Season
+1610612764,Washington,Wizards,East,Southeast,13-39,15,18,64,0.22,8-32,10-31,2-8,W 1,46.0,WAS,Regular Season
+1610612762,Utah,Jazz,West,Northwest,8-44 ,15,17,65,0.207,10-31,7-34,1-9,L 2,51.0,UTA,Regular Season
