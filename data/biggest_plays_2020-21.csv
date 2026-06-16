@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0022000961,2021-05-01,ORL vs. MEM,1630175,C. Anthony,ORL,4,00:00.10,Anthony 27' 3PT Pullup Jump Shot (26 PTS),0.0,0.976,0.976,Regular Season
+0022000003,2020-12-23,BOS vs. MIL,1628369,J. Tatum,BOS,4,00:01.50,Tatum 28' 3PT Step Back Bank Jump Shot (30 PTS),0.025,1.0,0.975,Regular Season
+0022000221,2021-01-20,MIN vs. ORL,1630175,C. Anthony,ORL,4,00:00.00,Anthony 25' 3PT Jump Shot (13 PTS),0.0,0.975,0.975,Regular Season
+0022000298,2021-01-30,CHI vs. POR,203081,D. Lillard,POR,4,00:00.30,Lillard 26' 3PT Jump Shot (44 PTS),0.0,0.975,0.975,Regular Season
+0022000319,2021-02-01,DAL vs. PHX,1626164,D. Booker,PHX,4,00:01.60,Booker 25' 3PT Pullup Jump Shot (24 PTS) (Paul 9 AST),0.0,0.975,0.975,Regular Season
+0022000570,2021-03-11,TOR vs. ATL,203503,T. Snell,ATL,4,00:00.00,Snell 25' 3PT Jump Shot (6 PTS) (Young 6 AST),0.0,0.975,0.975,Regular Season
+0022000702,2021-03-27,SAC vs. CLE,203084,H. Barnes,SAC,4,00:00.00,Barnes 26' 3PT Turnaround Jump Shot (16 PTS) (Fox 6 AST),0.025,1.0,0.975,Regular Season
+0022000763,2021-04-05,TOR vs. WAS,1629018,G. Trent Jr.,TOR,4,00:00.00,Trent Jr. 26' 3PT Pullup Jump Shot (16 PTS),0.025,1.0,0.975,Regular Season
+0022000837,2021-04-14,MEM vs. DAL,1629029,L. Dončić,DAL,4,00:00.00,Doncic 24' 3PT Floating Jump Shot (29 PTS) (Kleber 1 AST),0.0,0.975,0.975,Regular Season
+0022001078,2021-05-16,SAS vs. PHX,202734,E. Moore,PHX,4,00:02.20,Moore 25' 3PT Pullup Jump Shot (22 PTS),0.03,1.0,0.97,Regular Season
+0022000038,2020-12-27,CHI vs. GSW,1627814,D. Lee,GSW,4,00:02.30,Lee 26' 3PT Jump Shot (12 PTS) (Looney 4 AST),0.0,0.967,0.967,Regular Season
+0022000555,2021-03-04,MEM vs. MIL,201950,J. Holiday,MIL,4,00:02.00,Holiday 11' Step Back Jump Shot (15 PTS),0.024,0.975,0.951,Regular Season
+0022000702,2021-03-27,SAC vs. CLE,1629012,C. Sexton,CLE,4,00:00.20,Sexton 2' Driving Layup (26 PTS),0.024,0.975,0.951,Regular Season
+0022000120,2021-01-07,DEN vs. DAL,1628467,M. Kleber,DAL,4,00:03.30,Kleber 26' 3PT Jump Shot (9 PTS) (Doncic 13 AST),0.062,0.999,0.937,Regular Season
+0022000231,2021-01-22,IND vs. ORL,1627763,M. Brogdon,IND,5,00:03.60,Brogdon 27' 3PT Jump Shot (23 PTS) (McDermott 4 AST),0.072,0.998,0.927,Regular Season
+0022000310,2021-01-31,WAS vs. BKN,201566,R. Westbrook,WAS,4,00:04.30,Westbrook 24' 3PT Jump Shot (41 PTS) (Mathews 1 AST),0.004,0.912,0.908,Regular Season
+0022000276,2021-01-27,PHI vs. LAL,202699,T. Harris,PHI,4,00:03.00,Harris 15' Pullup Jump Shot (24 PTS) (Curry 3 AST),0.054,0.947,0.893,Regular Season
+0022000923,2021-04-26,MIN vs. UTA,201144,M. Conley,UTA,4,00:06.40,Conley 25' 3PT Step Back Jump Shot (26 PTS),0.013,0.863,0.85,Regular Season
+0022000029,2020-12-26,POR vs. HOU,203468,C. McCollum,POR,5,00:06.90,McCollum 25' 3PT Jump Shot (44 PTS) (Lillard 9 AST),0.146,0.983,0.837,Regular Season
+0022000480,2021-02-23,CLE vs. ATL,1630205,L. Stevens,CLE,4,00:04.10,Stevens 2' Driving Dunk (8 PTS) (Sexton 5 AST),0.085,0.917,0.832,Regular Season
+0022000923,2021-04-26,MIN vs. UTA,1626156,D. Russell,MIN,4,00:04.20,Russell 2' Cutting Layup Shot (27 PTS) (Rubio 4 AST),0.088,0.914,0.826,Regular Season
+0022000524,2021-02-28,BOS vs. WAS,1628369,J. Tatum,BOS,4,00:04.70,Tatum 4' Driving Reverse Layup (31 PTS),0.1,0.902,0.802,Regular Season
+0022000891,2021-04-21,SAC vs. MIN,1627741,B. Hield,SAC,4,00:08.80,Hield 25' 3PT Jump Shot (29 PTS) (Barnes 7 AST),0.031,0.829,0.798,Regular Season
+0022000855,2021-04-17,LAL vs. UTA,203903,J. Clarkson,UTA,4,00:09.20,Clarkson 26' 3PT Jump Shot (27 PTS) (Ingles 13 AST),0.176,0.966,0.79,Regular Season
+0022000964,2021-05-01,DAL vs. WAS,1627827,D. Finney-Smith,DAL,4,00:09.30,Finney-Smith 3PT Jump Shot (22 PTS) (Doncic 20 AST),0.034,0.822,0.788,Regular Season

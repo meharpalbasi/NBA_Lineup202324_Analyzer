@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0021700039,2017-10-22,OKC vs. MIN,203952,A. Wiggins,MIN,4,00:00.40,Wiggins 30' 3PT Pullup Jump Shot (27 PTS),0.023,1.0,0.977,Regular Season
+0021700375,2017-12-09,LAC vs. WAS,101150,L. Williams,LAC,4,00:01.20,L. Williams 29' 3PT Pullup Jump Shot (35 PTS),0.0,0.977,0.977,Regular Season
+0021701059,2018-03-20,BOS vs. OKC,202694,M. Morris Sr.,BOS,4,00:01.80,Morris Sr. 26' 3PT Jump Shot (21 PTS) (Tatum 4 AST),0.0,0.977,0.977,Regular Season
+0021701132,2018-03-30,HOU vs. PHX,101123,G. Green,HOU,4,00:00.30,Green 3PT Jump Shot (15 PTS) (Ariza 4 AST),0.0,0.977,0.977,Regular Season
+0021700057,2017-10-25,PHI vs. HOU,201569,E. Gordon,HOU,4,00:00.10,Gordon 24' 3PT Jump Shot (29 PTS) (Harden 13 AST),0.0,0.976,0.976,Regular Season
+0021700068,2017-10-26,POR vs. LAC,201933,B. Griffin,LAC,4,00:00.00,Griffin 25' 3PT Pullup Jump Shot (25 PTS),0.0,0.976,0.976,Regular Season
+0021700260,2017-11-22,MEM vs. DAL,203084,H. Barnes,DAL,4,00:00.00,Barnes 29' 3PT Turnaround Fadeaway Bank Jump Shot (22 PTS) (Smith Jr. 3 AST),0.0,0.976,0.976,Regular Season
+0021700442,2017-12-18,IND vs. BOS,1626179,T. Rozier,BOS,4,00:01.50,Rozier 1' Running Dunk (9 PTS),0.023,0.976,0.953,Regular Season
+0021700599,2018-01-09,TOR vs. MIA,201961,W. Ellington,MIA,4,00:00.30,Ellington Layup (15 PTS) (Dragic 4 AST),0.023,0.976,0.953,Regular Season
+0021700685,2018-01-21,DET vs. BKN,203915,S. Dinwiddie,BKN,4,00:01.10,Dinwiddie 13' Floating Jump Shot (22 PTS) (Harris 1 AST),0.023,0.976,0.953,Regular Season
+0021700784,2018-02-04,BOS vs. POR,201143,A. Horford,BOS,4,00:01.00,Horford 20' Turnaround Jump Shot (22 PTS) (Brown 4 AST),0.024,0.977,0.953,Regular Season
+0021701188,2018-04-06,MEM vs. SAC,203992,B. Bogdanović,SAC,4,00:01.50,Bogdanovic 16' Pullup Jump Shot (8 PTS),0.023,0.976,0.953,Regular Season
+0021700599,2018-01-09,TOR vs. MIA,201942,D. DeRozan,TOR,4,00:03.10,DeRozan 1' Tip Layup Shot (25 PTS),0.056,0.946,0.89,Regular Season
+0021700315,2017-11-30,DEN vs. CHI,203115,W. Barton,DEN,4,00:03.20,Barton 2' Driving Reverse Layup (37 PTS),0.059,0.943,0.884,Regular Season
+0021700697,2018-01-23,OKC vs. BKN,201566,R. Westbrook,OKC,4,00:03.30,Westbrook 2' Driving Layup (32 PTS),0.062,0.94,0.879,Regular Season
+0021700710,2018-01-25,MIA vs. SAC,1628368,D. Fox,SAC,4,00:03.30,Fox 1' Tip Dunk Shot (14 PTS),0.06,0.938,0.879,Regular Season
+0021700716,2018-01-26,TOR vs. UTA,201937,R. Rubio,UTA,4,00:05.70,Rubio 25' 3PT Jump Shot (14 PTS) (Mitchell 2 AST),0.117,0.991,0.873,Regular Season
+0021700039,2017-10-22,OKC vs. MIN,2546,C. Anthony,OKC,4,00:05.80,Anthony 24' 3PT Jump Shot (23 PTS) (Westbrook 10 AST),0.01,0.881,0.871,Regular Season
+0021700654,2018-01-17,ATL vs. NOP,203145,K. Bazemore,ATL,4,00:03.60,Bazemore 18' Pullup Jump Shot (20 PTS) (Schroder 15 AST),0.07,0.932,0.862,Regular Season
+0021700517,2017-12-28,BOS vs. HOU,201143,A. Horford,BOS,4,00:03.90,Horford 5' Driving Floating Jump Shot (9 PTS),0.078,0.924,0.846,Regular Season
+0021701188,2018-04-06,MEM vs. SAC,1628415,D. Brooks,MEM,4,00:07.40,D. Brooks 25' 3PT Pullup Jump Shot (16 PTS),0.02,0.852,0.832,Regular Season
+0021700966,2018-03-07,DET vs. TOR,201942,D. DeRozan,TOR,4,00:04.60,DeRozan 2' Driving Dunk (38 PTS),0.093,0.904,0.81,Regular Season
+0021700786,2018-02-04,NYK vs. ATL,203145,K. Bazemore,ATL,4,00:08.50,Bazemore 3PT Jump Shot (19 PTS) (Muscala 1 AST),0.164,0.972,0.808,Regular Season
+0021700685,2018-01-21,DET vs. BKN,203083,A. Drummond,DET,4,00:04.70,Drummond 3' Driving Layup (7 PTS) (Galloway 5 AST),0.099,0.904,0.806,Regular Season
+0021700943,2018-03-04,ATL vs. PHX,1627752,T. Prince,ATL,4,00:08.60,Prince 25' 3PT Pullup Jump Shot (22 PTS),0.028,0.834,0.806,Regular Season

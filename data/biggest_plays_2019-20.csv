@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0021900037,2019-10-27,MEM vs. BKN,203109,J. Crowder,MEM,5,00:00.00,Crowder 27' 3PT Jump Shot (6 PTS) (Morant 9 AST),0.0,0.975,0.975,Regular Season
+0021900084,2019-11-02,POR vs. PHI,1627788,F. Korkmaz,PHI,4,00:00.40,Korkmaz 24' 3PT Jump Shot (11 PTS) (Simmons 8 AST),0.0,0.974,0.974,Regular Season
+0021900226,2019-11-23,CHA vs. CHI,203897,Z. LaVine,CHI,4,00:00.80,LaVine 25' 3PT Jump Shot (49 PTS),0.0,0.974,0.974,Regular Season
+0021900346,2019-12-09,HOU vs. SAC,202357,N. Bjelica,SAC,4,00:00.00,Bjelica 32' 3PT Jump Shot (17 PTS) (Joseph 6 AST),0.0,0.974,0.974,Regular Season
+0021900790,2020-02-09,HOU vs. UTA,200782,P. Tucker,HOU,4,00:01.60,Tucker 3PT Jump Shot (9 PTS) (Westbrook 4 AST),0.026,1.0,0.974,Regular Season
+0021900790,2020-02-09,HOU vs. UTA,202711,B. Bogdanović,UTA,4,00:00.00,Bogdanovic 28' 3PT Jump Shot (8 PTS) (Ingles 7 AST),0.0,0.974,0.974,Regular Season
+0021900084,2019-11-02,POR vs. PHI,1629014,A. Simons,POR,4,00:02.60,Simons 3PT Jump Shot (13 PTS) (Lillard 9 AST),0.044,1.0,0.956,Regular Season
+0021900177,2019-11-16,NYK vs. CHA,1628984,D. Graham,CHA,4,00:02.80,Graham 28' 3PT Jump Shot (29 PTS) (Washington 3 AST),0.0,0.95,0.95,Regular Season
+0021900596,2020-01-13,SAC vs. ORL,203932,A. Gordon,ORL,4,00:01.10,Gordon 6' Fadeaway Jumper (18 PTS) (Fournier 6 AST),0.025,0.974,0.95,Regular Season
+0021900770,2020-02-07,WAS vs. DAL,203078,B. Beal,WAS,4,00:00.20,Beal 3' Cutting Layup Shot (29 PTS) (Brown Jr. 4 AST),0.026,0.975,0.95,Regular Season
+0021900123,2019-11-08,DEN vs. PHI,203999,N. Jokić,DEN,4,00:02.20,Jokic 20' Jump Shot (26 PTS) (Millsap 2 AST),0.031,0.969,0.938,Regular Season
+0021900075,2019-11-01,SAC vs. UTA,203084,H. Barnes,SAC,4,00:02.90,Barnes 2' Tip Layup Shot (13 PTS),0.053,0.949,0.896,Regular Season
+0021901306,2020-08-12,OKC vs. MIA,203488,M. Muscala,OKC,4,00:05.20,Muscala 27' 3PT Jump Shot (6 PTS) (Bazley 4 AST),0.008,0.889,0.881,Regular Season
+0021900475,2019-12-28,MIA vs. PHI,1629639,T. Herro,MIA,4,00:06.90,Herro 26' 3PT Step Back Jump Shot (13 PTS),0.018,0.856,0.838,Regular Season
+0021900624,2020-01-17,SAS vs. ATL,1628989,K. Huerter,ATL,4,00:07.00,Huerter 24' 3PT Jump Shot (18 PTS) (Hunter 2 AST),0.018,0.85,0.832,Regular Season
+0021901254,2020-08-03,PHI vs. SAS,1629003,S. Milton,PHI,4,00:07.20,Milton 25' 3PT Jump Shot (16 PTS) (Horford 3 AST),0.02,0.851,0.831,Regular Season
+0021900337,2019-12-08,MIA vs. CHI,1629639,T. Herro,MIA,4,00:07.10,Herro 27' 3PT Jump Shot (16 PTS) (Butler 4 AST),0.152,0.982,0.83,Regular Season
+0021900866,2020-02-26,WAS vs. BKN,1629010,J. Robinson,WAS,4,00:09.50,Robinson 27' 3PT Jump Shot (7 PTS) (Beal 5 AST),0.188,0.965,0.777,Regular Season
+0021900794,2020-02-10,IND vs. BKN,203915,S. Dinwiddie,BKN,4,00:05.20,Dinwiddie 21' Step Back Jump Shot (21 PTS),0.111,0.886,0.775,Regular Season
+0021900470,2019-12-27,MIA vs. IND,201609,G. Dragic,MIA,4,00:06.80,Dragic 9' Floating Jump Shot (14 PTS) (Adebayo 6 AST),0.147,0.858,0.711,Regular Season
+0021900559,2020-01-08,DAL vs. DEN,203999,N. Jokić,DEN,4,00:07.90,Jokic 2' Driving Layup (33 PTS),0.16,0.835,0.675,Regular Season
+0021900617,2020-01-16,GSW vs. DEN,1629672,E. Paschall,GSW,4,00:16.00,Paschall 27' 3PT Pullup Jump Shot (16 PTS) (Lee 6 AST),0.249,0.919,0.67,Regular Season
+0021900365,2019-12-11,SAC vs. OKC,203992,B. Bogdanović,SAC,4,00:17.30,Bogdanovic 27' 3PT Jump Shot (17 PTS) (Hield 6 AST),0.094,0.752,0.658,Regular Season
+0021900868,2020-02-26,MIA vs. MIN,1629162,J. McLaughlin,MIN,4,00:08.50,McLaughlin 2' Driving Layup (13 PTS),0.169,0.826,0.657,Regular Season
+0021900949,2020-03-08,BOS vs. OKC,203471,D. Schröder,OKC,4,00:08.50,Schroder 1' Driving Layup (27 PTS),0.169,0.826,0.657,Regular Season

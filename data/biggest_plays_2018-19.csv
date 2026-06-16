@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0021800514,2018-12-27,SAC vs. LAL,203992,B. Bogdanović,SAC,4,00:00.80,Bogdanovic 27' 3PT Step Back Jump Shot (23 PTS) (Bjelica 3 AST),0.0,0.976,0.976,Regular Season
+0021800680,2019-01-19,DET vs. SAC,1627741,B. Hield,SAC,4,00:00.50,Hield 27' 3PT Jump Shot (35 PTS),0.024,1.0,0.976,Regular Season
+0021800915,2019-02-27,MIA vs. GSW,2548,D. Wade,MIA,4,00:00.30,Wade 25' 3PT Turnaround Fadeaway Bank Jump Shot (25 PTS),0.0,0.976,0.976,Regular Season
+0021801098,2019-03-24,TOR vs. CHA,203087,J. Lamb,CHA,4,00:00.00,Lamb 48' 3PT Jump Bank Shot (13 PTS),0.0,0.976,0.976,Regular Season
+0021801218,2019-04-09,OKC vs. HOU,202331,P. George,OKC,4,00:01.80,George 3PT Jump Shot (27 PTS) (Westbrook 10 AST),0.0,0.976,0.976,Regular Season
+0021801220,2019-04-10,ATL vs. IND,1627752,T. Prince,ATL,4,00:02.10,Prince 32' 3PT Jump Shot (23 PTS) (Huerter 3 AST),0.027,1.0,0.973,Regular Season
+0021800289,2018-11-25,BKN vs. PHI,202710,J. Butler III,PHI,4,00:02.30,Butler 26' 3PT Step Back Jump Shot (34 PTS),0.032,1.0,0.968,Regular Season
+0021800565,2019-01-03,GSW vs. HOU,201935,J. Harden,HOU,5,00:02.70,Harden 28' 3PT Pullup Jump Shot (44 PTS),0.0,0.955,0.955,Regular Season
+0021800015,2018-10-18,WAS vs. MIA,203482,K. Olynyk,MIA,4,00:00.20,Olynyk 3' Putback Layup (9 PTS),0.024,0.976,0.952,Regular Season
+0021800024,2018-10-19,UTA vs. GSW,201973,J. Jerebko,GSW,4,00:00.30,Jerebko 1' Tip Layup Shot (10 PTS),0.024,0.976,0.952,Regular Season
+0021800106,2018-10-31,CHI vs. DEN,200794,P. Millsap,DEN,5,00:00.10,Millsap 2' Tip Layup Shot (19 PTS),0.024,0.976,0.952,Regular Season
+0021800262,2018-11-21,SAS vs. MEM,201942,D. DeRozan,SAS,4,00:01.20,DeRozan 15' Pullup Jump Shot (24 PTS),0.024,0.976,0.952,Regular Season
+0021800451,2018-12-18,IND vs. CLE,1626204,L. Nance Jr.,CLE,4,00:00.00,Nance Jr. 1' Tip Layup Shot (15 PTS),0.024,0.976,0.952,Regular Season
+0021800665,2019-01-17,WAS vs. NYK,1628418,T. Bryant,WAS,4,00:00.40,Bryant 6' Driving Layup (10 PTS) (Beal 4 AST),0.024,0.976,0.952,Regular Season
+0021800814,2019-02-07,BOS vs. LAL,200765,R. Rondo,LAL,4,00:00.20,Rondo 19' Fadeaway Jumper (17 PTS),0.024,0.976,0.952,Regular Season
+0021800881,2019-02-22,OKC vs. UTA,202331,P. George,OKC,6,00:01.60,George 9' Floating Jump Shot (45 PTS),0.024,0.976,0.952,Regular Season
+0021800970,2019-03-06,CHI vs. PHI,203897,Z. LaVine,CHI,4,00:01.60,LaVine 2' Driving Layup (39 PTS) (Lopez 3 AST),0.024,0.976,0.952,Regular Season
+0021801025,2019-03-14,DEN vs. DAL,203999,N. Jokić,DEN,4,00:00.00,Jokic 12' Turnaround Fadeaway (11 PTS),0.024,0.976,0.952,Regular Season
+0021801145,2019-03-31,ATL vs. MIL,1628425,S. Brown,MIL,5,00:01.10,Brown 1' Driving Layup (27 PTS),0.024,0.976,0.952,Regular Season
+0021801145,2019-03-31,ATL vs. MIL,1629027,T. Young,ATL,5,00:00.00,Young 11' Jump Shot (12 PTS),0.024,0.976,0.952,Regular Season
+0021800358,2018-12-05,BKN vs. OKC,202331,P. George,OKC,4,00:03.10,George 25' 3PT Pullup Jump Shot (47 PTS) (Westbrook 17 AST),0.055,0.999,0.944,Regular Season
+0021801180,2019-04-05,CHA vs. TOR,203087,J. Lamb,CHA,4,00:03.30,Lamb 26' 3PT Jump Shot (22 PTS) (Walker 8 AST),0.063,0.999,0.936,Regular Season
+0021800267,2018-11-23,DET vs. HOU,201933,B. Griffin,DET,4,00:03.50,Griffin 30' 3PT Pullup Jump Shot (23 PTS),0.069,0.999,0.93,Regular Season
+0021800127,2018-11-03,IND vs. BOS,203506,V. Oladipo,IND,4,00:04.70,Oladipo 27' 3PT Pullup Jump Shot (24 PTS),0.005,0.903,0.898,Regular Season
+0021800072,2018-10-26,NOP vs. BKN,201950,J. Holiday,NOP,4,00:03.00,Holiday 17' Pullup Jump Shot (25 PTS),0.054,0.948,0.893,Regular Season

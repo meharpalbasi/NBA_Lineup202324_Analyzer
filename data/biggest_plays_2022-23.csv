@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0022200168,2022-11-09,OKC vs. MIL,1628983,S. Gilgeous-Alexander,OKC,5,00:01.20,Gilgeous-Alexander 25' 3PT Step Back Jump Shot (37 PTS),0.0,0.975,0.975,Regular Season
+0022200213,2022-11-16,WAS vs. OKC,1628983,S. Gilgeous-Alexander,OKC,4,00:01.90,Gilgeous-Alexander 27' 3PT Step Back Jump Shot (42 PTS),0.0,0.975,0.975,Regular Season
+0022200308,2022-11-28,LAL vs. IND,1629614,A. Nembhard,IND,4,00:00.00,Nembhard 25' 3PT Jump Shot (12 PTS) (Haliburton 14 AST),0.0,0.975,0.975,Regular Season
+0022200376,2022-12-08,POR vs. DEN,1627750,J. Murray,DEN,4,00:00.90,Murray 24' 3PT Step Back Jump Shot (21 PTS),0.0,0.975,0.975,Regular Season
+0022200949,2023-03-03,MIA vs. NYK,203944,J. Randle,NYK,4,00:01.70,Randle 26' 3PT Step Back Jump Shot (43 PTS),0.025,1.0,0.975,Regular Season
+0022201051,2023-03-17,HOU vs. NOP,1631095,J. Smith Jr.,HOU,4,00:00.40,Smith Jr. 29' 3PT Pullup Jump Shot (11 PTS) (Tate 5 AST),0.025,1.0,0.975,Regular Season
+0022201054,2023-03-17,LAL vs. DAL,1628467,M. Kleber,DAL,4,00:00.00,Kleber 27' 3PT Jump Shot (10 PTS) (Irving 6 AST),0.0,0.975,0.975,Regular Season
+0022201094,2023-03-23,BKN vs. CLE,1630171,I. Okoro,CLE,4,00:01.30,Okoro 3PT Jump Shot (11 PTS) (LeVert 2 AST),0.025,1.0,0.975,Regular Season
+0022200372,2022-12-07,UTA vs. GSW,1631323,S. Fontecchio,UTA,4,00:01.40,Fontecchio 3' Dunk (18 PTS) (Beasley 1 AST),0.025,0.975,0.95,Regular Season
+0022200400,2022-12-11,ATL vs. CHI,1631100,A. Griffin,ATL,5,00:00.00,Griffin 6' Alley Oop Layup (17 PTS) (Johnson 1 AST),0.025,0.975,0.95,Regular Season
+0022200485,2022-12-23,NYK vs. CHI,201942,D. DeRozan,CHI,4,00:00.40,DeRozan 22' Pullup Jump Shot (25 PTS),0.025,0.975,0.95,Regular Season
+0022200998,2023-03-10,PHI vs. POR,203954,J. Embiid,PHI,4,00:01.50,Embiid 14' Turnaround Fadeaway (39 PTS),0.025,0.975,0.95,Regular Season
+0022201142,2023-03-29,OKC vs. DET,1631114,J. Williams,OKC,4,00:00.10,Jal. Williams Tip Layup Shot (27 PTS),0.025,0.975,0.95,Regular Season
+0022200040,2022-10-23,NOP vs. UTA,203482,K. Olynyk,UTA,5,00:03.10,Olynyk 4' Driving Finger Roll Layup (20 PTS),0.057,0.942,0.885,Regular Season
+0022200227,2022-11-18,CHI vs. ORL,1630591,J. Suggs,ORL,4,00:05.00,Suggs 26' 3PT Step Back Jump Shot (20 PTS),0.006,0.892,0.885,Regular Season
+0022200599,2023-01-08,MIA vs. BKN,1626220,R. O'Neale,BKN,4,00:03.20,O'Neale 4' Floating Jump Shot (8 PTS),0.06,0.939,0.879,Regular Season
+0022200454,2022-12-19,ATL vs. ORL,1628365,M. Fultz,ORL,4,00:03.80,Fultz 1' Driving Reverse Layup (24 PTS),0.076,0.922,0.846,Regular Season
+0022200458,2022-12-19,OKC vs. POR,1631114,J. Williams,OKC,4,00:06.80,J. Williams Free Throw 1 of 2 (13 PTS),0.145,0.984,0.838,Regular Season
+0022200537,2022-12-30,SAC vs. UTA,1628989,K. Huerter,SAC,4,00:09.20,Huerter 25' 3PT Jump Shot (30 PTS) (Murray 2 AST),0.034,0.822,0.788,Regular Season
+0022200376,2022-12-08,POR vs. DEN,203081,D. Lillard,POR,4,00:09.30,Lillard 29' 3PT Step Back Jump Shot (40 PTS),0.184,0.966,0.783,Regular Season
+0022200694,2023-01-21,ATL vs. CHA,203991,C. Capela,ATL,4,00:05.40,Capela Tip Layup Shot (12 PTS),0.117,0.885,0.768,Regular Season
+0022200646,2023-01-14,UTA vs. PHI,203954,J. Embiid,PHI,4,00:05.70,Embiid 13' Step Back Jump Shot (30 PTS) (Harden 11 AST),0.121,0.876,0.755,Regular Season
+0022201121,2023-03-26,GSW vs. MIN,1626157,K. Towns,MIN,4,00:11.10,Towns 26' 3PT Running Jump Shot (14 PTS) (Anderson 7 AST),0.2,0.951,0.752,Regular Season
+0022200037,2022-10-23,LAL vs. POR,203081,D. Lillard,POR,4,00:12.40,Lillard 27' 3PT Step Back Jump Shot (41 PTS),0.212,0.941,0.729,Regular Season
+0022200726,2023-01-25,GSW vs. MEM,202691,K. Thompson,GSW,4,00:14.60,Thompson 27' 3PT Pullup Jump Shot (24 PTS) (Poole 7 AST),0.237,0.928,0.691,Regular Season

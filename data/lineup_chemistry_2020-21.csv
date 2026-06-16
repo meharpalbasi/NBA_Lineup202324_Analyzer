@@ -1,0 +1,272 @@
+GROUP_ID,PLAYERS,TEAM_ABBREVIATION,POSS_OFF,POSS_DEF,NET_ACTUAL,NET_EXPECTED,CHEMISTRY,SEASON,SEASON_TYPE
+-202699-203552-203954-1627732-1629003-,T. Harris - S. Curry - J. Embiid - B. Simmons - S. Milton,PHI,109,109,52.8,7.1,45.6,2020-21,Regular Season
+-201152-202066-202696-1629632-1630172-,T. Young - G. Temple - N. Vučević - C. White - P. Williams,CHI,116,112,29.4,-5.9,35.3,2020-21,Regular Season
+-202696-203516-203932-1628407-1630175-,N. Vučević - J. Ennis III - A. Gordon - D. Bacon - C. Anthony,ORL,118,117,22.1,-11.2,33.2,2020-21,Regular Season
+-203200-203926-204456-1628988-1629048-,J. Holiday - D. McDermott - T. McConnell - A. Holiday - G. Bitadze,IND,107,101,29.5,-2.5,32.0,2020-21,Regular Season
+-202711-203497-204060-1626220-1627777-,B. Bogdanović - R. Gobert - J. Ingles - R. O'Neale - G. Niang,UTA,171,179,44.9,14.8,30.1,2020-21,Regular Season
+-202330-1626179-1628970-1628984-1629023-,G. Hayward - T. Rozier - M. Bridges - D. Graham - P. Washington,CHA,144,139,28.4,0.6,27.8,2020-21,Regular Season
+-203501-1626161-1627827-1628973-1629029-,T. Hardaway Jr. - W. Cauley-Stein - D. Finney-Smith - J. Brunson - L. Dončić,DAL,127,123,35.8,9.1,26.7,2020-21,Regular Season
+-201937-1626156-1626157-1629020-1630162-,R. Rubio - D. Russell - K. Towns - J. Vanderbilt - A. Edwards,MIN,141,139,27.9,2.4,25.5,2020-21,Regular Season
+-203200-203926-204456-1627734-1627763-,J. Holiday - D. McDermott - T. McConnell - D. Sabonis - M. Brogdon,IND,147,147,23.3,-1.9,25.2,2020-21,Regular Season
+-201144-203497-204060-1626220-1628378-,M. Conley - R. Gobert - J. Ingles - R. O'Neale - D. Mitchell,UTA,123,123,37.7,12.9,24.8,2020-21,Regular Season
+-201571-201950-203114-203507-1626171-,D. Augustin - J. Holiday - K. Middleton - G. Antetokounmpo - B. Portis,MIL,111,106,29.0,5.2,23.8,2020-21,Regular Season
+-1628404-1629627-1629637-1629638-1630184-,J. Hart - Z. Williamson - J. Hayes - N. Alexander-Walker - K. Lewis Jr.,NOP,130,127,23.4,0.1,23.3,2020-21,Regular Season
+-201571-201572-203114-203507-1628978-,D. Augustin - B. Lopez - K. Middleton - G. Antetokounmpo - D. DiVincenzo,MIL,178,168,25.7,2.9,22.8,2020-21,Regular Season
+-1626156-1626157-1629006-1630162-1630183-,D. Russell - K. Towns - J. Okogie - A. Edwards - J. McDaniels,MIN,152,152,17.0,-5.1,22.0,2020-21,Regular Season
+-203486-203924-1626153-1628367-1630180-,M. Plumlee - J. Grant - D. Wright - J. Jackson - S. Bey,DET,108,109,17.5,-4.1,21.6,2020-21,Regular Season
+-201144-203497-203903-1627777-1629671-,M. Conley - R. Gobert - J. Clarkson - G. Niang - M. Oni,UTA,194,188,35.0,13.9,21.1,2020-21,Regular Season
+-200752-201988-1627749-1627751-1630170-,R. Gay - P. Mills - D. Murray - J. Poeltl - D. Vassell,SAS,264,264,25.7,5.0,20.7,2020-21,Regular Season
+-201572-201950-203114-203507-1626192-,B. Lopez - J. Holiday - K. Middleton - G. Antetokounmpo - P. Connaughton,MIL,143,147,29.5,9.5,20.0,2020-21,Regular Season
+-1626179-1628970-1628984-1628998-1629023-,T. Rozier - M. Bridges - D. Graham - C. Martin - P. Washington,CHA,173,171,22.0,2.0,20.0,2020-21,Regular Season
+-203524-203991-203992-1628989-1629164-,S. Hill - C. Capela - B. Bogdanović - K. Huerter - B. Goodwin,ATL,140,149,22.8,3.4,19.5,2020-21,Regular Season
+-202685-203937-1628415-1628991-1629630-,J. Valančiūnas - K. Anderson - D. Brooks - J. Jackson Jr. - J. Morant,MEM,105,106,20.5,1.2,19.3,2020-21,Regular Season
+-201566-203078-203458-203526-1629060-,R. Westbrook - B. Beal - A. Len - R. Neto - R. Hachimura,WAS,124,123,19.1,0.1,19.1,2020-21,Regular Season
+-201586-201587-202331-202695-202704-,S. Ibaka - N. Batum - P. George - K. Leonard - R. Jackson,LAC,159,161,32.1,13.6,18.5,2020-21,Regular Season
+-201939-203110-203145-1628539-1629308-,S. Curry - D. Green - K. Bazemore - M. Mulder - J. Toscano-Anderson,GSW,107,104,27.0,8.8,18.2,2020-21,Regular Season
+-202683-203081-203468-203496-203994-1626181-,E. Freedom - D. Lillard - C. McCollum - R. Covington - J. Nurkić - N. Powell,POR,214,212,22.5,5.1,17.4,2020-21,Regular Season
+-200768-203920-1627783-1627832-1628384-,K. Lowry - K. Birch - P. Siakam - F. VanVleet - O. Anunoby,TOR,185,183,20.9,3.8,17.1,2020-21,Regular Season
+-202710-203482-1628389-1629130-1629639-,J. Butler III - K. Olynyk - B. Adebayo - D. Robinson - T. Herro,MIA,198,199,19.5,3.7,15.8,2020-21,Regular Season
+-203501-204001-1626196-1627827-1628973-,T. Hardaway Jr. - K. Porziņģis - J. Richardson - D. Finney-Smith - J. Brunson,DAL,223,219,17.2,1.4,15.8,2020-21,Regular Season
+-203082-203920-203932-1628407-1629109-,T. Ross - K. Birch - A. Gordon - D. Bacon - G. Clark,ORL,108,107,10.9,-4.4,15.3,2020-21,Regular Season
+-203991-203992-1628381-1628989-1629027-,C. Capela - B. Bogdanović - J. Collins - K. Huerter - T. Young,ATL,233,235,23.7,8.5,15.2,2020-21,Regular Season
+-203524-203991-203992-1628989-1629027-,S. Hill - C. Capela - B. Bogdanović - K. Huerter - T. Young,ATL,206,199,20.0,4.8,15.2,2020-21,Regular Season
+-101150-202694-202695-1627826-1629611-,L. Williams - M. Morris Sr. - K. Leonard - I. Zubac - T. Mann,LAC,104,108,18.7,3.9,14.8,2020-21,Regular Season
+-101108-203109-1628969-1629028-1629661-,C. Paul - J. Crowder - M. Bridges - D. Ayton - C. Johnson,PHX,169,169,20.1,5.6,14.5,2020-21,Regular Season
+-201568-203503-1628381-1628989-1629027-,D. Gallinari - T. Snell - J. Collins - K. Huerter - T. Young,ATL,176,173,20.8,6.3,14.5,2020-21,Regular Season
+-201976-202331-202694-202695-1627826-,P. Beverley - P. George - M. Morris Sr. - K. Leonard - I. Zubac,LAC,103,105,24.7,10.4,14.3,2020-21,Regular Season
+-1627783-1628384-1628449-1629018-1630201-,P. Siakam - O. Anunoby - C. Boucher - G. Trent Jr. - M. Flynn,TOR,107,104,17.0,2.7,14.3,2020-21,Regular Season
+-200746-201942-201988-1629022-1629640-,L. Aldridge - D. DeRozan - P. Mills - L. Walker IV - K. Johnson,SAS,102,102,5.7,-7.9,13.6,2020-21,Regular Season
+-202683-203081-203496-1627884-1629018-,E. Freedom - D. Lillard - R. Covington - D. Jones Jr. - G. Trent Jr.,POR,575,569,13.8,0.3,13.5,2020-21,Regular Season
+-201142-201599-201935-202681-203925-,K. Durant - D. Jordan - J. Harden - K. Irving - J. Harris,BKN,107,105,18.1,4.9,13.2,2020-21,Regular Season
+-203200-1627734-1627747-1627763-1628410-,J. Holiday - D. Sabonis - C. LeVert - M. Brogdon - E. Sumner,IND,204,204,8.1,-5.1,13.2,2020-21,Regular Season
+-2544-202083-1626149-1628398-1629659-,L. James - W. Matthews - M. Harrell - K. Kuzma - T. Horton-Tucker,LAL,124,123,17.7,4.8,13.0,2020-21,Regular Season
+-201565-201959-203493-203944-1629628-,D. Rose - T. Gibson - R. Bullock Jr. - J. Randle - R. Barrett,NYK,214,220,17.6,5.0,12.6,2020-21,Regular Season
+-202322-203482-1626174-1629645-1630256-,J. Wall - K. Olynyk - C. Wood - K. Porter Jr. - J. Tate,HOU,271,273,6.7,-5.9,12.6,2020-21,Regular Season
+-202683-203081-203496-203918-1629018-,E. Freedom - D. Lillard - R. Covington - R. Hood - G. Trent Jr.,POR,115,115,12.1,-0.5,12.6,2020-21,Regular Season
+-200768-1626181-1627783-1627832-1628384-,K. Lowry - N. Powell - P. Siakam - F. VanVleet - O. Anunoby,TOR,219,219,13.1,0.7,12.5,2020-21,Regular Season
+-201567-1629012-1629636-1629731-1630171-,K. Love - C. Sexton - D. Garland - D. Wade - I. Okoro,CLE,132,128,5.0,-7.2,12.3,2020-21,Regular Season
+-2738-1628389-1629130-1629216-1629639-,A. Iguodala - B. Adebayo - D. Robinson - G. Vincent - T. Herro,MIA,182,188,10.6,-1.6,12.2,2020-21,Regular Season
+-201144-202711-203497-204060-1626220-,M. Conley - B. Bogdanović - R. Gobert - J. Ingles - R. O'Neale,UTA,278,281,30.6,18.4,12.2,2020-21,Regular Season
+-202340-203482-1626174-1629645-1630256-,A. Bradley - K. Olynyk - C. Wood - K. Porter Jr. - J. Tate,HOU,163,164,7.6,-4.7,12.2,2020-21,Regular Season
+-202696-203095-203516-1629109-1630175-,N. Vučević - E. Fournier - J. Ennis III - G. Clark - C. Anthony,ORL,109,108,4.6,-7.2,11.8,2020-21,Regular Season
+-203090-1626153-1626158-1627741-1628963-,M. Harkless - D. Wright - R. Holmes - B. Hield - M. Bagley III,SAC,140,147,19.2,7.3,11.8,2020-21,Regular Season
+-201937-1626157-1627736-1629020-1630162-,R. Rubio - K. Towns - M. Beasley - J. Vanderbilt - A. Edwards,MIN,233,228,9.7,-2.0,11.7,2020-21,Regular Season
+-201933-203486-203924-1626153-1628367-,B. Griffin - M. Plumlee - J. Grant - D. Wright - J. Jackson,DET,103,102,1.3,-10.2,11.5,2020-21,Regular Season
+-204001-1626196-1627827-1628467-1629029-,K. Porziņģis - J. Richardson - D. Finney-Smith - M. Kleber - L. Dončić,DAL,577,584,12.5,1.2,11.3,2020-21,Regular Season
+-202339-203500-1627742-1628366-1628404-,E. Bledsoe - S. Adams - B. Ingram - L. Ball - J. Hart,NOP,237,234,11.7,0.5,11.2,2020-21,Regular Season
+-203926-1627734-1627747-1628410-1629052-,D. McDermott - D. Sabonis - C. LeVert - E. Sumner - O. Brissett,IND,114,114,13.4,2.5,10.9,2020-21,Regular Season
+-1626156-1627823-1629020-1629162-1629675-,D. Russell - J. Hernangomez - J. Vanderbilt - J. McLaughlin - N. Reid,MIN,148,142,6.2,-4.5,10.7,2020-21,Regular Season
+-201142-201145-201935-202681-203925-,K. Durant - J. Green - J. Harden - K. Irving - J. Harris,BKN,161,155,17.1,6.4,10.7,2020-21,Regular Season
+-203501-1626161-1626196-1627827-1629029-,T. Hardaway Jr. - W. Cauley-Stein - J. Richardson - D. Finney-Smith - L. Dončić,DAL,218,220,15.5,4.9,10.6,2020-21,Regular Season
+-202331-202694-202695-202704-1627826-,P. George - M. Morris Sr. - K. Leonard - R. Jackson - I. Zubac,LAC,420,426,20.2,9.9,10.3,2020-21,Regular Season
+-202324-202711-203903-1626220-1630235-,D. Favors - B. Bogdanović - J. Clarkson - R. O'Neale - T. Forrest,UTA,187,186,11.0,0.9,10.2,2020-21,Regular Season
+-203115-203999-1627750-1628420-1629008-,W. Barton - N. Jokić - J. Murray - M. Morris - M. Porter Jr.,DEN,318,308,19.6,9.4,10.1,2020-21,Regular Season
+-203083-1626204-1626224-1628422-1630171-,A. Drummond - L. Nance Jr. - C. Osman - D. Dotson - I. Okoro,CLE,156,149,-0.1,-10.3,10.1,2020-21,Regular Season
+-202954-203145-203952-1627814-1629672-,B. Wanamaker - K. Bazemore - A. Wiggins - D. Lee - E. Paschall,GSW,195,199,8.5,-1.4,9.9,2020-21,Regular Season
+-203115-203932-203999-1627750-1629008-,W. Barton - A. Gordon - N. Jokić - J. Murray - M. Porter Jr.,DEN,218,214,15.3,5.4,9.9,2020-21,Regular Season
+-203457-203493-203944-1629628-1630193-,N. Noel - R. Bullock Jr. - J. Randle - R. Barrett - I. Quickley,NYK,160,158,13.5,3.7,9.8,2020-21,Regular Season
+-1628386-1629012-1629636-1629731-1630171-,J. Allen - C. Sexton - D. Garland - D. Wade - I. Okoro,CLE,232,232,0.7,-8.9,9.6,2020-21,Regular Season
+-202330-1626179-1628970-1629023-1630163-,G. Hayward - T. Rozier - M. Bridges - P. Washington - L. Ball,CHA,110,110,7.0,-2.4,9.4,2020-21,Regular Season
+-202339-1626195-1627742-1628366-1629627-,E. Bledsoe - W. Hernangomez - B. Ingram - L. Ball - Z. Williamson,NOP,278,275,11.2,1.8,9.4,2020-21,Regular Season
+-201565-201959-202692-1630167-1630193-,D. Rose - T. Gibson - A. Burks - O. Toppin - I. Quickley,NYK,274,269,15.9,6.5,9.3,2020-21,Regular Season
+-202711-203497-204060-1626220-1628378-,B. Bogdanović - R. Gobert - J. Ingles - R. O'Neale - D. Mitchell,UTA,467,462,20.7,11.5,9.2,2020-21,Regular Season
+-202692-203457-203493-203944-1629628-,A. Burks - N. Noel - R. Bullock Jr. - J. Randle - R. Barrett,NYK,105,110,14.1,5.0,9.1,2020-21,Regular Season
+-203084-1626158-1627741-1628368-1628963-,H. Barnes - R. Holmes - B. Hield - D. Fox - M. Bagley III,SAC,893,886,7.5,-1.1,8.7,2020-21,Regular Season
+-201939-203110-203952-1626162-1626172-,S. Curry - D. Green - A. Wiggins - K. Oubre Jr. - K. Looney,GSW,395,401,9.7,1.0,8.7,2020-21,Regular Season
+-2772-202710-203506-1628389-1629130-,T. Ariza - J. Butler III - V. Oladipo - B. Adebayo - D. Robinson,MIA,107,108,14.9,6.6,8.3,2020-21,Regular Season
+-203084-1626158-1627741-1628368-1630169-,H. Barnes - R. Holmes - B. Hield - D. Fox - T. Haliburton,SAC,857,864,6.9,-1.2,8.1,2020-21,Regular Season
+-202685-1628415-1629630-1629634-1630217-,J. Valančiūnas - D. Brooks - J. Morant - B. Clarke - D. Bane,MEM,151,144,11.1,3.1,8.0,2020-21,Regular Season
+-203488-1628977-1629026-1630177-1630197-,M. Muscala - H. Diallo - K. Williams - T. Maledon - A. Pokusevski,OKC,162,163,-2.1,-9.9,7.9,2020-21,Regular Season
+-201949-1629627-1629637-1630184-1630230-,J. Johnson - Z. Williamson - J. Hayes - K. Lewis Jr. - N. Marshall,NOP,117,118,9.6,1.7,7.9,2020-21,Regular Season
+-201565-203457-203493-203944-1629628-,D. Rose - N. Noel - R. Bullock Jr. - J. Randle - R. Barrett,NYK,301,292,11.0,3.2,7.8,2020-21,Regular Season
+-201939-203110-203952-1626162-1629308-,S. Curry - D. Green - A. Wiggins - K. Oubre Jr. - J. Toscano-Anderson,GSW,329,332,9.6,1.9,7.7,2020-21,Regular Season
+-203524-203991-1628381-1628989-1629027-,S. Hill - C. Capela - J. Collins - K. Huerter - T. Young,ATL,101,107,16.4,8.9,7.5,2020-21,Regular Season
+-202330-203469-1626179-1629023-1630163-,G. Hayward - C. Zeller - T. Rozier - P. Washington - L. Ball,CHA,266,259,4.9,-2.5,7.5,2020-21,Regular Season
+-101108-1626164-1628470-1628969-1629028-,C. Paul - D. Booker - T. Craig - M. Bridges - D. Ayton,PHX,213,215,11.0,3.5,7.5,2020-21,Regular Season
+-203200-203926-1626167-1627734-1627763-,J. Holiday - D. McDermott - M. Turner - D. Sabonis - M. Brogdon,IND,497,492,4.5,-2.8,7.3,2020-21,Regular Season
+-202693-203083-203471-203484-1628398-,M. Morris - A. Drummond - D. Schröder - K. Caldwell-Pope - K. Kuzma,LAL,139,145,-0.7,-8.0,7.3,2020-21,Regular Season
+-202330-203469-1626179-1628984-1629023-,G. Hayward - C. Zeller - T. Rozier - D. Graham - P. Washington,CHA,103,103,8.9,1.7,7.2,2020-21,Regular Season
+-201566-201577-203078-1629060-1630166-,R. Westbrook - R. Lopez - B. Beal - R. Hachimura - D. Avdija,WAS,117,120,4.0,-3.2,7.2,2020-21,Regular Season
+-200794-203115-203914-203999-1627750-,P. Millsap - W. Barton - G. Harris - N. Jokić - J. Murray,DEN,492,489,9.8,2.8,7.0,2020-21,Regular Season
+-203200-203926-1627734-1627747-1629052-,J. Holiday - D. McDermott - D. Sabonis - C. LeVert - O. Brissett,IND,111,113,7.8,0.9,6.9,2020-21,Regular Season
+-201567-1628386-1629012-1629636-1630171-,K. Love - J. Allen - C. Sexton - D. Garland - I. Okoro,CLE,171,168,1.6,-5.3,6.9,2020-21,Regular Season
+-203991-1628381-1629027-1629629-1629631-,C. Capela - J. Collins - T. Young - C. Reddish - D. Hunter,ATL,209,202,10.8,3.9,6.8,2020-21,Regular Season
+-201143-201588-1628983-1629647-1629652-,A. Horford - G. Hill - S. Gilgeous-Alexander - D. Bazley - L. Dort,OKC,397,401,3.4,-3.4,6.8,2020-21,Regular Season
+-203501-204001-1626196-1628467-1629029-,T. Hardaway Jr. - K. Porziņģis - J. Richardson - M. Kleber - L. Dončić,DAL,123,118,1.2,-5.6,6.8,2020-21,Regular Season
+-2730-203118-1627788-1629003-1629680-,D. Howard - M. Scott - F. Korkmaz - S. Milton - M. Thybulle,PHI,205,211,5.4,-1.3,6.7,2020-21,Regular Season
+-101108-203109-1626164-1629028-1629661-,C. Paul - J. Crowder - D. Booker - D. Ayton - C. Johnson,PHX,114,114,7.1,0.4,6.7,2020-21,Regular Season
+-201937-1626157-1629006-1630162-1630183-,R. Rubio - K. Towns - J. Okogie - A. Edwards - J. McDaniels,MIN,368,366,2.3,-4.3,6.6,2020-21,Regular Season
+-203991-1628381-1628989-1629027-1629631-,C. Capela - J. Collins - K. Huerter - T. Young - D. Hunter,ATL,203,195,14.2,7.8,6.4,2020-21,Regular Season
+-202339-203500-1627742-1629627-1629638-,E. Bledsoe - S. Adams - B. Ingram - Z. Williamson - N. Alexander-Walker,NOP,246,253,4.0,-2.4,6.4,2020-21,Regular Season
+-201586-201587-201976-202331-202695-,S. Ibaka - N. Batum - P. Beverley - P. George - K. Leonard,LAC,539,532,16.0,9.7,6.3,2020-21,Regular Season
+-203497-203903-204060-1627777-1629671-,R. Gobert - J. Clarkson - J. Ingles - G. Niang - M. Oni,UTA,249,242,17.7,11.5,6.2,2020-21,Regular Season
+-202685-203937-1628415-1629630-1630217-,J. Valančiūnas - K. Anderson - D. Brooks - J. Morant - D. Bane,MEM,478,473,8.9,2.7,6.2,2020-21,Regular Season
+-202685-203937-1628415-1628960-1629630-,J. Valančiūnas - K. Anderson - D. Brooks - G. Allen - J. Morant,MEM,990,985,8.1,2.0,6.1,2020-21,Regular Season
+-202693-203471-203484-1626149-1628398-,M. Morris - D. Schröder - K. Caldwell-Pope - M. Harrell - K. Kuzma,LAL,104,102,4.1,-1.9,6.0,2020-21,Regular Season
+-201152-202696-203107-203897-1630172-,T. Young - N. Vučević - T. Satoransky - Z. LaVine - P. Williams,CHI,235,239,2.4,-3.5,5.9,2020-21,Regular Season
+-201937-1627774-1629020-1629669-1630183-,R. Rubio - J. Layman - J. Vanderbilt - J. Nowell - J. McDaniels,MIN,119,120,6.0,0.1,5.9,2020-21,Regular Season
+-2738-202710-1628389-1629130-1629639-,A. Iguodala - J. Butler III - B. Adebayo - D. Robinson - T. Herro,MIA,155,154,7.0,1.2,5.8,2020-21,Regular Season
+-200755-1626195-1628404-1629627-1630184-,J. Redick - W. Hernangomez - J. Hart - Z. Williamson - K. Lewis Jr.,NOP,137,146,8.2,2.6,5.7,2020-21,Regular Season
+-203085-203932-203999-1629008-1630267-,A. Rivers - A. Gordon - N. Jokić - M. Porter Jr. - F. Campazzo,DEN,149,145,9.5,3.7,5.7,2020-21,Regular Season
+-1629647-1629650-1629652-1630177-1630197-,D. Bazley - M. Brown - L. Dort - T. Maledon - A. Pokusevski,OKC,161,160,-11.3,-16.9,5.6,2020-21,Regular Season
+-201949-202339-1626195-1628366-1630230-,J. Johnson - E. Bledsoe - W. Hernangomez - L. Ball - N. Marshall,NOP,131,127,1.0,-4.3,5.3,2020-21,Regular Season
+-201942-1627749-1627751-1628401-1629640-,D. DeRozan - D. Murray - J. Poeltl - D. White - K. Johnson,SAS,689,686,6.5,1.3,5.2,2020-21,Regular Season
+-202066-203897-1628976-1629632-1630172-,G. Temple - Z. LaVine - W. Carter Jr. - C. White - P. Williams,CHI,293,295,-1.8,-6.8,5.1,2020-21,Regular Season
+-203503-203991-1628381-1628989-1629027-,T. Snell - C. Capela - J. Collins - K. Huerter - T. Young,ATL,366,372,12.5,7.7,4.9,2020-21,Regular Season
+-2544-201188-203076-203471-203484-,L. James - M. Gasol - A. Davis - D. Schröder - K. Caldwell-Pope,LAL,589,582,10.2,5.3,4.9,2020-21,Regular Season
+-203081-203468-203496-203994-1626181-,D. Lillard - C. McCollum - R. Covington - J. Nurkić - N. Powell,POR,584,577,9.3,4.5,4.7,2020-21,Regular Season
+-203083-1626204-1629012-1629636-1630171-,A. Drummond - L. Nance Jr. - C. Sexton - D. Garland - I. Okoro,CLE,144,142,-1.8,-6.4,4.6,2020-21,Regular Season
+-201980-202699-203552-203954-1629680-,D. Green - T. Harris - S. Curry - J. Embiid - M. Thybulle,PHI,150,158,17.0,12.5,4.5,2020-21,Regular Season
+-203109-1626164-1626166-1628969-1629028-,J. Crowder - D. Booker - C. Payne - M. Bridges - D. Ayton,PHX,268,264,11.3,6.8,4.5,2020-21,Regular Season
+-201959-202692-203944-1629628-1630193-,T. Gibson - A. Burks - J. Randle - R. Barrett - I. Quickley,NYK,113,111,11.8,7.4,4.3,2020-21,Regular Season
+-201152-203107-203897-1628374-1630172-,T. Young - T. Satoransky - Z. LaVine - L. Markkanen - P. Williams,CHI,178,179,4.7,0.4,4.3,2020-21,Regular Season
+-2772-201609-202710-1628389-1629130-,T. Ariza - G. Dragic - J. Butler III - B. Adebayo - D. Robinson,MIA,119,120,11.7,7.4,4.3,2020-21,Regular Season
+-201572-203114-203507-1627854-1628978-,B. Lopez - K. Middleton - G. Antetokounmpo - B. Forbes - D. DiVincenzo,MIL,270,266,5.3,1.3,4.1,2020-21,Regular Season
+-202324-202711-203903-1626220-1628378-,D. Favors - B. Bogdanović - J. Clarkson - R. O'Neale - D. Mitchell,UTA,558,545,5.8,1.8,4.0,2020-21,Regular Season
+-202689-203935-1627759-1628369-1629057-,K. Walker - M. Smart - J. Brown - J. Tatum - R. Williams III,BOS,219,225,5.5,1.5,4.0,2020-21,Regular Season
+-201980-202699-203552-203954-1627732-,D. Green - T. Harris - S. Curry - J. Embiid - B. Simmons,PHI,1365,1348,13.7,9.6,4.0,2020-21,Regular Season
+-202683-203081-203468-203496-203994-1627884-,E. Freedom - D. Lillard - C. McCollum - R. Covington - J. Nurkić - D. Jones Jr.,POR,119,122,10.4,6.5,3.9,2020-21,Regular Season
+-2730-202699-1627788-1629003-1629680-,D. Howard - T. Harris - F. Korkmaz - S. Milton - M. Thybulle,PHI,167,162,7.5,3.6,3.9,2020-21,Regular Season
+-101108-1626164-1628969-1629028-1629661-,C. Paul - D. Booker - M. Bridges - D. Ayton - C. Johnson,PHX,397,390,9.4,5.7,3.7,2020-21,Regular Season
+-101108-1626163-1626164-1628969-1629028-,C. Paul - F. Kaminsky - D. Booker - M. Bridges - D. Ayton,PHX,331,335,9.5,5.9,3.7,2020-21,Regular Season
+-2772-202710-1628389-1629130-1629134-,T. Ariza - J. Butler III - B. Adebayo - D. Robinson - K. Nunn,MIA,404,414,8.5,5.0,3.6,2020-21,Regular Season
+-202683-203081-203468-203496-1626181-,E. Freedom - D. Lillard - C. McCollum - R. Covington - N. Powell,POR,147,145,7.5,3.9,3.6,2020-21,Regular Season
+-201567-1626224-1628386-1629636-1630171-,K. Love - C. Osman - J. Allen - D. Garland - I. Okoro,CLE,129,126,-0.0,-3.4,3.3,2020-21,Regular Season
+-202684-202689-1627759-1628369-1628464-,T. Thompson - K. Walker - J. Brown - J. Tatum - D. Theis,BOS,269,264,2.0,-0.9,2.9,2020-21,Regular Season
+-202696-203095-203516-203932-1630175-,N. Vučević - E. Fournier - J. Ennis III - A. Gordon - C. Anthony,ORL,144,140,-1.8,-4.6,2.8,2020-21,Regular Season
+-2730-1627788-1629003-1629680-1630178-,D. Howard - F. Korkmaz - S. Milton - M. Thybulle - T. Maxey,PHI,124,129,5.5,2.8,2.7,2020-21,Regular Season
+-2738-201609-1628389-1629130-1629134-,A. Iguodala - G. Dragic - B. Adebayo - D. Robinson - K. Nunn,MIA,105,107,1.2,-1.5,2.7,2020-21,Regular Season
+-200755-202339-1628404-1629627-1629637-,J. Redick - E. Bledsoe - J. Hart - Z. Williamson - J. Hayes,NOP,101,103,2.2,-0.0,2.3,2020-21,Regular Season
+-203486-203924-1626153-1628402-1630180-,M. Plumlee - J. Grant - D. Wright - F. Jackson - S. Bey,DET,119,119,0.3,-1.8,2.1,2020-21,Regular Season
+-203493-203901-203944-1629011-1629628-,R. Bullock Jr. - E. Payton - J. Randle - M. Robinson - R. Barrett,NYK,785,781,1.3,-0.7,2.0,2020-21,Regular Season
+-2544-201188-202083-203484-1628398-,L. James - M. Gasol - W. Matthews - K. Caldwell-Pope - K. Kuzma,LAL,101,100,3.4,1.4,1.9,2020-21,Regular Season
+-203486-203924-1628367-1630180-1630240-,M. Plumlee - J. Grant - J. Jackson - S. Bey - S. Lee,DET,136,137,-4.1,-5.9,1.8,2020-21,Regular Season
+-202339-203500-1627742-1628366-1629627-,E. Bledsoe - S. Adams - B. Ingram - L. Ball - Z. Williamson,NOP,1262,1256,2.0,0.2,1.8,2020-21,Regular Season
+-200768-203382-1626181-1627783-1627832-,K. Lowry - A. Baynes - N. Powell - P. Siakam - F. VanVleet,TOR,279,273,1.4,-0.4,1.8,2020-21,Regular Season
+-201566-203078-1629021-1629060-1629726-,R. Westbrook - B. Beal - M. Wagner - R. Hachimura - G. Mathews,WAS,296,305,-4.9,-6.6,1.7,2020-21,Regular Season
+-2544-1626149-1627936-1628398-1629659-,L. James - M. Harrell - A. Caruso - K. Kuzma - T. Horton-Tucker,LAL,119,116,5.2,4.3,0.9,2020-21,Regular Season
+-202330-202687-1626179-1628970-1628984-,G. Hayward - B. Biyombo - T. Rozier - M. Bridges - D. Graham,CHA,127,127,0.8,-0.0,0.8,2020-21,Regular Season
+-201959-203493-203901-203944-1629628-,T. Gibson - R. Bullock Jr. - E. Payton - J. Randle - R. Barrett,NYK,171,177,2.4,1.6,0.8,2020-21,Regular Season
+-202685-203937-1628415-1629001-1629630-,J. Valančiūnas - K. Anderson - D. Brooks - D. Melton - J. Morant,MEM,113,109,9.9,9.1,0.8,2020-21,Regular Season
+-201144-203497-203903-204060-1627777-,M. Conley - R. Gobert - J. Clarkson - J. Ingles - G. Niang,UTA,642,646,15.4,14.7,0.6,2020-21,Regular Season
+-201942-1627749-1627751-1629022-1629640-,D. DeRozan - D. Murray - J. Poeltl - L. Walker IV - K. Johnson,SAS,396,388,-5.1,-5.4,0.3,2020-21,Regular Season
+-201937-1626157-1627774-1629020-1630162-,R. Rubio - K. Towns - J. Layman - J. Vanderbilt - A. Edwards,MIN,213,215,1.0,0.7,0.3,2020-21,Regular Season
+-2544-201188-203471-203484-1628398-,L. James - M. Gasol - D. Schröder - K. Caldwell-Pope - K. Kuzma,LAL,149,155,6.5,6.4,0.1,2020-21,Regular Season
+-201566-203078-203458-1629060-1629726-,R. Westbrook - B. Beal - A. Len - R. Hachimura - G. Mathews,WAS,214,214,-6.4,-6.5,0.1,2020-21,Regular Season
+-101108-203109-1626164-1628969-1629028-,C. Paul - J. Crowder - D. Booker - M. Bridges - D. Ayton,PHX,1444,1449,6.3,6.3,-0.0,2020-21,Regular Season
+-201937-1627736-1629006-1629020-1629675-,R. Rubio - M. Beasley - J. Okogie - J. Vanderbilt - N. Reid,MIN,100,101,-8.2,-8.2,-0.0,2020-21,Regular Season
+-203503-203991-203992-1628381-1629027-,T. Snell - C. Capela - B. Bogdanović - J. Collins - T. Young,ATL,229,229,5.1,5.1,0.0,2020-21,Regular Season
+-203076-203083-203471-203484-1628398-,A. Davis - A. Drummond - D. Schröder - K. Caldwell-Pope - K. Kuzma,LAL,107,105,4.6,4.7,-0.2,2020-21,Regular Season
+-201939-203110-203145-203952-1626172-,S. Curry - D. Green - K. Bazemore - A. Wiggins - K. Looney,GSW,565,561,9.5,9.7,-0.2,2020-21,Regular Season
+-201566-203078-203458-1629060-1630166-,R. Westbrook - B. Beal - A. Len - R. Hachimura - D. Avdija,WAS,205,207,-1.4,-1.0,-0.3,2020-21,Regular Season
+-203081-203468-203496-203994-1627884-,D. Lillard - C. McCollum - R. Covington - J. Nurkić - D. Jones Jr.,POR,316,315,5.8,6.1,-0.3,2020-21,Regular Season
+-1628983-1629647-1629652-1629676-1630177-,S. Gilgeous-Alexander - D. Bazley - L. Dort - I. Roby - T. Maledon,OKC,209,215,-13.1,-12.8,-0.3,2020-21,Regular Season
+-202709-203486-203924-1628367-1630180-,C. Joseph - M. Plumlee - J. Grant - J. Jackson - S. Bey,DET,103,102,-5.2,-4.8,-0.4,2020-21,Regular Season
+-201144-202711-203497-1626220-1628378-,M. Conley - B. Bogdanović - R. Gobert - R. O'Neale - D. Mitchell,UTA,1209,1224,12.0,12.4,-0.4,2020-21,Regular Season
+-200768-1626181-1627783-1627832-1628449-,K. Lowry - N. Powell - P. Siakam - F. VanVleet - C. Boucher,TOR,173,176,3.7,4.7,-1.0,2020-21,Regular Season
+-201572-201950-203114-203507-1628978-,B. Lopez - J. Holiday - K. Middleton - G. Antetokounmpo - D. DiVincenzo,MIL,1144,1113,6.6,7.8,-1.2,2020-21,Regular Season
+-202710-203482-1628389-1629130-1629134-,J. Butler III - K. Olynyk - B. Adebayo - D. Robinson - K. Nunn,MIA,393,388,3.1,4.4,-1.4,2020-21,Regular Season
+-201942-201988-1627749-1627751-1629640-,D. DeRozan - P. Mills - D. Murray - J. Poeltl - K. Johnson,SAS,111,119,-0.9,0.6,-1.5,2020-21,Regular Season
+-200768-203382-1627783-1627832-1628384-,K. Lowry - A. Baynes - P. Siakam - F. VanVleet - O. Anunoby,TOR,236,240,-2.2,-0.8,-1.5,2020-21,Regular Season
+-203115-203932-203999-1629008-1630267-,W. Barton - A. Gordon - N. Jokić - M. Porter Jr. - F. Campazzo,DEN,210,205,0.7,2.2,-1.5,2020-21,Regular Season
+-201577-203078-203526-1629060-1630166-,R. Lopez - B. Beal - R. Neto - R. Hachimura - D. Avdija,WAS,112,115,-5.8,-4.3,-1.5,2020-21,Regular Season
+-201599-201935-202681-203925-1628971-,D. Jordan - J. Harden - K. Irving - J. Harris - B. Brown,BKN,392,398,4.7,6.4,-1.7,2020-21,Regular Season
+-201933-201961-203486-203924-1626153-,B. Griffin - W. Ellington - M. Plumlee - J. Grant - D. Wright,DET,365,353,-6.9,-5.0,-1.9,2020-21,Regular Season
+-200794-203115-203999-1627750-1629008-,P. Millsap - W. Barton - N. Jokić - J. Murray - M. Porter Jr.,DEN,438,433,5.5,8.1,-2.7,2020-21,Regular Season
+-201942-1627749-1627751-1629640-1630170-,D. DeRozan - D. Murray - J. Poeltl - K. Johnson - D. Vassell,SAS,156,155,-9.8,-7.0,-2.8,2020-21,Regular Season
+-1626224-1628386-1629012-1629731-1630171-,C. Osman - J. Allen - C. Sexton - D. Wade - I. Okoro,CLE,139,132,-17.1,-14.4,-2.8,2020-21,Regular Season
+-1626164-1626166-1628969-1629028-1629661-,D. Booker - C. Payne - M. Bridges - D. Ayton - C. Johnson,PHX,114,111,3.6,6.5,-2.9,2020-21,Regular Season
+-201980-202699-203118-203552-1627732-,D. Green - T. Harris - M. Scott - S. Curry - B. Simmons,PHI,227,226,0.7,3.6,-2.9,2020-21,Regular Season
+-201939-203110-203145-203952-1629308-,S. Curry - D. Green - K. Bazemore - A. Wiggins - J. Toscano-Anderson,GSW,155,162,5.8,8.9,-3.0,2020-21,Regular Season
+-2546-202683-203081-1627884-1629018-,C. Anthony - E. Freedom - D. Lillard - D. Jones Jr. - G. Trent Jr.,POR,143,147,-5.6,-2.6,-3.0,2020-21,Regular Season
+-201937-1626156-1626157-1630162-1630183-,R. Rubio - D. Russell - K. Towns - A. Edwards - J. McDaniels,MIN,154,154,-6.9,-3.9,-3.1,2020-21,Regular Season
+-203457-203493-203901-203944-1629628-,N. Noel - R. Bullock Jr. - E. Payton - J. Randle - R. Barrett,NYK,1117,1133,-3.1,0.2,-3.3,2020-21,Regular Season
+-202334-1626156-1627736-1629006-1630162-,E. Davis - D. Russell - M. Beasley - J. Okogie - A. Edwards,MIN,102,103,-8.6,-4.7,-3.9,2020-21,Regular Season
+-202689-203935-1627759-1628369-1628464-,K. Walker - M. Smart - J. Brown - J. Tatum - D. Theis,BOS,170,161,-3.5,0.5,-4.0,2020-21,Regular Season
+-201143-1628983-1629647-1629652-1630177-,A. Horford - S. Gilgeous-Alexander - D. Bazley - L. Dort - T. Maledon,OKC,317,313,-13.4,-9.2,-4.1,2020-21,Regular Season
+-201942-1626168-1627749-1627751-1629022-,D. DeRozan - T. Lyles - D. Murray - J. Poeltl - L. Walker IV,SAS,124,121,-7.4,-3.3,-4.1,2020-21,Regular Season
+-200768-1627783-1627832-1628384-1628449-,K. Lowry - P. Siakam - F. VanVleet - O. Anunoby - C. Boucher,TOR,141,138,2.1,6.4,-4.3,2020-21,Regular Season
+-203200-1626167-1627734-1627747-1627763-,J. Holiday - M. Turner - D. Sabonis - C. LeVert - M. Brogdon,IND,397,399,-5.4,-1.2,-4.3,2020-21,Regular Season
+-201152-203897-1628374-1629632-1630172-,T. Young - Z. LaVine - L. Markkanen - C. White - P. Williams,CHI,122,125,-5.8,-1.5,-4.3,2020-21,Regular Season
+-1629647-1629650-1629652-1629676-1630177-,D. Bazley - M. Brown - L. Dort - I. Roby - T. Maledon,OKC,196,193,-22.8,-18.5,-4.3,2020-21,Regular Season
+-201569-1627863-1628021-1628425-1630256-,E. Gordon - D. House Jr. - D. Nwaba - S. Brown - J. Tate,HOU,109,113,-6.7,-2.4,-4.3,2020-21,Regular Season
+-201572-201950-203114-203507-1627854-,B. Lopez - J. Holiday - K. Middleton - G. Antetokounmpo - B. Forbes,MIL,142,140,0.3,4.7,-4.4,2020-21,Regular Season
+-2546-202683-203081-1629018-1629642-,C. Anthony - E. Freedom - D. Lillard - G. Trent Jr. - N. Little,POR,104,101,-7.1,-2.6,-4.5,2020-21,Regular Season
+-202684-203935-1627759-1628369-1628464-,T. Thompson - M. Smart - J. Brown - J. Tatum - D. Theis,BOS,199,204,-2.8,1.8,-4.6,2020-21,Regular Season
+-202324-202711-204060-1626220-1628378-,D. Favors - B. Bogdanović - J. Ingles - R. O'Neale - D. Mitchell,UTA,380,379,-1.0,3.7,-4.7,2020-21,Regular Season
+-202711-203497-203903-204060-1626220-,B. Bogdanović - R. Gobert - J. Clarkson - J. Ingles - R. O'Neale,UTA,219,225,5.6,10.6,-4.9,2020-21,Regular Season
+-201980-202699-203552-1627732-1628396-,D. Green - T. Harris - S. Curry - B. Simmons - T. Bradley,PHI,169,162,-2.3,2.8,-5.1,2020-21,Regular Season
+-203991-1628381-1628989-1629027-1629629-,C. Capela - J. Collins - K. Huerter - T. Young - C. Reddish,ATL,407,412,-3.4,1.8,-5.2,2020-21,Regular Season
+-203897-1628374-1628976-1629632-1630172-,Z. LaVine - L. Markkanen - W. Carter Jr. - C. White - P. Williams,CHI,228,227,-12.2,-6.4,-5.7,2020-21,Regular Season
+-201588-1628983-1629647-1629652-1629676-,G. Hill - S. Gilgeous-Alexander - D. Bazley - L. Dort - I. Roby,OKC,198,208,-17.4,-11.6,-5.7,2020-21,Regular Season
+-201152-202066-203897-1629632-1630172-,T. Young - G. Temple - Z. LaVine - C. White - P. Williams,CHI,105,108,-6.5,-0.7,-5.8,2020-21,Regular Season
+-202710-203482-1629130-1629134-1629644-,J. Butler III - K. Olynyk - D. Robinson - K. Nunn - K. Okpala,MIA,114,114,0.5,6.3,-5.8,2020-21,Regular Season
+-201572-201950-203114-1626171-1628978-,B. Lopez - J. Holiday - K. Middleton - B. Portis - D. DiVincenzo,MIL,132,132,2.7,8.5,-5.8,2020-21,Regular Season
+-200746-201942-1627749-1629022-1629640-,L. Aldridge - D. DeRozan - D. Murray - L. Walker IV - K. Johnson,SAS,454,458,-12.4,-6.4,-6.0,2020-21,Regular Season
+-202324-202711-203903-204060-1626220-,D. Favors - B. Bogdanović - J. Clarkson - J. Ingles - R. O'Neale,UTA,166,169,-1.0,5.0,-6.0,2020-21,Regular Season
+-202692-203901-203944-1629011-1629628-,A. Burks - E. Payton - J. Randle - M. Robinson - R. Barrett,NYK,194,186,-7.5,-1.5,-6.0,2020-21,Regular Season
+-101108-203109-203967-1626164-1628969-,C. Paul - J. Crowder - D. Šarić - D. Booker - M. Bridges,PHX,152,144,1.6,7.8,-6.2,2020-21,Regular Season
+-201145-201599-202681-203925-1629013-,J. Green - D. Jordan - K. Irving - J. Harris - L. Shamet,BKN,110,110,-8.8,-2.4,-6.4,2020-21,Regular Season
+-201939-203110-203952-1626162-1630164-,S. Curry - D. Green - A. Wiggins - K. Oubre Jr. - J. Wiseman,GSW,547,544,-13.0,-6.5,-6.5,2020-21,Regular Season
+-1626204-1628386-1629012-1629636-1630171-,L. Nance Jr. - J. Allen - C. Sexton - D. Garland - I. Okoro,CLE,283,280,-13.5,-6.8,-6.7,2020-21,Regular Season
+-1628367-1629635-1630165-1630180-1630191-,J. Jackson - S. Doumbouya - K. Hayes - S. Bey - I. Stewart,DET,154,155,-9.3,-2.4,-6.9,2020-21,Regular Season
+-202339-203500-1627742-1629627-1630230-,E. Bledsoe - S. Adams - B. Ingram - Z. Williamson - N. Marshall,NOP,111,111,-8.1,-1.1,-7.0,2020-21,Regular Season
+-200752-201942-201988-1627751-1630170-,R. Gay - D. DeRozan - P. Mills - J. Poeltl - D. Vassell,SAS,163,160,-4.6,2.6,-7.2,2020-21,Regular Season
+-203087-203200-1626167-1627734-1627763-,J. Lamb - J. Holiday - M. Turner - D. Sabonis - M. Brogdon,IND,276,276,-9.8,-2.4,-7.3,2020-21,Regular Season
+-201565-201959-202692-203944-1630193-,D. Rose - T. Gibson - A. Burks - J. Randle - I. Quickley,NYK,114,113,0.2,7.6,-7.4,2020-21,Regular Season
+-201937-1626157-1627736-1630162-1630183-,R. Rubio - K. Towns - M. Beasley - A. Edwards - J. McDaniels,MIN,237,224,-10.0,-2.4,-7.6,2020-21,Regular Season
+-201980-202699-203954-1627732-1629003-,D. Green - T. Harris - J. Embiid - B. Simmons - S. Milton,PHI,132,135,0.8,8.7,-7.9,2020-21,Regular Season
+-203115-203932-203999-1628420-1629008-,W. Barton - A. Gordon - N. Jokić - M. Morris - M. Porter Jr.,DEN,108,110,-0.2,7.7,-7.9,2020-21,Regular Season
+-203501-203939-1626196-1627827-1629029-,T. Hardaway Jr. - D. Powell - J. Richardson - D. Finney-Smith - L. Dončić,DAL,174,176,-8.2,-0.0,-8.1,2020-21,Regular Season
+-201572-201950-203114-1626192-1628978-,B. Lopez - J. Holiday - K. Middleton - P. Connaughton - D. DiVincenzo,MIL,181,182,0.3,8.3,-8.1,2020-21,Regular Season
+-203200-203926-204456-1627734-1628988-,J. Holiday - D. McDermott - T. McConnell - D. Sabonis - A. Holiday,IND,122,124,-8.7,-0.2,-8.4,2020-21,Regular Season
+-1626224-1628386-1629012-1629636-1630171-,C. Osman - J. Allen - C. Sexton - D. Garland - I. Okoro,CLE,163,158,-16.6,-8.0,-8.6,2020-21,Regular Season
+-202330-202687-1626179-1628984-1629023-,G. Hayward - B. Biyombo - T. Rozier - D. Graham - P. Washington,CHA,525,522,-11.8,-3.2,-8.6,2020-21,Regular Season
+-1626174-1627863-1628425-1629645-1630256-,C. Wood - D. House Jr. - S. Brown - K. Porter Jr. - J. Tate,HOU,119,117,-20.0,-10.4,-9.6,2020-21,Regular Season
+-203960-1627747-1627763-1628410-1629052-,J. Sampson - C. LeVert - M. Brogdon - E. Sumner - O. Brissett,IND,101,102,-8.9,0.8,-9.6,2020-21,Regular Season
+-203914-1628407-1628976-1629021-1630175-,G. Harris - D. Bacon - W. Carter Jr. - M. Wagner - C. Anthony,ORL,155,157,-26.8,-17.2,-9.6,2020-21,Regular Season
+-201566-202722-203078-203458-1629060-,R. Westbrook - D. Bertans - B. Beal - A. Len - R. Hachimura,WAS,127,128,-9.2,0.3,-9.6,2020-21,Regular Season
+-1626179-1628970-1628984-1629023-1629667-,T. Rozier - M. Bridges - D. Graham - P. Washington - J. McDaniels,CHA,135,130,-8.9,1.2,-10.1,2020-21,Regular Season
+-202330-202687-1626179-1628970-1630163-,G. Hayward - B. Biyombo - T. Rozier - M. Bridges - L. Ball,CHA,191,197,-16.1,-5.9,-10.2,2020-21,Regular Season
+-202711-203497-203903-1626220-1628378-,B. Bogdanović - R. Gobert - J. Clarkson - R. O'Neale - D. Mitchell,UTA,139,152,-2.0,8.4,-10.5,2020-21,Regular Season
+-203914-1628407-1628976-1629643-1630175-,G. Harris - D. Bacon - W. Carter Jr. - C. Okeke - C. Anthony,ORL,150,153,-21.8,-11.1,-10.7,2020-21,Regular Season
+-203506-1626167-1627734-1627763-1628988-,V. Oladipo - M. Turner - D. Sabonis - M. Brogdon - A. Holiday,IND,143,150,-12.6,-1.4,-11.2,2020-21,Regular Season
+-203501-204001-1626196-1627827-1629029-,T. Hardaway Jr. - K. Porziņģis - J. Richardson - D. Finney-Smith - L. Dončić,DAL,169,179,-14.9,-3.5,-11.4,2020-21,Regular Season
+-203937-1628415-1629630-1629634-1630214-,K. Anderson - D. Brooks - J. Morant - B. Clarke - X. Tillman,MEM,130,130,-8.0,3.5,-11.4,2020-21,Regular Season
+-201939-203110-203145-203952-1630164-,S. Curry - D. Green - K. Bazemore - A. Wiggins - J. Wiseman,GSW,102,104,-8.7,2.7,-11.4,2020-21,Regular Season
+-202066-202696-1628464-1629632-1630172-,G. Temple - N. Vučević - D. Theis - C. White - P. Williams,CHI,271,271,-18.6,-7.1,-11.5,2020-21,Regular Season
+-202685-203937-1626145-1628415-1629634-,J. Valančiūnas - K. Anderson - T. Jones - D. Brooks - B. Clarke,MEM,167,172,-9.7,1.8,-11.5,2020-21,Regular Season
+-202709-203084-1626158-1627741-1628368-,C. Joseph - H. Barnes - R. Holmes - B. Hield - D. Fox,SAC,136,138,-10.2,1.8,-12.1,2020-21,Regular Season
+-201566-201577-202722-203078-1629060-,R. Westbrook - R. Lopez - D. Bertans - B. Beal - R. Hachimura,WAS,126,122,-14.7,-2.4,-12.3,2020-21,Regular Season
+-203932-203999-1628408-1629008-1630267-,A. Gordon - N. Jokić - P. Dozier - M. Porter Jr. - F. Campazzo,DEN,245,243,-6.7,5.6,-12.3,2020-21,Regular Season
+-202683-203081-203468-203496-1627884-,E. Freedom - D. Lillard - C. McCollum - R. Covington - D. Jones Jr.,POR,195,194,-10.1,2.6,-12.7,2020-21,Regular Season
+-201961-203486-203924-1626153-1630180-,W. Ellington - M. Plumlee - J. Grant - D. Wright - S. Bey,DET,183,179,-17.8,-5.0,-12.8,2020-21,Regular Season
+-203490-203897-1628976-1629632-1630172-,O. Porter Jr. - Z. LaVine - W. Carter Jr. - C. White - P. Williams,CHI,147,147,-22.8,-9.9,-12.9,2020-21,Regular Season
+-202324-202711-203903-204060-1628378-,D. Favors - B. Bogdanović - J. Clarkson - J. Ingles - D. Mitchell,UTA,130,132,-13.5,-0.3,-13.2,2020-21,Regular Season
+-201188-202693-203471-203484-1628398-,M. Gasol - M. Morris - D. Schröder - K. Caldwell-Pope - K. Kuzma,LAL,173,167,-16.6,-2.4,-14.2,2020-21,Regular Season
+-201566-201577-202722-203526-1630166-,R. Westbrook - R. Lopez - D. Bertans - R. Neto - D. Avdija,WAS,195,189,-16.3,-1.7,-14.6,2020-21,Regular Season
+-202684-202689-203935-1627759-1628369-,T. Thompson - K. Walker - M. Smart - J. Brown - J. Tatum,BOS,121,116,-10.9,3.6,-14.6,2020-21,Regular Season
+-1629004-1629026-1629650-1630177-1630197-,S. Mykhailiuk - K. Williams - M. Brown - T. Maledon - A. Pokusevski,OKC,105,110,-24.5,-9.9,-14.7,2020-21,Regular Season
+-2544-202083-202693-1626149-1628398-,L. James - W. Matthews - M. Morris - M. Harrell - K. Kuzma,LAL,134,133,-14.5,0.6,-15.1,2020-21,Regular Season
+-203085-203901-203944-1629011-1629628-,A. Rivers - E. Payton - J. Randle - M. Robinson - R. Barrett,NYK,107,108,-19.8,-4.2,-15.6,2020-21,Regular Season
+-203083-1626204-1626224-1629012-1630171-,A. Drummond - L. Nance Jr. - C. Osman - C. Sexton - I. Okoro,CLE,103,103,-25.1,-9.4,-15.7,2020-21,Regular Season
+-200794-203914-203999-1627750-1629008-,P. Millsap - G. Harris - N. Jokić - J. Murray - M. Porter Jr.,DEN,107,108,-11.9,3.8,-15.7,2020-21,Regular Season
+-201142-201145-201599-202681-203925-,K. Durant - J. Green - D. Jordan - K. Irving - J. Harris,BKN,107,112,-11.8,5.1,-17.0,2020-21,Regular Season
+-203084-1627741-1628368-1628963-1630169-,H. Barnes - B. Hield - D. Fox - M. Bagley III - T. Haliburton,SAC,127,125,-25.2,-7.4,-17.7,2020-21,Regular Season
+-202331-202694-202704-1627826-1629611-,P. George - M. Morris Sr. - R. Jackson - I. Zubac - T. Mann,LAC,113,109,-14.3,3.5,-17.8,2020-21,Regular Season
+-200782-201935-202322-1626174-1628021-,P. Tucker - J. Harden - J. Wall - C. Wood - D. Nwaba,HOU,116,119,-21.2,-2.3,-18.8,2020-21,Regular Season
+-201572-203114-203507-1626192-1628978-,B. Lopez - K. Middleton - G. Antetokounmpo - P. Connaughton - D. DiVincenzo,MIL,106,105,-15.4,5.2,-20.7,2020-21,Regular Season
+-202696-203095-203932-1628365-1628407-,N. Vučević - E. Fournier - A. Gordon - M. Fultz - D. Bacon,ORL,120,121,-25.4,-4.7,-20.7,2020-21,Regular Season
+-203200-204456-1626167-1627734-1627763-,J. Holiday - T. McConnell - M. Turner - D. Sabonis - M. Brogdon,IND,145,150,-17.1,3.7,-20.8,2020-21,Regular Season
+-201145-201599-201935-202681-203925-,J. Green - D. Jordan - J. Harden - K. Irving - J. Harris,BKN,168,164,-17.9,3.0,-20.9,2020-21,Regular Season
+-202330-203469-1626179-1628970-1630163-,G. Hayward - C. Zeller - T. Rozier - M. Bridges - L. Ball,CHA,139,133,-21.9,0.3,-22.2,2020-21,Regular Season
+-201145-201935-202681-203925-1628971-,J. Green - J. Harden - K. Irving - J. Harris - B. Brown,BKN,103,108,-19.0,3.4,-22.4,2020-21,Regular Season
+-202324-203903-204060-1626220-1628378-,D. Favors - J. Clarkson - J. Ingles - R. O'Neale - D. Mitchell,UTA,163,158,-19.9,2.6,-22.5,2020-21,Regular Season
+-200752-201988-1627749-1629234-1630170-,R. Gay - P. Mills - D. Murray - D. Eubanks - D. Vassell,SAS,112,113,-20.8,2.3,-23.0,2020-21,Regular Season
+-201937-1626157-1629020-1630162-1630183-,R. Rubio - K. Towns - J. Vanderbilt - A. Edwards - J. McDaniels,MIN,108,103,-23.7,1.1,-24.8,2020-21,Regular Season
+-203083-1627752-1629012-1629636-1630171-,A. Drummond - T. Prince - C. Sexton - D. Garland - I. Okoro,CLE,126,121,-38.7,-13.2,-25.5,2020-21,Regular Season
+-2730-201980-202699-203552-1627732-,D. Howard - D. Green - T. Harris - S. Curry - B. Simmons,PHI,137,146,-28.1,-0.3,-27.8,2020-21,Regular Season
+-202331-202694-202704-1627826-1628379-,P. George - M. Morris Sr. - R. Jackson - I. Zubac - L. Kennard,LAC,110,110,-27.1,3.2,-30.4,2020-21,Regular Season
+-203897-1628374-1629632-1629655-1630172-,Z. LaVine - L. Markkanen - C. White - D. Gafford - P. Williams,CHI,102,109,-35.4,-3.7,-31.6,2020-21,Regular Season
+-202687-1626179-1629023-1629667-1630163-,B. Biyombo - T. Rozier - P. Washington - J. McDaniels - L. Ball,CHA,143,145,-45.3,-8.1,-37.2,2020-21,Regular Season
+-1629004-1629650-1629676-1630177-1630197-,S. Mykhailiuk - M. Brown - I. Roby - T. Maledon - A. Pokusevski,OKC,101,103,-69.7,-23.8,-46.0,2020-21,Regular Season

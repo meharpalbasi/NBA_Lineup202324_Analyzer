@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0022100289,2021-11-26,UTA vs. NOP,1628984,D. Graham,NOP,4,00:01.90,Graham 27' 3PT Running Pull-Up Jump Shot (9 PTS) (Ingram 5 AST),0.0,0.975,0.975,Regular Season
+0022100444,2021-12-18,OKC vs. LAC,1628983,S. Gilgeous-Alexander,OKC,4,00:00.90,Gilgeous-Alexander 28' 3PT Step Back Jump Shot (18 PTS) (Muscala 1 AST),0.0,0.975,0.975,Regular Season
+0022100524,2021-12-29,SAC vs. DAL,1629002,C. Metu,SAC,4,00:00.10,Metu 3PT Jump Shot (11 PTS) (Fox 3 AST),0.0,0.975,0.975,Regular Season
+0022100530,2021-12-31,IND vs. CHI,201942,D. DeRozan,CHI,4,00:00.00,DeRozan 27' 3PT Pullup Jump Shot (28 PTS),0.025,1.0,0.975,Regular Season
+0022100541,2022-01-01,WAS vs. CHI,201942,D. DeRozan,CHI,4,00:00.10,DeRozan 24' 3PT Pullup Jump Shot (28 PTS) (White 5 AST),0.0,0.975,0.975,Regular Season
+0022100883,2022-02-16,GSW vs. DEN,1628420,M. Morris,DEN,4,00:00.20,Morris 27' 3PT Jump Shot (13 PTS) (Jokic 8 AST),0.0,0.975,0.975,Regular Season
+0022100953,2022-03-04,PHX vs. NYK,1629661,C. Johnson,PHX,4,00:01.20,Johnson 31' 3PT Running Jump Shot (38 PTS) (Payne 16 AST),0.0,0.975,0.975,Regular Season
+0022101036,2022-03-16,BKN vs. DAL,203915,S. Dinwiddie,DAL,4,00:01.00,Dinwiddie 26' 3PT Jump Shot (22 PTS) (Doncic 9 AST),0.025,1.0,0.975,Regular Season
+0022101040,2022-03-16,SAS vs. OKC,1629022,L. Walker IV,SAS,4,00:01.80,Walker IV 26' 3PT Pullup Jump Shot (20 PTS) (Vassell 3 AST),0.025,1.0,0.975,Regular Season
+0022100540,2022-01-01,DET vs. SAS,1630180,S. Bey,DET,5,00:02.10,Bey 24' 3PT Jump Shot (21 PTS) (Walton Jr. 6 AST),0.0,0.972,0.972,Regular Season
+0022100505,2021-12-27,PHX vs. MEM,1629630,J. Morant,MEM,4,00:00.50,Morant 7' Driving Layup (33 PTS),0.025,0.975,0.95,Regular Season
+0022100915,2022-02-27,CHA vs. DET,203482,K. Olynyk,DET,5,00:00.00,Olynyk 14' Turnaround Fadeaway (20 PTS) (Hayes 7 AST),0.025,0.975,0.95,Regular Season
+0022100936,2022-03-02,MIL vs. MIA,201950,J. Holiday,MIL,4,00:01.90,Holiday 7' Driving Layup (25 PTS),0.025,0.975,0.95,Regular Season
+0022101086,2022-03-23,IND vs. SAC,1627745,D. Jones,SAC,4,00:00.20,Jones Tip Layup Shot (12 PTS),0.025,0.975,0.95,Regular Season
+0022100016,2021-10-21,GSW vs. LAC,1627826,I. Zubac,LAC,4,00:03.70,Zubac Free Throw 1 of 2 (1 PTS),0.002,0.924,0.922,Regular Season
+0022100541,2022-01-01,WAS vs. CHI,1628398,K. Kuzma,WAS,4,00:04.00,Kuzma 29' 3PT Jump Shot (29 PTS) (Beal 17 AST),0.084,0.997,0.913,Regular Season
+0022100505,2021-12-27,PHX vs. MEM,1626164,D. Booker,PHX,4,00:05.10,Booker 27' 3PT Pullup Jump Shot (30 PTS) (Paul 13 AST),0.007,0.891,0.884,Regular Season
+0022100261,2021-11-22,UTA vs. MEM,1628991,J. Jackson Jr.,MEM,4,00:06.70,Jackson Jr. 26' 3PT Jump Shot (26 PTS) (Morant 7 AST),0.016,0.856,0.84,Regular Season
+0022100786,2022-02-03,LAC vs. LAL,202704,R. Jackson,LAC,4,00:04.10,Jackson 2' Driving Layup (25 PTS),0.086,0.915,0.828,Regular Season
+0022100292,2021-11-27,PHI vs. MIN,1627752,T. Prince,MIN,6,00:04.80,Prince 3' Running Finger Roll Layup (5 PTS) (Russell 8 AST),0.102,0.896,0.794,Regular Season
+0022101040,2022-03-16,SAS vs. OKC,1630197,A. Pokusevski,OKC,4,00:04.80,Pokusevski 3' Driving Layup (16 PTS) (Gilgeous-Alexander 8 AST),0.102,0.896,0.794,Regular Season
+0022100371,2021-12-08,TOR vs. OKC,203488,M. Muscala,OKC,4,00:09.40,Muscala 27' 3PT Jump Shot (6 PTS) (Gilgeous-Alexander 9 AST),0.035,0.815,0.78,Regular Season
+0022100778,2022-02-02,DAL vs. OKC,203493,R. Bullock Jr.,DAL,4,00:09.60,Bullock 24' 3PT Jump Shot (20 PTS) (Brunson 4 AST),0.188,0.964,0.776,Regular Season
+0022101036,2022-03-16,BKN vs. DAL,201142,K. Durant,BKN,4,00:10.60,Durant 27' 3PT Pullup Jump Shot (23 PTS),0.045,0.804,0.759,Regular Season
+0022100883,2022-02-16,GSW vs. DEN,201939,S. Curry,GSW,4,00:05.90,Curry 18' Pullup Jump Shot (24 PTS),0.128,0.874,0.746,Regular Season
