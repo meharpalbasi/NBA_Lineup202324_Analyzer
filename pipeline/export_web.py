@@ -68,6 +68,7 @@ PLAYER_INDEX_COLUMNS: List[str] = [
     "CLUTCH_NET_RATING", "CLUTCH_MIN",
     "OBPM", "DBPM", "BPM", "VORP",
     "XEFG", "SHOTMAKING_OVER_XEFG", "XEFG_FGA",
+    "BOX_CREATION", "OFFENSIVE_LOAD",
     "O_RAPM", "D_RAPM", "RAPM", "RAPM_POSS",
     "O_RAPM_3YR", "D_RAPM_3YR", "RAPM_3YR", "RAPM_3YR_POSS",
     "WPA",
@@ -270,6 +271,14 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
         sm = compute_shotmaking(pd.read_csv(sz_path, low_memory=False))
         if not sm.empty:
             df = df.merge(sm, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    # Playmaking (Box Creation + Offensive Load) — box-derived from the same
+    # per-game stats; no new pull.
+    from .compute_impact import compute_playmaking
+
+    pm = compute_playmaking(df)
+    if not pm.empty:
+        df = df.merge(pm, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
 
     # RAPM (regularized adjusted plus-minus) — self-computed from play-by-play by
     # the standalone fetch_rapm subsystem. Merge it in when its CSV is present.
