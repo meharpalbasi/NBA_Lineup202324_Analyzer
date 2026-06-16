@@ -53,7 +53,8 @@ git add data/on_off_*.csv data/clutch_*.csv data/play_types_*.csv \
         data/player_game_logs_*.csv \
         data/team_game_logs_*.csv \
         data/pt_shot_defender_*.csv \
-        data/matchups_*.csv
+        data/matchups_*.csv \
+        data/standings_*.csv
 
 # 4. Commit + push only if something actually changed.
 if git diff --staged --quiet; then

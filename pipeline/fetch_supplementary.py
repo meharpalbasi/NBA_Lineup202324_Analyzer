@@ -1164,3 +1164,50 @@ def fetch_matchups(season: str = config.SEASON) -> Optional[pd.DataFrame]:
     save_dataframe(df, filepath)
     logger.info("✓ Matchups: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
     return df
+
+
+# =========================================================================
+# 16. League standings (final regular-season table)
+# =========================================================================
+
+STANDINGS_COLUMNS: List[str] = [
+    "TeamID", "TeamCity", "TeamName", "Conference", "Division",
+    "ConferenceRecord", "PlayoffRank", "WINS", "LOSSES", "WinPCT",
+    "HOME", "ROAD", "L10", "strCurrentStreak", "ConferenceGamesBack",
+]
+
+
+def fetch_standings(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Conference standings (one ``LeagueStandingsV3`` call) → standings CSV.
+
+    Slim, one row per team: conference + seed, W/L/PCT, home/road/L10 splits,
+    current streak and games back. Team abbreviation is joined from nba_api's
+    static team table (the endpoint returns only id + city + name).
+    """
+    from .fetch_rapm import _get_json
+    from nba_api.stats.static import teams as _static_teams
+
+    logger.info("Fetching standings for season %s …", season)
+    try:
+        data = _get_json(
+            "leaguestandingsv3",
+            {"LeagueID": "00", "Season": season, "SeasonType": "Regular Season"},
+        )
+        rs = (data.get("resultSets") or [None])[0]
+        if not rs or not rs.get("rowSet"):
+            logger.error("No standings rows for %s.", season)
+            return None
+        df = pd.DataFrame(rs["rowSet"], columns=rs["headers"])
+        keep = [c for c in STANDINGS_COLUMNS if c in df.columns]
+        df = df[keep].rename(columns={"strCurrentStreak": "STREAK", "ConferenceGamesBack": "GB"})
+        abbr = {t["id"]: t["abbreviation"] for t in _static_teams.get_teams()}
+        df["TEAM_ABBREVIATION"] = df["TeamID"].map(abbr)
+        df["SEASON_TYPE"] = "Regular Season"
+    except Exception as exc:
+        logger.error("Failed standings %s: %s", season, exc)
+        return None
+
+    filepath = config.DATA_DIR / f"standings_{season}.csv"
+    save_dataframe(df, filepath)
+    logger.info("✓ Standings: %d teams → %s", len(df), filepath)
+    return df
