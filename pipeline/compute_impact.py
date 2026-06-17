@@ -219,3 +219,64 @@ def compute_shotmaking(shot_zones: pd.DataFrame) -> pd.DataFrame:
     df["XEFG_FGA"] = df["XEFG_FGA"].astype(int)
     logger.info("✓ Shot-making (xeFG by zone): %d player-rows", len(df))
     return df[cols]
+
+
+# ---------------------------------------------------------------------------
+# Playmaking: Box Creation + Offensive Load (Ben Taylor / Thinking Basketball)
+# ---------------------------------------------------------------------------
+# Both are box-score-derivable. Inputs are per-100 possessions, so we convert
+# per-game counting stats with the player's season possessions (POSS is a season
+# total in the dash feed): per100 = stat_pg * GP / POSS * 100.
+#
+# Box Creation ("open shots created per 100") uses a volume-gated 3-point
+# *proficiency* term — a sigmoid in 3PA that suppresses low-volume shooters,
+# times 3P% — NOT a raw 3PA/FGA ratio. Clamped at >=0. Validated against
+# published reference seasons (Curry '16 ~15.8/100, Nash '07 ~17.7).
+#
+# Offensive Load is the share of offense a player shoulders (creation + scoring
+# load + turnovers), computed on the same per-100 basis so it reads as a %.
+# Passer Rating is deliberately NOT computed: it needs layup-assist tracking
+# (2002+) we don't carry, so it can't be reproduced faithfully from the box.
+
+def compute_playmaking(player_stats: pd.DataFrame) -> pd.DataFrame:
+    """Box Creation + Offensive Load per (PLAYER_ID, SEASON_TYPE)."""
+    need = ["PLAYER_ID", "SEASON_TYPE", "GP", "POSS", "AST", "PTS", "TOV", "FGA", "FTA", "FG3A", "FG3_PCT"]
+    if not all(c in player_stats.columns for c in need):
+        return pd.DataFrame(columns=["PLAYER_ID", "SEASON_TYPE", "BOX_CREATION", "OFFENSIVE_LOAD"])
+
+    g = player_stats[need].copy()
+    for c in need[2:]:
+        g[c] = pd.to_numeric(g[c], errors="coerce")
+    g = g[(g["GP"] > 0) & (g["POSS"] > 0)].copy()
+    if g.empty:
+        return pd.DataFrame(columns=["PLAYER_ID", "SEASON_TYPE", "BOX_CREATION", "OFFENSIVE_LOAD"])
+
+    scale = g["GP"] / g["POSS"] * 100.0  # per-game -> per-100 possessions
+    ast = g["AST"] * scale
+    pts = g["PTS"] * scale
+    tov = g["TOV"] * scale
+    fga = g["FGA"] * scale
+    fta = g["FTA"] * scale
+    fg3a = g["FG3A"] * scale
+    fg3_pct = g["FG3_PCT"].fillna(0.0)
+
+    # Volume-gated 3-point proficiency: sigmoid(3PA/100) ramps 0->1, x 3P%.
+    three_prof = (2.0 / (1.0 + np.exp(-fg3a)) - 1.0) * fg3_pct
+
+    bc = (ast * 0.1843
+          + (pts + tov) * 0.0969
+          - 2.3021 * three_prof
+          + 0.0582 * (ast * (pts + tov) * three_prof)
+          - 1.1942)
+    bc = bc.clip(lower=0.0)
+
+    load = ((ast - 0.38 * bc) * 0.75) + fga + (fta * 0.44) + bc + tov
+
+    out = pd.DataFrame({
+        "PLAYER_ID": g["PLAYER_ID"].to_numpy(),
+        "SEASON_TYPE": g["SEASON_TYPE"].to_numpy(),
+        "BOX_CREATION": bc.round(1).to_numpy(),
+        "OFFENSIVE_LOAD": load.round(1).to_numpy(),
+    })
+    logger.info("✓ Playmaking (Box Creation + Offensive Load): %d player-rows", len(out))
+    return out
