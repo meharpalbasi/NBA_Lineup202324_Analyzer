@@ -245,6 +245,7 @@ def run(argv: list | None = None) -> None:
             fetch_estimated_metrics,
             fetch_hustle,
             fetch_matchups,
+            fetch_standings,
             fetch_on_off,
             fetch_play_types,
             fetch_player_clutch,
@@ -361,6 +362,13 @@ def run(argv: list | None = None) -> None:
         results["Matchups"] = (ok, rows)
         if ok:
             files_written.append(str(config.DATA_DIR / f"matchups_{season}.csv"))
+        time.sleep(config.API_ENDPOINT_DELAY)
+
+        # 16. League standings (final conference table)
+        ok, rows = _run_section("Standings", fetch_standings, season)
+        results["Standings"] = (ok, rows)
+        if ok:
+            files_written.append(str(config.DATA_DIR / f"standings_{season}.csv"))
 
     # ------------------------------------------------------------------
     # RAPM — self-computed regularized adjusted plus-minus. Heavy (reconstructs
