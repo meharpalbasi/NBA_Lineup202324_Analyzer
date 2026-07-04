@@ -39,6 +39,9 @@ minutes (matches to < 0.5s per player). The recipe:
   5. Ridge regression (``RidgeCV``) on the sparse design matrix → O-RAPM /
      D-RAPM / total RAPM per player.
   6. Save a slim ``rapm_{season}.csv``.
+  7. If compute_spm has produced this season's box prior, refit with the prior
+     (xRAPM-style: shrink toward the prior instead of zero) → ``ipm_{season}.csv``
+     — the stable flagship variant (docs/SPEC_PRIOR_INFORMED_RAPM.md).
 
 HTTP goes through ``curl_cffi`` (Chrome TLS impersonation) because stats.nba.com's
 Akamai bot manager silently drops plain ``requests``. We hit the raw endpoints
@@ -448,16 +451,62 @@ MatchupRow = Tuple[Tuple[int, ...], Tuple[int, ...], float, int, float]
 # Recency decay for the pooled multi-season fit (newest first).
 MULTI_SEASON_DECAY = [1.0, 0.7, 0.4]
 
+# IPM ("Informed Plus-Minus") prior settings — see docs/SPEC_PRIOR_INFORMED_RAPM.md.
+# The prior itself is regressed toward a below-average floor by box sample size
+# (a 50-possession rookie's per-100 rates are garbage, so his SPM is too); the
+# floor is deliberately below zero because fringe players are below average,
+# and offense degrades more than defense at the fringe.
+IPM_PRIOR_K = 1000.0  # possessions at which a player's SPM carries 50% weight
+IPM_FLOOR_O = -0.9
+IPM_FLOOR_D = -0.4
 
-def _fit_ridge(rows: List[MatchupRow]) -> Dict[str, Any]:
-    """Fit possession-weighted ridge on matchup rows; return the fit bundle."""
+
+def load_ipm_prior(season: str, loso: bool = False) -> Optional[Dict[int, Tuple[float, float]]]:
+    """Per-player (O, D) ridge prior: SPM shrunk toward the floor by sample size.
+
+    ``loso=True`` reads the leave-one-season-out SPM columns (weights trained
+    without this season) — validate_ipm uses that so its retrodiction tests are
+    leakage-free. Production fits use the full-fit columns.
+    """
+    path = config.DATA_DIR / f"spm_{season}.csv"
+    if not path.exists():
+        return None
+    df = pd.read_csv(path, low_memory=False)
+    ocol, dcol = "O_SPM", "D_SPM"
+    if loso:
+        if "O_SPM_LOSO" not in df.columns:
+            logger.warning("spm_%s.csv has no LOSO columns — falling back to full-fit SPM", season)
+        else:
+            ocol, dcol = "O_SPM_LOSO", "D_SPM_LOSO"
+    w = df["POSS_BASE"].to_numpy(dtype=float)
+    w = w / (w + IPM_PRIOR_K)
+    o = w * df[ocol].to_numpy(dtype=float) + (1.0 - w) * IPM_FLOOR_O
+    d = w * df[dcol].to_numpy(dtype=float) + (1.0 - w) * IPM_FLOOR_D
+    return {int(pid): (float(ov), float(dv))
+            for pid, ov, dv in zip(df["PLAYER_ID"], o, d)}
+
+
+def _fit_ridge(
+    rows: List[MatchupRow],
+    prior: Optional[Dict[int, Tuple[float, float]]] = None,
+) -> Dict[str, Any]:
+    """Fit possession-weighted ridge on matchup rows; return the fit bundle.
+
+    With ``prior``, the fit is the xRAPM-style prior-informed variant: the
+    prior-implied margin is subtracted from each stint's target, the ridge fits
+    the *deviations* (shrinking them toward zero = toward the prior), and the
+    published coefficients are prior + deviation. Players absent from the prior
+    map get the floor. ``fit["model"]`` predicts deviations in that case —
+    downstream consumers should use ``fit["coef"]`` / ``fit["predict"]``.
+    """
     from scipy import sparse
     from sklearn.linear_model import RidgeCV
 
     players = sorted({pid for off, dfn, _, _, _ in rows for pid in (*off, *dfn)})
     idx = {pid: i for i, pid in enumerate(players)}
     n_players = len(players)
-    logger.info("RAPM: %d players, %d matchup rows", n_players, len(rows))
+    logger.info("RAPM: %d players, %d matchup rows%s", n_players, len(rows),
+                " (prior-informed)" if prior is not None else "")
 
     r_idx, c_idx, vals = [], [], []
     y, weights = [], []
@@ -477,18 +526,31 @@ def _fit_ridge(rows: List[MatchupRow]) -> Dict[str, Any]:
     y = np.asarray(y)
     weights = np.asarray(weights)
 
+    beta0 = None
+    y_fit = y
+    if prior is not None:
+        beta0 = np.zeros(2 * n_players)
+        for pid in players:
+            o0, d0 = prior.get(pid, (IPM_FLOOR_O, IPM_FLOOR_D))
+            beta0[idx[pid]] = o0
+            beta0[idx[pid] + n_players] = d0
+        y_fit = y - X @ beta0
+
     # rd11490's lambda→alpha scaling: alpha = lambda * n / 2 (n = total possessions).
+    # The top of the grid extends past the pure-RAPM sweet spot because a good
+    # prior lets CV shrink the deviations harder.
     total_poss = float(weights.sum())
-    lambdas = [0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0]
+    lambdas = [0.005, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0, 4.0, 8.0]
     alphas = [l * total_poss / 2.0 for l in lambdas]
     model = RidgeCV(alphas=alphas, fit_intercept=True, cv=5)
-    model.fit(X, y, sample_weight=weights)
+    model.fit(X, y_fit, sample_weight=weights)
     logger.info("RAPM: chosen alpha=%.1f (intercept/lg-avg ORtg=%.1f)",
                 model.alpha_, model.intercept_)
 
+    coef = model.coef_ + beta0 if beta0 is not None else model.coef_
     return {
-        "model": model, "players": players, "idx": idx, "X": X, "y": y,
-        "weights": weights, "poss_off": poss_off, "poss_def": poss_def,
+        "model": model, "coef": coef, "players": players, "idx": idx, "X": X,
+        "y": y, "weights": weights, "poss_off": poss_off, "poss_def": poss_def,
     }
 
 
@@ -498,28 +560,29 @@ def _rapm_table(
     team_by_pid: Dict[int, str],
     season: str,
     season_type: str,
+    metric: str = "RAPM",
 ) -> pd.DataFrame:
-    """The published per-player RAPM table from a ridge fit."""
+    """The published per-player table from a ridge fit (RAPM or IPM columns)."""
     players = fit["players"]
     n_players = len(players)
-    coef = fit["model"].coef_
+    coef = fit["coef"]
     # Round the components, then derive the total from them so the published
     # columns are exactly additive (O_RAPM + D_RAPM == RAPM) — the profile shows
     # all three as separate bars, so they must reconcile.
-    o_rapm = np.round(coef[:n_players], 2)
-    d_rapm = np.round(coef[n_players:], 2)
+    o_val = np.round(coef[:n_players], 2)
+    d_val = np.round(coef[n_players:], 2)
     out = pd.DataFrame({
         "PLAYER_ID": players,
         "PLAYER_NAME": [name_by_pid.get(p, str(p)) for p in players],
         "TEAM_ABBREVIATION": [team_by_pid.get(p, "") for p in players],
-        "O_RAPM": o_rapm,
-        "D_RAPM": d_rapm,
-        "RAPM": np.round(o_rapm + d_rapm, 2),
+        f"O_{metric}": o_val,
+        f"D_{metric}": d_val,
+        metric: np.round(o_val + d_val, 2),
         "POSS": [round(fit["poss_off"][p] + fit["poss_def"][p]) for p in players],
         "SEASON": season,
         "SEASON_TYPE": season_type,
     })
-    return out.sort_values("RAPM", ascending=False).reset_index(drop=True)
+    return out.sort_values(metric, ascending=False).reset_index(drop=True)
 
 
 def _chemistry_table(
@@ -691,11 +754,27 @@ def fetch_rapm(
     logger.info("Saved %d players → %s", len(df), out_path)
 
     # Lineup chemistry rides on the same fit: which five-man units outperform
-    # the sum of their parts.
+    # the sum of their parts. (Stays on the PURE fit so residuals keep their
+    # meaning — the prior-informed fit below doesn't change it.)
     chem = _chemistry_table(fit, rows, name_by_pid, team_by_pid, season, season_type)
     chem_path = config.DATA_DIR / f"lineup_chemistry_{season}.csv"
     chem.to_csv(chem_path, index=False)
     logger.info("Saved %d lineups → %s", len(chem), chem_path)
+
+    # IPM — the prior-informed variant (same stint rows, zero extra fetches).
+    # Only runs when compute_spm has produced this season's prior.
+    prior = load_ipm_prior(season)
+    if prior is not None:
+        fit_ipm = _fit_ridge(rows, prior=prior)
+        ipm = _rapm_table(fit_ipm, name_by_pid, team_by_pid, season, season_type,
+                          metric="IPM")
+        ipm_path = config.DATA_DIR / f"ipm_{season}.csv"
+        ipm.to_csv(ipm_path, index=False)
+        both = df.merge(ipm[["PLAYER_ID", "IPM"]], on="PLAYER_ID")
+        logger.info("Saved %d players → %s (corr vs RAPM: %.3f)",
+                    len(ipm), ipm_path, both["RAPM"].corr(both["IPM"]))
+    else:
+        logger.info("No spm_%s.csv — skipping IPM (run pipeline.compute_spm first)", season)
     return df
 
 
