@@ -1,0 +1,21 @@
+{
+  "weights": {
+    "srs": -0.6170752350624914,
+    "ipm": 1.8771984057870181,
+    "hca": 1.5122144440945733
+  },
+  "train_fraction": 0.6,
+  "blend_fraction": 0.8,
+  "seasons": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "note": "blend weights are experimental (negative SRS weight, IPM look-ahead) \u2014 published ratings use TEAM_IPM + SRS only"
+}

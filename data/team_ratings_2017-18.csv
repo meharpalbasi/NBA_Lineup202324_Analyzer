@@ -1,0 +1,31 @@
+TEAM_ID,TEAM_ABBREVIATION,TEAM_NAME,GP,W,L,TEAM_IPM,SRS,O_SRS,D_SRS,SOS,OSOS,DSOS,SEASON,SEASON_TYPE
+1610612745,HOU,Houston Rockets,82,65,17,6.93,8.21,6.0,2.21,-0.27,-0.02,-0.24,2017-18,Regular Season
+1610612744,GSW,Golden State Warriors,82,58,24,6.37,5.79,7.2,-1.41,-0.19,0.07,-0.25,2017-18,Regular Season
+1610612761,TOR,Toronto Raptors,82,59,23,5.56,7.3,5.19,2.11,-0.48,-0.14,-0.35,2017-18,Regular Season
+1610612755,PHI,Philadelphia 76ers,82,52,30,4.49,4.3,3.43,0.87,-0.2,-0.04,-0.16,2017-18,Regular Season
+1610612762,UTA,Utah Jazz,82,48,34,4.33,4.47,-2.46,6.93,0.17,-0.27,0.44,2017-18,Regular Season
+1610612740,NOP,New Orleans Pelicans,82,48,34,3.47,1.48,5.8,-4.32,0.18,0.41,-0.24,2017-18,Regular Season
+1610612750,MIN,Minnesota Timberwolves,82,47,35,2.92,2.35,3.2,-0.85,0.12,0.02,0.1,2017-18,Regular Season
+1610612738,BOS,Boston Celtics,82,55,27,2.57,3.24,-2.68,5.92,-0.35,-0.36,0.01,2017-18,Regular Season
+1610612743,DEN,Denver Nuggets,82,46,36,2.32,1.57,4.0,-2.43,0.1,0.33,-0.24,2017-18,Regular Season
+1610612759,SAS,San Antonio Spurs,82,47,35,2.18,2.89,-3.82,6.71,-0.0,-0.22,0.22,2017-18,Regular Season
+1610612739,CLE,Cleveland Cavaliers,82,50,32,1.85,0.59,4.54,-3.94,-0.35,0.0,-0.35,2017-18,Regular Season
+1610612757,POR,Portland Trail Blazers,82,49,33,1.84,2.6,-0.85,3.45,0.0,-0.14,0.14,2017-18,Regular Season
+1610612760,OKC,Oklahoma City Thunder,82,48,34,1.7,3.42,1.65,1.77,0.01,0.13,-0.12,2017-18,Regular Season
+1610612749,MIL,Milwaukee Bucks,82,44,38,1.4,-0.45,0.11,-0.56,-0.14,-0.03,-0.11,2017-18,Regular Season
+1610612754,IND,Indiana Pacers,82,48,34,1.26,1.18,-0.92,2.1,-0.2,-0.14,-0.05,2017-18,Regular Season
+1610612764,WAS,Washington Wizards,82,43,39,0.69,0.53,0.28,0.25,-0.05,0.0,-0.06,2017-18,Regular Season
+1610612748,MIA,Miami Heat,82,44,38,0.16,0.15,-3.2,3.35,-0.32,-0.28,-0.04,2017-18,Regular Season
+1610612765,DET,Detroit Pistons,82,39,43,-0.24,-0.26,-2.77,2.51,-0.11,-0.2,0.09,2017-18,Regular Season
+1610612766,CHA,Charlotte Hornets,82,36,46,-0.36,0.07,1.9,-1.83,-0.19,0.01,-0.2,2017-18,Regular Season
+1610612746,LAC,LA Clippers,82,42,40,-1.08,0.15,2.76,-2.61,0.11,0.11,0.01,2017-18,Regular Season
+1610612747,LAL,Los Angeles Lakers,82,35,47,-1.87,-1.43,1.81,-3.25,0.12,0.07,0.04,2017-18,Regular Season
+1610612751,BKN,Brooklyn Nets,82,28,54,-2.64,-3.67,0.46,-4.13,0.08,0.2,-0.12,2017-18,Regular Season
+1610612742,DAL,Dallas Mavericks,82,24,58,-2.88,-2.7,-4.02,1.32,0.34,-0.0,0.34,2017-18,Regular Season
+1610612753,ORL,Orlando Magic,82,25,57,-4.02,-4.92,-3.0,-1.91,-0.1,-0.07,-0.03,2017-18,Regular Season
+1610612752,NYK,New York Knicks,82,29,53,-4.13,-3.53,-1.89,-1.64,0.03,-0.02,0.06,2017-18,Regular Season
+1610612737,ATL,Atlanta Hawks,82,24,58,-5.24,-5.3,-2.87,-2.43,0.15,0.11,0.05,2017-18,Regular Season
+1610612763,MEM,Memphis Grizzlies,82,22,60,-5.5,-5.81,-7.06,1.25,0.4,-0.06,0.45,2017-18,Regular Season
+1610612741,CHI,Chicago Bulls,82,27,55,-6.7,-6.84,-3.24,-3.6,0.2,0.17,0.03,2017-18,Regular Season
+1610612758,SAC,Sacramento Kings,82,27,55,-6.76,-6.59,-7.6,1.0,0.39,-0.09,0.49,2017-18,Regular Season
+1610612756,PHX,Phoenix Suns,82,21,61,-8.62,-8.8,-1.96,-6.84,0.57,0.45,0.12,2017-18,Regular Season

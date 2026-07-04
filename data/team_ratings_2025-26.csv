@@ -1,0 +1,31 @@
+TEAM_ID,TEAM_ABBREVIATION,TEAM_NAME,GP,W,L,TEAM_IPM,SRS,O_SRS,D_SRS,SOS,OSOS,DSOS,SEASON,SEASON_TYPE
+1610612760,OKC,Oklahoma City Thunder,81,64,17,8.99,11.07,3.27,7.8,-0.22,-0.27,0.05,2025-26,Regular Season
+1610612759,SAS,San Antonio Spurs,81,61,20,7.6,8.23,4.23,4.0,-0.17,-0.12,-0.05,2025-26,Regular Season
+1610612738,BOS,Boston Celtics,82,56,26,6.31,7.38,-0.96,8.33,-0.32,-0.21,-0.11,2025-26,Regular Season
+1610612765,DET,Detroit Pistons,81,59,22,5.65,7.57,1.83,5.74,-0.56,-0.3,-0.26,2025-26,Regular Season
+1610612752,NYK,New York Knicks,81,52,29,5.31,5.99,0.57,5.43,-0.29,-0.1,-0.19,2025-26,Regular Season
+1610612745,HOU,Houston Rockets,82,52,30,3.84,4.86,-0.84,5.69,-0.36,-0.47,0.1,2025-26,Regular Season
+1610612739,CLE,Cleveland Cavaliers,82,52,30,3.28,3.79,3.77,0.01,-0.32,-0.15,-0.18,2025-26,Regular Season
+1610612743,DEN,Denver Nuggets,82,54,28,3.2,4.96,6.43,-1.46,-0.18,-0.04,-0.14,2025-26,Regular Season
+1610612750,MIN,Minnesota Timberwolves,82,49,33,3.06,3.06,2.1,0.96,-0.29,-0.3,0.01,2025-26,Regular Season
+1610612766,CHA,Charlotte Hornets,82,44,38,2.92,4.49,0.1,4.39,-0.34,-0.31,-0.03,2025-26,Regular Season
+1610612747,LAL,Los Angeles Lakers,82,53,29,2.37,1.68,0.69,0.99,-0.08,-0.06,-0.02,2025-26,Regular Season
+1610612761,TOR,Toronto Raptors,82,46,36,2.26,2.76,-0.91,3.67,-0.07,0.06,-0.13,2025-26,Regular Season
+1610612746,LAC,LA Clippers,82,42,40,1.79,0.95,-2.04,2.99,-0.18,-0.21,0.03,2025-26,Regular Season
+1610612748,MIA,Miami Heat,82,43,39,1.75,2.36,5.51,-3.14,0.03,0.24,-0.21,2025-26,Regular Season
+1610612756,PHX,Phoenix Suns,82,45,37,1.19,1.74,-2.96,4.7,0.28,0.06,0.22,2025-26,Regular Season
+1610612737,ATL,Atlanta Hawks,82,46,36,0.98,2.39,3.04,-0.65,-0.02,0.18,-0.2,2025-26,Regular Season
+1610612744,GSW,Golden State Warriors,82,37,45,0.52,-0.35,-0.99,0.64,0.21,-0.0,0.21,2025-26,Regular Season
+1610612753,ORL,Orlando Magic,79,44,35,0.37,1.17,0.21,0.95,0.25,0.08,0.17,2025-26,Regular Season
+1610612755,PHI,Philadelphia 76ers,82,45,37,0.05,-0.27,0.42,-0.69,-0.08,0.14,-0.23,2025-26,Regular Season
+1610612757,POR,Portland Trail Blazers,82,42,40,-0.87,-0.29,-0.26,-0.04,-0.0,-0.13,0.13,2025-26,Regular Season
+1610612740,NOP,New Orleans Pelicans,82,26,56,-3.51,-4.27,0.1,-4.37,0.23,0.18,0.05,2025-26,Regular Season
+1610612742,DAL,Dallas Mavericks,81,26,55,-4.98,-5.37,-1.48,-3.89,0.08,-0.04,0.12,2025-26,Regular Season
+1610612749,MIL,Milwaukee Bucks,82,32,50,-5.3,-6.12,-4.87,-1.24,0.09,0.09,-0.0,2025-26,Regular Season
+1610612762,UTA,Utah Jazz,82,22,60,-5.42,-8.05,2.34,-10.39,0.37,0.35,0.02,2025-26,Regular Season
+1610612754,IND,Indiana Pacers,82,19,63,-5.44,-7.63,-2.84,-4.79,0.36,0.33,0.03,2025-26,Regular Season
+1610612741,CHI,Chicago Bulls,82,31,51,-5.67,-5.08,0.99,-6.07,0.13,0.29,-0.16,2025-26,Regular Season
+1610612763,MEM,Memphis Grizzlies,80,24,56,-5.84,-6.12,-1.04,-5.09,0.16,-0.01,0.17,2025-26,Regular Season
+1610612758,SAC,Sacramento Kings,82,22,60,-6.96,-9.59,-4.46,-5.13,0.41,0.14,0.27,2025-26,Regular Season
+1610612751,BKN,Brooklyn Nets,82,20,62,-7.71,-9.69,-9.62,-0.07,0.3,0.05,0.24,2025-26,Regular Season
+1610612764,WAS,Washington Wizards,82,17,65,-9.72,-11.61,-2.32,-9.28,0.37,0.38,-0.01,2025-26,Regular Season

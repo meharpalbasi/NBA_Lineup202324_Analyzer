@@ -1,0 +1,31 @@
+TEAM_ID,TEAM_ABBREVIATION,TEAM_NAME,GP,W,L,TEAM_IPM,SRS,O_SRS,D_SRS,SOS,OSOS,DSOS,SEASON,SEASON_TYPE
+1610612761,TOR,Toronto Raptors,82,58,24,6.82,5.49,3.1,2.39,-0.59,-0.13,-0.46,2018-19,Regular Season
+1610612744,GSW,Golden State Warriors,82,57,25,6.5,6.42,6.47,-0.05,-0.04,-0.0,-0.04,2018-19,Regular Season
+1610612749,MIL,Milwaukee Bucks,82,60,22,5.89,8.05,6.86,1.19,-0.82,-0.05,-0.77,2018-19,Regular Season
+1610612745,HOU,Houston Rockets,82,53,29,4.63,4.97,2.72,2.24,0.2,0.02,0.18,2018-19,Regular Season
+1610612762,UTA,Utah Jazz,82,50,32,4.54,5.29,0.37,4.92,0.03,-0.14,0.18,2018-19,Regular Season
+1610612738,BOS,Boston Celtics,82,49,33,3.87,3.9,1.07,2.83,-0.54,-0.11,-0.43,2018-19,Regular Season
+1610612743,DEN,Denver Nuggets,82,54,28,2.88,4.2,-0.79,4.99,0.25,-0.26,0.5,2018-19,Regular Season
+1610612757,POR,Portland Trail Blazers,82,53,29,2.83,4.44,3.56,0.87,0.24,0.11,0.13,2018-19,Regular Season
+1610612759,SAS,San Antonio Spurs,82,48,34,2.34,1.81,0.37,1.44,0.12,-0.08,0.2,2018-19,Regular Season
+1610612760,OKC,Oklahoma City Thunder,82,49,33,2.09,3.56,3.19,0.37,0.16,-0.08,0.23,2018-19,Regular Season
+1610612754,IND,Indiana Pacers,82,48,34,1.73,2.76,-3.58,6.34,-0.56,-0.38,-0.18,2018-19,Regular Season
+1610612755,PHI,Philadelphia 76ers,82,51,31,1.73,2.26,4.09,-1.83,-0.44,0.11,-0.55,2018-19,Regular Season
+1610612748,MIA,Miami Heat,82,39,43,0.8,-0.45,-5.77,5.32,-0.22,-0.27,0.05,2018-19,Regular Season
+1610612753,ORL,Orlando Magic,82,42,40,0.49,0.28,-4.11,4.39,-0.43,-0.22,-0.21,2018-19,Regular Season
+1610612765,DET,Detroit Pistons,82,41,41,0.31,-0.55,-4.17,3.62,-0.31,-0.01,-0.3,2018-19,Regular Season
+1610612746,LAC,LA Clippers,82,48,34,-0.22,1.09,4.1,-3.01,0.24,0.17,0.07,2018-19,Regular Season
+1610612758,SAC,Sacramento Kings,82,39,43,-0.57,-0.81,3.06,-3.87,0.31,0.09,0.22,2018-19,Regular Season
+1610612751,BKN,Brooklyn Nets,82,42,40,-0.66,-0.4,1.03,-1.43,-0.33,-0.01,-0.32,2018-19,Regular Season
+1610612750,MIN,Minnesota Timberwolves,82,36,46,-0.73,-1.02,1.45,-2.47,0.48,0.18,0.3,2018-19,Regular Season
+1610612740,NOP,New Orleans Pelicans,82,33,49,-1.38,-1.1,4.48,-5.57,0.23,0.25,-0.01,2018-19,Regular Season
+1610612742,DAL,Dallas Mavericks,82,33,49,-1.64,-0.86,-2.37,1.51,0.42,-0.03,0.45,2018-19,Regular Season
+1610612766,CHA,Charlotte Hornets,82,39,43,-1.99,-1.31,-0.48,-0.83,-0.22,-0.02,-0.2,2018-19,Regular Season
+1610612747,LAL,Los Angeles Lakers,82,37,45,-2.33,-1.32,0.5,-1.83,0.4,-0.06,0.45,2018-19,Regular Season
+1610612763,MEM,Memphis Grizzlies,82,33,49,-2.46,-2.08,-7.93,5.85,0.52,-0.26,0.78,2018-19,Regular Season
+1610612764,WAS,Washington Wizards,82,32,50,-3.33,-3.3,3.05,-6.34,-0.4,0.23,-0.63,2018-19,Regular Season
+1610612737,ATL,Atlanta Hawks,82,29,53,-4.75,-6.06,2.52,-8.58,-0.03,0.39,-0.43,2018-19,Regular Season
+1610612741,CHI,Chicago Bulls,82,22,60,-5.46,-8.32,-6.24,-2.08,0.1,0.03,0.07,2018-19,Regular Season
+1610612756,PHX,Phoenix Suns,82,19,63,-6.3,-8.61,-3.53,-5.08,0.73,0.18,0.56,2018-19,Regular Season
+1610612752,NYK,New York Knicks,82,17,65,-6.73,-8.92,-6.52,-2.4,0.28,0.12,0.17,2018-19,Regular Season
+1610612739,CLE,Cleveland Cavaliers,82,19,63,-8.92,-9.39,-6.5,-2.89,0.22,0.24,-0.02,2018-19,Regular Season
