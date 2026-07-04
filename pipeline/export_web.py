@@ -71,6 +71,7 @@ PLAYER_INDEX_COLUMNS: List[str] = [
     "BOX_CREATION", "OFFENSIVE_LOAD",
     "O_RAPM", "D_RAPM", "RAPM", "RAPM_POSS",
     "O_RAPM_3YR", "D_RAPM_3YR", "RAPM_3YR", "RAPM_3YR_POSS",
+    "O_IPM", "D_IPM", "IPM", "IPM_POSS",
     "WPA",
 ]
 
@@ -303,6 +304,17 @@ def export_player_index(season: str = config.SEASON) -> Optional[Path]:
                 "RAPM": "RAPM_3YR", "POSS": "RAPM_3YR_POSS",
             })
             df = df.merge(rp3, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
+
+    # IPM (Informed Plus-Minus) — the prior-informed RAPM flagship: the same
+    # ridge shrunk toward a self-trained box prior instead of zero (stable AND
+    # current-season). Produced alongside rapm_<season>.csv by fetch_rapm.
+    ipm_path = config.DATA_DIR / f"ipm_{season}.csv"
+    if ipm_path.exists():
+        ip = pd.read_csv(ipm_path, low_memory=False)
+        keep = {"PLAYER_ID", "SEASON_TYPE", "O_IPM", "D_IPM", "IPM", "POSS"}
+        if keep.issubset(ip.columns):
+            ip = ip[list(keep)].rename(columns={"POSS": "IPM_POSS"})
+            df = df.merge(ip, on=["PLAYER_ID", "SEASON_TYPE"], how="left")
 
     # Scoring WPA (win probability added by made baskets, leverage-weighted) —
     # computed from the play-by-play cache by compute_wpa.
