@@ -1,0 +1,31 @@
+TEAM_ID,TEAM_ABBREVIATION,TEAM_NAME,GP,W,L,TEAM_IPM,SRS,O_SRS,D_SRS,SOS,OSOS,DSOS,SEASON,SEASON_TYPE
+1610612738,BOS,Boston Celtics,82,57,25,6.08,6.38,3.58,2.8,-0.15,0.33,-0.48,2022-23,Regular Season
+1610612739,CLE,Cleveland Cavaliers,82,51,31,4.96,5.23,-2.46,7.69,-0.15,-0.03,-0.12,2022-23,Regular Season
+1610612755,PHI,Philadelphia 76ers,82,54,28,4.08,4.37,0.65,3.73,0.06,0.11,-0.06,2022-23,Regular Season
+1610612752,NYK,New York Knicks,82,47,35,3.42,2.99,1.62,1.37,0.06,0.28,-0.22,2022-23,Regular Season
+1610612749,MIL,Milwaukee Bucks,82,58,24,3.28,3.61,2.55,1.06,-0.02,0.29,-0.32,2022-23,Regular Season
+1610612743,DEN,Denver Nuggets,82,53,29,2.86,3.04,0.77,2.27,-0.29,-0.33,0.05,2022-23,Regular Season
+1610612763,MEM,Memphis Grizzlies,82,51,31,2.82,3.6,1.77,1.83,-0.34,-0.46,0.12,2022-23,Regular Season
+1610612758,SAC,Sacramento Kings,82,48,34,2.21,2.3,5.78,-3.47,-0.34,-0.25,-0.1,2022-23,Regular Season
+1610612744,GSW,Golden State Warriors,82,44,38,1.84,1.66,4.1,-2.45,-0.15,-0.15,-0.0,2022-23,Regular Season
+1610612756,PHX,Phoenix Suns,82,45,37,1.62,2.08,-1.37,3.45,0.01,-0.33,0.34,2022-23,Regular Season
+1610612742,DAL,Dallas Mavericks,82,38,44,1.62,-0.14,-0.76,0.62,-0.22,-0.3,0.08,2022-23,Regular Season
+1610612741,CHI,Chicago Bulls,82,40,42,1.51,1.37,-1.45,2.82,0.07,0.11,-0.04,2022-23,Regular Season
+1610612740,NOP,New Orleans Pelicans,82,42,40,1.27,1.63,-0.74,2.37,-0.26,-0.42,0.16,2022-23,Regular Season
+1610612747,LAL,Los Angeles Lakers,82,43,39,0.99,0.43,2.25,-1.83,-0.15,-0.23,0.08,2022-23,Regular Season
+1610612751,BKN,Brooklyn Nets,82,45,37,0.7,1.03,-1.18,2.21,0.18,0.15,0.03,2022-23,Regular Season
+1610612737,ATL,Atlanta Hawks,82,41,41,0.34,0.32,4.2,-3.88,0.02,0.46,-0.43,2022-23,Regular Season
+1610612750,MIN,Minnesota Timberwolves,82,42,40,0.32,-0.22,0.73,-0.95,-0.18,-0.36,0.18,2022-23,Regular Season
+1610612748,MIA,Miami Heat,82,44,38,0.26,-0.13,-5.14,5.01,0.18,0.07,0.12,2022-23,Regular Season
+1610612761,TOR,Toronto Raptors,82,41,41,0.14,1.59,-1.54,3.13,0.12,0.29,-0.18,2022-23,Regular Season
+1610612760,OKC,Oklahoma City Thunder,82,40,42,-0.22,0.96,2.66,-1.7,-0.12,-0.13,0.01,2022-23,Regular Season
+1610612764,WAS,Washington Wizards,82,35,47,-0.22,-1.06,-1.29,0.23,0.15,0.24,-0.09,2022-23,Regular Season
+1610612746,LAC,LA Clippers,82,44,38,-0.84,0.31,-1.57,1.88,-0.19,-0.47,0.28,2022-23,Regular Season
+1610612762,UTA,Utah Jazz,82,37,45,-1.06,-1.03,2.17,-3.2,-0.09,-0.21,0.13,2022-23,Regular Season
+1610612753,ORL,Orlando Magic,82,34,48,-1.97,-2.39,-3.02,0.63,0.17,0.25,-0.08,2022-23,Regular Season
+1610612754,IND,Indiana Pacers,82,35,47,-3.31,-2.91,2.22,-5.13,0.28,0.63,-0.35,2022-23,Regular Season
+1610612757,POR,Portland Trail Blazers,82,33,49,-3.6,-3.96,-1.58,-2.38,0.05,-0.3,0.35,2022-23,Regular Season
+1610612766,CHA,Charlotte Hornets,82,27,55,-5.1,-5.89,-3.25,-2.64,0.35,0.49,-0.13,2022-23,Regular Season
+1610612765,DET,Detroit Pistons,82,17,65,-7.56,-7.73,-3.96,-3.77,0.49,0.42,0.07,2022-23,Regular Season
+1610612745,HOU,Houston Rockets,82,22,60,-7.74,-7.62,-4.09,-3.52,0.24,-0.15,0.39,2022-23,Regular Season
+1610612759,SAS,San Antonio Spurs,82,22,60,-8.7,-9.82,-1.64,-8.18,0.22,0.01,0.21,2022-23,Regular Season
