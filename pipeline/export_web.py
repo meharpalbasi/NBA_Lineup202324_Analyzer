@@ -119,6 +119,33 @@ def _derive_team(group_id: str, pmap: Dict[int, Set[TeamKey]]) -> TeamKey:
     return counts.most_common(1)[0][0] if counts else (None, None)  # type: ignore[return-value]
 
 
+def enrich_lineup_teams(season: str = config.SEASON) -> Optional[Path]:
+    """Append team/team_id columns to the raw 5-man file (legacy-file contract).
+
+    The dashboard's team grid and filters key on a per-lineup ``team``; the
+    Railway-era ``NBALineup…`` files carried it, but the pipeline's raw merge
+    doesn't. Derive it the same way the slim exports do (GROUP_ID → the team
+    common to the five players, via the on/off roster map). Idempotent —
+    a file that already has the columns is left untouched.
+    """
+    path = config.DATA_DIR / f"lineups_5man_{season}.csv"
+    if not path.exists():
+        return None
+    df = pd.read_csv(path, low_memory=False)
+    if "team" in df.columns:
+        return path
+    pmap = build_player_team_map(season)
+    if not pmap:
+        logger.warning("enrich_lineup_teams(%s): no on/off roster map — skipped", season)
+        return None
+    derived = [_derive_team(g, pmap) for g in df["GROUP_ID"]]
+    df["team"] = [t[0] for t in derived]
+    df["team_id"] = [t[1] for t in derived]
+    df.to_csv(path, index=False)
+    logger.info("✓ Enriched %s with team columns (%d rows)", path.name, len(df))
+    return path
+
+
 def slim_one(season: str, group_quantity: int, min_minutes: float, pmap: Dict[int, Set[TeamKey]]) -> Optional[Path]:
     """Produce one ``lineups_slim_{gq}man_<season>.csv``. Returns the path or None."""
     src = config.DATA_DIR / f"lineups_{group_quantity}man_{season}.csv"

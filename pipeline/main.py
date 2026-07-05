@@ -404,16 +404,24 @@ def run(argv: list | None = None) -> None:
 
     # ------------------------------------------------------------------
     # Slim web exports (2/3-man) — needs the full lineup files; team is
-    # reconstructed from the on/off CSV, so run after both sections.
+    # reconstructed from the on/off CSV, so run after both sections. The raw
+    # 5-man file gets the same team columns appended (the dashboard's team
+    # grid keys on them; the legacy Railway files carried them already).
     # ------------------------------------------------------------------
     if not args.supplementary_only and not args.rapm_only:
-        from .export_web import export_slim
+        from .export_web import enrich_lineup_teams, export_slim
 
         try:
             paths = export_slim(season)
             files_written.extend(str(p) for p in paths)
         except Exception as exc:  # never let slimming abort the run
             logger.error("Slim export failed: %s", exc)
+        try:
+            p = enrich_lineup_teams(season)
+            if p:
+                files_written.append(str(p))
+        except Exception as exc:
+            logger.error("Lineup team enrichment failed: %s", exc)
 
     # ------------------------------------------------------------------
     # Player index (pre-joined web table) — needs the supplementary player
