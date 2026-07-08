@@ -132,3 +132,33 @@ launchctl unload ~/Library/LaunchAgents/com.nbalineup.supplementary.plist  # dis
 ## See also
 - [`docs/MINI_NBA_BLOCK_DEBUG.md`](../docs/MINI_NBA_BLOCK_DEBUG.md) — why the "block" was a false negative.
 - [`docs/DATA_SOURCES.md`](../docs/DATA_SOURCES.md) — the whole data-publishing picture.
+
+## Publishing & remote-ops notes (2026-07-05)
+
+- **Git pushes use a dedicated deploy key**, not the keychain: remote is
+  `git@github-nba:…` (ssh alias in `~/.ssh/config` → `~/.ssh/id_ed25519_nba`,
+  registered as a write deploy key on this repo). The macOS keychain is LOCKED
+  in ssh/headless sessions, so the old https remote hung every scripted
+  `git push` with error `-25308`.
+- **Launching long jobs over ssh: use `screen -dmS <name> …`**, never
+  `nohup … & disown`. macOS tears down the TCC grant when the ssh session
+  exits, and the orphaned process dies with "Operation not permitted" on its
+  first ~/Documents access. Detached screen sessions survive with permissions
+  intact (that's how the 2026-07 lineup/shot-hex backfills ran).
+- If a job's push is rejected (main moved while it ran):
+  `git pull --rebase origin main && git push origin main` — data commits
+  rebase cleanly.
+
+## Season rollover (October) checklist
+
+1. Bump the default season: `pipeline/config.py` → `NBA_SEASON` default
+   (one-line PR); check Railway's `NBA_SEASON` env too.
+2. Load the RAPM launchd job (it stays unloaded over the summer):
+   `launchctl load ~/Library/LaunchAgents/com.nbalineup.rapm.mini.plist`.
+   First run wants the prior seasons' PBP cache for the 3-yr pooled fit —
+   rsync `data/rapm_cache/` from the laptop instead of refetching.
+3. Frontend: add the new season entry to `lib/seasons-config.js` with
+   `isCurrent` once the first data publishes.
+4. Everything else is automatic: `run_rapm.sh` now self-applies the frozen
+   SPM prior for a new season (→ IPM), refreshes the schedule, and recomputes
+   team power ratings on every weekly run.

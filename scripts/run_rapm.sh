@@ -34,7 +34,16 @@ fi
 echo "[$(ts)] Syncing with origin/main…"
 git pull --rebase --autostash origin main
 
-# 2. Compute RAPM and re-export the player index so RAPM columns get merged in.
+# 1b. Season-rollover guard: the IPM ridge needs the season's SPM prior. A
+#     brand-new season gets scored with the FROZEN weights in spm_model.json
+#     (no retraining); skipped once the file exists.
+SEASON="${NBA_SEASON:-$("$PYTHON" -c 'from pipeline import config; print(config.SEASON)')}"
+if [ ! -f "data/spm_${SEASON}.csv" ]; then
+  echo "[$(ts)] No SPM prior for ${SEASON} — applying frozen weights…"
+  "$PYTHON" -m pipeline.compute_spm --apply "$SEASON"
+fi
+
+# 2. Compute RAPM (and IPM, via the prior above) and re-export the player index.
 echo "[$(ts)] Computing RAPM (this takes a while)…"
 "$PYTHON" -m pipeline.main --rapm-only
 
@@ -42,10 +51,19 @@ echo "[$(ts)] Computing RAPM (this takes a while)…"
 #     raw responses cached under data/shotdetail_cache/, so re-runs are cheap).
 "$PYTHON" -m pipeline.fetch_shot_detail
 
+# 2c. Schedule (one light call) + team power ratings (offline compute over
+#     files the weekly jobs already produce) ride the same cadence, so the
+#     /teams ratings card and the schedule never go stale in-season.
+"$PYTHON" -m pipeline.fetch_schedule
+"$PYTHON" -m pipeline.compute_ratings
+
 # 3. Stage the RAPM tables (single-season + 3-yr pooled), lineup chemistry,
 #    WPA + biggest plays, and the refreshed player index.
-git add data/rapm_*.csv data/lineup_chemistry_*.csv data/player_index_*.csv \
-        data/wpa_*.csv data/biggest_plays_*.csv
+git add data/rapm_*.csv data/ipm_*.csv data/spm_*.csv data/spm_model.json \
+        data/lineup_chemistry_*.csv data/player_index_*.csv \
+        data/wpa_*.csv data/biggest_plays_*.csv data/shot_hex_*.csv \
+        data/team_ratings_*.csv data/ratings_validation.csv data/ratings_model.json \
+        data/schedule_*.csv
 
 # 4. Commit + push only if something actually changed.
 if git diff --staged --quiet; then
