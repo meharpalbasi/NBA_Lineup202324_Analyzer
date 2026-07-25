@@ -1,0 +1,30 @@
+{
+  "features": [
+    "srs_diff",
+    "ipm_diff"
+  ],
+  "prob_logistic": [
+    0.263797,
+    0.091286,
+    0.052725
+  ],
+  "margin_lstsq": [
+    0.732997,
+    0.360112,
+    1.98536
+  ],
+  "margin_rmse_in_sample": 13.838,
+  "seasons": [
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+  ],
+  "srs_lambda": 4.0,
+  "prior_floor": -1.3,
+  "note": "P(home) = logistic(b0 + b1*srs_diff + b2*ipm_diff); margin model feeds B3 sims."
+}

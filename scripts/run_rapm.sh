@@ -57,13 +57,17 @@ echo "[$(ts)] Computing RAPM (this takes a while)…"
 "$PYTHON" -m pipeline.fetch_schedule
 "$PYTHON" -m pipeline.compute_ratings
 
+# 2d. Pregame win probability: revalidates the model and, in-season, writes
+#     predictions for every unplayed game on the schedule (offseason: no-op).
+"$PYTHON" -m pipeline.compute_winprob
+
 # 3. Stage the RAPM tables (single-season + 3-yr pooled), lineup chemistry,
 #    WPA + biggest plays, and the refreshed player index.
 git add data/rapm_*.csv data/ipm_*.csv data/spm_*.csv data/spm_model.json \
         data/lineup_chemistry_*.csv data/player_index_*.csv \
         data/wpa_*.csv data/biggest_plays_*.csv data/shot_hex_*.csv \
         data/team_ratings_*.csv data/ratings_validation.csv data/ratings_model.json \
-        data/schedule_*.csv
+        data/schedule_*.csv data/winprob_*.csv data/winprob_model.json
 
 # 4. Commit + push only if something actually changed.
 if git diff --staged --quiet; then
