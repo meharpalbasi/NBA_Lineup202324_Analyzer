@@ -27,8 +27,15 @@ special-case: the 2020 bubble and the empty-arena 2020-21 season mute home
 court; it shows up as noise, not bias.
 
 Runs standalone:  venv/bin/python -m pipeline.compute_winprob
-In-season, the weekly run also writes winprob_upcoming.csv for unplayed games
-on the schedule (offseason: skipped).
+In-season, the weekly run also writes winprob_upcoming_<season>.csv for unplayed
+games on the schedule; before a new season has game logs it is a no-op.
+
+Two honest limits on "as-of-date", stated because the methodology page says so
+too: the SRS refit advances by game index rather than by calendar date, so a
+game can be rated with other games from the SAME EVENING already included
+(worth ~0.2pp of accuracy); and the prior season's IPM inherits SPM
+coefficients fit across all nine seasons. Neither lets a later date inform an
+earlier prediction, which is the property that matters for retrodiction.
 """
 from __future__ import annotations
 
@@ -57,6 +64,14 @@ PRIOR_FLOOR = -1.3
 
 
 def _season_list() -> List[str]:
+    """Seasons used for validation — deliberately FROZEN, not auto-discovered.
+
+    A season in progress must not enter the LOSO fit (partial data would bias
+    the coefficients), so this list is bumped by hand once a season completes.
+    Between bumps only the three logistic coefficients age; the features
+    themselves are always recomputed live, so predictions stay current.
+    Rollover step: see scripts/SETUP_MACMINI.md.
+    """
     return [f"20{y}-{y+1}" for y in range(17, 26)]
 
 
@@ -135,8 +150,11 @@ class _RosterRating:
         logs = logs.sort_values("GAME_DATE")
         self.rows: Dict[str, List[Tuple[str, int, float]]] = {}
         for r in logs.itertuples():
+            # NaN is truthy, so `r.MIN or 0.0` would let a null through and
+            # poison the whole team's weighted average.
+            minutes = float(r.MIN) if pd.notna(r.MIN) else 0.0
             self.rows.setdefault(str(r.TEAM_ABBREVIATION), []).append(
-                (str(r.GAME_DATE), int(r.PLAYER_ID), float(r.MIN or 0.0))
+                (str(r.GAME_DATE), int(r.PLAYER_ID), minutes)
             )
         self.cursor: Dict[str, int] = {t: 0 for t in self.rows}
         self.cum: Dict[str, Dict[int, float]] = {t: {} for t in self.rows}
@@ -227,7 +245,13 @@ def validate(seasons: Optional[List[str]] = None) -> Tuple[pd.DataFrame, pd.Data
         logger.info("%s: %d games featurized", s, len(feats[s]))
 
     # 2017-18 has no prior-season IPM → prior-source only, never train/test.
+    # Any OTHER season dropping out means an input went missing; that would
+    # silently change the published sample size, so it warns loudly.
     usable = [s for s in seasons if not feats[s]["ipm_diff"].isna().any()]
+    for s in seasons:
+        if s not in usable and s != seasons[0]:
+            logger.warning("%s dropped from validation (no prior-season IPM) — "
+                           "published sample size will change", s)
     logger.info("LOSO seasons: %s", ", ".join(usable))
 
     results: List[Dict[str, Any]] = []
@@ -305,7 +329,16 @@ def predict_upcoming(season: str = config.SEASON) -> Optional[pd.DataFrame]:
     sched_path = config.DATA_DIR / f"schedule_{season}.csv"
     if not sched_path.exists() or not MODEL_PATH.exists():
         return None
-    sched = pd.read_csv(sched_path, low_memory=False)
+    # A brand-new season has a schedule days before it has any game logs, and
+    # --rapm-only never fetches them. Without this guard the weekly job dies
+    # here on the first run after the rollover.
+    for name in (f"team_game_logs_{season}.csv", f"player_game_logs_{season}.csv"):
+        p = config.DATA_DIR / name
+        if not p.exists() or p.stat().st_size == 0:
+            logger.info("%s not on disk yet (new season) — skipping upcoming win-prob.", name)
+            return None
+    # GAME_ID keeps its leading zeros so the output joins to schedule_<season>.csv.
+    sched = pd.read_csv(sched_path, low_memory=False, dtype={"GAME_ID": str})
     upcoming = sched[(sched["STAGE"] == "Regular Season") & (sched["STATUS"] == 1)]
     if upcoming.empty:
         logger.info("No unplayed regular-season games on the %s schedule.", season)

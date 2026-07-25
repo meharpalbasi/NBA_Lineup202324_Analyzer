@@ -160,5 +160,11 @@ launchctl unload ~/Library/LaunchAgents/com.nbalineup.supplementary.plist  # dis
 3. Frontend: add the new season entry to `lib/seasons-config.js` with
    `isCurrent` once the first data publishes.
 4. Everything else is automatic: `run_rapm.sh` now self-applies the frozen
-   SPM prior for a new season (→ IPM), refreshes the schedule, and recomputes
-   team power ratings on every weekly run.
+   SPM prior for a new season (→ IPM), refreshes the schedule, recomputes team
+   power ratings, and publishes pregame win probabilities for unplayed games
+   on every weekly run.
+5. **After the season ENDS** (not at tip-off): add it to `_season_list()` in
+   `pipeline/compute_winprob.py` so the win-probability model retrains on it,
+   then refresh the published Brier/calibration tables on the frontend
+   methodology page. Between bumps only the logistic coefficients age (drift
+   ~0.006 mean |ΔP| per year); the ratings themselves are recomputed live.

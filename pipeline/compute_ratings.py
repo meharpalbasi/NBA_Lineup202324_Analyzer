@@ -289,7 +289,14 @@ def compute_ratings(seasons: Optional[List[str]] = None) -> None:
 if __name__ == "__main__":  # pragma: no cover - manual runs
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     compute_ratings()
-    df = pd.read_csv(config.DATA_DIR / f"team_ratings_{config.SEASON}.csv")
+    # A season in progress has no ratings file yet (available_seasons() only
+    # yields completed ones), so this summary print must never abort the run —
+    # it sits mid-script in run_rapm.sh, ahead of the git publish steps.
+    ratings_path = config.DATA_DIR / f"team_ratings_{config.SEASON}.csv"
+    if not ratings_path.exists():
+        print(f"\n(no team_ratings_{config.SEASON}.csv yet — nothing to summarise)")
+        raise SystemExit(0)
+    df = pd.read_csv(ratings_path)
     print(f"\n=== {config.SEASON} POWER RATINGS (by Team IPM) ===")
     print(df[["TEAM_ABBREVIATION", "W", "L", "TEAM_IPM", "SRS",
               "O_SRS", "D_SRS", "SOS"]].head(12).to_string(index=False))
