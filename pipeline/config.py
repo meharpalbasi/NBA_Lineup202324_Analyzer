@@ -11,10 +11,13 @@ import os
 from pathlib import Path
 from typing import List
 
+from .season import resolve_season
+
 # ---------------------------------------------------------------------------
-# Season
+# Season — derived from the date (rolls over 1 October, see season.py);
+# NBA_SEASON overrides. Nothing here needs editing at a season rollover.
 # ---------------------------------------------------------------------------
-SEASON: str = os.getenv("NBA_SEASON", "2025-26")
+SEASON: str = resolve_season()
 
 # ---------------------------------------------------------------------------
 # TeamDashLineups — measure types, group quantities, per‑modes

@@ -5,11 +5,11 @@
     <key>Label</key>
     <string>com.nbalineup.supplementary</string>
 
-    <!-- Mac mini paths (user: meharpal, clone dir: NBA_Lineup202324_Analyzer). -->
+    <!-- Mac mini paths (user: meharpal, clone dir: ~/apps/NBA_Lineup202324_Analyzer — NOT ~/Documents, which macOS TCC blocks for launchd). -->
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/run_supplementary.sh</string>
+        <string>/Users/meharpal/apps/NBA_Lineup202324_Analyzer/scripts/run_supplementary.sh</string>
     </array>
 
     <!-- launchd starts jobs with a bare PATH; give it git + homebrew. -->
@@ -31,8 +31,8 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.out.log</string>
+    <string>/Users/meharpal/apps/NBA_Lineup202324_Analyzer/scripts/logs/launchd.out.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.err.log</string>
+    <string>/Users/meharpal/apps/NBA_Lineup202324_Analyzer/scripts/logs/launchd.err.log</string>
 </dict>
 </plist>

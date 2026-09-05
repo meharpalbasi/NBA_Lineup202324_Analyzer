@@ -38,6 +38,15 @@ git pull --rebase --autostash origin main
 #     brand-new season gets scored with the FROZEN weights in spm_model.json
 #     (no retraining); skipped once the file exists.
 SEASON="${NBA_SEASON:-$("$PYTHON" -c 'from pipeline import config; print(config.SEASON)')}"
+
+# 1a. New-season guard: config.SEASON rolls over on 1 October, but games (and
+#     the weekly supplementary job's player_stats) only arrive later in the
+#     month. Nothing to fit until then — exit cleanly and try again next week.
+if [ ! -f "data/player_stats_${SEASON}.csv" ]; then
+  echo "[$(ts)] No data for ${SEASON} yet (data/player_stats_${SEASON}.csv missing) — nothing to do."
+  exit 0
+fi
+
 if [ ! -f "data/spm_${SEASON}.csv" ]; then
   echo "[$(ts)] No SPM prior for ${SEASON} — applying frozen weights…"
   "$PYTHON" -m pipeline.compute_spm --apply "$SEASON"
