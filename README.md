@@ -119,7 +119,7 @@ python run_pipeline.py --season 2024-25
 ### CLI options
 
 ```
---season SEASON       NBA season (default: 2025-26, or NBA_SEASON env var)
+--season SEASON       NBA season (default: derived from the date — rolls over 1 Oct; NBA_SEASON overrides)
 --lineups-only        Fetch only lineup data
 --supplementary-only  Fetch only supplementary/player/team data + exports
 --with-rapm           Also compute RAPM (heavy; reconstructs every game, ~1h)
@@ -132,7 +132,7 @@ python run_pipeline.py --season 2024-25
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `NBA_SEASON` | Season to fetch | `2025-26` |
+| `NBA_SEASON` | Season to fetch (override) | date-derived: Oct–Dec → this year's season, Jan–Sep → last year's (`pipeline/season.py`) |
 | `GITHUB_TOKEN`, `GITHUB_REPO` | Railway auto-commit (legacy lineup job) | — |
 
 ## Publishing (who runs what)

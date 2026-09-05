@@ -17,7 +17,7 @@ nba_api is routed through `curl_cffi` Chrome-TLS impersonation
 
 | Job | Where | Produces |
 |-----|-------|----------|
-| `update_and_commit.sh` (`fetchlineups.py`) | Railway (cloud) | legacy lineup CSV (`NBALineup…BaseAdvanced.csv`) |
+| `update_and_commit.sh` (`fetchlineups.py`) | Railway (cloud, every 2 days) | legacy 5-man lineup CSV (`NBALineup…BaseAdvanced.csv`) — pushes with a classic no-expiry PAT |
 | `scripts/run_supplementary.sh` | **Mac mini** | on/off, clutch, play types, tracking, hustle, defense, estimated, slim 2/3-man lineups |
 
 ---
@@ -25,8 +25,10 @@ nba_api is routed through `curl_cffi` Chrome-TLS impersonation
 ## One-time setup
 
 ```bash
-# 1. Clone to the path the mini's launchd plist expects (skip if already cloned)
-cd ~/Documents
+# 1. Clone to the path the mini's launchd plist expects (skip if already cloned).
+#    ~/apps, NOT ~/Documents: macOS TCC blocks launchd (and orphaned ssh jobs)
+#    from ~/Documents, ~/Desktop and ~/Downloads with "Operation not permitted".
+mkdir -p ~/apps && cd ~/apps
 git clone git@github.com:meharpalbasi/NBA_Lineup202324_Analyzer.git
 cd NBA_Lineup202324_Analyzer
 
@@ -74,7 +76,7 @@ launchctl list | grep nbalineup
 tail -f scripts/logs/launchd.out.log scripts/logs/launchd.err.log
 ```
 
-> If this mini's username / clone path isn't `/Users/meharpal/Documents/NBA_Lineup202324_Analyzer`,
+> If this mini's username / clone path isn't `/Users/meharpal/apps/NBA_Lineup202324_Analyzer`,
 > edit the three hard-coded paths in `scripts/com.nbalineup.supplementary.mini.plist` before copying it.
 
 Default schedule: **Mondays 08:00 local**. If the mini is asleep/off then, launchd runs the
@@ -145,25 +147,39 @@ launchctl unload ~/Library/LaunchAgents/com.nbalineup.supplementary.plist  # dis
   exits, and the orphaned process dies with "Operation not permitted" on its
   first ~/Documents access. Detached screen sessions survive with permissions
   intact (that's how the 2026-07 lineup/shot-hex backfills ran).
+- **The repo lives in `~/apps/`, not `~/Documents/`** (moved 2026-09-05). launchd has
+  no TCC grant for ~/Documents at all: the weekly agent had *never* run successfully
+  there (`launchctl print` showed `runs = 1`, exit 78, "Operation not permitted").
+  ~/apps is outside TCC's protected folders, so launchd and screen jobs both work.
+- **The `github-nba` ssh alias is what every push depends on.** A later project's
+  setup overwrote `~/.ssh/config` on 2026-07-05 and silently removed it for two
+  months. If pushes fail with "Could not resolve hostname github-nba", re-add:
+  `Host github-nba / HostName github.com / User git / IdentityFile ~/.ssh/id_ed25519_nba / IdentitiesOnly yes`.
 - If a job's push is rejected (main moved while it ran):
   `git pull --rebase origin main && git push origin main` — data commits
   rebase cleanly.
 
-## Season rollover (October) checklist
+## Season rollover (October) — nothing to do
 
-1. Bump the default season: `pipeline/config.py` → `NBA_SEASON` default
-   (one-line PR); check Railway's `NBA_SEASON` env too.
-2. Load the RAPM launchd job (it stays unloaded over the summer):
-   `launchctl load ~/Library/LaunchAgents/com.nbalineup.rapm.mini.plist`.
-   First run wants the prior seasons' PBP cache for the 3-yr pooled fit —
-   rsync `data/rapm_cache/` from the laptop instead of refetching.
-3. Frontend: add the new season entry to `lib/seasons-config.js` with
-   `isCurrent` once the first data publishes.
-4. Everything else is automatic: `run_rapm.sh` now self-applies the frozen
-   SPM prior for a new season (→ IPM), refreshes the schedule, recomputes team
-   power ratings, and publishes pregame win probabilities for unplayed games
-   on every weekly run.
-5. **After the season ENDS** (not at tip-off): add it to `_season_list()` in
+Since 2026-09 the rollover is automatic end to end:
+
+- **Season string:** `pipeline/season.py` flips to the new season on **1 October**
+  (`NBA_SEASON` still overrides). Railway's legacy job uses the same rule.
+- **Empty weeks before opening night:** fetchers skip empty results, `run_rapm.sh`
+  exits cleanly until `player_stats_<season>.csv` exists, so nothing is published
+  until real games are in.
+- **RAPM agent stays loaded all year** (offseason runs refit from cache in seconds
+  and commit nothing). The prior seasons' PBP cache (`data/rapm_cache/`) and
+  shot-detail cache are on the mini, so the 3-yr pooled fit never refetches.
+- **IPM prior:** `run_rapm.sh` self-applies the frozen SPM weights to a new
+  season, refreshes the schedule, recomputes team power ratings and pregame win
+  probabilities on every weekly run.
+- **Frontend:** the season list is generated and the current season is verified
+  hourly against the published files — no entry to add.
+
+The one remaining manual step is post-season, not at tip-off:
+
+1. **After the season ENDS**: add it to `_season_list()` in
    `pipeline/compute_winprob.py` so the win-probability model retrains on it,
    then refresh the published Brier/calibration tables on the frontend
    methodology page. Between bumps only the logistic coefficients age (drift

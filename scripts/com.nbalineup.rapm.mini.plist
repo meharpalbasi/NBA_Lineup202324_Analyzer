@@ -5,11 +5,11 @@
     <key>Label</key>
     <string>com.nbalineup.rapm</string>
 
-    <!-- Mac mini paths (user: meharpal, clone dir: NBA_Lineup202324_Analyzer). -->
+    <!-- Mac mini paths (user: meharpal, clone dir: ~/apps/NBA_Lineup202324_Analyzer — NOT ~/Documents, which macOS TCC blocks for launchd). -->
     <key>ProgramArguments</key>
     <array>
         <string>/bin/bash</string>
-        <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/run_rapm.sh</string>
+        <string>/Users/meharpal/apps/NBA_Lineup202324_Analyzer/scripts/run_rapm.sh</string>
     </array>
 
     <!-- launchd starts jobs with a bare PATH; give it git + homebrew. -->
@@ -33,8 +33,8 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.rapm.out.log</string>
+    <string>/Users/meharpal/apps/NBA_Lineup202324_Analyzer/scripts/logs/launchd.rapm.out.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/meharpal/Documents/NBA_Lineup202324_Analyzer/scripts/logs/launchd.rapm.err.log</string>
+    <string>/Users/meharpal/apps/NBA_Lineup202324_Analyzer/scripts/logs/launchd.rapm.err.log</string>
 </dict>
 </plist>

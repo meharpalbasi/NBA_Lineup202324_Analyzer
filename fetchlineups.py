@@ -5,6 +5,28 @@ import pandas as pd
 import time
 import os
 
+# Route nba_api through curl_cffi (Chrome TLS fingerprint) when the pipeline
+# package is importable — stats.nba.com drops plain urllib3 fingerprints from
+# many networks. Optional: plain requests are used if the patch isn't available.
+try:
+    import pipeline.nba_http_patch  # noqa: F401
+except Exception as _patch_exc:  # pragma: no cover
+    print(f"(curl_cffi patch not applied: {_patch_exc})")
+
+# Season: NBA_SEASON env var if set, else derived from today's date (rolls over
+# on 1 October — see pipeline/season.py). No edit needed at a season rollover.
+try:
+    from pipeline.season import resolve_season as _resolve_season
+except Exception:  # pragma: no cover — standalone copy without the package
+    import datetime as _dt
+    def _resolve_season():
+        env = os.getenv("NBA_SEASON")
+        if env:
+            return env
+        t = _dt.date.today()
+        y = t.year if t.month >= 10 else t.year - 1
+        return f"{y}-{(y + 1) % 100:02d}"
+
 # In[1]: Get Team Information
 nba_teams = teams.get_teams()
 
@@ -99,7 +121,7 @@ print("-" * 30)
 
 # Test with a single team to ensure API is accessible
 test_team_id = 1610612747  # Lakers
-test_season = os.getenv("NBA_SEASON", "2025-26")
+test_season = _resolve_season()
 
 try:
     print(f"Testing API connectivity with Lakers (Team ID: {test_team_id})...")
@@ -168,11 +190,13 @@ for team_name, team_id_i in team_dict.items():
 
                 print(f"    Merging Base and Advanced {season_type} stats...")
                 # Columns to keep from advanced (GROUP_ID + unique advanced stats)
-                base_cols = set(team_lineup_base.columns)
-                adv_cols = set(team_lineup_advanced.columns)
-                # Exclude SEASON_TYPE from base_cols for comparison as it's added in both
-                base_cols_for_compare = base_cols - {'SEASON_TYPE'}
-                adv_unique_cols = list(adv_cols - base_cols_for_compare - {'SEASON_TYPE'}) # Also exclude SEASON_TYPE here
+                # Advanced columns not already in Base, in the API's own column
+                # order. (A set difference here made the order random per
+                # process, so every run rewrote all ~8,900 lines of the CSV —
+                # and committed — even when no number had changed.)
+                base_cols_for_compare = set(team_lineup_base.columns) - {'SEASON_TYPE'}
+                adv_unique_cols = [c for c in team_lineup_advanced.columns
+                                   if c not in base_cols_for_compare and c != 'SEASON_TYPE']
                 cols_to_keep = ['GROUP_ID'] + adv_unique_cols
                 cols_to_keep = [col for col in cols_to_keep if col in team_lineup_advanced.columns] # Ensure columns exist
 
@@ -262,7 +286,10 @@ if not league_lineup.empty:
     league_lineup['players_list'] = league_lineup['GROUP_NAME'].fillna('').str.split(' - ')
 
     # Sort by team name and then season type for clarity
-    league_lineup = league_lineup.sort_values(by=['team', 'SEASON_TYPE', 'MIN'], ascending=[True, True, False]) # Sort by MIN descending within type
+    # Deterministic order (GROUP_ID breaks MIN ties; mergesort is stable) so an
+    # unchanged season produces a byte-identical file and no commit.
+    league_lineup = league_lineup.sort_values(by=['team', 'SEASON_TYPE', 'MIN', 'GROUP_ID'],
+                                              ascending=[True, True, False, True], kind='mergesort')
 
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)

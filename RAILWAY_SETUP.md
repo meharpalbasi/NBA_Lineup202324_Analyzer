@@ -33,7 +33,7 @@ In your Railway project, go to **Variables** and add the following:
 
 | Variable | Value | Description |
 |----------|-------|-------------|
-| `GITHUB_TOKEN` | `ghp_xxxxx...` | Your GitHub Personal Access Token (from Step 1) |
+| `GITHUB_TOKEN` | `ghp_xxxxx...` | GitHub Personal Access Token (from Step 1). Use a **classic** token with the `repo` scope and **No expiration** — fine-grained tokens cap at 1 year and the job silently fails on every run once it expires (that is exactly what happened 2026-07-17 → 2026-09-05: fetch succeeded, `git push` got HTTP 401, Railway reported "Deployment crashed" every 2 days). |
 | `GITHUB_REPO` | `username/nbalineup` | Your GitHub repository in format `username/repo` |
 
 #### Optional Variables
@@ -42,12 +42,12 @@ In your Railway project, go to **Variables** and add the following:
 |----------|-------|-------------|
 | `GIT_USER_NAME` | `Railway Bot` | Name for git commits (default: Railway Bot) |
 | `GIT_USER_EMAIL` | `bot@railway.app` | Email for git commits (default: bot@railway.app) |
-| `NBA_SEASON` | `2025-26` | NBA season to fetch (default: 2025-26) |
+| `NBA_SEASON` | `2025-26` | Override only. Unset = derived from the date (rolls over 1 Oct, `pipeline/season.py`), so **leave it unset** and the job follows every new season on its own. |
 
 **Example Configuration:**
 - `GITHUB_TOKEN`: `ghp_abc123xyz...` (your actual PAT)
 - `GITHUB_REPO`: `meharpalbasi/nbalineup`
-- `NBA_SEASON`: `2025-26`
+- `NBA_SEASON`: leave unset (auto)
 
 ### 4. Cron Schedule
 

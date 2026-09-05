@@ -104,8 +104,15 @@ needs a new (heavy) pull — its own play-by-play subsystem, below.
 
 ## Seasons
 
-- **2025-26** — current: legacy lineups (Railway) + full supplementary (Mac mini).
-- **2024-25, 2023-24** — historical: legacy 5-man lineup CSVs only (no supplementary).
+- **Current season = derived from the date** (`pipeline/season.py`, rolls over **1 October**;
+  `NBA_SEASON` overrides). Nobody edits a season string in October: from 1 Oct every producer
+  targets the new season, gets 0 rows until opening night (every fetcher skips writing empty
+  files, so those runs are no-ops), and starts publishing `*_<new season>.csv` the first run after
+  games are played. The frontend switches over on its own once the new season's `player_index`
+  and 5-man files exist (see the frontend's `lib/current-season.js`).
+- **2017-18 → 2024-25** — historical, backfilled in full (5/3/2-man lineups + supplementary +
+  RAPM/IPM); the 2023-24/2024-25 5-man tables are the legacy `NBALineup…` files, older seasons use
+  `lineups_5man_<season>.csv`.
 
 ## Operating notes
 
