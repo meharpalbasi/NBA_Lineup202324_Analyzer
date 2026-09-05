@@ -57,9 +57,9 @@ season,model,window,brier,logloss,accuracy,n_games
 2024-25,blend,first_quarter,0.2071,0.6012,0.6699,306
 2025-26,home_only,full,0.2471,0.6873,0.5543,1225
 2025-26,home_only,first_quarter,0.2462,0.6855,0.5621,306
-2025-26,srs,full,0.2049,0.5972,0.6849,1225
-2025-26,srs,first_quarter,0.2016,0.5889,0.6569,306
+2025-26,srs,full,0.2049,0.5972,0.6865,1225
+2025-26,srs,first_quarter,0.2016,0.5888,0.6569,306
 2025-26,roster_prior_ipm,full,0.2268,0.6446,0.6229,1225
 2025-26,roster_prior_ipm,first_quarter,0.2204,0.6303,0.6405,306
-2025-26,blend,full,0.2066,0.6011,0.6824,1225
-2025-26,blend,first_quarter,0.1995,0.5844,0.6961,306
+2025-26,blend,full,0.2066,0.6011,0.6833,1225
+2025-26,blend,first_quarter,0.1995,0.5844,0.6993,306
