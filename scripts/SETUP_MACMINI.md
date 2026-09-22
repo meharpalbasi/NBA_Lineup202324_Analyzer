@@ -146,6 +146,7 @@ The laptop can still publish on demand with `bash scripts/run_supplementary.sh`;
 launchctl list | grep nbalineup                                            # is it loaded?
 launchctl start com.nbalineup.supplementary                                # run now
 launchctl unload ~/Library/LaunchAgents/com.nbalineup.supplementary.plist  # disable
+grep -E "Legacy|WARN" scripts/logs/launchd.out.log | tail -5               # did the 5-man lineup step work?
 ```
 
 ## See also
