@@ -31,6 +31,21 @@ logger = logging.getLogger("pipeline.fetch_supplementary")
 # =========================================================================
 
 
+def _canonical_order(df: pd.DataFrame, keys: List[str]) -> pd.DataFrame:
+    """Sort rows by ``keys`` (those present) with a stable sort.
+
+    stats.nba.com returns some result sets in a different row order on every
+    call (game logs, defender tracking, closest-defender splits). Without a
+    canonical order the weekly publish commits thousands of reordered lines
+    with no data change. Keys are chosen to identify a row uniquely, so the
+    output is byte-identical for identical data.
+    """
+    cols = [k for k in keys if k in df.columns]
+    if not cols:
+        return df
+    return df.sort_values(cols, kind="mergesort").reset_index(drop=True)
+
+
 def fetch_on_off(season: str = config.SEASON) -> Optional[pd.DataFrame]:
     """Fetch on/off court player stats for all 30 teams.
 
@@ -477,7 +492,7 @@ def fetch_defense_tracking(season: str = config.SEASON) -> Optional[pd.DataFrame
         logger.error("No defense tracking data collected.")
         return None
 
-    df = pd.concat(frames, ignore_index=True)
+    df = _canonical_order(pd.concat(frames, ignore_index=True), ['CLOSE_DEF_PERSON_ID', 'DEFENSE_CATEGORY', 'SEASON_TYPE'])
     filepath = config.DATA_DIR / f"defense_tracking_{season}.csv"
     save_dataframe(df, filepath)
     logger.info("✓ Defense tracking: %d rows → %s", len(df), filepath)
@@ -919,7 +934,7 @@ def fetch_player_game_logs(season: str = config.SEASON) -> Optional[pd.DataFrame
         logger.error("No player game-log data collected.")
         return None
 
-    df = pd.concat(frames, ignore_index=True)
+    df = _canonical_order(pd.concat(frames, ignore_index=True), ['PLAYER_ID', 'GAME_DATE', 'MATCHUP', 'SEASON_TYPE'])
     filepath = config.DATA_DIR / f"player_game_logs_{season}.csv"
     save_dataframe(df, filepath)
     logger.info("✓ Player game logs: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
@@ -996,7 +1011,7 @@ def fetch_team_game_logs(season: str = config.SEASON) -> Optional[pd.DataFrame]:
         logger.error("No team game-log data collected.")
         return None
 
-    df = pd.concat(frames, ignore_index=True)
+    df = _canonical_order(pd.concat(frames, ignore_index=True), ['TEAM_ID', 'GAME_DATE', 'MATCHUP', 'SEASON_TYPE'])
     filepath = config.DATA_DIR / f"team_game_logs_{season}.csv"
     save_dataframe(df, filepath)
     logger.info("✓ Team game logs: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
@@ -1068,7 +1083,7 @@ def fetch_pt_shot(season: str = config.SEASON) -> Optional[pd.DataFrame]:
         logger.error("No closest-defender shot data collected.")
         return None
 
-    df = pd.concat(frames, ignore_index=True)
+    df = _canonical_order(pd.concat(frames, ignore_index=True), ['PLAYER_ID', 'CLOSE_DEF', 'SEASON_TYPE'])
     filepath = config.DATA_DIR / f"pt_shot_defender_{season}.csv"
     save_dataframe(df, filepath)
     logger.info("✓ Shot splits: %d rows × %d cols → %s", len(df), len(df.columns), filepath)
