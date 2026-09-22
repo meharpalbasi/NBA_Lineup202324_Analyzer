@@ -72,4 +72,5 @@ it as a health signal.
 - `requirements-pipeline.txt` — minimal runtime deps (incl. `curl_cffi`).
 - `scripts/run_supplementary.sh` — fetch + commit/push (uses `--supplementary-only`).
 - `scripts/com.nbalineup.supplementary.mini.plist` (mini paths) / `…supplementary.plist` (laptop paths).
-- Railway still independently keeps the legacy 5-man lineup CSV fresh.
+- The legacy 5-man lineup CSV is refreshed by the same weekly job since 2026-09
+  (`--legacy-lineups-only`); the Railway cron that used to produce it is retired.

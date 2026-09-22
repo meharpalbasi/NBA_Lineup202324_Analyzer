@@ -160,6 +160,16 @@ def _parse_args(argv: list | None = None) -> argparse.Namespace:
         help="Fetch only supplementary data, skip lineups.",
     )
     parser.add_argument(
+        "--legacy-lineups-only",
+        action="store_true",
+        help=(
+            "Refresh only the legacy 5-man lineup CSV the dashboard reads "
+            "(NBALineup<season>_RegSeason_Playoffs_BaseAdvanced.csv): 5-man, "
+            "Totals, Base+Advanced, Regular Season + Playoffs — ~120 calls. "
+            "Skips everything else."
+        ),
+    )
+    parser.add_argument(
         "--with-rapm",
         action="store_true",
         help="Also compute RAPM (heavy — reconstructs every game's lineups; ~1h).",
@@ -219,6 +229,22 @@ def run(argv: list | None = None) -> None:
     wall_start = time.time()
     results: Dict[str, Tuple[bool, int]] = {}
     files_written: List[str] = []
+
+    # ------------------------------------------------------------------
+    # Legacy 5-man lineup CSV (the /dashboard 5-man table). A light,
+    # standalone mode: the weekly residential job runs it as its own
+    # invocation so a failure here can't take the supplementary section down
+    # (or vice versa). Replaces the retired Railway cron (2026-09).
+    # ------------------------------------------------------------------
+    if args.legacy_lineups_only:
+        from .fetch_lineups import fetch_legacy_lineups, legacy_lineups_path
+
+        ok, rows = _run_section("Legacy 5-man lineups", fetch_legacy_lineups, season)
+        results["Legacy lineups"] = (ok, rows)
+        if ok:
+            files_written.append(str(legacy_lineups_path(season)))
+        _print_summary(results, files_written, time.time() - wall_start)
+        return
 
     # ------------------------------------------------------------------
     # Core lineups
@@ -406,7 +432,7 @@ def run(argv: list | None = None) -> None:
     # Slim web exports (2/3-man) — needs the full lineup files; team is
     # reconstructed from the on/off CSV, so run after both sections. The raw
     # 5-man file gets the same team columns appended (the dashboard's team
-    # grid keys on them; the legacy Railway files carried them already).
+    # grid keys on them; the legacy NBALineup… files carry them already).
     # ------------------------------------------------------------------
     if not args.supplementary_only and not args.rapm_only:
         from .export_web import enrich_lineup_teams, export_slim

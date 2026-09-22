@@ -30,7 +30,7 @@ if [ ! -x "$PYTHON" ]; then
   exit 1
 fi
 
-# 1. Sync with remote first (Railway + the supplementary job also push to main).
+# 1. Sync with remote first (the supplementary job also pushes to main).
 echo "[$(ts)] Syncing with origin/main…"
 git pull --rebase --autostash origin main
 

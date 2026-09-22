@@ -28,8 +28,9 @@
 # stage the lineup CSVs, then commit + push only if something changed. The raw
 # lineups_{5,3,2}man_*.csv are .gitignored (too large to serve normally), so they
 # are force-added (`git add -f`) — for these backfilled seasons the raw 5-man file
-# is the ONLY 5-man source (no Railway bot produces a legacy NBALineup…csv for
-# them). The slim files are not ignored and stage normally.
+# is the ONLY 5-man source (no legacy NBALineup…csv exists for them; that file is
+# only produced for the current season). The slim files are not ignored and
+# stage normally.
 #
 # Residential IP only (stats.nba.com / Akamai blocks datacenter IPs; nba_api is
 # routed through curl_cffi Chrome-TLS in pipeline/nba_http_patch.py). Keep the
@@ -75,8 +76,8 @@ fi
 
 echo "===== $(ts) lineup backfill starting: ${SEASONS[*]} ====="
 
-# 1. Sync with remote first (Railway + the supplementary/RAPM jobs also push to
-#    main). --autostash so a dirty tree doesn't abort the rebase.
+# 1. Sync with remote first (the supplementary/RAPM jobs also push to main).
+#    --autostash so a dirty tree doesn't abort the rebase.
 echo "[$(ts)] Syncing with origin/main…"
 git pull --rebase --autostash origin main
 

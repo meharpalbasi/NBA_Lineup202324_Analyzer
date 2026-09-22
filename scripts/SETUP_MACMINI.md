@@ -1,14 +1,17 @@
 # Mac mini setup — supplementary data publisher
 
-The Mac mini is the **active publisher** of the modular pipeline's supplementary data:
-it runs `scripts/run_supplementary.sh` weekly on a home/residential IP and pushes the
-rich CSVs to GitHub — the data Railway does *not* produce (on/off, clutch, play types,
-tracking, hustle, defense tracking, estimated metrics, and the slim 2/3-man lineups).
+The Mac mini is the **publisher** of everything in `data/`: it runs
+`scripts/run_supplementary.sh` weekly on a home/residential IP and pushes the rich
+CSVs to GitHub (on/off, clutch, play types, tracking, hustle, defense tracking,
+estimated metrics, the slim 2/3-man lineups) **and** the legacy 5-man lineup CSV the
+dashboard reads (`NBALineup…BaseAdvanced.csv`, via `--legacy-lineups-only`).
 
 Why a residential machine and not the cloud: `stats.nba.com` (Akamai) blocks
 datacenter/cloud IPs (AWS/GCP/Railway/GitHub Actions); a home IP reaches it fine.
 nba_api is routed through `curl_cffi` Chrome-TLS impersonation
-(`pipeline/nba_http_patch.py`) to pass Akamai's fingerprinting.
+(`pipeline/nba_http_patch.py`) to pass Akamai's fingerprinting. (This is why the
+Railway cron that used to publish the 5-man file was retired in 2026-09 — it had
+been missing most of its runs.)
 
 > **Note (resolved 2026-06-03):** the mini was briefly thought to be "blocked" from
 > `stats.nba.com`. That was a **false negative in the test command**, not a real block —
@@ -17,8 +20,9 @@ nba_api is routed through `curl_cffi` Chrome-TLS impersonation
 
 | Job | Where | Produces |
 |-----|-------|----------|
-| `update_and_commit.sh` (`fetchlineups.py`) | Railway (cloud, every 2 days) | legacy 5-man lineup CSV (`NBALineup…BaseAdvanced.csv`) — pushes with a classic no-expiry PAT |
-| `scripts/run_supplementary.sh` | **Mac mini** | on/off, clutch, play types, tracking, hustle, defense, estimated, slim 2/3-man lineups |
+| `scripts/run_supplementary.sh` (Mon 08:00) | **Mac mini** | on/off, clutch, play types, tracking, hustle, defense, estimated, slim 2/3-man lineups, **legacy 5-man lineup CSV** |
+| `scripts/run_rapm.sh` (Sat 08:00) | **Mac mini** | RAPM, chemistry, WPA, refreshed `player_index` |
+| `scripts/run_lineups.sh` (Wed + Fri 08:00, **optional**) | Mac mini | legacy 5-man lineup CSV only — load if weekly is too stale in-season |
 
 ---
 
@@ -87,6 +91,19 @@ reload:
 launchctl unload ~/Library/LaunchAgents/com.nbalineup.supplementary.plist
 cp scripts/com.nbalineup.supplementary.mini.plist ~/Library/LaunchAgents/com.nbalineup.supplementary.plist
 launchctl load -w ~/Library/LaunchAgents/com.nbalineup.supplementary.plist
+```
+
+## Optional: mid-week 5-man lineup refresh (launchd) — Wednesdays + Fridays 08:00
+
+The Monday job already refreshes the legacy 5-man CSV. If you want the every-2-days
+cadence the old Railway cron had during the season, also load the lineups-only job
+(`scripts/run_lineups.sh`, ~120 calls, a few minutes, commits only when the file changed):
+
+```bash
+cp scripts/com.nbalineup.lineups.mini.plist ~/Library/LaunchAgents/com.nbalineup.lineups.plist
+launchctl load -w ~/Library/LaunchAgents/com.nbalineup.lineups.plist
+launchctl start com.nbalineup.lineups           # optional: run once now
+tail -f scripts/logs/launchd.lineups.out.log scripts/logs/launchd.lineups.err.log
 ```
 
 ## Install the weekly RAPM job (launchd) — Saturdays 08:00
@@ -164,7 +181,8 @@ launchctl unload ~/Library/LaunchAgents/com.nbalineup.supplementary.plist  # dis
 Since 2026-09 the rollover is automatic end to end:
 
 - **Season string:** `pipeline/season.py` flips to the new season on **1 October**
-  (`NBA_SEASON` still overrides). Railway's legacy job uses the same rule.
+  (`NBA_SEASON` still overrides). The legacy 5-man file follows the same rule, so
+  `NBALineup<new season>_…csv` appears on the first Monday run after games are played.
 - **Empty weeks before opening night:** fetchers skip empty results, `run_rapm.sh`
   exits cleanly until `player_stats_<season>.csv` exists, so nothing is published
   until real games are in.
