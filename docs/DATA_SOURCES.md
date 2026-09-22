@@ -27,7 +27,7 @@ flowchart LR
 > **Railway is retired (2026-09).** A Railway cron used to publish the legacy 5-man lineup
 > CSV every 2 days. `stats.nba.com` throttles datacenter IPs, so it missed most runs from
 > mid-July 2026 on; the fetch was ported into the pipeline (`--legacy-lineups-only`) and the
-> Mac mini publishes that file too. See [Retiring Railway](#retiring-railway-checklist) below.
+> Mac mini publishes that file too. See [Railway retirement](#railway-retirement) below.
 
 ## Who produces what
 
@@ -120,23 +120,21 @@ needs a new (heavy) pull — its own play-by-play subsystem, below.
 - **Health check (NOT a bare curl one-liner):** `python -m pipeline.main --supplementary-only --dry-run`. A header-less request to `/stats/*` hangs ~20s even when everything is fine — see [`docs/MINI_NBA_BLOCK_DEBUG.md`](./MINI_NBA_BLOCK_DEBUG.md).
 - **Change a schedule:** edit `StartCalendarInterval` in the relevant `.mini` plist, then `launchctl unload && launchctl load -w` it.
 - **Confirm a run happened:** look for the commit messages above on `main`, or tail `scripts/logs/launchd.{out,err}.log` (`launchd.lineups.*.log` for the optional mid-week job).
+- **Confirm the 5-man step worked:** when the data hasn't changed (the offseason), a successful legacy-lineups refresh commits nothing — exactly like a failed one — so git can't tell them apart. Check the log: `grep -E "Legacy|WARN" scripts/logs/launchd.out.log | tail -5`. A good run shows `Legacy lineups: N rows from 30/30 teams` and `✓ Legacy 5-man lineups completed in …s — N rows`. A bad one shows `⚠ Legacy 5-man lineups completed but produced 0 rows` (nothing fetched, or a partial fetch it refused to publish), `✗ … FAILED`, or the script's `WARN: legacy lineup refresh failed` line. In-season the file changes every week, so a Monday commit without it is itself a red flag.
 - **One scheduled publisher at a time:** the Mac mini. The laptop's scheduled agent is retired to avoid push races.
 
-## Retiring Railway (checklist)
+## Railway retirement
 
-The code side is done in this repo (`railway.json`, `update_and_commit.sh`, `RAILWAY_SETUP.md`,
-`fetchlineups.py` and the keep-alive workflow are gone). What remains is outside git:
+Completed 2026-09-22 — nothing Railway-related is left to do:
 
-1. **Railway dashboard:** delete (or at least pause) the "NBA Lineup Updater" service so it can't
-   race the mini on `data/NBALineup…csv`. Both wrote the same deterministic file, so an overlap
-   is harmless, just noisy.
-2. **GitHub → Settings → Secrets:** remove `RAILWAY_API_TOKEN`, `RAILWAY_SERVICE_ID`,
-   `RAILWAY_ENVIRONMENT_ID` (only the deleted keep-alive workflow used them).
-3. **The classic PAT** the Railway service pushed with (`GITHUB_TOKEN` in its variables): revoke
-   it at GitHub → Settings → Developer settings → Personal access tokens.
-4. **Confirm the cut-over:** the first Monday run after merge should commit the 5-man file in
-   the mini's `data: refresh supplementary stats - <date>` commit (or report "no changes" in the
-   offseason — expected).
+- **Code:** `railway.json`, `update_and_commit.sh`, `RAILWAY_SETUP.md`, `fetchlineups.py` and the
+  keep-alive workflow were removed in PR #37; the fetch lives on as `--legacy-lineups-only`.
+- **Railway:** the service is deleted.
+- **GitHub:** the fine-grained token the service pushed with is revoked, and the
+  `RAILWAY_API_TOKEN` / `RAILWAY_SERVICE_ID` / `RAILWAY_ENVIRONMENT_ID` Actions secrets are removed.
+
+Its last commit to `main` was `chore: update NBA lineup data - 2026-09-07`. Since then the Mac
+mini is the only writer of `data/NBALineup…csv`.
 
 ## See also
 - [`scripts/SETUP_MACMINI.md`](../scripts/SETUP_MACMINI.md) — residential publisher setup.
