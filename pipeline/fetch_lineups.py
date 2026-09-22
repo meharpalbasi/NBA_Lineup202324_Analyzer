@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import logging
 import time
+from pathlib import Path
 from typing import Dict, List, Optional
 
 import pandas as pd
@@ -250,3 +251,195 @@ def fetch_and_merge_lineups(season: str = config.SEASON) -> Dict[int, pd.DataFra
         )
 
     return results
+
+
+# ---------------------------------------------------------------------------
+# Legacy 5-man file — the /dashboard 5-man table
+# ---------------------------------------------------------------------------
+#
+# ``data/NBALineup<YYYYYY>_RegSeason_Playoffs_BaseAdvanced.csv`` is the file the
+# frontend reads for the current season's 5-man dashboard, and whose existence
+# (with ``player_index``) tells it a new season has started. Until 2026-09 a
+# Railway cron produced it with the standalone ``fetchlineups.py``; this is that
+# script ported into the pipeline so the residential publisher makes it too.
+#
+# It is deliberately *light*: 5-man × Totals × Base+Advanced × (Regular Season,
+# Playoffs) = 120 ``TeamDashLineups`` calls, a few minutes — versus the ~2,000
+# calls of the full lineup fetch above, which is why the weekly job can afford
+# to run it every time.
+#
+# The output contract is kept byte-for-byte compatible with the original
+# script — same column set and order, ``team`` as the full name, ``players_list``
+# as a Python-list repr, deterministic row order — so an unchanged season
+# produces an identical file and the publisher commits nothing.
+
+LEGACY_MEASURE_TYPES: List[str] = ["Base", "Advanced"]
+LEGACY_GROUP_QUANTITY: int = 5
+LEGACY_PER_MODE: str = "Totals"
+
+
+def legacy_lineups_path(season: str = config.SEASON) -> Path:
+    """``data/NBALineup202627_RegSeason_Playoffs_BaseAdvanced.csv`` for ``"2026-27"``."""
+    return config.DATA_DIR / f"NBALineup{season.replace('-', '')}_RegSeason_Playoffs_BaseAdvanced.csv"
+
+
+def _fetch_team_legacy(
+    season: str,
+    season_type: str,
+    team_id: int,
+    measure_type: str,
+) -> Optional[pd.DataFrame]:
+    """One ``TeamDashLineups`` call (5-man, Totals) for one team.
+
+    Returns the lineup frame (result set index 1) with ``SEASON_TYPE`` appended,
+    or ``None`` when the call failed after retries or returned no rows (e.g. a
+    team that missed the playoffs).
+    """
+    try:
+        result = api_call_with_retry(
+            teamdashlineups.TeamDashLineups,
+            params=dict(
+                group_quantity=LEGACY_GROUP_QUANTITY,
+                measure_type_detailed_defense=measure_type,
+                per_mode_detailed=LEGACY_PER_MODE,
+                season=season,
+                season_type_all_star=season_type,
+                team_id=team_id,
+                last_n_games=0,
+                month=0,
+                opponent_team_id=0,
+                pace_adjust="N",
+                plus_minus="N",
+                period=0,
+                rank="N",
+            ),
+        )
+    except Exception as exc:
+        logger.error(
+            "Legacy lineups: %s / %s / %s failed for team %d: %s",
+            season, season_type, measure_type, team_id, exc,
+        )
+        return None
+
+    df_list = result.get_data_frames()
+    if len(df_list) < 2 or df_list[1].empty:
+        return None
+    df = df_list[1].copy()
+    df["SEASON_TYPE"] = season_type
+    return df
+
+
+def merge_legacy_team(
+    base: Optional[pd.DataFrame],
+    advanced: Optional[pd.DataFrame],
+    team_name: str,
+    team_id: int,
+) -> Optional[pd.DataFrame]:
+    """Merge one team/season-type's Base and Advanced frames the legacy way.
+
+    Pure (no I/O) so it can be tested offline. Advanced contributes only the
+    columns Base lacks, **in the API's own column order** (a set difference here
+    once made the order random per process and every run rewrote the whole
+    file); the join is an inner join on ``GROUP_ID``. If Advanced is missing
+    the Base frame is used alone, matching the original script. Returns ``None``
+    when there is nothing usable.
+    """
+    if base is None or base.empty:
+        return None
+
+    if advanced is None or advanced.empty:
+        logger.warning("  %s: Advanced stats missing — using Base stats only.", team_name)
+        merged = base.copy()
+    else:
+        base_cols = set(base.columns) - {"SEASON_TYPE"}
+        adv_unique = [c for c in advanced.columns if c not in base_cols and c != "SEASON_TYPE"]
+        merged = pd.merge(
+            base,
+            advanced[["GROUP_ID"] + adv_unique],
+            on="GROUP_ID",
+            how="inner",
+            suffixes=("", "_adv"),
+        )
+        if merged.empty:
+            logger.warning("  %s: no common lineups between Base and Advanced — skipped.", team_name)
+            return None
+
+    merged["team"] = team_name
+    merged["team_id"] = team_id
+    return merged
+
+
+def finalize_legacy_lineups(frames: List[pd.DataFrame]) -> pd.DataFrame:
+    """Concatenate per-team frames into the published legacy table.
+
+    Adds ``players_list`` (split from ``GROUP_NAME``) and applies the
+    deterministic sort: team, season type, minutes descending, ``GROUP_ID`` as
+    the tie-break, stable mergesort — so identical data yields an identical file.
+    """
+    if not frames:
+        return pd.DataFrame()
+    df = pd.concat(frames, ignore_index=True)
+    df["players_list"] = df["GROUP_NAME"].fillna("").str.split(" - ")
+    return df.sort_values(
+        by=["team", "SEASON_TYPE", "MIN", "GROUP_ID"],
+        ascending=[True, True, False, True],
+        kind="mergesort",
+    )
+
+
+def fetch_legacy_lineups(season: str = config.SEASON) -> Optional[pd.DataFrame]:
+    """Refresh the legacy 5-man lineup CSV for *season* (~120 API calls).
+
+    Writes :func:`legacy_lineups_path`. The file is left untouched when the
+    fetch returns nothing (pre-season, or the API is unreachable) and when it
+    would cover *fewer* teams than the file already on disk — a partial fetch
+    must never replace a complete table on the dashboard.
+
+    Returns:
+        The written ``DataFrame``, or ``None`` if nothing was written.
+    """
+    team_ids = get_all_team_ids()
+    n_calls = len(team_ids) * len(config.SEASON_TYPES) * len(LEGACY_MEASURE_TYPES)
+    logger.info(
+        "Legacy 5-man lineups for %s: %d teams × %s × %s = %d calls",
+        season, len(team_ids), "/".join(config.SEASON_TYPES), "+".join(LEGACY_MEASURE_TYPES), n_calls,
+    )
+
+    frames: List[pd.DataFrame] = []
+    for idx, team_id in enumerate(team_ids, 1):
+        team_name = get_team_name(team_id)
+        for season_type in config.SEASON_TYPES:
+            parts: Dict[str, Optional[pd.DataFrame]] = {}
+            for measure_type in LEGACY_MEASURE_TYPES:
+                parts[measure_type] = _fetch_team_legacy(season, season_type, team_id, measure_type)
+                pace()  # respect rate limits between calls
+            merged = merge_legacy_team(parts["Base"], parts["Advanced"], team_name, team_id)
+            if merged is None:
+                logger.info("  [%d/%d] %s — %s: no rows", idx, len(team_ids), team_name, season_type)
+            else:
+                frames.append(merged)
+                logger.info("  [%d/%d] %s — %s: %d lineups", idx, len(team_ids), team_name, season_type, len(merged))
+
+    df = finalize_legacy_lineups(frames)
+    if df.empty:
+        logger.warning("Legacy lineups: no rows for %s — existing file left untouched.", season)
+        return None
+
+    path = legacy_lineups_path(season)
+    teams_now = int(df["team"].nunique())
+    if path.exists():
+        try:
+            teams_before = int(pd.read_csv(path, usecols=["team"])["team"].nunique())
+        except Exception:  # unreadable/odd file — overwrite it
+            teams_before = 0
+        if teams_now < teams_before:
+            logger.error(
+                "Legacy lineups: fetched %d teams but %s already covers %d — "
+                "refusing to overwrite a complete table with a partial one.",
+                teams_now, path.name, teams_before,
+            )
+            return None
+
+    logger.info("Legacy lineups: %d rows from %d/%d teams", len(df), teams_now, len(team_ids))
+    save_dataframe(df, path)
+    return df

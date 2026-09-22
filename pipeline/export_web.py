@@ -34,7 +34,8 @@ from .utils import save_dataframe, setup_logging
 
 logger = logging.getLogger("pipeline.export_web")
 
-# Group sizes we publish slim files for (5-man already ships via the legacy CSV).
+# Group sizes we publish slim files for (5-man already ships via the legacy
+# NBALineup… CSV — see fetch_lineups.fetch_legacy_lineups).
 SLIM_GROUP_QUANTITIES: List[int] = [2, 3]
 
 # Columns the frontend reads — kept in a legacy-compatible order. Any that are
@@ -123,7 +124,7 @@ def enrich_lineup_teams(season: str = config.SEASON) -> Optional[Path]:
     """Append team/team_id columns to the raw 5-man file (legacy-file contract).
 
     The dashboard's team grid and filters key on a per-lineup ``team``; the
-    Railway-era ``NBALineup…`` files carried it, but the pipeline's raw merge
+    legacy ``NBALineup…`` files carry it, but the pipeline's raw merge
     doesn't. Derive it the same way the slim exports do (GROUP_ID → the team
     common to the five players, via the on/off roster map). Idempotent —
     a file that already has the columns is left untouched.

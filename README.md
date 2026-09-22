@@ -19,7 +19,7 @@ run_pipeline.py              ← entry point (thin wrapper around pipeline.main)
 └── pipeline/
     ├── config.py            ← all tunable constants (measure types, delays, season)
     ├── nba_http_patch.py    ← routes nba_api through curl_cffi (Chrome TLS) — see below
-    ├── fetch_lineups.py     ← core lineup data (LeagueDashLineups, 5/3/2-man)
+    ├── fetch_lineups.py     ← core lineup data (TeamDashLineups, 5/3/2-man) + the legacy 5-man dashboard file
     ├── fetch_supplementary.py ← player/team pulls (on/off, clutch, tracking, stats, …)
     ├── fetch_rapm.py        ← RAPM: play-by-play → lineup reconstruction → ridge (opt-in)
     ├── compute_impact.py    ← BPM 2.0 + VORP and shot-making/xeFG, computed OFFLINE
@@ -29,8 +29,8 @@ run_pipeline.py              ← entry point (thin wrapper around pipeline.main)
 ```
 
 Run it as `python run_pipeline.py …` or `python -m pipeline.main …` (identical).
-`fetchlineups.py` is the original single-file pipeline (Base+Advanced only), kept
-for the Railway legacy-lineup job; use `run_pipeline.py` for everything else.
+(The original single-file `fetchlineups.py`, which a Railway cron used to run, was
+folded into `pipeline/fetch_lineups.py` as `--legacy-lineups-only` in 2026-09.)
 
 ### Why curl_cffi
 
@@ -58,6 +58,16 @@ group size.
 
 → `lineups_{5,3,2}man_{season}.csv` (full, **.gitignored** — too big) and the
 published slim `lineups_slim_{2,3}man_{season}.csv` (Totals, MIN≥100, ~40 cols).
+
+### Legacy 5-man dashboard file — `fetch_lineups.fetch_legacy_lineups`
+
+`NBALineup{YYYYYY}_RegSeason_Playoffs_BaseAdvanced.csv` — the table the
+`/dashboard` 5-man view reads (and whose existence tells the frontend a new
+season has started). A light fetch: 5-man × Totals × Base+Advanced × Regular
+Season + Playoffs, 120 `TeamDashLineups` calls, a few minutes. Run with
+`--legacy-lineups-only`; the weekly Mac mini job does. The output is byte-identical
+across runs when nothing changed (deterministic column and row order), and the
+fetcher refuses to overwrite a complete file with a partial one.
 
 ### Player & team pulls — `fetch_supplementary.py`
 
@@ -112,6 +122,7 @@ pip install -r requirements-pipeline.txt   # nba_api, pandas, curl_cffi, scikit-
 
 python run_pipeline.py                      # lineups + supplementary + exports
 python run_pipeline.py --supplementary-only # skip the heavy lineup fetch (~220 calls)
+python run_pipeline.py --legacy-lineups-only # just the /dashboard 5-man file (~120 calls)
 python run_pipeline.py --rapm-only          # just RAPM + re-export player_index (~1h)
 python run_pipeline.py --season 2024-25
 ```
@@ -122,6 +133,7 @@ python run_pipeline.py --season 2024-25
 --season SEASON       NBA season (default: derived from the date — rolls over 1 Oct; NBA_SEASON overrides)
 --lineups-only        Fetch only lineup data
 --supplementary-only  Fetch only supplementary/player/team data + exports
+--legacy-lineups-only Refresh only the legacy 5-man dashboard CSV (NBALineup…BaseAdvanced.csv)
 --with-rapm           Also compute RAPM (heavy; reconstructs every game, ~1h)
 --rapm-only           Compute RAPM and re-export player_index; skip everything else
 --dry-run             Test API connectivity only (use this for a health check)
@@ -133,7 +145,6 @@ python run_pipeline.py --season 2024-25
 | Variable | Description | Default |
 |----------|-------------|---------|
 | `NBA_SEASON` | Season to fetch (override) | date-derived: Oct–Dec → this year's season, Jan–Sep → last year's (`pipeline/season.py`) |
-| `GITHUB_TOKEN`, `GITHUB_REPO` | Railway auto-commit (legacy lineup job) | — |
 
 ## Publishing (who runs what)
 
@@ -141,11 +152,16 @@ The CSVs in `data/` are published to `main` by automated producers, **not** by a
 plain `git push` from a dev box. See [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md).
 In short:
 
-- **Railway (cloud, every 2 days)** — the legacy 5-man lineup CSV (`fetchlineups.py`).
 - **Mac mini (residential, weekly)** — `scripts/run_supplementary.sh`: everything
-  supplementary + the computed metrics + `player_index`.
+  supplementary + the computed metrics + `player_index`, **and** the legacy 5-man
+  dashboard CSV (`--legacy-lineups-only`).
 - **RAPM** — `scripts/run_rapm.sh` (`--rapm-only`), on its own slower cadence
   because it's a ~1h job; publishes `rapm_*.csv` + the RAPM-merged `player_index`.
+- *(Optional)* **`scripts/run_lineups.sh`** — mid-week refresh of just the 5-man
+  file (Wed + Fri plist) if weekly isn't fresh enough during the season.
+
+There is no cloud producer: the Railway cron that used to publish the 5-man file
+was retired in 2026-09 (datacenter IPs are throttled by `stats.nba.com`).
 
 > ⚠️ Code that changes `export_web`/`compute_impact`/`fetch_*` must merge **before**
 > the next scheduled run, or the producers regenerate the CSVs with old code.

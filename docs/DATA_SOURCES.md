@@ -1,8 +1,8 @@
 # Data sources & publishing
 
-How NBA data gets from `stats.nba.com` into the web app. There are **two repos**, **two
-automated producers** (Railway in the cloud, the Mac mini at home), and the frontend reads
-everything as static CSVs over GitHub's raw CDN — there is no API server or database.
+How NBA data gets from `stats.nba.com` into the web app. There are **two repos**, **one
+automated producer** (the Mac mini at home), and the frontend reads everything as static
+CSVs over GitHub's raw CDN — there is no API server or database.
 
 ## The two repos
 
@@ -15,22 +15,25 @@ everything as static CSVs over GitHub's raw CDN — there is no API server or da
 
 ```mermaid
 flowchart LR
-  R["Railway cron bot<br/>(cloud, every 2 days)"]
-  M["Mac mini<br/>(launchd, weekly) — active"]
+  M["Mac mini<br/>(launchd: weekly supplementary + 5-man lineups, weekly RAPM)"]
   L["Laptop<br/>(manual fallback)"]
   D[("data/ on main<br/>NBA_Lineup202324_Analyzer")]
   F["Next.js app<br/>(client-side fetch + parse)"]
-  R -->|legacy lineup CSV| D
-  M -->|supplementary CSVs| D
+  M -->|all published CSVs| D
   L -. manual run only .-> D
   D -->|raw.githubusercontent.com| F
 ```
+
+> **Railway is retired (2026-09).** A Railway cron used to publish the legacy 5-man lineup
+> CSV every 2 days. `stats.nba.com` throttles datacenter IPs, so it missed most runs from
+> mid-July 2026 on; the fetch was ported into the pipeline (`--legacy-lineups-only`) and the
+> Mac mini publishes that file too. See [Retiring Railway](#retiring-railway-checklist) below.
 
 ## Who produces what
 
 | Data file (in `data/`) | Producer | nba_api endpoint | Published to git? |
 |---|---|---|---|
-| `NBALineup202526_RegSeason_Playoffs_BaseAdvanced.csv` | **Railway** | `TeamDashLineups` (5-man) | ✅ |
+| `NBALineup202526_RegSeason_Playoffs_BaseAdvanced.csv` (legacy 5-man, current season) | **Mac mini** (`--legacy-lineups-only`) | `TeamDashLineups` (5-man, Base+Adv, Totals) | ✅ |
 | `on_off_2025-26.csv` | **Mac mini** | `TeamPlayerOnOffSummary` | ✅ |
 | `clutch_2025-26.csv` | **Mac mini** | `LeagueDashTeamClutch` | ✅ |
 | `play_types_2025-26.csv` | **Mac mini** | `SynergyPlayTypes` | ✅ |
@@ -56,23 +59,20 @@ derived from the pulls above by `pipeline/compute_impact.py` and merged into
 `player_index` by `pipeline/export_web.py`. **RAPM** is the one exception that
 needs a new (heavy) pull — its own play-by-play subsystem, below.
 
-## Producer 1 — Railway (cloud), every 2 days
-
-- Config: [`railway.json`](../railway.json) → `cronSchedule: "0 0 */2 * *"` = **00:00 UTC every 2 days**, `startCommand: bash update_and_commit.sh`.
-- [`update_and_commit.sh`](../update_and_commit.sh): sync `main` → `python fetchlineups.py` → `git add data/` → commit `chore: update NBA lineup data - <date>` → push.
-- Output: the **legacy 5-man lineup CSV** for the current season only.
-- Keep-alive: [`.github/workflows/railway-keepalive.yml`](../.github/workflows/railway-keepalive.yml) pings Railway to redeploy **every Sunday 00:00 UTC** so the free-tier service doesn't sleep.
-- ⚠️ Caveat: since ~Feb 2026, `stats.nba.com` (Akamai) throttles/blocks datacenter IPs, so the cloud lineup fetch can be flaky. The residential machine below is the dependable publisher.
-
-## Producer 2 — Mac mini (launchd), Mondays 08:00 local — **active publisher**
+## Producer 1 — Mac mini (launchd), Mondays 08:00 local — **the publisher**
 
 - Config: [`scripts/com.nbalineup.supplementary.mini.plist`](../scripts/com.nbalineup.supplementary.mini.plist), installed on the mini as `~/Library/LaunchAgents/com.nbalineup.supplementary.plist` → `StartCalendarInterval` Weekday 1 (Monday), 08:00. Runs on next wake if asleep.
-- [`scripts/run_supplementary.sh`](../scripts/run_supplementary.sh): pull `main` → `python -m pipeline.main --supplementary-only` (~220 API calls) → stage the rich CSVs → commit `data: refresh supplementary stats - <date>` → push (only if something changed).
-- Output: **everything databallr-style** — on/off, clutch, play types, tracking, defense tracking, hustle, estimated metrics, and the **slim 2/3-man lineups**.
+- [`scripts/run_supplementary.sh`](../scripts/run_supplementary.sh): pull `main` → `python -m pipeline.main --supplementary-only` (~220 API calls) → `python -m pipeline.main --legacy-lineups-only` (~120 calls, separate invocation so one can't sink the other) → stage the published CSVs → commit `data: refresh supplementary stats - <date>` → push (only if something changed).
+- Output: **everything databallr-style** — on/off, clutch, play types, tracking, defense tracking, hustle, estimated metrics, the **slim 2/3-man lineups** — **plus the legacy 5-man lineup CSV** the dashboard reads.
+- The legacy fetch (`pipeline/fetch_lineups.py::fetch_legacy_lineups`) writes a byte-identical file when nothing changed and refuses to overwrite a complete table with a partial one, so a flaky run never publishes a half-empty dashboard.
 - Why residential: it routes nba_api through `curl_cffi` (Chrome TLS impersonation) from a home IP, which `stats.nba.com` accepts. See [`pipeline/nba_http_patch.py`](../pipeline/nba_http_patch.py).
 - Setup runbook: [`scripts/SETUP_MACMINI.md`](../scripts/SETUP_MACMINI.md). (The mini was briefly mis-diagnosed as "blocked" — that was a test-command false negative; see [`docs/MINI_NBA_BLOCK_DEBUG.md`](./MINI_NBA_BLOCK_DEBUG.md).)
 
-## Producer 2b — RAPM (`run_rapm.sh`, residential, separate cadence)
+### Optional — mid-week 5-man refresh (`run_lineups.sh`, Wed + Fri)
+
+- [`scripts/run_lineups.sh`](../scripts/run_lineups.sh) + [`scripts/com.nbalineup.lineups.mini.plist`](../scripts/com.nbalineup.lineups.mini.plist): the `--legacy-lineups-only` step on its own, Wednesdays and Fridays 08:00. With Monday's job that is the every-2-days cadence Railway had. **Not loaded by default** — load it if weekly lineups feel stale in-season. Commit `data: refresh 5-man lineups - <date>`, only when the file changed.
+
+## Producer 1b — RAPM (`run_rapm.sh`, residential, separate cadence)
 
 - [`scripts/run_rapm.sh`](../scripts/run_rapm.sh): pull `main` → `python -m pipeline.main --rapm-only` → stage `rapm_*.csv` + the refreshed `player_index_*.csv` → commit `data: refresh RAPM - <date>` → push.
 - Heavy and **separate from the weekly supplementary run**: it reconstructs every game's on-court fives from `playbyplayv3` + `boxscoretraditionalv3` (no pre-built lineup feed exists for the current season), so it's ~2,500 light per-game calls / ~1h. Run it on its own slower cadence.
@@ -80,9 +80,9 @@ needs a new (heavy) pull — its own play-by-play subsystem, below.
 - Residential IP only, same `curl_cffi` reason as the supplementary fetch.
 - Recipe + gotchas live in the [`pipeline/fetch_rapm.py`](../pipeline/fetch_rapm.py) module docstring.
 
-## Producer 3 — Laptop (manual fallback)
+## Producer 2 — Laptop (manual fallback)
 
-- Same repo + venv as the mini; can publish on demand with `bash scripts/run_supplementary.sh`.
+- Same repo + venv as the mini; can publish on demand with `bash scripts/run_supplementary.sh` (which includes the 5-man file) or just `bash scripts/run_lineups.sh`.
 - Its **scheduled** LaunchAgent has been **retired** (`launchctl unload …`) so it doesn't race the mini. Re-enable with `launchctl load -w …` if the mini is ever offline for a while.
 
 ## How the frontend consumes it
@@ -116,13 +116,28 @@ needs a new (heavy) pull — its own play-by-play subsystem, below.
 
 ## Operating notes
 
-- **Publish supplementary data now (manually):** on a residential machine, `bash scripts/run_supplementary.sh` (commits + pushes only if data changed).
+- **Publish supplementary data now (manually):** on a residential machine, `bash scripts/run_supplementary.sh` (commits + pushes only if data changed). Just the 5-man file: `bash scripts/run_lineups.sh`.
 - **Health check (NOT a bare curl one-liner):** `python -m pipeline.main --supplementary-only --dry-run`. A header-less request to `/stats/*` hangs ~20s even when everything is fine — see [`docs/MINI_NBA_BLOCK_DEBUG.md`](./MINI_NBA_BLOCK_DEBUG.md).
-- **Change a schedule:** Railway → edit `cronSchedule` in `railway.json`; mini → edit `StartCalendarInterval` in the `.mini` plist, then `launchctl unload && launchctl load -w` it.
-- **Confirm a run happened:** look for the commit messages above on `main`, or tail `scripts/logs/launchd.{out,err}.log`.
+- **Change a schedule:** edit `StartCalendarInterval` in the relevant `.mini` plist, then `launchctl unload && launchctl load -w` it.
+- **Confirm a run happened:** look for the commit messages above on `main`, or tail `scripts/logs/launchd.{out,err}.log` (`launchd.lineups.*.log` for the optional mid-week job).
 - **One scheduled publisher at a time:** the Mac mini. The laptop's scheduled agent is retired to avoid push races.
 
+## Retiring Railway (checklist)
+
+The code side is done in this repo (`railway.json`, `update_and_commit.sh`, `RAILWAY_SETUP.md`,
+`fetchlineups.py` and the keep-alive workflow are gone). What remains is outside git:
+
+1. **Railway dashboard:** delete (or at least pause) the "NBA Lineup Updater" service so it can't
+   race the mini on `data/NBALineup…csv`. Both wrote the same deterministic file, so an overlap
+   is harmless, just noisy.
+2. **GitHub → Settings → Secrets:** remove `RAILWAY_API_TOKEN`, `RAILWAY_SERVICE_ID`,
+   `RAILWAY_ENVIRONMENT_ID` (only the deleted keep-alive workflow used them).
+3. **The classic PAT** the Railway service pushed with (`GITHUB_TOKEN` in its variables): revoke
+   it at GitHub → Settings → Developer settings → Personal access tokens.
+4. **Confirm the cut-over:** the first Monday run after merge should commit the 5-man file in
+   the mini's `data: refresh supplementary stats - <date>` commit (or report "no changes" in the
+   offseason — expected).
+
 ## See also
-- [`RAILWAY_SETUP.md`](../RAILWAY_SETUP.md) — Railway deploy + env vars.
 - [`scripts/SETUP_MACMINI.md`](../scripts/SETUP_MACMINI.md) — residential publisher setup.
 - [`docs/MINI_NBA_BLOCK_DEBUG.md`](./MINI_NBA_BLOCK_DEBUG.md) — why the mini "block" was a false negative.
