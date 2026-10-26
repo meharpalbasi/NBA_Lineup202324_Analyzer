@@ -1,0 +1,925 @@
+GROUP_SET,TEAM_ID,TEAM_ABBREVIATION,TEAM_NAME,VS_PLAYER_ID,VS_PLAYER_NAME,COURT_STATUS,GP,MIN,PLUS_MINUS,OFF_RATING,DEF_RATING,NET_RATING,team,SEASON_TYPE
+On/Off Court,1610612737,ATL,Atlanta Hawks,1629638,"Alexander-Walker, Nickeil",On,3,89.0,27.4,121.4,95.4,26.0,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630700,"Daniels, Dyson",On,3,87.0,18.8,117.3,99.5,17.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1629652,"Dort, Luguentz",On,3,70.0,0.7,115.3,115.4,-0.1,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1643544,"Ejiofor, Zuby",On,1,8.0,47.2,142.9,80.0,62.9,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1627827,"Finney-Smith, Dorian",On,1,8.0,47.2,142.9,80.0,62.9,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1643412,"Flemings, Kingston",On,3,55.0,2.6,108.2,106.6,1.6,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630552,"Johnson, Jalen",On,3,95.0,18.8,124.0,105.0,19.0,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630557,"Kispert, Corey",On,1,10.0,64.6,138.9,66.7,72.2,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1629111,"Landale, Jock",On,3,55.0,7.8,111.2,106.6,4.6,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,203468,"McCollum, CJ",On,3,76.0,19.5,123.6,106.1,17.5,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1642854,"Newell, Asa",On,1,8.0,47.2,142.9,80.0,62.9,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630168,"Okongwu, Onyeka",On,3,77.0,15.0,121.3,107.1,14.2,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630598,"Wiggins, Aaron",On,3,82.0,4.7,117.6,113.2,4.4,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1629638,"Alexander-Walker, Nickeil",Off,3,55.0,-3.5,116.2,116.7,-0.4,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630700,"Daniels, Dyson",Off,3,57.0,10.9,120.0,112.3,7.7,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1642484,"Dennis, RayJ",Off,3,144.0,15.7,120.6,105.8,14.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1629652,"Dort, Luguentz",Off,3,74.0,29.8,123.7,93.6,30.1,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1643544,"Ejiofor, Zuby",Off,3,136.0,13.8,119.6,106.8,12.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1627827,"Finney-Smith, Dorian",Off,3,136.0,13.8,119.6,106.8,12.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1643412,"Flemings, Kingston",Off,3,89.0,23.6,125.4,103.7,21.7,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1642933,"Gilbert, Keshon",Off,3,144.0,15.7,120.6,105.8,14.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1631243,"Gueye, Mouhamed",Off,3,144.0,15.7,120.6,105.8,14.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630552,"Johnson, Jalen",Off,3,49.0,9.7,112.5,102.7,9.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630557,"Kispert, Corey",Off,3,134.0,12.1,119.1,108.2,10.9,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1629111,"Landale, Jock",Off,3,89.0,20.6,124.3,103.7,20.7,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,203468,"McCollum, CJ",Off,3,68.0,11.3,113.3,104.1,9.3,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1642854,"Newell, Asa",Off,3,136.0,13.8,119.6,106.8,12.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630168,"Okongwu, Onyeka",Off,3,67.0,16.5,116.6,102.1,14.5,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1643539,"Veesaar, Henri",Off,3,144.0,15.7,120.6,105.8,14.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630598,"Wiggins, Aaron",Off,3,62.0,30.1,124.0,92.4,31.7,Atlanta Hawks,Regular Season
+On/Off Court,1610612737,ATL,Atlanta Hawks,1630592,"Wilson, Jalen",Off,3,144.0,15.7,120.6,105.8,14.8,Atlanta Hawks,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1630568,"Garza, Luka",On,2,12.0,-12.1,91.7,96.2,-4.5,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,202331,"George, Paul",On,2,64.0,7.5,117.6,110.8,6.8,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1642864,"González, Hugo",On,2,13.0,-61.4,92.3,151.9,-59.5,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1630573,"Hauser, Sam",On,2,41.0,15.3,126.5,112.2,14.3,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1630202,"Pritchard, Payton",On,2,58.0,-1.7,111.9,110.7,1.1,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1629674,"Queta, Neemias",On,2,44.0,6.5,124.7,113.4,11.3,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1629011,"Robinson, Mitchell",On,2,41.0,-11.8,103.8,112.3,-8.5,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1631248,"Scheierman, Baylor",On,2,29.0,-9.8,103.2,111.1,-7.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1628369,"Tatum, Jayson",On,2,75.0,-2.6,112.4,114.3,-1.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1641775,"Walsh, Jordan",On,2,34.0,1.4,104.3,104.4,-0.1,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1628401,"White, Derrick",On,2,69.0,-5.5,114.5,118.6,-4.1,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1642269,"Carter, Devin",Off,2,96.0,-2.0,114.6,115.5,-0.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1643416,"Cenac Jr., Chris",Off,2,96.0,-2.0,114.6,115.5,-0.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,201144,"Conley, Mike",Off,2,96.0,-2.0,114.6,115.5,-0.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1630568,"Garza, Luka",Off,2,84.0,-0.6,117.9,116.4,1.5,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,202331,"George, Paul",Off,2,32.0,-21.2,103.1,119.4,-16.3,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1642864,"González, Hugo",Off,2,83.0,7.5,117.4,108.3,9.1,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1631199,"Harper Jr., Ron",Off,2,96.0,-2.0,114.6,115.5,-0.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1630573,"Hauser, Sam",Off,2,55.0,-14.8,100.0,115.8,-15.8,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1641759,"Mitchell, Dillon",Off,2,96.0,-2.0,114.6,115.5,-0.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1630202,"Pritchard, Payton",Off,2,38.0,-2.5,112.8,116.9,-4.1,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1629674,"Queta, Neemias",Off,2,52.0,-9.3,103.0,109.6,-6.6,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1629011,"Robinson, Mitchell",Off,2,55.0,5.2,119.8,112.7,7.1,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1631248,"Scheierman, Baylor",Off,2,67.0,1.4,114.7,114.9,-0.2,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1628369,"Tatum, Jayson",Off,2,21.0,0.0,120.0,117.1,2.9,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1641775,"Walsh, Jordan",Off,2,62.0,-3.9,116.5,117.7,-1.2,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1628401,"White, Derrick",Off,2,27.0,7.2,114.8,100.0,14.8,Boston Celtics,Regular Season
+On/Off Court,1610612738,BOS,Boston Celtics,1642873,"Williams, Amari",Off,2,96.0,-2.0,114.6,115.5,-0.9,Boston Celtics,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1628386,"Allen, Jarrett",On,2,56.0,0.9,101.6,100.8,0.8,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,201935,"Harden, James",On,2,66.0,-14.5,100.6,113.6,-13.0,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1626209,"Hezonja, Mario",On,2,39.0,11.2,112.0,101.2,10.8,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1630241,"Merrill, Sam",On,2,45.0,12.7,112.6,99.0,13.6,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1628378,"Mitchell, Donovan",On,2,71.0,-0.7,106.8,107.4,-0.6,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1630596,"Mobley, Evan",On,2,69.0,-15.9,104.5,117.6,-13.2,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1641854,"Porter Jr., Craig",On,2,13.0,15.3,100.0,89.3,10.7,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1642878,"Proctor, Tyrese",On,2,16.0,36.3,119.0,90.5,28.6,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1642281,"Tyson, Jaylon",On,2,45.0,12.9,115.6,100.0,15.6,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1631212,"Watson, Peyton",On,2,61.0,-20.4,97.8,115.7,-17.9,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1628386,"Allen, Jarrett",Off,2,40.0,-5.9,110.8,113.7,-2.9,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1628418,"Bryant, Thomas",Off,2,96.0,-2.0,106.9,108.3,-1.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1631215,"Diop, Khalifa",Off,2,96.0,-2.0,106.9,108.3,-1.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1642400,"Enaruna, Tristan",Off,2,96.0,-2.0,106.9,108.3,-1.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,201935,"Harden, James",Off,2,30.0,25.9,120.6,92.3,28.3,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1626209,"Hezonja, Mario",Off,2,57.0,-10.9,101.5,111.0,-9.6,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1630241,"Merrill, Sam",Off,2,51.0,-15.2,99.1,113.9,-14.8,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1642434,"Minix, Riley",Off,2,96.0,-2.0,106.9,108.3,-1.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1628378,"Mitchell, Donovan",Off,2,25.0,-5.7,100.0,101.7,-1.7,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1630596,"Mobley, Evan",Off,2,27.0,34.3,108.1,78.7,29.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1641854,"Porter Jr., Craig",Off,2,83.0,-4.6,106.9,110.5,-3.6,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1642878,"Proctor, Tyrese",Off,2,80.0,-9.6,104.0,111.9,-7.9,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1643509,"Thomas, Meleek",Off,2,96.0,-2.0,106.9,108.3,-1.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1641772,"Tomlin, Nae'Qwan",Off,2,96.0,-2.0,106.9,108.3,-1.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1642281,"Tyson, Jaylon",Off,2,51.0,-14.9,99.2,113.3,-14.2,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1643640,"Udeh, Jr., Ernest",Off,2,96.0,-2.0,106.9,108.3,-1.4,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612739,CLE,Cleveland Cavaliers,1631212,"Watson, Peyton",Off,2,35.0,30.3,120.3,91.3,29.0,Cleveland Cavaliers,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1630180,"Bey, Saddiq",On,3,71.0,2.0,120.4,112.5,7.9,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642847,"Fears, Jeremiah",On,3,68.0,-10.6,110.2,121.2,-11.0,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1630529,"Jones, Herbert",On,3,51.0,9.4,115.2,100.0,15.2,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,201599,"Jordan, DeAndre",On,1,20.0,-2.4,115.9,118.2,-2.3,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1631097,"Mathurin, Bennedict",On,3,53.0,-11.7,118.3,123.1,-4.9,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1631255,"Matković, Karlo",On,2,17.0,2.8,105.3,100.0,5.3,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642274,"Missi, Yves",On,2,39.0,-17.1,117.9,139.5,-21.6,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1630530,"Murphy III, Trey",On,3,100.0,-11.5,112.9,124.5,-11.6,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1627749,"Murray, Dejounte",On,3,99.0,-10.7,113.3,123.4,-10.1,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1629673,"Poole, Jordan",On,3,56.0,13.6,122.1,103.1,19.0,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642852,"Queen, Derik",On,3,72.0,5.4,113.0,110.1,2.9,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1629627,"Williamson, Zion",On,3,98.0,0.5,113.9,113.4,0.5,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1630180,"Bey, Saddiq",Off,3,78.0,-8.0,111.7,120.7,-9.0,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1643738,"Dia, Malik",Off,3,149.0,-3.2,115.8,118.2,-2.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642847,"Fears, Jeremiah",Off,3,81.0,3.0,119.8,112.5,7.3,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642358,"Johnson, AJ",Off,3,149.0,-3.2,115.8,118.2,-2.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1630529,"Jones, Herbert",Off,3,98.0,-9.8,115.6,125.0,-9.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,201599,"Jordan, DeAndre",Off,3,129.0,-3.4,114.9,117.3,-2.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1631097,"Mathurin, Bennedict",Off,3,96.0,1.5,113.3,111.9,1.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1631255,"Matković, Karlo",Off,3,132.0,-4.0,116.4,120.6,-4.3,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1631121,"McGowens, Bryce",Off,3,149.0,-3.2,115.8,118.2,-2.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642274,"Missi, Yves",Off,3,110.0,1.7,113.2,111.1,2.1,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1630530,"Murphy III, Trey",Off,3,49.0,13.7,120.6,102.7,17.9,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1627749,"Murray, Dejounte",Off,3,50.0,11.5,121.0,102.7,18.3,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1643555,"Pierre Jr., Jaron",Off,3,149.0,-3.2,115.8,118.2,-2.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1629673,"Poole, Jordan",Off,3,93.0,-13.5,111.4,123.6,-12.3,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642852,"Queen, Derik",Off,3,77.0,-11.2,113.0,124.4,-11.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1642882,"Reese, Julian",Off,3,149.0,-3.2,115.8,118.2,-2.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1630570,"Watford, Trendon",Off,3,149.0,-3.2,115.8,118.2,-2.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612740,NOP,New Orleans Pelicans,1629627,"Williamson, Zion",Off,3,51.0,-10.3,117.4,120.9,-3.4,New Orleans Pelicans,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1643591,"Awaka, Tobe",On,1,14.0,-20.3,93.8,112.5,-18.8,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1641824,"Buzelis, Matas",On,3,77.0,-19.3,107.2,126.4,-19.2,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1628380,"Collins, Zach",On,2,20.0,14.4,100.0,93.3,6.7,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1642855,"Essengue, Noa",On,2,27.0,7.2,100.0,96.8,3.2,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630581,"Giddey, Josh",On,3,78.0,-30.1,100.0,125.8,-25.8,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1627741,"Hield, Buddy",On,3,45.0,-7.4,106.9,114.9,-8.0,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630200,"Jones, Tre",On,3,56.0,13.8,112.9,100.8,12.1,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1631159,"Miller, Leonard",On,3,70.0,-13.7,100.0,114.8,-14.8,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630171,"Okoro, Isaac",On,3,59.0,-30.1,96.9,124.4,-27.5,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1626181,"Powell, Norman",On,3,87.0,-7.1,104.9,111.7,-6.9,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1643637,"Sellers, Jaylin",On,1,14.0,-20.3,93.8,112.5,-18.8,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630188,"Smith, Jalen",On,3,68.0,-16.3,100.0,113.8,-13.8,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1643410,"Wilson, Caleb",On,3,104.0,-15.7,107.0,121.0,-14.0,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1643591,"Awaka, Tobe",Off,3,130.0,-12.6,106.1,118.8,-12.7,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1641824,"Buzelis, Matas",Off,3,67.0,-6.4,98.0,104.6,-6.6,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1629651,"Claxton, Nic",Off,3,144.0,-13.3,104.9,118.2,-13.3,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1628380,"Collins, Zach",Off,3,124.0,-17.8,105.3,121.3,-15.9,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1642855,"Essengue, Noa",Off,3,117.0,-18.0,104.9,121.9,-17.0,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630581,"Giddey, Josh",Off,3,66.0,6.6,108.2,103.4,4.7,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1641722,"Hawkins, Jordan",Off,3,144.0,-13.3,104.9,118.2,-13.3,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1627741,"Hield, Buddy",Off,3,99.0,-16.1,101.7,116.5,-14.8,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630200,"Jones, Tre",Off,3,88.0,-30.5,98.1,125.6,-27.5,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1631159,"Miller, Leonard",Off,3,74.0,-13.0,105.1,116.4,-11.3,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630171,"Okoro, Isaac",Off,3,85.0,-1.7,107.4,110.5,-3.1,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1626181,"Powell, Norman",Off,3,57.0,-22.9,101.6,124.0,-22.4,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1643637,"Sellers, Jaylin",Off,3,130.0,-12.6,106.1,118.8,-12.7,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630188,"Smith, Jalen",Off,3,76.0,-10.7,105.7,117.4,-11.7,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1643517,"Swain, Dailyn",Off,3,144.0,-13.3,104.9,118.2,-13.3,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1630172,"Williams, Patrick",Off,3,144.0,-13.3,104.9,118.2,-13.3,Chicago Bulls,Regular Season
+On/Off Court,1610612741,CHI,Chicago Bulls,1643410,"Wilson, Caleb",Off,3,40.0,-7.2,93.3,102.3,-8.9,Chicago Bulls,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1631108,"Christie, Max",On,3,92.0,-23.4,97.4,121.0,-23.6,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1630619,"Cissé, Moussa",On,3,11.0,31.2,120.8,95.7,25.2,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1642383,"Clayton Jr., Walter",On,2,15.0,-6.2,103.3,110.0,-6.7,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1642843,"Flagg, Cooper",On,2,50.0,26.9,130.8,103.7,27.1,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1629655,"Gafford, Daniel",On,3,59.0,-0.8,112.9,108.5,4.4,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1641724,"Howard, Jett",On,1,4.0,34.8,111.1,87.5,23.6,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,202681,"Irving, Kyrie",On,2,49.0,1.0,110.5,110.6,-0.1,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1643516,"Johnson Jr., Morez",On,3,43.0,0.0,107.4,103.1,4.4,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1643588,"Lawal, Tobi",On,2,5.0,53.1,108.3,70.0,38.3,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1630230,"Marshall, Naji",On,3,83.0,-12.7,102.2,113.2,-11.0,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1642258,"Risacher, Zaccharie",On,3,91.0,2.7,116.3,112.6,3.7,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1631204,"Sasser, Marcus",On,3,77.0,-3.1,120.5,120.6,-0.1,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1629023,"Washington, P.J.",On,3,100.0,-23.6,104.3,124.1,-19.8,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1643547,"de Larrea, Sergio",On,3,41.0,-18.8,110.5,130.6,-20.1,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1630583,"Aldama, Santi",Off,3,144.0,-6.0,112.0,117.9,-6.0,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1641844,"Biberović, Tarik",Off,3,144.0,-6.0,112.0,117.9,-6.0,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1631108,"Christie, Max",Off,3,52.0,25.0,130.4,107.2,23.1,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1630619,"Cissé, Moussa",Off,3,133.0,-9.0,110.8,118.9,-8.1,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1642383,"Clayton Jr., Walter",Off,3,129.0,-6.0,112.5,117.9,-5.4,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1642843,"Flagg, Cooper",Off,3,94.0,-23.5,99.0,123.4,-24.4,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1629655,"Gafford, Daniel",Off,3,85.0,-9.6,108.2,116.9,-8.7,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1641724,"Howard, Jett",Off,3,140.0,-7.2,111.6,118.8,-7.2,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,202681,"Irving, Kyrie",Off,3,95.0,-9.6,110.5,118.2,-7.7,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1643516,"Johnson Jr., Morez",Off,3,101.0,-8.5,111.3,117.6,-6.3,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1643588,"Lawal, Tobi",Off,3,139.0,-8.3,112.1,119.6,-7.5,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1641726,"Lively II, Dereck",Off,3,144.0,-6.0,112.0,117.9,-6.0,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1630230,"Marshall, Naji",Off,3,61.0,3.1,120.5,113.7,6.7,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1628997,"Martin, Caleb",Off,3,144.0,-6.0,112.0,117.9,-6.0,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1642258,"Risacher, Zaccharie",Off,3,54.0,-20.6,100.0,118.9,-18.9,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1631204,"Sasser, Marcus",Off,3,67.0,-9.3,100.0,109.5,-9.5,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1629023,"Washington, P.J.",Off,3,44.0,33.7,126.9,91.6,35.3,Dallas Mavericks,Regular Season
+On/Off Court,1610612742,DAL,Dallas Mavericks,1643547,"de Larrea, Sergio",Off,3,103.0,-0.9,111.0,111.4,-0.4,Dallas Mavericks,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1628963,"Bagley III, Marvin",On,2,20.0,-4.7,85.7,90.5,-4.8,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1631128,"Braun, Christian",On,2,73.0,-3.3,107.6,112.3,-4.6,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1642350,"Brazile, Trevon",On,2,47.0,9.3,103.8,96.2,7.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,201942,"DeRozan, DeMar",On,2,52.0,-12.1,90.7,106.7,-16.0,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1643813,"Diallo, Alpha",On,1,22.0,2.2,88.6,86.4,2.3,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,203932,"Gordon, Aaron",On,2,66.0,-0.7,106.3,109.4,-3.0,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1641747,"Holmes II, DaRon",On,1,2.0,139.8,266.7,100.0,166.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1643624,"Hopkins, Bryce",On,2,21.0,-9.3,110.6,121.7,-11.1,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1629661,"Johnson, Cameron",On,1,11.0,0.0,117.4,117.4,0.0,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,203999,"Jokić, Nikola",On,2,79.0,-5.5,107.1,114.5,-7.4,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1626145,"Jones, Tyus",On,2,19.0,-12.3,88.6,104.8,-16.1,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1627750,"Murray, Jamal",On,2,80.0,-0.6,107.2,107.2,0.0,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1642948,"Nembhard, Ryan",On,1,2.0,139.8,266.7,100.0,166.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1641715,"Whitmore, Cam",On,1,11.0,-42.5,115.4,160.0,-44.6,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1628963,"Bagley III, Marvin",Off,2,81.0,-2.4,110.5,114.2,-3.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1631128,"Braun, Christian",Off,2,28.0,-1.7,96.6,98.3,-1.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1642350,"Brazile, Trevon",Off,2,54.0,-13.2,103.6,118.0,-14.4,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,201942,"DeRozan, DeMar",Off,2,49.0,6.8,117.6,111.1,6.5,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1643813,"Diallo, Alpha",Off,2,79.0,-4.3,108.8,115.6,-6.8,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,203932,"Gordon, Aaron",Off,2,35.0,-6.9,97.4,102.6,-5.2,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1641747,"Holmes II, DaRon",Off,2,99.0,-5.3,103.3,110.1,-6.8,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1643624,"Hopkins, Bryce",Off,2,80.0,-1.2,103.0,106.7,-3.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1629661,"Johnson, Cameron",Off,2,90.0,-3.2,103.7,109.1,-5.4,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,203999,"Jokić, Nikola",Off,2,22.0,6.5,97.8,91.1,6.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1642461,"Jones, Spencer",Off,2,101.0,-2.9,106.1,110.0,-3.9,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1626145,"Jones, Tyus",Off,2,82.0,-0.6,109.4,109.4,0.1,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1627750,"Murray, Jamal",Off,2,21.0,-11.3,95.9,110.6,-14.7,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1642948,"Nembhard, Ryan",Off,2,99.0,-5.3,103.3,110.1,-6.8,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1630192,"Nnaji, Zeke",Off,2,101.0,-2.9,106.1,110.0,-3.9,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1631124,"Strawther, Julian",Off,2,101.0,-2.9,106.1,110.0,-3.9,Denver Nuggets,Regular Season
+On/Off Court,1610612743,DEN,Denver Nuggets,1641715,"Whitmore, Cam",Off,2,90.0,2.1,103.7,103.2,0.5,Denver Nuggets,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1629646,"Bassey, Charles",On,1,13.0,11.3,106.7,103.6,3.1,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1643018,"Cryer, LJ",On,2,23.0,-6.3,128.6,132.0,-3.4,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,201939,"Curry, Stephen",On,2,51.0,-24.5,100.9,128.6,-27.6,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,203110,"Green, Draymond",On,2,52.0,-24.8,104.6,131.8,-27.2,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,201143,"Horford, Al",On,2,37.0,-19.7,83.3,101.3,-17.9,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1643633,"Ike, Graham",On,3,51.0,-9.5,116.5,126.9,-10.3,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1642865,"Lendeborg, Yaxel",On,3,103.0,-11.7,106.7,120.6,-13.9,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1642502,"Leons, Malevy",On,2,13.0,0.0,124.1,124.1,0.0,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1629001,"Melton, De'Anthony",On,3,68.0,-28.9,98.6,125.5,-26.9,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1627777,"Niang, Georges",On,3,56.0,1.7,116.1,118.3,-2.2,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1627780,"Payton II, Gary",On,3,46.0,-26.9,108.9,138.8,-29.9,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1641764,"Podziemski, Brandin",On,1,33.0,0.0,111.3,114.5,-3.2,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1642954,"Richard, Will",On,3,55.0,4.4,114.3,111.0,3.3,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1630611,"Santos, Gui",On,3,68.0,-9.2,106.9,115.9,-9.0,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1630314,"Williams, Brandon",On,3,51.0,5.6,111.5,106.2,5.3,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1629646,"Bassey, Charles",Off,3,131.0,-13.5,109.8,123.6,-13.9,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,202710,"Butler III, Jimmy",Off,3,144.0,-11.3,110.2,122.2,-12.0,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1643018,"Cryer, LJ",Off,3,121.0,-12.3,106.3,120.2,-14.0,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,201939,"Curry, Stephen",Off,3,93.0,-4.1,113.0,116.4,-3.4,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,203110,"Green, Draymond",Off,3,92.0,-3.7,112.2,114.6,-2.4,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,201143,"Horford, Al",Off,3,107.0,-8.5,118.9,127.9,-8.9,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1643633,"Ike, Graham",Off,3,93.0,-12.3,103.5,117.8,-14.3,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1642865,"Lendeborg, Yaxel",Off,3,41.0,-10.4,110.2,120.5,-10.2,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1642502,"Leons, Malevy",Off,3,131.0,-12.5,108.3,122.0,-13.6,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1629001,"Melton, De'Anthony",Off,3,76.0,4.4,116.2,116.9,-0.7,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1630541,"Moody, Moses",Off,3,144.0,-11.3,110.2,122.2,-12.0,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1627777,"Niang, Georges",Off,3,88.0,-19.7,101.6,120.7,-19.1,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1627780,"Payton II, Gary",Off,3,98.0,-3.9,107.1,111.5,-4.3,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1641764,"Podziemski, Brandin",Off,3,111.0,-14.7,108.9,123.4,-14.5,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,204001,"Porziņģis, Kristaps",Off,3,144.0,-11.3,110.2,122.2,-12.0,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1642954,"Richard, Will",Off,3,89.0,-21.0,105.3,128.0,-22.7,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1630611,"Santos, Gui",Off,3,76.0,-13.2,107.8,126.4,-18.6,Golden State Warriors,Regular Season
+On/Off Court,1610612744,GSW,Golden State Warriors,1630314,"Williams, Brandon",Off,3,93.0,-20.7,107.7,128.4,-20.6,Golden State Warriors,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203500,"Adams, Steven",On,1,9.0,32.4,128.6,110.5,18.0,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203992,"Bogdanović, Bogdan",On,3,42.0,2.3,124.1,118.8,5.3,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203991,"Capela, Clint",On,2,19.0,-12.7,112.2,121.4,-9.2,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1642384,"Crawford, Isaiah",On,2,4.0,-27.2,160.0,142.9,17.1,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,201142,"Durant, Kevin",On,3,111.0,16.0,123.9,109.1,14.9,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1631106,"Eason, Tari",On,3,60.0,-3.2,115.2,113.8,1.4,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1630578,"Sengun, Alperen",On,3,99.0,19.0,119.5,101.9,17.6,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1642263,"Sheppard, Reed",On,2,46.0,14.6,119.8,110.3,9.5,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203935,"Smart, Marcus",On,2,48.0,20.1,135.9,114.3,21.6,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1631095,"Smith Jr., Jabari",On,3,104.0,13.0,123.0,107.8,15.2,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1630256,"Tate, Jae'Sean",On,2,3.0,-72.7,100.0,116.7,-16.7,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1641708,"Thompson, Amen",On,3,109.0,-3.5,110.6,113.1,-2.5,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1643570,"Thornton, Bruce",On,2,7.0,-14.0,82.4,94.1,-11.8,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1627832,"VanVleet, Fred",On,2,61.0,18.9,126.0,106.5,19.5,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203500,"Adams, Steven",Off,3,135.0,8.2,121.3,112.2,9.1,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203992,"Bogdanović, Bogdan",Off,3,102.0,12.7,120.9,106.9,14.0,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203991,"Capela, Clint",Off,3,125.0,13.0,121.9,108.8,13.1,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1643595,"Copeland, Quadir",Off,3,144.0,9.7,122.6,112.5,10.2,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1642384,"Crawford, Isaiah",Off,3,140.0,10.6,121.6,111.7,9.9,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,201142,"Durant, Kevin",Off,3,33.0,-11.6,109.0,115.7,-6.8,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1631106,"Eason, Tari",Off,3,84.0,18.9,125.1,107.5,17.6,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1641763,"Phillips, Julian",Off,3,144.0,9.7,122.6,112.5,10.2,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1630578,"Sengun, Alperen",Off,3,45.0,-10.6,119.1,122.0,-2.9,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1642263,"Sheppard, Reed",Off,3,98.0,7.3,121.0,111.8,9.2,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,203935,"Smart, Marcus",Off,3,96.0,4.5,113.8,109.7,4.0,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1631095,"Smith Jr., Jabari",Off,3,40.0,1.2,112.2,109.9,2.3,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1630256,"Tate, Jae'Sean",Off,3,141.0,11.2,122.9,112.0,10.9,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1641708,"Thompson, Amen",Off,3,35.0,50.2,149.3,98.7,50.6,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1643570,"Thornton, Bruce",Off,3,137.0,10.8,124.2,113.6,10.6,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1631131,"Tshiebwe, Oscar",Off,3,144.0,9.7,122.6,112.5,10.2,Houston Rockets,Regular Season
+On/Off Court,1610612745,HOU,Houston Rockets,1627832,"VanVleet, Fred",Off,3,83.0,2.9,118.9,114.0,4.8,Houston Rockets,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1642353,"Christie, Cam",On,1,2.0,73.2,125.0,50.0,75.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1641711,"Dick, Gradey",On,3,48.0,23.9,114.7,91.8,22.9,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1627739,"Dunn, Kris",On,3,93.0,6.7,105.5,97.1,8.4,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1629636,"Garland, Darius",On,3,104.0,-9.7,105.8,115.2,-9.4,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1629060,"Hachimura, Rui",On,3,94.0,-10.8,107.1,116.6,-9.5,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1630543,"Jackson, Isaiah",On,3,67.0,-2.2,107.7,111.4,-3.7,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1627884,"Jones Jr., Derrick",On,3,91.0,-6.9,104.7,112.6,-7.9,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,201572,"Lopez, Brook",On,3,70.0,12.4,111.2,98.1,13.1,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1643568,"Martinelli, Nick",On,1,2.0,73.2,125.0,50.0,75.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1642394,"Miller, Baba",On,2,12.0,-12.2,100.0,106.9,-6.9,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1629618,"Pickett, Jalen",On,1,2.0,73.2,125.0,50.0,75.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1642920,"Sanders, Kobe",On,3,58.0,29.0,118.5,89.5,29.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1643413,"Wagler, Keaton",On,3,78.0,7.4,111.7,103.5,8.2,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,203078,"Beal, Bradley",Off,3,144.0,3.3,109.7,106.5,3.2,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1642353,"Christie, Cam",Off,3,142.0,2.4,109.5,107.2,2.3,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1641711,"Dick, Gradey",Off,3,96.0,-7.0,104.9,112.9,-8.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1627739,"Dunn, Kris",Off,3,51.0,-2.8,113.4,113.0,0.3,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1629636,"Garland, Darius",Off,3,40.0,37.4,117.0,80.0,37.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1629060,"Hachimura, Rui",Off,3,50.0,29.5,111.3,84.3,27.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1627742,"Ingram, Brandon",Off,3,144.0,3.3,109.7,106.5,3.2,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1630543,"Jackson, Isaiah",Off,3,77.0,8.1,110.1,100.6,9.5,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1627884,"Jones Jr., Derrick",Off,3,53.0,20.7,115.0,95.0,20.0,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,201572,"Lopez, Brook",Off,3,74.0,-5.2,106.3,111.9,-5.7,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1643568,"Martinelli, Nick",Off,3,142.0,2.4,109.5,107.2,2.3,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1642394,"Miller, Baba",Off,3,132.0,4.7,110.7,106.0,4.6,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1641757,"Miller, Jordan",Off,3,144.0,3.3,109.7,106.5,3.2,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1642949,"Niederhäuser, Yanic Konan",Off,3,144.0,3.3,109.7,106.5,3.2,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1629618,"Pickett, Jalen",Off,3,142.0,2.4,109.5,107.2,2.3,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1642920,"Sanders, Kobe",Off,3,86.0,-13.9,102.2,114.8,-12.5,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1629622,"Strus, Max",Off,3,144.0,3.3,109.7,106.5,3.2,Los Angeles Clippers,Regular Season
+On/Off Court,1610612746,LAC,LA Clippers,1643413,"Wagler, Keaton",Off,3,66.0,-1.5,106.5,105.6,0.8,Los Angeles Clippers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629029,"Dončić, Luka",On,3,105.0,20.1,129.8,109.3,20.5,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629656,"Grimes, Quentin",On,3,78.0,8.6,117.2,109.8,7.4,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630702,"Hardy, Jaden",On,1,7.0,-78.0,73.3,146.7,-73.3,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1642355,"James, Bronny",On,1,7.0,-78.0,73.3,146.7,-73.3,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1631117,"Kessler, Walker",On,3,93.0,24.7,131.6,105.6,26.0,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1631222,"LaRavia, Jake",On,2,33.0,40.4,123.6,84.7,38.9,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1626172,"Looney, Kevon",On,3,24.0,-42.4,101.8,134.5,-32.7,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630572,"Mamukelashvili, Sandro",On,3,67.0,0.7,121.9,115.7,6.2,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1643024,"Mañon, Chris",On,1,6.0,-94.9,84.6,169.2,-84.6,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630559,"Reaves, Austin",On,3,106.0,24.0,133.2,107.5,25.7,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629012,"Sexton, Collin",On,2,36.0,-10.6,116.7,123.8,-7.1,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629680,"Thybulle, Matisse",On,3,73.0,24.3,132.9,106.6,26.3,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630533,"Williams, Ziaire",On,3,85.0,18.1,126.8,108.9,17.9,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1643418,"Carr, Cameron",Off,3,144.0,13.0,125.9,112.4,13.5,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629029,"Dončić, Luka",Off,3,39.0,-6.2,115.0,118.3,-3.3,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629656,"Grimes, Quentin",Off,3,66.0,18.3,132.4,114.0,18.4,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630702,"Hardy, Jaden",Off,3,137.0,17.5,128.6,110.6,18.0,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1642355,"James, Bronny",Off,3,137.0,17.5,128.6,110.6,18.0,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1641751,"Kaluma, Arthur",Off,3,144.0,13.0,125.9,112.4,13.5,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1631117,"Kessler, Walker",Off,3,51.0,-8.5,113.0,115.8,-2.8,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1631222,"LaRavia, Jake",Off,3,111.0,4.8,126.1,117.8,8.2,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1626172,"Looney, Kevon",Off,3,120.0,24.0,130.8,106.0,24.8,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630572,"Mamukelashvili, Sandro",Off,3,77.0,23.6,128.0,103.7,24.2,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1643024,"Mañon, Chris",Off,3,138.0,17.3,127.7,109.5,18.2,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1643758,"Okereke, AK",Off,3,144.0,13.0,125.9,112.4,13.5,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630559,"Reaves, Austin",Off,3,38.0,-17.7,101.2,120.2,-19.1,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629012,"Sexton, Collin",Off,3,108.0,20.9,126.8,107.0,19.9,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1642876,"Thiero, Adou",Off,3,144.0,13.0,125.9,112.4,13.5,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629680,"Thybulle, Matisse",Off,3,71.0,1.4,117.7,114.3,3.4,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1629020,"Vanderbilt, Jarred",Off,3,144.0,13.0,125.9,112.4,13.5,Los Angeles Lakers,Regular Season
+On/Off Court,1610612747,LAL,Los Angeles Lakers,1630533,"Williams, Ziaire",Off,3,59.0,5.7,120.8,113.6,7.1,Los Angeles Lakers,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1628389,"Adebayo, Bam",On,3,93.0,-21.3,107.8,128.3,-20.5,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,203507,"Antetokounmpo, Giannis",On,3,88.0,-29.6,94.3,122.9,-28.6,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1643553,"Conwell, Ryan",On,3,10.0,-10.0,84.2,85.7,-1.5,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1631323,"Fontecchio, Simone",On,2,6.0,49.8,118.2,58.3,59.8,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1642066,"Gardner, Myron",On,2,6.0,49.8,118.2,58.3,59.8,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,203501,"Hardaway Jr., Tim",On,3,60.0,-0.8,104.7,106.3,-1.6,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1631107,"Jović, Nikola",On,3,44.0,-8.8,97.8,106.6,-8.8,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1641796,"Larsson, Pelle",On,3,89.0,-2.7,104.1,107.2,-3.1,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1630558,"Mitchell, Davion",On,3,103.0,-20.5,109.7,130.4,-20.6,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1626171,"Portis Jr., Bobby",On,3,73.0,5.3,109.5,106.5,3.0,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1630208,"Richards, Nick",On,2,6.0,49.8,118.2,58.3,59.8,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1630696,"Smith, Dru",On,1,6.0,60.5,114.3,69.2,45.1,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,202691,"Thompson, Klay",On,3,67.0,-36.4,101.4,134.9,-33.5,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,203952,"Wiggins, Andrew",On,3,71.0,-41.7,102.5,141.5,-39.0,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1628389,"Adebayo, Bam",Off,3,51.0,-5.6,96.3,100.0,-3.7,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,203507,"Antetokounmpo, Giannis",Off,3,56.0,6.0,119.8,112.2,7.6,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1643553,"Conwell, Ryan",Off,3,134.0,-16.1,106.5,123.2,-16.7,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1643621,"Donaldson, Tre",Off,3,144.0,-15.7,105.1,121.4,-16.3,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1631323,"Fontecchio, Simone",Off,3,138.0,-18.4,104.7,123.6,-18.9,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1642066,"Gardner, Myron",Off,3,138.0,-18.4,104.7,123.6,-18.9,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1642884,"Goldin, Vladislav",Off,3,144.0,-15.7,105.1,121.4,-16.3,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,203501,"Hardaway Jr., Tim",Off,3,84.0,-26.4,103.8,129.2,-25.4,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1642352,"Johnson, Keshad",Off,3,144.0,-15.7,105.1,121.4,-16.3,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1631107,"Jović, Nikola",Off,3,100.0,-18.7,106.7,126.5,-19.8,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1641796,"Larsson, Pelle",Off,3,55.0,-36.8,105.1,138.3,-33.2,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1630558,"Mitchell, Davion",Off,3,41.0,-3.5,88.8,90.1,-1.3,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1626171,"Portis Jr., Bobby",Off,3,71.0,-37.0,98.1,134.0,-35.9,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1630208,"Richards, Nick",Off,3,138.0,-18.4,104.7,123.6,-18.9,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,1630696,"Smith, Dru",Off,3,138.0,-18.7,104.4,123.3,-18.9,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,202691,"Thompson, Klay",Off,3,77.0,2.5,106.6,105.5,1.1,Miami Heat,Regular Season
+On/Off Court,1610612748,MIA,Miami Heat,203952,"Wiggins, Andrew",Off,3,73.0,9.9,105.8,97.4,8.4,Miami Heat,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1643417,"Ament, Nate",On,1,11.0,-26.6,91.7,112.0,-20.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1643415,"Burries, Brayden",On,3,41.0,-14.0,105.6,121.6,-16.0,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631172,"Dieng, Ousmane",On,2,37.0,-18.1,106.3,122.5,-16.2,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631260,"Green, AJ",On,3,52.0,-20.5,93.3,115.7,-22.4,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1629639,"Herro, Tyler",On,3,95.0,-10.1,111.6,119.8,-8.2,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1642857,"Jakučionis, Kasparas",On,3,74.0,-15.0,109.6,122.8,-13.1,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631170,"Jaquez Jr., Jaime",On,3,94.0,-5.6,111.8,117.9,-6.1,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1628398,"Kuzma, Kyle",On,3,92.0,-6.3,108.7,115.8,-7.1,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631157,"Rollins, Ryan",On,3,83.0,-2.9,111.6,113.6,-2.0,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1630579,"Sims, Jericho",On,1,2.0,102.2,275.0,116.7,158.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1626167,"Turner, Myles",On,3,82.0,-19.2,104.3,119.3,-15.0,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1642276,"Ware, Kel'el",On,3,58.0,3.3,113.7,113.3,0.5,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1643417,"Ament, Nate",Off,3,133.0,-8.7,111.3,119.7,-8.4,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1643415,"Burries, Brayden",Off,3,103.0,-8.4,110.1,116.2,-6.1,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631172,"Dieng, Ousmane",Off,3,107.0,-7.2,108.8,116.5,-7.8,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631260,"Green, AJ",Off,3,93.0,-4.2,116.6,120.4,-3.8,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1629639,"Herro, Tyler",Off,3,49.0,-9.8,104.5,115.5,-11.0,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1642857,"Jakučionis, Kasparas",Off,3,70.0,-4.8,108.7,111.7,-3.0,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631170,"Jaquez Jr., Jaime",Off,3,50.0,-18.3,99.1,120.4,-21.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1642880,"Jones, Kam",Off,3,144.0,-10.0,110.2,119.4,-9.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1628398,"Kuzma, Kyle",Off,3,52.0,-16.6,106.2,121.1,-14.9,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1627747,"LeVert, Caris",Off,3,144.0,-10.0,110.2,119.4,-9.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1642881,"Marković, Bogoljub",Off,3,144.0,-10.0,110.2,119.4,-9.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631250,"Nance, Pete",Off,3,144.0,-10.0,110.2,119.4,-9.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1631157,"Rollins, Ryan",Off,3,61.0,-19.6,105.1,123.2,-18.1,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1642504,"Ryan, Cormac",Off,3,144.0,-10.0,110.2,119.4,-9.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1630579,"Sims, Jericho",Off,3,142.0,-11.5,108.1,118.8,-10.6,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1629018,"Trent Jr., Gary",Off,3,144.0,-10.0,110.2,119.4,-9.3,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1626167,"Turner, Myles",Off,3,62.0,2.3,115.8,115.3,0.5,Milwaukee Bucks,Regular Season
+On/Off Court,1610612749,MIL,Milwaukee Bucks,1642276,"Ware, Kel'el",Off,3,86.0,-19.0,106.1,121.0,-14.9,Milwaukee Bucks,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630163,"Ball, LaMelo",On,3,68.0,47.7,124.5,81.2,43.3,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642866,"Beringer, Joan",On,3,41.0,15.1,115.6,100.0,15.6,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1641740,"Clark, Jaylen",On,3,12.0,-58.0,76.9,136.0,-59.1,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630245,"Dosunmu, Ayo",On,3,79.0,33.4,115.4,85.5,30.0,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630162,"Edwards, Anthony",On,3,94.0,27.2,126.3,99.5,26.8,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642912,"Evans, Isaiah",On,3,8.0,-34.9,89.5,127.8,-38.3,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,203497,"Gobert, Rudy",On,3,94.0,30.1,116.3,88.4,27.9,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630538,"Hyland, Bones",On,3,27.0,-30.4,78.9,112.7,-33.8,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630228,"Kuminga, Jonathan",On,3,83.0,29.9,124.1,95.9,28.2,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1626168,"Lyles, Trey",On,3,43.0,23.2,103.0,84.4,18.7,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630183,"McDaniels, Jaden",On,3,90.0,36.3,130.7,94.3,36.4,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642389,"Pullin, Zyon",On,1,5.0,-93.9,72.7,170.0,-97.3,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630545,"Shannon Jr, Terrence",On,3,65.0,15.6,106.3,92.3,14.0,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642262,"Williams, Cody",On,3,11.0,-60.9,80.0,147.8,-67.8,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630163,"Ball, LaMelo",Off,3,76.0,1.3,108.3,107.7,0.6,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642866,"Beringer, Joan",Off,3,103.0,26.6,116.7,92.7,24.0,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1641740,"Clark, Jaylen",Off,3,132.0,30.5,121.6,92.5,29.1,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1628978,"DiVincenzo, Donte",Off,3,144.0,23.3,119.0,96.1,23.0,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630245,"Dosunmu, Ayo",Off,3,65.0,11.1,115.0,105.0,10.0,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630162,"Edwards, Anthony",Off,3,50.0,16.2,101.8,87.3,14.5,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642912,"Evans, Isaiah",Off,3,136.0,26.9,120.6,93.8,26.8,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,203497,"Gobert, Rudy",Off,3,50.0,10.6,114.3,105.4,8.9,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630538,"Hyland, Bones",Off,3,117.0,35.6,125.7,92.4,33.3,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630228,"Kuminga, Jonathan",Off,3,61.0,14.3,106.5,93.5,13.0,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1626168,"Lyles, Trey",Off,3,101.0,23.4,120.8,98.1,22.7,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630183,"McDaniels, Jaden",Off,3,54.0,1.8,93.3,94.0,-0.7,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642389,"Pullin, Zyon",Off,3,139.0,27.2,120.3,93.6,26.8,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1630545,"Shannon Jr, Terrence",Off,3,79.0,29.7,124.9,96.4,28.4,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642262,"Williams, Cody",Off,3,133.0,30.3,121.2,91.8,29.4,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612750,MIN,Minnesota Timberwolves,1642911,"Zikarsky, Rocco",Off,3,144.0,23.3,119.0,96.1,23.0,Minnesota Timberwolves,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1643414,"Brown Jr., Mikel",On,2,40.0,-10.8,108.0,117.0,-9.0,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1641730,"Clowney, Noah",On,3,61.0,-12.5,109.7,119.0,-9.3,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642856,"Dëmin, Egor",On,3,77.0,-6.2,105.9,110.5,-4.6,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1631165,"Ellis, Keon",On,3,79.0,-17.0,101.7,119.5,-17.8,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1643538,"Jefferson, Joshua",On,1,4.0,-39.6,71.4,133.3,-61.9,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1643052,"Johnson, Chaney",On,3,53.0,-20.7,92.5,112.6,-20.1,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1631169,"Minott, Josh",On,2,30.0,-18.9,104.5,122.4,-17.9,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1629008,"Porter Jr., Michael",On,3,88.0,-4.9,107.7,112.8,-5.2,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642962,"Powell, Drake",On,1,12.0,-27.2,116.0,144.0,-28.0,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,203944,"Randle, Julius",On,3,97.0,-4.4,109.2,113.9,-4.7,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642879,"Saraf, Ben",On,1,4.0,-39.6,71.4,133.3,-61.9,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1630549,"Sharpe, Day'Ron",On,3,69.0,0.0,110.9,109.4,1.5,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642849,"Traore, Nolan",On,3,45.0,-23.2,107.1,128.3,-21.1,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1629021,"Wagner, Moritz",On,3,45.0,-40.8,97.9,132.3,-34.4,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642874,"Wolf, Danny",On,1,15.0,-3.1,109.4,116.1,-6.8,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1643548,"Bilodeau, Tyler",Off,3,144.0,-12.7,106.4,118.2,-11.8,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1643414,"Brown Jr., Mikel",Off,3,104.0,-13.4,104.8,117.0,-12.2,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1641730,"Clowney, Noah",Off,3,83.0,-12.8,101.6,114.3,-12.6,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642856,"Dëmin, Egor",Off,3,67.0,-20.0,105.5,125.7,-20.2,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1631165,"Ellis, Keon",Off,3,65.0,-7.4,110.9,116.4,-5.6,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1643538,"Jefferson, Joshua",Off,3,140.0,-12.0,106.8,117.9,-11.0,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1643052,"Johnson, Chaney",Off,3,91.0,-7.9,112.1,120.3,-8.2,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1629611,"Mann, Terance",Off,3,144.0,-12.7,106.4,118.2,-11.8,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1631169,"Minott, Josh",Off,3,114.0,-11.0,106.5,116.5,-10.1,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1641761,"Nelson, Grant",Off,3,144.0,-12.7,106.4,118.2,-11.8,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1629008,"Porter Jr., Michael",Off,3,56.0,-24.8,103.4,124.8,-21.4,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642962,"Powell, Drake",Off,3,132.0,-11.3,105.6,115.9,-10.4,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,203944,"Randle, Julius",Off,3,47.0,-29.7,96.0,123.8,-27.8,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642879,"Saraf, Ben",Off,3,140.0,-12.0,106.8,117.9,-11.0,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1630549,"Sharpe, Day'Ron",Off,3,75.0,-24.2,101.8,121.6,-19.8,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642849,"Traore, Nolan",Off,3,99.0,-7.8,104.6,113.5,-8.9,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1629021,"Wagner, Moritz",Off,3,99.0,0.0,109.6,110.6,-1.0,Brooklyn Nets,Regular Season
+On/Off Court,1610612751,BKN,Brooklyn Nets,1642874,"Wolf, Danny",Off,3,129.0,-13.8,106.0,118.4,-12.3,Brooklyn Nets,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1643022,"Akins, Jaden",On,1,0.0,-232.3,0.0,200.0,-200.0,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1630631,"Alvarado, Jose",On,2,27.0,-7.0,100.0,109.4,-9.4,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628384,"Anunoby, OG",On,3,100.0,-20.1,96.2,117.4,-21.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628969,"Bridges, Mikal",On,3,90.0,-26.7,87.2,113.2,-26.0,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628973,"Brunson, Jalen",On,3,104.0,-3.7,98.6,103.7,-5.1,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,203903,"Clarkson, Jordan",On,3,17.0,34.7,117.1,80.6,36.6,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,203083,"Drummond, Andre",On,3,39.0,-18.6,91.7,110.8,-19.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628404,"Hart, Josh",On,3,101.0,3.8,105.7,102.9,2.8,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1642278,"Kolek, Tyler",On,1,15.0,-12.7,125.0,141.9,-16.9,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1630540,"McBride, Miles",On,3,56.0,-6.0,115.2,120.4,-5.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1629013,"Shamet, Landry",On,3,68.0,12.1,108.8,100.0,8.8,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1626157,"Towns, Karl-Anthony",On,3,94.0,0.5,108.8,108.9,0.0,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1630164,"Wiseman, James",On,2,9.0,-5.2,73.7,83.3,-9.6,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1643022,"Akins, Jaden",Off,3,144.0,-5.7,103.7,110.3,-6.5,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1630631,"Alvarado, Jose",Off,3,117.0,-6.2,102.9,110.4,-7.5,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628384,"Anunoby, OG",Off,3,44.0,25.2,109.5,85.3,24.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628969,"Bridges, Mikal",Off,3,54.0,27.5,125.9,100.9,25.0,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628973,"Brunson, Jalen",Off,3,40.0,-13.1,111.0,124.4,-13.4,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,203903,"Clarkson, Jordan",Off,3,127.0,-11.7,101.1,113.0,-11.9,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1642359,"Dadiet, Pacôme",Off,3,144.0,-6.3,103.4,110.6,-7.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1642885,"Diawara, Mohamed",Off,3,144.0,-6.3,103.4,110.6,-7.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,203083,"Drummond, Andre",Off,3,105.0,-1.8,106.0,109.4,-3.4,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1628404,"Hart, Josh",Off,3,43.0,-30.0,92.3,123.3,-31.0,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1642261,"Knecht, Dalton",Off,1,48.0,-9.0,102.0,112.1,-10.1,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1642278,"Kolek, Tyler",Off,3,129.0,-5.6,99.6,106.9,-7.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1630540,"McBride, Miles",Off,3,88.0,-6.6,94.6,102.2,-7.6,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1641755,"McCullar Jr., Kevin",Off,3,144.0,-6.3,103.4,110.6,-7.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1643589,"Nickel, Tyler",Off,3,144.0,-6.3,103.4,110.6,-7.2,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1629013,"Shamet, Landry",Off,3,76.0,-22.6,93.5,116.0,-22.5,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1626157,"Towns, Karl-Anthony",Off,3,50.0,-19.2,89.6,108.5,-18.9,New York Knicks,Regular Season
+On/Off Court,1610612752,NYK,New York Knicks,1630164,"Wiseman, James",Off,3,135.0,-6.4,104.7,111.6,-6.9,New York Knicks,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1631094,"Banchero, Paolo",On,2,68.0,-14.2,103.3,118.2,-14.9,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630217,"Bane, Desmond",On,3,95.0,-1.5,103.4,104.3,-0.9,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1629048,"Bitadze, Goga",On,2,24.0,6.0,105.9,96.2,9.7,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1641710,"Black, Anthony",On,1,26.0,38.8,138.9,98.2,40.7,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1631288,"Cain, Jamal",On,3,40.0,-13.1,105.7,115.6,-9.9,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1628976,"Carter Jr., Wendell",On,3,92.0,-3.6,105.9,108.2,-2.4,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1628975,"Carter, Jevon",On,1,13.0,-14.2,121.4,131.0,-9.6,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630658,"Castleton, Colin",On,1,4.0,0.0,128.6,112.5,16.1,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1631457,"Morales, Alex",On,1,4.0,0.0,128.6,112.5,16.1,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1642859,"Richardson, Jase",On,3,46.0,-36.5,77.8,107.7,-29.9,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630591,"Suggs, Jalen",On,3,100.0,-9.1,102.8,111.1,-8.3,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,202696,"Vučević, Nikola",On,3,24.0,-31.9,102.1,130.0,-27.9,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630532,"Wagner, Franz",On,3,100.0,-6.3,105.1,109.6,-4.5,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1641783,"da Silva, Tristan",On,3,84.0,2.3,110.6,109.0,1.5,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1631094,"Banchero, Paolo",Off,3,76.0,0.0,106.7,104.2,2.6,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630217,"Bane, Desmond",Off,3,49.0,-16.7,107.5,121.3,-13.7,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1629048,"Bitadze, Goga",Off,3,120.0,-9.2,105.8,113.7,-8.0,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1641710,"Black, Anthony",Off,3,118.0,-16.7,98.8,113.9,-15.1,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1631288,"Cain, Jamal",Off,3,104.0,-4.2,103.5,108.4,-4.9,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1628976,"Carter Jr., Wendell",Off,3,52.0,-12.1,104.7,112.6,-7.9,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1628975,"Carter, Jevon",Off,3,131.0,-5.9,105.0,109.1,-4.1,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630658,"Castleton, Colin",Off,3,140.0,-6.8,106.0,111.5,-5.5,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1628371,"Isaac, Jonathan",Off,3,144.0,-6.7,106.5,111.9,-5.4,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1631457,"Morales, Alex",Off,3,140.0,-6.8,106.0,111.5,-5.5,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1643593,"Nelson, Izaiyah",Off,3,144.0,-6.7,106.5,111.9,-5.4,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1642869,"Penda, Noah",Off,3,144.0,-6.7,106.5,111.9,-5.4,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1642859,"Richardson, Jase",Off,3,98.0,7.3,118.3,111.3,7.0,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630591,"Suggs, Jalen",Off,3,44.0,-1.1,110.3,108.0,2.3,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,202696,"Vučević, Nikola",Off,3,120.0,-1.6,106.9,107.2,-0.3,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1630532,"Wagner, Franz",Off,3,44.0,-7.6,104.1,111.2,-7.1,Orlando Magic,Regular Season
+On/Off Court,1610612753,ORL,Orlando Magic,1641783,"da Silva, Tristan",Off,3,60.0,-19.3,95.2,111.6,-16.4,Orlando Magic,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641738,"Brown, Kobe",On,1,1.0,-110.8,0.0,75.0,-75.0,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630169,"Haliburton, Tyrese",On,3,97.0,12.4,116.2,107.1,9.1,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630643,"Huff, Jay",On,2,26.0,16.5,121.8,103.6,18.2,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1631245,"Jackson, Quenton",On,3,50.0,7.6,108.6,97.2,11.3,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1626204,"Nance Jr., Larry",On,3,28.0,-15.3,92.1,101.5,-9.5,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1629614,"Nembhard, Andrew",On,3,96.0,8.5,124.4,115.9,8.5,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630174,"Nesmith, Aaron",On,2,39.0,2.4,117.9,115.5,2.4,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1626162,"Oubre Jr., Kelly",On,3,67.0,-3.6,114.7,115.0,-0.3,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641767,"Sheppard, Ben",On,1,12.0,-7.9,107.7,111.1,-3.4,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1627783,"Siakam, Pascal",On,3,90.0,8.0,124.5,115.7,8.8,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641771,"Slawson, Jalen",On,2,24.0,13.9,118.4,100.0,18.4,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630167,"Toppin, Obi",On,3,70.0,4.1,111.5,109.8,1.7,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641716,"Walker, Jarace",On,3,55.0,5.3,113.1,109.1,4.0,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1627826,"Zubac, Ivica",On,3,64.0,-4.5,112.7,119.4,-6.7,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641738,"Brown, Kobe",Off,3,143.0,5.7,118.6,113.0,5.5,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1642277,"Furphy, Johnny",Off,3,144.0,4.7,117.4,112.9,4.5,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630169,"Haliburton, Tyrese",Off,3,47.0,-11.3,111.9,118.1,-6.2,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630643,"Huff, Jay",Off,3,118.0,2.0,115.6,113.2,2.4,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1631245,"Jackson, Quenton",Off,3,94.0,3.1,120.2,117.9,2.3,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,204456,"McConnell, T.J.",Off,3,144.0,4.7,117.4,112.9,4.5,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1626204,"Nance Jr., Larry",Off,3,116.0,9.5,123.4,114.6,8.8,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1629614,"Nembhard, Andrew",Off,3,48.0,-3.0,97.1,101.0,-3.9,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630174,"Nesmith, Aaron",Off,3,105.0,5.5,116.2,111.0,5.3,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1626162,"Oubre Jr., Kelly",Off,3,77.0,11.8,117.0,107.7,9.2,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641767,"Sheppard, Ben",Off,3,132.0,5.8,117.9,112.3,5.6,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1627783,"Siakam, Pascal",Off,3,54.0,-0.9,100.8,100.8,0.0,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641771,"Slawson, Jalen",Off,3,120.0,2.8,116.3,113.7,2.7,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1643552,"Smith, Braden",Off,3,144.0,4.7,117.4,112.9,4.5,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1630167,"Toppin, Obi",Off,3,74.0,5.2,120.3,111.7,8.6,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1641716,"Walker, Jarace",Off,3,89.0,4.3,117.1,111.8,5.3,Indiana Pacers,Regular Season
+On/Off Court,1610612754,IND,Indiana Pacers,1627826,"Zubac, Ivica",Off,3,80.0,12.1,117.9,106.4,11.6,Indiana Pacers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1641737,"Bona, Adem",On,4,58.0,-19.0,91.1,110.7,-19.6,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1627759,"Brown, Jaylen",On,4,147.0,12.7,108.7,96.0,12.7,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,203484,"Caldwell-Pope, Kentavious",On,4,110.0,2.2,108.4,107.7,0.7,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1642845,"Edgecombe, VJ",On,3,98.0,3.9,105.3,101.8,3.6,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1642348,"Edwards, Justin",On,1,0.0,0.0,0.0,0.0,0.0,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,203954,"Embiid, Joel",On,3,104.0,22.6,110.3,92.4,18.0,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,2544,"James, LeBron",On,3,100.0,-8.1,99.1,107.8,-8.7,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1631126,"Love, Caleb",On,1,0.0,0.0,0.0,0.0,0.0,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1630178,"Maxey, Tyrese",On,4,151.0,10.8,107.6,97.0,10.6,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1642889,"Philon Jr., Labaron",On,2,17.0,28.7,100.0,74.3,25.7,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1629014,"Simons, Anfernee",On,4,89.0,-21.0,86.9,108.7,-21.8,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1629731,"Wade, Dean",On,2,65.0,-0.7,104.3,102.1,2.2,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1631133,"Walker, Jabari",On,3,19.0,-12.6,111.4,120.0,-8.6,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1631230,"Barlow, Dominick",Off,4,192.0,3.0,105.5,102.4,3.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1641737,"Bona, Adem",Off,4,134.0,12.5,107.5,97.3,10.2,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1627759,"Brown, Jaylen",Off,4,45.0,-29.0,90.9,118.2,-27.3,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,203484,"Caldwell-Pope, Kentavious",Off,4,82.0,4.1,96.8,94.1,2.7,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1642845,"Edgecombe, VJ",Off,4,94.0,2.0,104.1,102.1,2.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1642348,"Edwards, Justin",Off,4,192.0,3.0,105.8,102.6,3.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,203954,"Embiid, Joel",Off,4,88.0,-20.2,94.5,113.5,-19.0,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1629605,"Fall, Tacko",Off,4,192.0,3.0,105.5,102.4,3.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1630574,"Hukporti, Ariel",Off,4,192.0,3.0,105.5,102.4,3.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,2544,"James, LeBron",Off,4,92.0,15.2,108.3,94.6,13.8,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1631126,"Love, Caleb",Off,4,192.0,3.0,105.8,102.6,3.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1630178,"Maxey, Tyrese",Off,4,41.0,-25.8,89.6,114.9,-25.3,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1642889,"Philon Jr., Labaron",Off,4,175.0,0.5,105.8,104.7,1.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1641712,"Rupert, Rayan",Off,4,192.0,3.0,105.5,102.4,3.1,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1629014,"Simons, Anfernee",Off,4,103.0,23.8,117.1,94.7,22.4,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1629731,"Wade, Dean",Off,4,127.0,4.9,103.9,100.0,3.9,Philadelphia 76ers,Regular Season
+On/Off Court,1610612755,PHI,Philadelphia 76ers,1631133,"Walker, Jabari",Off,4,173.0,4.7,104.3,100.0,4.3,Philadelphia 76ers,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1626164,"Booker, Devin",On,2,66.0,-29.8,114.7,140.7,-26.0,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1631123,"Bouyea, Jamaree",On,1,7.0,27.4,93.3,62.5,30.8,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1628970,"Bridges, Miles",On,2,62.0,-26.4,101.6,124.6,-23.0,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1628415,"Brooks, Dillon",On,2,60.0,-24.6,107.1,128.7,-21.5,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642346,"Dunn, Ryan",On,2,27.0,7.1,101.9,94.4,7.4,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642853,"Fleming, Rasheer",On,1,12.0,0.0,70.8,68.0,2.8,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1631221,"Gillespie, Collin",On,2,49.0,0.0,114.6,109.3,5.3,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1630692,"Goodwin, Jordan",On,2,42.0,-17.2,109.6,120.5,-10.8,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1630224,"Green, Jalen",On,2,51.0,-36.5,104.7,138.9,-34.2,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642345,"Ighodaro, Oso",On,1,15.0,-23.0,96.8,119.4,-22.6,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1628379,"Kennard, Luke",On,1,18.0,39.3,151.4,117.1,34.2,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642863,"Maluach, Khaman",On,2,44.0,-23.7,114.1,135.1,-21.0,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1643520,"Peat, Koa",On,1,7.0,27.4,93.3,62.5,30.8,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1641871,"Reath, Duop",On,2,12.0,-8.0,96.3,103.7,-7.4,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1630311,"Spencer, Pat",On,1,7.0,27.4,93.3,62.5,30.8,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1626164,"Booker, Devin",Off,2,30.0,14.4,93.5,79.0,14.5,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1631123,"Bouyea, Jamaree",Off,2,89.0,-19.4,109.9,127.6,-17.7,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1628970,"Bridges, Miles",Off,2,34.0,2.8,116.2,113.5,2.7,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1628415,"Brooks, Dillon",Off,2,36.0,-1.4,111.3,109.6,1.7,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642346,"Dunn, Ryan",Off,2,69.0,-25.0,109.7,133.6,-23.9,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642853,"Fleming, Rasheer",Off,2,84.0,-18.3,113.9,130.9,-17.0,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1631221,"Gillespie, Collin",Off,2,47.0,-32.8,102.1,129.3,-27.2,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1630692,"Goodwin, Jordan",Off,2,54.0,-15.1,107.9,119.7,-11.8,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1630224,"Green, Jalen",Off,2,45.0,7.5,112.0,101.1,10.9,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642345,"Ighodaro, Oso",Off,2,81.0,-14.7,110.8,122.2,-11.4,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1628379,"Kennard, Luke",Off,2,78.0,-29.0,98.1,123.5,-25.4,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1642863,"Maluach, Khaman",Off,2,52.0,-9.3,102.8,108.2,-5.4,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1643520,"Peat, Koa",Off,2,89.0,-19.4,109.9,127.6,-17.7,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1641871,"Reath, Duop",Off,2,84.0,-17.1,109.9,125.3,-15.3,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1630311,"Spencer, Pat",Off,2,89.0,-19.4,109.9,127.6,-17.7,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1631166,"Timme, Drew",Off,2,96.0,-16.0,108.6,123.0,-14.4,Phoenix Suns,Regular Season
+On/Off Court,1610612756,PHX,Phoenix Suns,1631109,"Williams, Mark",Off,2,96.0,-16.0,108.6,123.0,-14.4,Phoenix Suns,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630166,"Avdija, Deni",On,2,61.0,29.1,130.2,101.6,28.7,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1641739,"Camara, Toumani",On,2,50.0,27.9,130.2,100.9,29.3,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1631321,"Cissoko, Sidy",On,2,51.0,12.1,107.1,97.3,9.9,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1642270,"Clingan, Donovan",On,2,41.0,38.4,128.9,87.1,41.9,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1642905,"Hansen, Yang",On,1,12.0,0.0,68.0,70.8,-2.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630703,"Henderson, Scoot",On,2,40.0,15.7,107.7,97.7,10.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,201950,"Holiday, Jrue",On,2,47.0,31.6,137.9,109.9,28.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1643257,"Kent, Jayson",On,1,7.0,-27.4,62.5,93.3,-30.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630249,"Krejčí, Vít",On,2,19.0,-2.5,92.7,95.1,-2.4,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,203081,"Lillard, Damian",On,2,57.0,35.6,123.4,94.1,29.3,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1629630,"Morant, Ja",On,2,49.0,38.8,148.1,111.8,36.3,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630695,"Potter, Micah",On,1,12.0,0.0,68.0,70.8,-2.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1629057,"Williams III, Robert",On,2,33.0,17.3,125.6,113.2,12.5,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630166,"Avdija, Deni",Off,2,35.0,16.5,106.3,93.5,12.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1641739,"Camara, Toumani",Off,2,46.0,20.8,114.0,97.9,16.1,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1642382,"Carlson, Branden",Off,2,96.0,24.5,123.5,100.5,23.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1631321,"Cissoko, Sidy",Off,2,45.0,38.8,138.9,101.1,37.9,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1642270,"Clingan, Donovan",Off,2,55.0,14.0,117.9,107.5,10.4,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1642905,"Hansen, Yang",Off,2,84.0,28.0,131.3,104.5,26.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630703,"Henderson, Scoot",Off,2,56.0,30.8,130.5,101.7,28.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,201950,"Holiday, Jrue",Off,2,49.0,17.7,103.8,90.2,13.6,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1643257,"Kent, Jayson",Off,2,89.0,28.6,128.0,101.1,27.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630249,"Krejčí, Vít",Off,2,77.0,31.2,131.3,100.6,30.7,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,203081,"Lillard, Damian",Off,2,39.0,8.5,112.5,109.5,3.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1629630,"Morant, Ja",Off,2,47.0,9.3,96.1,87.3,8.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1630695,"Potter, Micah",Off,2,84.0,28.0,131.3,104.5,26.8,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1631101,"Sharpe, Shaedon",Off,2,96.0,24.5,123.5,100.5,23.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1642910,"Tonje, John",Off,2,96.0,24.5,123.5,100.5,23.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1629057,"Williams III, Robert",Off,2,63.0,28.3,119.4,91.4,28.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612757,POR,Portland Trail Blazers,1642959,"Youngblood, Chris",Off,2,96.0,24.5,123.5,100.5,23.0,Portland Trail Blazers,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1630173,"Achiuwa, Precious",On,3,94.0,-12.8,105.9,117.7,-11.8,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1643411,"Acuff Jr., Darius",On,3,108.0,-14.7,106.8,122.8,-16.1,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1641778,"Black, Leaky",On,1,0.0,0.0,0.0,0.0,0.0,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642363,"Clifford, Nique",On,2,19.0,-20.4,97.5,117.5,-20.0,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1629631,"Hunter, De'Andre",On,3,74.0,-22.1,101.9,125.6,-23.8,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642284,"Karaban, Alex",On,1,5.0,-36.6,77.8,122.2,-44.4,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,203897,"LaVine, Zach",On,3,114.0,-16.5,105.6,121.2,-15.6,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642367,"Mogbo, Jonathan",On,2,26.0,-3.7,110.7,112.3,-1.6,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1628370,"Monk, Malik",On,2,24.0,-13.9,100.0,113.2,-13.2,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1631099,"Murray, Keegan",On,2,54.0,-8.0,104.1,111.4,-7.3,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1631342,"Plowden, Daeqwon",On,3,50.0,-22.3,108.6,128.0,-19.5,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1627734,"Sabonis, Domantas",On,3,107.0,-10.3,108.2,117.6,-9.4,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1643567,"Sharp, Emanuel",On,3,46.0,-13.6,93.1,107.0,-13.9,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1630173,"Achiuwa, Precious",Off,3,50.0,-18.1,102.7,120.9,-18.2,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1643411,"Acuff Jr., Darius",Off,3,36.0,-14.6,97.4,107.4,-10.0,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1641778,"Black, Leaky",Off,3,144.0,-14.7,105.8,120.0,-14.2,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642928,"Cardwell, Dylan",Off,3,144.0,-14.7,105.8,119.6,-13.8,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642363,"Clifford, Nique",Off,3,125.0,-13.8,106.6,119.9,-13.3,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1629631,"Hunter, De'Andre",Off,3,70.0,-6.8,107.1,112.1,-5.0,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642284,"Karaban, Alex",Off,3,139.0,-13.8,106.6,119.5,-12.9,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,203897,"LaVine, Zach",Off,3,30.0,-7.9,103.2,111.3,-8.1,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642367,"Mogbo, Jonathan",Off,3,118.0,-17.1,103.9,120.3,-16.4,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1628370,"Monk, Malik",Off,3,120.0,-14.8,105.8,120.0,-14.2,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1631099,"Murray, Keegan",Off,3,90.0,-18.7,105.8,124.3,-18.5,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642951,"Pedulla, Sean",Off,2,96.0,-9.5,113.2,121.3,-8.1,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1631342,"Plowden, Daeqwon",Off,3,94.0,-10.7,102.4,113.5,-11.1,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1642875,"Raynaud, Maxime",Off,3,144.0,-14.7,105.8,119.6,-13.8,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1627734,"Sabonis, Domantas",Off,3,37.0,-27.1,96.3,122.5,-26.3,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1643567,"Sharp, Emanuel",Off,3,98.0,-15.2,109.3,125.0,-15.7,Sacramento Kings,Regular Season
+On/Off Court,1610612758,SAC,Sacramento Kings,1627732,"Simmons, Ben",Off,3,144.0,-14.7,105.8,119.6,-13.8,Sacramento Kings,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,203084,"Barnes, Harrison",On,3,18.0,-34.1,73.7,105.1,-31.4,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1643576,"Brown, Maliq",On,1,1.0,0.0,200.0,133.3,66.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642868,"Bryant, Carter",On,3,21.0,-50.5,104.7,155.8,-51.2,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642264,"Castle, Stephon",On,3,90.0,3.8,105.1,102.1,3.1,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1630577,"Champagnie, Julian",On,3,83.0,-0.6,115.8,115.7,0.1,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1628368,"Fox, De'Aaron",On,3,93.0,6.2,111.9,105.4,6.5,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1643551,"Gillespie, Ja'Kobi",On,2,4.0,-79.1,100.0,155.6,-55.6,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642844,"Harper, Dylan",On,3,96.0,8.0,105.7,100.0,5.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1629640,"Johnson, Keldon",On,3,65.0,-3.0,115.1,118.0,-2.9,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642357,"Jones Garcia, David",On,1,1.0,0.0,200.0,133.3,66.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1628436,"Kornet, Luke",On,3,43.0,-39.4,103.3,139.1,-35.8,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1629162,"McLaughlin, Jordan",On,1,3.0,-111.4,60.0,166.7,-106.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1643542,"Reed Jr., Tarris",On,2,8.0,-6.1,128.6,118.8,9.8,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1630170,"Vassell, Devin",On,3,98.0,10.8,107.0,100.0,7.0,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1641705,"Wembanyama, Victor",On,3,95.0,16.7,110.7,94.7,16.0,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,203084,"Barnes, Harrison",Off,3,126.0,5.0,115.4,111.3,4.0,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1643576,"Brown, Maliq",Off,3,143.0,0.0,109.9,110.7,-0.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642868,"Bryant, Carter",Off,3,123.0,8.6,109.8,101.9,7.9,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642264,"Castle, Stephon",Off,3,54.0,-6.2,112.0,120.0,-8.0,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1630577,"Champagnie, Julian",Off,3,61.0,0.8,99.2,99.2,0.0,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1628368,"Fox, De'Aaron",Off,3,51.0,-11.4,100.9,110.9,-10.0,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1643551,"Gillespie, Ja'Kobi",Off,3,140.0,2.4,110.8,109.2,1.6,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642844,"Harper, Dylan",Off,3,48.0,-16.0,110.9,125.5,-14.6,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,202699,"Harris, Tobias",Off,3,144.0,0.0,110.5,111.3,-0.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1629640,"Johnson, Keldon",Off,3,79.0,2.4,102.9,102.4,0.5,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1642357,"Jones Garcia, David",Off,3,143.0,0.0,109.9,110.7,-0.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1628436,"Kornet, Luke",Off,3,101.0,16.6,111.5,95.0,16.5,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1629162,"McLaughlin, Jordan",Off,3,141.0,2.4,111.4,109.8,1.6,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1643519,"Quaintance, Jayden",Off,3,144.0,0.0,110.5,111.3,-0.7,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1643542,"Reed Jr., Tarris",Off,3,136.0,0.4,109.7,110.1,-0.4,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1630170,"Vassell, Devin",Off,3,46.0,-23.0,110.4,132.0,-21.5,San Antonio Spurs,Regular Season
+On/Off Court,1610612759,SAS,San Antonio Spurs,1641705,"Wembanyama, Victor",Off,3,49.0,-32.4,105.9,133.0,-27.1,San Antonio Spurs,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642964,"Barnhizer, Brooks",On,2,3.0,-96.0,100.0,250.0,-150.0,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1627936,"Caruso, Alex",On,3,67.0,36.7,113.3,77.1,36.2,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1628983,"Gilgeous-Alexander, Shai",On,3,107.0,19.8,118.5,99.1,19.4,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1628392,"Hartenstein, Isaiah",On,3,67.0,10.7,110.9,97.9,13.0,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1631096,"Holmgren, Chet",On,3,90.0,2.7,103.7,98.4,5.3,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1643530,"Mara, Aday",On,3,39.0,5.0,106.1,102.5,3.6,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642272,"McCain, Jared",On,3,61.0,13.4,105.4,93.7,11.7,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642349,"Mitchell, Ajay",On,3,74.0,16.3,104.5,87.3,17.1,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642892,"Stirtz, Bennett",On,3,13.0,-43.4,82.1,125.0,-42.9,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1641717,"Wallace, Cason",On,3,49.0,4.9,106.8,101.0,5.8,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1631114,"Williams, Jalen",On,3,95.0,1.0,101.0,97.4,3.6,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1631119,"Williams, Jaylin",On,3,37.0,6.5,83.3,78.9,4.4,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1629026,"Williams, Kenrich",On,3,20.0,-2.4,104.5,109.3,-4.8,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642964,"Barnhizer, Brooks",Off,3,142.0,12.2,107.5,94.6,12.9,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1627936,"Caruso, Alex",Off,3,77.0,-12.4,99.4,110.6,-11.2,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1643717,"Dix, Josh",Off,3,144.0,10.3,107.4,97.0,10.4,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1628983,"Gilgeous-Alexander, Shai",Off,3,37.0,-16.8,74.0,89.7,-15.7,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1628392,"Hartenstein, Isaiah",Off,3,77.0,10.0,101.2,93.8,7.4,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1631096,"Holmgren, Chet",Off,3,54.0,23.0,110.5,89.3,21.2,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1643530,"Mara, Aday",Off,3,105.0,12.3,107.4,93.6,13.7,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642272,"McCain, Jared",Off,3,83.0,8.1,105.7,96.6,9.2,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642349,"Mitchell, Ajay",Off,3,70.0,4.1,109.0,104.1,4.9,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642923,"Oweh, Otega",Off,2,96.0,12.0,108.2,95.9,12.2,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642877,"Peavy, Micah",Off,1,48.0,7.0,105.9,99.0,6.9,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642850,"Sorber, Thomas",Off,3,144.0,10.3,107.4,97.0,10.4,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642892,"Stirtz, Bennett",Off,3,131.0,15.8,110.0,93.4,16.6,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1642260,"Topić, Nikola",Off,3,144.0,10.3,107.4,97.0,10.4,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1641717,"Wallace, Cason",Off,3,95.0,13.1,106.6,92.9,13.7,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1631114,"Williams, Jalen",Off,3,49.0,28.3,115.5,91.6,23.9,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1631119,"Williams, Jaylin",Off,3,107.0,11.7,113.8,101.8,12.1,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612760,OKC,Oklahoma City Thunder,1629026,"Williams, Kenrich",Off,3,124.0,12.4,107.0,93.4,13.6,Oklahoma City Thunder,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,203937,"Anderson, Kyle",On,2,16.0,-6.1,77.8,85.7,-7.9,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1630567,"Barnes, Scottie",On,3,91.0,5.8,101.4,95.2,6.2,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1629628,"Barrett, RJ",On,3,93.0,9.3,106.5,95.6,11.0,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642419,"Battle, Jamison",On,3,36.0,17.3,121.7,103.5,18.2,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1643558,"Bradley, Jaden",On,3,10.0,42.5,113.6,66.7,47.0,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1643512,"Graves, Allen",On,3,46.0,8.4,99.0,91.2,7.8,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1631218,"Jackson-Davis, Trayce",On,3,17.0,20.3,107.9,85.0,22.9,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,202695,"Leonard, Kawhi",On,2,52.0,6.5,101.7,95.0,6.6,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642918,"Martin, Alijah",On,3,12.0,19.7,100.0,75.0,25.0,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642867,"Murray-Boyles, Collin",On,3,56.0,35.8,123.4,89.5,33.9,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1627751,"Poeltl, Jakob",On,3,68.0,-4.3,98.6,100.0,-1.4,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1630193,"Quickley, Immanuel",On,3,86.0,12.9,109.3,96.4,12.9,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642347,"Shead, Jamal",On,3,61.0,0.0,100.8,97.8,3.0,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642266,"Walter, Ja'Kobe",On,3,78.0,9.2,117.8,106.4,11.4,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,203937,"Anderson, Kyle",Off,3,128.0,12.0,111.4,99.3,12.1,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1630567,"Barnes, Scottie",Off,3,53.0,17.1,116.1,94.9,21.2,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1629628,"Barrett, RJ",Off,3,51.0,11.2,108.4,94.4,14.0,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642419,"Battle, Jamison",Off,3,108.0,7.6,102.1,94.9,7.2,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642927,"Bittle, Nate",Off,3,144.0,10.0,108.3,97.8,10.5,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1643558,"Bradley, Jaden",Off,3,134.0,7.5,107.8,100.0,7.8,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1643512,"Graves, Allen",Off,3,98.0,10.7,110.6,99.1,11.5,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1631218,"Jackson-Davis, Trayce",Off,3,127.0,8.7,108.3,99.3,9.0,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,202695,"Leonard, Kawhi",Off,3,92.0,12.0,110.6,97.5,13.1,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642918,"Martin, Alijah",Off,3,132.0,9.1,109.0,99.7,9.3,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642867,"Murray-Boyles, Collin",Off,3,88.0,-6.6,95.9,100.5,-4.6,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1627751,"Poeltl, Jakob",Off,3,76.0,22.6,113.1,92.0,21.1,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1630193,"Quickley, Immanuel",Off,3,58.0,5.7,103.2,93.9,9.3,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642347,"Shead, Jamal",Off,3,83.0,17.3,110.6,93.2,17.4,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1641869,"Smith, Malachi",Off,3,144.0,10.0,108.3,97.8,10.5,Toronto Raptors,Regular Season
+On/Off Court,1610612761,TOR,Toronto Raptors,1642266,"Walter, Ja'Kobe",Off,3,66.0,11.0,95.3,83.0,12.3,Toronto Raptors,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1642846,"Bailey, Ace",On,3,75.0,-7.0,111.5,117.5,-6.0,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1642268,"Collier, Isaiah",On,3,47.0,-5.2,116.5,122.2,-5.7,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1642271,"Filipowski, Kyle",On,2,17.0,0.0,102.5,100.0,2.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1641718,"George, Keyonte",On,3,94.0,-10.7,109.7,119.2,-9.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1630182,"Green, Josh",On,1,3.0,27.7,85.7,50.0,35.7,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1629637,"Hayes, Jaxson",On,3,71.0,-14.8,103.9,116.1,-12.2,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1628991,"Jackson Jr., Jaren",On,3,95.0,-16.8,110.3,128.5,-18.2,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1628374,"Markkanen, Lauri",On,3,108.0,-6.2,116.8,125.3,-8.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1629004,"Mykhailiuk, Svi",On,3,55.0,-7.9,111.9,120.0,-8.1,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1629006,"Okogie, Josh",On,2,17.0,2.8,100.0,88.9,11.1,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1643408,"Peterson, Darryn",On,3,91.0,-8.4,110.2,115.7,-5.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1641729,"Sensabaugh, Brice",On,3,46.0,-12.4,113.5,128.7,-15.3,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1641725,"Alexander, Trey",Off,3,144.0,-9.3,112.3,121.8,-9.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1642846,"Bailey, Ace",Off,3,69.0,-11.9,111.0,123.4,-12.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1628964,"Bamba, Mo",Off,3,144.0,-9.3,112.3,121.8,-9.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1628396,"Bradley, Tony",Off,3,144.0,-9.3,112.3,121.8,-9.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1641723,"Bufkin, Kobe",Off,1,48.0,-9.0,120.6,130.7,-10.1,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1642268,"Collier, Isaiah",Off,3,98.0,-11.3,109.0,118.0,-9.1,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1642271,"Filipowski, Kyle",Off,3,127.0,-10.5,113.0,123.8,-10.8,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1641718,"George, Keyonte",Off,3,50.0,-6.8,112.9,121.1,-8.1,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1630182,"Green, Josh",Off,3,141.0,-10.2,113.0,123.3,-10.4,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1629637,"Hayes, Jaxson",Off,3,73.0,-4.0,117.5,124.4,-6.9,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1642396,"Hinson, Blake",Off,1,48.0,1.0,117.6,116.7,1.0,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1631127,"Ingram, Harrison",Off,3,144.0,-9.3,112.3,121.8,-9.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1628991,"Jackson Jr., Jaren",Off,3,49.0,4.9,109.9,104.5,5.4,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1628374,"Markkanen, Lauri",Off,3,36.0,-18.8,89.5,101.2,-11.8,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1629004,"Mykhailiuk, Svi",Off,3,89.0,-10.2,110.8,118.5,-7.7,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,203994,"Nurkić, Jusuf",Off,3,144.0,-9.3,112.3,121.8,-9.5,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1629006,"Okogie, Josh",Off,3,127.0,-11.0,113.4,125.3,-11.9,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1643408,"Peterson, Darryn",Off,3,53.0,-11.0,112.8,125.4,-12.6,Utah Jazz,Regular Season
+On/Off Court,1610612762,UTA,Utah Jazz,1641729,"Sensabaugh, Brice",Off,3,98.0,-7.9,109.6,116.2,-6.6,Utah Jazz,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1643409,"Boozer, Cameron",On,3,102.0,21.2,126.3,105.5,20.7,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642907,"Coward, Cedric",On,2,60.0,28.0,127.3,102.4,24.9,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1641744,"Edey, Zach",On,2,44.0,48.5,135.2,85.9,49.3,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,203924,"Grant, Jerami",On,3,73.0,-2.6,100.6,103.1,-2.5,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1641707,"Hendricks, Taylor",On,1,7.0,-106.1,61.5,164.3,-102.7,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1641713,"Jackson, GG",On,3,44.0,-19.6,102.0,120.2,-18.2,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1629660,"Jerome, Ty",On,3,95.0,29.7,126.3,98.5,27.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1631200,"Murray, Kris",On,1,13.0,7.7,126.1,117.4,8.7,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1630590,"Pippen Jr., Scotty",On,3,54.0,-2.7,102.6,103.4,-0.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642366,"Post, Quinten",On,3,56.0,-10.2,96.0,109.1,-13.1,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642285,"Spencer, Cam",On,3,49.0,-24.5,95.2,116.8,-21.6,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1630191,"Stewart, Isaiah",On,2,39.0,1.2,117.5,114.8,2.7,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642377,"Wells, Jaylen",On,3,85.0,34.3,130.9,98.3,32.6,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1643409,"Boozer, Cameron",Off,3,42.0,-12.6,91.2,104.4,-13.2,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1643721,"Cooper, Carson",Off,3,144.0,11.3,117.4,106.6,10.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642907,"Coward, Cedric",Off,3,84.0,-0.6,109.0,108.9,0.1,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1641744,"Edey, Zach",Off,3,100.0,-4.8,107.8,114.0,-6.2,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,203924,"Grant, Jerami",Off,3,71.0,25.6,134.9,107.4,27.5,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1641707,"Hendricks, Taylor",Off,3,137.0,17.1,119.9,103.4,16.5,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1641713,"Jackson, GG",Off,3,100.0,25.0,122.5,98.6,23.9,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1629660,"Jerome, Ty",Off,3,49.0,-24.6,95.1,117.1,-22.0,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1643510,"López, Karim",Off,3,144.0,11.3,117.4,106.6,10.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642942,"Mashack, Jahmai",Off,3,144.0,11.3,117.4,106.6,10.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1631200,"Murray, Kris",Off,3,131.0,11.7,116.7,105.7,11.0,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1630590,"Pippen Jr., Scotty",Off,3,90.0,19.6,125.0,105.2,19.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642366,"Post, Quinten",Off,3,88.0,25.2,128.8,103.2,25.6,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1641765,"Prosper, Olivier-Maxence",Off,3,144.0,11.3,117.4,106.6,10.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642914,"Small, Javon",Off,3,144.0,11.3,117.4,106.6,10.8,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642285,"Spencer, Cam",Off,3,95.0,29.8,126.0,98.5,27.5,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1630191,"Stewart, Isaiah",Off,3,105.0,15.1,116.9,102.2,14.7,Memphis Grizzlies,Regular Season
+On/Off Court,1610612763,MEM,Memphis Grizzlies,1642377,"Wells, Jaylen",Off,3,59.0,-22.1,91.6,114.8,-23.2,Memphis Grizzlies,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1629028,"Ayton, Deandre",On,3,46.0,2.1,116.1,115.2,0.9,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1641736,"Beekman, Reece",On,1,1.0,49.2,50.0,0.0,50.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642267,"Carrington, Bub",On,3,50.0,6.7,118.0,113.8,4.3,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1630551,"Champagnie, Justin",On,3,69.0,24.9,122.0,97.4,24.6,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1641731,"Coulibaly, Bilal",On,3,81.0,-9.5,103.9,110.9,-7.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,203076,"Davis, Anthony",On,3,97.0,-4.9,108.1,114.2,-6.1,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642273,"George, Kyshawn",On,3,91.0,5.3,112.4,106.4,6.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1630264,"Gill, Anthony",On,1,1.0,84.0,50.0,0.0,50.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642848,"Johnson, Tre",On,3,68.0,8.5,112.9,104.8,8.2,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1630544,"Mann, Tre",On,1,1.0,49.2,50.0,0.0,50.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,203114,"Middleton, Khris",On,2,28.0,0.0,115.6,117.5,-1.8,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1643590,"Okpara, Felix",On,1,1.0,49.2,50.0,0.0,50.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642860,"Riley, Will",On,2,6.0,-34.4,90.9,116.7,-25.8,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642259,"Sarr, Alex",On,3,72.0,-5.3,102.4,107.1,-4.8,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1629027,"Young, Trae",On,3,109.0,-1.3,108.0,111.0,-3.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1629028,"Ayton, Deandre",Off,3,98.0,2.0,108.4,107.6,0.8,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1641736,"Beekman, Reece",Off,3,143.0,1.7,112.4,110.8,1.6,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642267,"Carrington, Bub",Off,3,94.0,-0.5,106.7,106.2,0.5,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1630551,"Champagnie, Justin",Off,3,75.0,-19.3,100.6,119.6,-19.1,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1641731,"Coulibaly, Bilal",Off,3,63.0,16.7,116.8,105.8,10.9,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,203076,"Davis, Anthony",Off,3,47.0,16.4,115.0,99.0,16.0,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1643407,"Dybantsa, AJ",Off,3,144.0,2.0,112.0,110.1,1.9,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642273,"George, Kyshawn",Off,3,53.0,-3.6,107.6,111.0,-3.4,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1630264,"Gill, Anthony",Off,3,143.0,1.7,112.4,110.5,1.9,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642848,"Johnson, Tre",Off,3,76.0,-3.8,109.3,111.5,-2.2,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1630544,"Mann, Tre",Off,3,143.0,1.7,112.4,110.8,1.6,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,203114,"Middleton, Khris",Off,3,116.0,2.5,110.2,107.0,3.2,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1643590,"Okpara, Felix",Off,3,143.0,1.7,112.4,110.8,1.6,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642860,"Riley, Will",Off,3,138.0,3.5,112.4,109.5,2.9,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642259,"Sarr, Alex",Off,3,72.0,9.3,117.4,111.3,6.2,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1641774,"Vukčević, Tristan",Off,3,144.0,2.0,112.0,110.1,1.9,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1642364,"Watkins, Jamir",Off,3,144.0,2.0,112.0,110.1,1.9,Washington Wizards,Regular Season
+On/Off Court,1610612764,WAS,Washington Wizards,1629027,"Young, Trae",Off,3,35.0,12.4,114.9,98.7,16.2,Washington Wizards,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1628381,"Collins, John",On,3,89.0,10.3,116.6,106.4,10.2,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1630595,"Cunningham, Cade",On,3,98.0,13.6,120.8,104.9,15.9,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1631105,"Duren, Jalen",On,2,38.0,13.8,135.4,119.0,16.3,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1629750,"Green, Javonte",On,3,53.0,13.7,111.9,100.0,11.9,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1641842,"Holland II, Ronald",On,3,48.0,6.0,104.6,100.9,3.7,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1628989,"Huerter, Kevin",On,3,64.0,-2.2,107.1,110.9,-3.7,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1642450,"Jenkins, Daniss",On,3,76.0,19.6,121.9,103.1,18.7,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1630198,"Joe, Isaiah",On,3,42.0,-16.1,101.1,115.2,-14.1,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1643536,"Okorie, Ebuka",On,1,2.0,58.3,50.0,0.0,50.0,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1630194,"Reed, Paul",On,3,66.0,16.0,112.3,94.3,18.0,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1629130,"Robinson, Duncan",On,3,87.0,27.0,130.3,101.1,29.2,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1642449,"Smith, Tolu",On,2,5.0,-19.9,81.8,110.0,-28.2,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1641709,"Thompson, Ausar",On,2,53.0,23.8,123.6,100.0,23.6,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1628381,"Collins, John",Off,3,55.0,16.4,117.1,99.2,17.9,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1630595,"Cunningham, Cade",Off,3,46.0,10.5,111.0,101.0,10.0,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1631105,"Duren, Jalen",Off,3,106.0,12.2,111.4,98.6,12.8,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1629750,"Green, Javonte",Off,3,91.0,12.1,120.1,107.7,12.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1641989,"Harkless, Elijah",Off,3,144.0,12.7,118.7,106.4,12.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1641842,"Holland II, Ronald",Off,3,96.0,16.0,124.1,106.6,17.5,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1628989,"Huerter, Kevin",Off,3,80.0,24.7,124.2,98.8,25.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1642450,"Jenkins, Daniss",Off,3,68.0,4.9,111.1,106.3,4.9,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1630198,"Joe, Isaiah",Off,3,102.0,24.4,125.2,101.0,24.3,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1642403,"Jones, Isaac",Off,3,144.0,12.7,118.7,106.4,12.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1642404,"Lanier, Chaz",Off,3,144.0,12.7,118.7,106.4,12.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1643536,"Okorie, Ebuka",Off,3,142.0,12.1,119.7,107.8,11.8,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1642391,"Onyenso, Ugonna",Off,3,144.0,12.7,118.7,106.4,12.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1627752,"Prince, Taurean",Off,3,144.0,12.7,118.7,106.4,12.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1630194,"Reed, Paul",Off,3,78.0,9.9,119.8,110.8,8.9,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1629130,"Robinson, Duncan",Off,3,57.0,-9.3,100.0,108.7,-8.7,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1642449,"Smith, Tolu",Off,3,139.0,13.8,119.3,105.9,13.4,Detroit Pistons,Regular Season
+On/Off Court,1610612765,DET,Detroit Pistons,1641709,"Thompson, Ausar",Off,3,91.0,6.3,114.7,109.5,5.1,Detroit Pistons,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1628960,"Allen, Grayson",On,3,82.0,1.2,107.7,109.0,-1.3,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1643515,"Anderson, Christian",On,3,32.0,-6.0,91.5,95.8,-4.3,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1631217,"Diabaté, Moussa",On,3,77.0,-34.5,83.3,115.9,-32.5,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1641790,"Hall, PJ",On,1,10.0,-64.6,66.7,138.9,-72.2,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642883,"James, Sion",On,3,77.0,-14.4,95.8,110.4,-14.6,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1641750,"Kalkbrenner, Ryan",On,3,56.0,22.4,126.5,105.2,21.3,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642862,"McNeeley, Liam",On,2,15.0,-43.9,83.9,133.3,-49.5,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1641706,"Miller, Brandon",On,3,94.0,-10.7,96.0,103.9,-7.8,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1626220,"O'Neale, Royce",On,3,45.0,2.1,108.0,108.2,-0.2,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1629675,"Reid, Naz",On,3,95.0,-13.7,100.5,112.0,-11.5,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642275,"Salaün, Tidjane",On,2,33.0,-30.7,90.8,117.6,-26.9,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,203471,"Schröder, Dennis",On,3,93.0,-7.8,102.0,110.0,-8.0,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1643419,"Steinbach, Hannes",On,1,12.0,-48.0,79.2,129.2,-50.0,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642369,"Ajayi, Michael",Off,3,144.0,-11.7,101.0,112.5,-11.6,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1628960,"Allen, Grayson",Off,3,62.0,-28.9,87.4,113.8,-26.4,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1643515,"Anderson, Christian",Off,3,112.0,-13.3,100.8,114.8,-13.9,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1643573,"Boswell, Kylan",Off,3,144.0,-11.7,101.0,112.5,-11.6,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1631217,"Diabaté, Moussa",Off,3,67.0,14.2,116.3,104.9,11.5,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1641790,"Hall, PJ",Off,3,134.0,-7.9,103.2,110.5,-7.3,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642883,"James, Sion",Off,3,67.0,-8.5,100.7,108.8,-8.2,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1641750,"Kalkbrenner, Ryan",Off,3,88.0,-33.2,82.7,111.7,-29.0,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642851,"Knueppel, Kon",Off,3,144.0,-11.7,101.0,112.5,-11.6,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642862,"McNeeley, Liam",Off,3,129.0,-7.8,102.6,110.3,-7.7,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1641706,"Miller, Brandon",Off,3,50.0,-13.5,105.7,122.3,-16.7,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1626220,"O'Neale, Royce",Off,3,99.0,-18.0,94.7,112.4,-17.7,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1629675,"Reid, Naz",Off,3,49.0,-7.8,100.0,103.8,-3.8,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1642275,"Salaün, Tidjane",Off,3,111.0,-6.0,102.9,109.7,-6.7,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,203471,"Schröder, Dennis",Off,3,51.0,-18.7,93.5,111.0,-17.5,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1643419,"Steinbach, Hannes",Off,3,132.0,-8.4,102.9,111.1,-8.2,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1629632,"White, Coby",Off,3,144.0,-11.7,101.0,112.5,-11.6,Charlotte Hornets,Regular Season
+On/Off Court,1610612766,CHA,Charlotte Hornets,1629684,"Williams, Grant",Off,3,144.0,-11.7,101.0,112.5,-11.6,Charlotte Hornets,Regular Season

@@ -1,31 +1,31 @@
 TeamID,TeamCity,TeamName,Conference,Division,ConferenceRecord,PlayoffRank,WINS,LOSSES,WinPCT,HOME,ROAD,L10,STREAK,GB,TEAM_ABBREVIATION,SEASON_TYPE
-1610612737,Atlanta,Hawks,East,Southeast,0-0,1,0,0,0.0,0-0,0-0,0-0,W 0,0.0,ATL,Regular Season
-1610612742,Dallas,Mavericks,West,Southwest,0-0,1,0,0,0.0,0-0,0-0,0-0,W 0,0.0,DAL,Regular Season
-1610612738,Boston,Celtics,East,Atlantic,0-0,2,0,0,0.0,0-0,0-0,0-0,W 0,0.0,BOS,Regular Season
-1610612743,Denver,Nuggets,West,Northwest,0-0,2,0,0,0.0,0-0,0-0,0-0,W 0,0.0,DEN,Regular Season
-1610612741,Chicago,Bulls,East,Central,0-0,3,0,0,0.0,0-0,0-0,0-0,W 0,0.0,CHI,Regular Season
-1610612744,Golden State,Warriors,West,Pacific,0-0,3,0,0,0.0,0-0,0-0,0-0,W 0,0.0,GSW,Regular Season
-1610612745,Houston,Rockets,West,Southwest,0-0,4,0,0,0.0,0-0,0-0,0-0,W 0,0.0,HOU,Regular Season
-1610612751,Brooklyn,Nets,East,Atlantic,0-0,4,0,0,0.0,0-0,0-0,0-0,W 0,0.0,BKN,Regular Season
-1610612747,Los Angeles,Lakers,West,Pacific,0-0,5,0,0,0.0,0-0,0-0,0-0,W 0,0.0,LAL,Regular Season
-1610612766,Charlotte,Hornets,East,Southeast,0-0,5,0,0,0.0,0-0,0-0,0-0,W 0,0.0,CHA,Regular Season
-1610612739,Cleveland,Cavaliers,East,Central,0-0,6,0,0,0.0,0-0,0-0,0-0,W 0,0.0,CLE,Regular Season
-1610612746,LA,Clippers,West,Pacific,0-0,6,0,0,0.0,0-0,0-0,0-0,W 0,0.0,LAC,Regular Season
-1610612763,Memphis,Grizzlies,West,Southwest,0-0,7,0,0,0.0,0-0,0-0,0-0,W 0,0.0,MEM,Regular Season
-1610612765,Detroit,Pistons,East,Central,0-0,7,0,0,0.0,0-0,0-0,0-0,W 0,0.0,DET,Regular Season
-1610612750,Minnesota,Timberwolves,West,Northwest,0-0,8,0,0,0.0,0-0,0-0,0-0,W 0,0.0,MIN,Regular Season
-1610612754,Indiana,Pacers,East,Central,0-0,8,0,0,0.0,0-0,0-0,0-0,W 0,0.0,IND,Regular Season
-1610612740,New Orleans,Pelicans,West,Southwest,0-0,9,0,0,0.0,0-0,0-0,0-0,W 0,0.0,NOP,Regular Season
-1610612748,Miami,Heat,East,Southeast,0-0,9,0,0,0.0,0-0,0-0,0-0,W 0,0.0,MIA,Regular Season
-1610612749,Milwaukee,Bucks,East,Central,0-0,10,0,0,0.0,0-0,0-0,0-0,W 0,0.0,MIL,Regular Season
-1610612760,Oklahoma City,Thunder,West,Northwest,0-0,10,0,0,0.0,0-0,0-0,0-0,W 0,0.0,OKC,Regular Season
-1610612752,New York,Knicks,East,Atlantic,0-0,11,0,0,0.0,0-0,0-0,0-0,W 0,0.0,NYK,Regular Season
-1610612756,Phoenix,Suns,West,Pacific,0-0,11,0,0,0.0,0-0,0-0,0-0,W 0,0.0,PHX,Regular Season
-1610612753,Orlando,Magic,East,Southeast,0-0,12,0,0,0.0,0-0,0-0,0-0,W 0,0.0,ORL,Regular Season
-1610612757,Portland,Trail Blazers,West,Northwest,0-0,12,0,0,0.0,0-0,0-0,0-0,W 0,0.0,POR,Regular Season
-1610612755,Philadelphia,76ers,East,Atlantic,0-0,13,0,0,0.0,0-0,0-0,0-0,W 0,0.0,PHI,Regular Season
-1610612758,Sacramento,Kings,West,Pacific,0-0,13,0,0,0.0,0-0,0-0,0-0,W 0,0.0,SAC,Regular Season
-1610612759,San Antonio,Spurs,West,Southwest,0-0,14,0,0,0.0,0-0,0-0,0-0,W 0,0.0,SAS,Regular Season
-1610612761,Toronto,Raptors,East,Atlantic,0-0,14,0,0,0.0,0-0,0-0,0-0,W 0,0.0,TOR,Regular Season
-1610612762,Utah,Jazz,West,Northwest,0-0,15,0,0,0.0,0-0,0-0,0-0,W 0,0.0,UTA,Regular Season
-1610612764,Washington,Wizards,East,Southeast,0-0,15,0,0,0.0,0-0,0-0,0-0,W 0,0.0,WAS,Regular Season
+1610612745,Houston,Rockets,West,Southwest,2-0  ,1,3,0,1.0,1-0,2-0,3-0,W 3,0.0,HOU,Regular Season
+1610612765,Detroit,Pistons,East,Central,3-0  ,1,3,0,1.0,1-0,2-0,3-0,W 3,0.0,DET,Regular Season
+1610612755,Philadelphia,76ers,East,Atlantic,3-1  ,2,3,1,0.75,2-1,1-0,3-1,L 1,0.5,PHI,Regular Season
+1610612747,Los Angeles,Lakers,West,Pacific,3-0  ,2,3,0,1.0,2-0,1-0,3-0,W 3,0.0,LAL,Regular Season
+1610612737,Atlanta,Hawks,East,Southeast,2-0  ,3,2,1,0.667,0-1,2-0,2-1,L 1,1.0,ATL,Regular Season
+1610612760,Oklahoma City,Thunder,West,Northwest,3-0  ,3,3,0,1.0,2-0,1-0,3-0,W 3,0.0,OKC,Regular Season
+1610612761,Toronto,Raptors,East,Atlantic,2-0  ,4,2,1,0.667,1-0,1-1,2-1,L 1,1.0,TOR,Regular Season
+1610612763,Memphis,Grizzlies,West,Southwest,3-0  ,4,3,0,1.0,1-0,2-0,3-0,W 3,0.0,MEM,Regular Season
+1610612764,Washington,Wizards,East,Southeast,2-1  ,5,2,1,0.667,1-1,1-0,2-1,W 1,1.0,WAS,Regular Season
+1610612750,Minnesota,Timberwolves,West,Northwest,0-0  ,5,3,0,1.0,1-0,2-0,3-0,W 3,0.0,MIN,Regular Season
+1610612754,Indiana,Pacers,East,Central,1-0  ,6,2,1,0.667,0-1,2-0,2-1,W 1,1.0,IND,Regular Season
+1610612757,Portland,Trail Blazers,West,Northwest,2-0  ,6,2,0,1.0,1-0,1-0,2-0,W 2,0.5,POR,Regular Season
+1610612766,Charlotte,Hornets,East,Southeast,2-1  ,7,2,1,0.667,1-1,1-0,2-1,W 1,1.0,CHA,Regular Season
+1610612743,Denver,Nuggets,West,Northwest,1-1  ,7,1,1,0.5,1-0,0-1,1-1,W 1,1.5,DEN,Regular Season
+1610612738,Boston,Celtics,East,Atlantic,1-1  ,8,1,1,0.5,1-0,0-1,1-1,W 1,1.5,BOS,Regular Season
+1610612756,Phoenix,Suns,West,Pacific,1-1  ,8,1,1,0.5,1-0,0-1,1-1,W 1,1.5,PHX,Regular Season
+1610612759,San Antonio,Spurs,West,Southwest,1-2  ,9,1,2,0.333,0-2,1-0,1-2,W 1,2.0,SAS,Regular Season
+1610612739,Cleveland,Cavaliers,East,Central,1-1  ,9,1,1,0.5,1-0,0-1,1-1,W 1,1.5,CLE,Regular Season
+1610612742,Dallas,Mavericks,West,Southwest,0-2  ,10,1,2,0.333,0-1,1-1,1-2,L 1,2.0,DAL,Regular Season
+1610612753,Orlando,Magic,East,Southeast,1-1  ,10,1,2,0.333,0-2,1-0,1-2,W 1,2.0,ORL,Regular Season
+1610612746,LA,Clippers,West,Pacific,1-2  ,11,1,2,0.333,1-0,0-2,1-2,L 2,2.0,LAC,Regular Season
+1610612741,Chicago,Bulls,East,Central,1-2  ,11,1,2,0.333,0-1,1-1,1-2,L 1,2.0,CHI,Regular Season
+1610612748,Miami,Heat,East,Southeast,0-2  ,12,0,3,0.0,0-2,0-1,0-3,L 3,3.0,MIA,Regular Season
+1610612762,Utah,Jazz,West,Northwest,1-2  ,12,1,2,0.333,1-1,0-1,1-2,L 1,2.0,UTA,Regular Season
+1610612752,New York,Knicks,East,Atlantic,0-3  ,13,0,3,0.0,0-2,0-1,0-3,L 3,3.0,NYK,Regular Season
+1610612740,New Orleans,Pelicans,West,Southwest,0-2  ,13,0,3,0.0,0-1,0-2,0-3,L 3,3.0,NOP,Regular Season
+1610612744,Golden State,Warriors,West,Pacific,0-3  ,14,0,3,0.0,0-1,0-2,0-3,L 3,3.0,GSW,Regular Season
+1610612749,Milwaukee,Bucks,East,Central,0-3  ,14,0,3,0.0,0-1,0-2,0-3,L 3,3.0,MIL,Regular Season
+1610612751,Brooklyn,Nets,East,Atlantic,0-3  ,15,0,3,0.0,0-2,0-1,0-3,L 3,3.0,BKN,Regular Season
+1610612758,Sacramento,Kings,West,Pacific,0-3  ,15,0,3,0.0,0-2,0-1,0-3,L 3,3.0,SAC,Regular Season
