@@ -1,8 +1,8 @@
 {
   "weights": {
-    "srs": -0.6129088499275629,
-    "ipm": 1.872754547586926,
-    "hca": 1.4975532040046724
+    "srs": -0.561911932807077,
+    "ipm": 1.8196265282371116,
+    "hca": 1.503459414030733
   },
   "train_fraction": 0.6,
   "blend_fraction": 0.8,
@@ -15,7 +15,8 @@
     "2022-23",
     "2023-24",
     "2024-25",
-    "2025-26"
+    "2025-26",
+    "2026-27"
   ],
   "note": "blend weights are experimental (negative SRS weight, IPM look-ahead) \u2014 published ratings use TEAM_IPM + SRS only"
 }

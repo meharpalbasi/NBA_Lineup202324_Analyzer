@@ -1,0 +1,26 @@
+GAME_ID,GAME_DATE,MATCHUP,PLAYER_ID,PLAYER_NAME,TEAM_ABBREVIATION,PERIOD,CLOCK,DESCRIPTION,WP_BEFORE,WP_AFTER,WPA,SEASON_TYPE
+0022600186,2026-11-04,LAC vs. MIA,202691,K. Thompson,MIA,5,00:01.00,Thompson 24' 3PT Jump Shot (30 PTS) (Antetokounmpo 6 AST),0.0,0.976,0.976,Regular Season
+0022600128,2026-10-27,BOS vs. BKN,1628369,J. Tatum,BOS,5,00:00.00,Tatum 17' Turnaround Jump Shot (40 PTS) (White 7 AST),0.024,0.976,0.953,Regular Season
+0022600128,2026-10-27,BOS vs. BKN,1643414,M. Brown Jr.,BKN,4,00:01.00,Brown Jr. 24' 3PT Jump Shot (14 PTS) (Ellis 4 AST),0.0,0.499,0.499,Regular Season
+0022600165,2026-11-02,MEM vs. NOP,1629660,T. Jerome,MEM,4,00:04.60,Jerome 10' Driving Floating Jump Shot (32 PTS),0.005,0.502,0.497,Regular Season
+0022600186,2026-11-04,LAC vs. MIA,1629060,R. Hachimura,LAC,4,00:02.70,Hachimura Free Throw 2 of 2 (21 PTS),0.044,0.502,0.457,Regular Season
+0022600158,2026-11-02,CLE vs. OKC,1628983,S. Gilgeous-Alexander,OKC,4,00:32.60,Gilgeous-Alexander 24' 3PT Step Back Jump Shot (43 PTS),0.495,0.928,0.433,Regular Season
+0022600165,2026-11-02,MEM vs. NOP,1629660,T. Jerome,MEM,5,00:18.80,Jerome 1' Driving Layup (40 PTS),0.1,0.504,0.404,Regular Season
+0022600101,2026-10-23,GSW vs. MEM,1643409,C. Boozer,MEM,4,00:20.10,Boozer 9' Turnaround Jump Shot (25 PTS),0.496,0.892,0.397,Regular Season
+0022600179,2026-11-04,NOP vs. UTA,1627749,D. Murray,NOP,4,00:06.40,Murray Free Throw 2 of 2 (18 PTS),0.135,0.502,0.367,Regular Season
+0022600158,2026-11-02,CLE vs. OKC,1630241,S. Merrill,CLE,4,01:01.00,Merrill 24' 3PT Jump Shot (8 PTS) (Mitchell 11 AST),0.145,0.507,0.362,Regular Season
+0022600120,2026-10-26,CLE vs. MIN,1630162,A. Edwards,MIN,5,01:03.00,Edwards 24' 3PT Jump Shot (44 PTS) (Gobert 2 AST),0.14,0.492,0.352,Regular Season
+0022600165,2026-11-02,MEM vs. NOP,1642847,J. Fears,NOP,5,00:07.30,Fears Free Throw 2 of 2 (12 PTS),0.497,0.849,0.351,Regular Season
+0022600165,2026-11-02,MEM vs. NOP,1642847,J. Fears,NOP,5,00:07.30,Fears Free Throw 1 of 2 (11 PTS),0.148,0.497,0.349,Regular Season
+0022600018,2026-10-30,PHI vs. NYK,1628973,J. Brunson,NYK,4,01:32.00,Brunson 27' 3PT Step Back Jump Shot (23 PTS) (Towns 3 AST),0.272,0.606,0.334,Regular Season
+0022600128,2026-10-27,BOS vs. BKN,1628401,D. White,BOS,4,00:33.70,White Cutting Dunk Shot (14 PTS) (Tatum 8 AST),0.505,0.836,0.331,Regular Season
+0022600141,2026-10-28,UTA vs. SAS,1641718,K. George,UTA,4,00:41.40,George 7' Driving Layup (31 PTS),0.196,0.506,0.31,Regular Season
+0022600120,2026-10-26,CLE vs. MIN,201935,J. Harden,CLE,4,00:10.40,Harden 7' Driving Floating Jump Shot (17 PTS),0.194,0.503,0.309,Regular Season
+0022600186,2026-11-04,LAC vs. MIA,203507,G. Antetokounmpo,MIA,4,00:10.80,Antetokounmpo Free Throw 2 of 2 (25 PTS),0.497,0.801,0.304,Regular Season
+0022600186,2026-11-04,LAC vs. MIA,203507,G. Antetokounmpo,MIA,4,00:10.80,Antetokounmpo Free Throw 1 of 2 (24 PTS),0.195,0.497,0.302,Regular Season
+0022600128,2026-10-27,BOS vs. BKN,1643414,M. Brown Jr.,BKN,4,00:44.90,Brown Jr. 2' Driving Layup (9 PTS),0.197,0.494,0.297,Regular Season
+0022600184,2026-11-04,SAS vs. DAL,1630230,N. Marshall,DAL,4,01:41.00,Marshall 3PT Jump Shot (22 PTS) (Flagg 5 AST),0.195,0.49,0.296,Regular Season
+0022600179,2026-11-04,NOP vs. UTA,1628374,L. Markkanen,UTA,4,00:39.40,Markkanen 26' 3PT Jump Shot (18 PTS) (George 8 AST),0.667,0.962,0.295,Regular Season
+0022600148,2026-10-31,CHA vs. PHI,1642845,V. Edgecombe,PHI,4,00:36.10,Edgecombe 26' 3PT Step Back Jump Shot (10 PTS),0.674,0.968,0.294,Regular Season
+0022600120,2026-10-26,CLE vs. MIN,1628378,D. Mitchell,CLE,5,00:48.00,Mitchell 19' Fadeaway Jumper (26 PTS),0.507,0.796,0.289,Regular Season
+0022600018,2026-10-30,PHI vs. NYK,1642845,V. Edgecombe,PHI,4,00:33.60,Edgecombe 27' 3PT Jump Shot (13 PTS) (Maxey 4 AST),0.691,0.974,0.284,Regular Season
