@@ -1,6 +1,12 @@
 OFF_PLAYER_ID,OFF_PLAYER_NAME,DEF_PLAYER_ID,DEF_PLAYER_NAME,GP,MATCHUP_MIN,PARTIAL_POSS,PLAYER_PTS,MATCHUP_FGM,MATCHUP_FGA,MATCHUP_FG3M,MATCHUP_FG3A,MATCHUP_TOV,SFL,SEASON_TYPE
+1629637,Jaxson Hayes,1641705,Victor Wembanyama,2,20.6,89.4,10.0,4.0,11.0,0.0,0.0,1.0,1.0,Regular Season
 1629627,Zion Williamson,203932,Aaron Gordon,2,16.1,87.4,24.0,10.0,14.0,1.0,2.0,3.0,3.0,Regular Season
+1641705,Victor Wembanyama,1629637,Jaxson Hayes,2,17.4,81.6,29.0,12.0,29.0,3.0,13.0,3.0,2.0,Regular Season
+1629027,Trae Young,1630700,Dyson Daniels,2,14.2,76.0,5.0,2.0,5.0,1.0,3.0,6.0,0.0,Regular Season
+201935,James Harden,1629026,Kenrich Williams,2,13.2,70.9,18.0,6.0,14.0,2.0,5.0,3.0,3.0,Regular Season
 203932,Aaron Gordon,1629627,Zion Williamson,2,14.8,66.8,14.0,3.0,10.0,3.0,9.0,0.0,3.0,Regular Season
+203944,Julius Randle,1629675,Naz Reid,2,12.2,65.3,22.0,7.0,14.0,3.0,5.0,1.0,3.0,Regular Season
+1642270,Donovan Clingan,1631117,Walker Kessler,2,13.1,64.5,16.0,5.0,7.0,3.0,4.0,3.0,2.0,Regular Season
 1627750,Jamal Murray,1627749,Dejounte Murray,2,11.8,62.8,16.0,5.0,15.0,3.0,7.0,0.0,2.0,Regular Season
 1630578,Alperen Sengun,1630168,Onyeka Okongwu,2,14.4,62.3,14.0,5.0,9.0,1.0,1.0,5.0,1.0,Regular Season
 1629027,Trae Young,203471,Dennis Schröder,2,12.3,62.2,19.0,8.0,13.0,0.0,2.0,2.0,2.0,Regular Season
@@ -8,305 +14,541 @@ OFF_PLAYER_ID,OFF_PLAYER_NAME,DEF_PLAYER_ID,DEF_PLAYER_NAME,GP,MATCHUP_MIN,PARTI
 1643411,Darius Acuff Jr.,1642377,Jaylen Wells,2,12.8,59.3,27.0,9.0,20.0,4.0,9.0,0.0,3.0,Regular Season
 1641718,Keyonte George,1642377,Jaylen Wells,2,12.7,58.1,17.0,6.0,10.0,2.0,3.0,1.0,3.0,Regular Season
 203076,Anthony Davis,1631217,Moussa Diabaté,2,12.6,57.1,30.0,11.0,19.0,3.0,5.0,0.0,2.0,Regular Season
+1629026,Kenrich Williams,201935,James Harden,2,11.3,56.8,10.0,4.0,8.0,2.0,5.0,1.0,0.0,Regular Season
+1631217,Moussa Diabaté,1630194,Paul Reed,2,14.2,56.6,6.0,2.0,3.0,0.0,0.0,1.0,1.0,Regular Season
 1643409,Cameron Boozer,1630173,Precious Achiuwa,2,10.7,56.5,11.0,4.0,17.0,1.0,8.0,2.0,1.0,Regular Season
+1631117,Walker Kessler,1642270,Donovan Clingan,2,13.4,55.6,14.0,6.0,10.0,0.0,0.0,0.0,2.0,Regular Season
+1629029,Luka Dončić,1641739,Toumani Camara,2,11.3,55.4,35.0,11.0,20.0,6.0,13.0,2.0,5.0,Regular Season
 203110,Draymond Green,1631117,Walker Kessler,2,11.8,55.3,2.0,1.0,5.0,0.0,2.0,2.0,0.0,Regular Season
 1630532,Franz Wagner,1630567,Scottie Barnes,2,11.4,54.9,12.0,2.0,9.0,0.0,4.0,5.0,4.0,Regular Season
+1629675,Naz Reid,203944,Julius Randle,2,13.8,54.9,11.0,5.0,10.0,1.0,5.0,1.0,0.0,Regular Season
 1627749,Dejounte Murray,1631128,Christian Braun,2,10.2,54.7,11.0,5.0,9.0,1.0,4.0,1.0,0.0,Regular Season
 1642377,Jaylen Wells,1643411,Darius Acuff Jr.,2,11.4,54.6,6.0,3.0,5.0,0.0,2.0,2.0,0.0,Regular Season
 1630191,Isaiah Stewart,1627734,Domantas Sabonis,2,11.2,54.2,21.0,8.0,11.0,3.0,4.0,0.0,1.0,Regular Season
-1628973,Jalen Brunson,1642845,VJ Edgecombe,2,11.1,53.8,14.0,5.0,13.0,1.0,2.0,2.0,1.0,Regular Season
+1630194,Paul Reed,1631217,Moussa Diabaté,2,12.7,54.2,15.0,6.0,6.0,1.0,1.0,3.0,0.0,Regular Season
+1628973,Jalen Brunson,1642845,VJ Edgecombe,2,11.1,53.9,14.0,5.0,13.0,1.0,2.0,2.0,1.0,Regular Season
 1630567,Scottie Barnes,1630532,Franz Wagner,2,12.1,53.8,15.0,6.0,11.0,0.0,3.0,1.0,1.0,Regular Season
-1629637,Jaxson Hayes,1641705,Victor Wembanyama,1,13.1,53.8,2.0,0.0,2.0,0.0,0.0,1.0,1.0,Regular Season
+1630166,Deni Avdija,1628970,Miles Bridges,2,10.8,53.7,12.0,5.0,11.0,1.0,4.0,2.0,1.0,Regular Season
+1643410,Caleb Wilson,1628384,OG Anunoby,2,9.2,53.0,4.0,2.0,8.0,0.0,3.0,0.0,0.0,Regular Season
+1626164,Devin Booker,1641739,Toumani Camara,2,9.3,52.5,9.0,3.0,8.0,1.0,3.0,1.0,1.0,Regular Season
+1641705,Victor Wembanyama,1629023,P.J. Washington,2,11.5,52.3,16.0,5.0,13.0,2.0,8.0,0.0,3.0,Regular Season
+1630178,Tyrese Maxey,1628969,Mikal Bridges,2,12.5,51.7,11.0,4.0,11.0,1.0,6.0,1.0,1.0,Regular Season
+1641718,Keyonte George,1642847,Jeremiah Fears,2,9.4,51.7,12.0,5.0,7.0,0.0,2.0,3.0,1.0,Regular Season
+1629008,Michael Porter Jr.,1642883,Sion James,2,11.2,51.7,23.0,8.0,15.0,5.0,8.0,1.0,2.0,Regular Season
+1627734,Domantas Sabonis,1641705,Victor Wembanyama,2,11.5,51.4,13.0,6.0,13.0,1.0,2.0,1.0,0.0,Regular Season
 1627734,Domantas Sabonis,1630191,Isaiah Stewart,2,10.9,51.3,5.0,1.0,2.0,0.0,0.0,0.0,3.0,Regular Season
-1630178,Tyrese Maxey,1628969,Mikal Bridges,2,12.5,51.1,11.0,4.0,11.0,1.0,6.0,1.0,1.0,Regular Season
+1629029,Luka Dončić,201950,Jrue Holiday,2,10.3,51.2,18.0,7.0,14.0,2.0,6.0,2.0,1.0,Regular Season
+1628964,Mo Bamba,1628436,Luke Kornet,2,10.2,50.3,6.0,3.0,7.0,0.0,0.0,0.0,0.0,Regular Season
 1642883,Sion James,1629027,Trae Young,2,13.3,50.3,1.0,0.0,1.0,0.0,1.0,0.0,0.0,Regular Season
-1641705,Victor Wembanyama,1629637,Jaxson Hayes,1,10.8,50.1,21.0,8.0,17.0,3.0,9.0,0.0,1.0,Regular Season
+1628970,Miles Bridges,1630166,Deni Avdija,2,9.9,50.0,8.0,3.0,8.0,2.0,4.0,0.0,0.0,Regular Season
+203954,Joel Embiid,1626157,Karl-Anthony Towns,2,12.6,49.7,6.0,2.0,10.0,1.0,5.0,3.0,1.0,Regular Season
 1630173,Precious Achiuwa,1643409,Cameron Boozer,2,10.6,49.7,8.0,4.0,4.0,0.0,0.0,0.0,1.0,Regular Season
+1630178,Tyrese Maxey,1642450,Daniss Jenkins,2,12.9,49.1,14.0,5.0,10.0,2.0,6.0,0.0,0.0,Regular Season
+1643411,Darius Acuff Jr.,1642264,Stephon Castle,2,11.2,49.0,12.0,5.0,13.0,2.0,5.0,2.0,0.0,Regular Season
 1629023,P.J. Washington,201142,Kevin Durant,2,9.6,48.9,6.0,2.0,6.0,2.0,5.0,1.0,0.0,Regular Season
-203954,Joel Embiid,1626157,Karl-Anthony Towns,2,12.6,48.6,6.0,2.0,10.0,1.0,5.0,3.0,1.0,Regular Season
+1630595,Cade Cunningham,1627759,Jaylen Brown,2,9.9,48.5,7.0,2.0,8.0,1.0,5.0,3.0,0.0,Regular Season
 202681,Kyrie Irving,1641708,Amen Thompson,2,9.9,48.5,9.0,3.0,4.0,1.0,2.0,1.0,1.0,Regular Season
 1642377,Jaylen Wells,1641718,Keyonte George,2,8.7,48.4,6.0,2.0,7.0,1.0,4.0,0.0,0.0,Regular Season
 1630559,Austin Reaves,1627884,Derrick Jones Jr.,2,10.4,48.2,12.0,5.0,9.0,1.0,2.0,4.0,1.0,Regular Season
+1641705,Victor Wembanyama,1627734,Domantas Sabonis,2,9.1,48.1,18.0,7.0,17.0,1.0,4.0,3.0,0.0,Regular Season
+1642883,Sion James,1629008,Michael Porter Jr.,2,10.7,48.1,1.0,0.0,2.0,0.0,2.0,0.0,1.0,Regular Season
+1643408,Darryn Peterson,1627749,Dejounte Murray,2,10.0,48.1,4.0,2.0,5.0,0.0,3.0,2.0,0.0,Regular Season
+1628378,Donovan Mitchell,1642349,Ajay Mitchell,2,9.3,48.0,15.0,6.0,12.0,3.0,5.0,1.0,0.0,Regular Season
+1628384,OG Anunoby,1643410,Caleb Wilson,2,10.0,47.8,7.0,3.0,10.0,1.0,6.0,0.0,0.0,Regular Season
 1631117,Walker Kessler,1630543,Isaiah Jackson,2,8.6,47.5,7.0,2.0,4.0,0.0,0.0,1.0,1.0,Regular Season
 1631217,Moussa Diabaté,203076,Anthony Davis,2,12.0,47.3,4.0,2.0,5.0,0.0,0.0,0.0,0.0,Regular Season
+1627759,Jaylen Brown,1630595,Cade Cunningham,2,9.6,46.9,22.0,8.0,16.0,4.0,5.0,0.0,1.0,Regular Season
 1641708,Amen Thompson,1629638,Nickeil Alexander-Walker,2,11.6,46.9,8.0,3.0,6.0,0.0,0.0,1.0,1.0,Regular Season
 1631117,Walker Kessler,203110,Draymond Green,2,10.2,46.8,17.0,8.0,9.0,0.0,0.0,2.0,1.0,Regular Season
+1642865,Yaxel Lendeborg,1628415,Dillon Brooks,2,8.5,46.8,19.0,6.0,11.0,5.0,7.0,0.0,1.0,Regular Season
 201599,DeAndre Jordan,203999,Nikola Jokić,2,9.5,46.6,5.0,1.0,1.0,0.0,0.0,1.0,0.0,Regular Season
 1642274,Yves Missi,1627826,Ivica Zubac,1,8.3,46.5,7.0,3.0,3.0,0.0,0.0,0.0,1.0,Regular Season
+1630178,Tyrese Maxey,1631212,Peyton Watson,2,10.7,46.5,13.0,4.0,9.0,1.0,3.0,0.0,1.0,Regular Season
+1643407,AJ Dybantsa,1629638,Nickeil Alexander-Walker,2,9.1,46.1,8.0,3.0,4.0,1.0,1.0,1.0,0.0,Regular Season
+1631217,Moussa Diabaté,1630549,Day'Ron Sharpe,2,11.2,46.1,4.0,2.0,3.0,0.0,0.0,2.0,0.0,Regular Season
+1641706,Brandon Miller,1631165,Keon Ellis,2,9.1,46.0,1.0,0.0,4.0,0.0,4.0,1.0,0.0,Regular Season
+203954,Joel Embiid,1630596,Evan Mobley,2,10.0,45.9,12.0,3.0,12.0,1.0,4.0,3.0,3.0,Regular Season
 1642907,Cedric Coward,203897,Zach LaVine,2,10.0,45.9,15.0,5.0,10.0,3.0,6.0,2.0,1.0,Regular Season
+1630596,Evan Mobley,1628392,Isaiah Hartenstein,2,9.9,45.3,14.0,6.0,11.0,1.0,2.0,1.0,1.0,Regular Season
 1627749,Dejounte Murray,1627750,Jamal Murray,2,8.4,45.3,16.0,6.0,9.0,0.0,2.0,0.0,2.0,Regular Season
-1628983,Shai Gilgeous-Alexander,1631128,Christian Braun,1,8.0,45.1,9.0,3.0,12.0,1.0,6.0,0.0,0.0,Regular Season
+1642846,Ace Bailey,1642844,Dylan Harper,2,9.4,44.8,6.0,3.0,12.0,0.0,4.0,2.0,0.0,Regular Season
+1628436,Luke Kornet,1628964,Mo Bamba,2,9.5,44.8,4.0,1.0,3.0,0.0,0.0,0.0,1.0,Regular Season
 201142,Kevin Durant,1630700,Dyson Daniels,2,9.6,44.6,10.0,3.0,7.0,2.0,4.0,2.0,0.0,Regular Season
-1628976,Wendell Carter Jr.,1630168,Onyeka Okongwu,1,7.8,43.9,9.0,3.0,4.0,1.0,2.0,0.0,0.0,Regular Season
 203999,Nikola Jokić,201599,DeAndre Jordan,2,7.8,43.9,7.0,3.0,7.0,1.0,4.0,4.0,0.0,Regular Season
+1629680,Matisse Thybulle,203081,Damian Lillard,2,9.8,43.9,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Regular Season
+1628976,Wendell Carter Jr.,1630168,Onyeka Okongwu,1,7.8,43.9,9.0,3.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+1630596,Evan Mobley,203954,Joel Embiid,2,7.9,43.6,23.0,9.0,13.0,3.0,4.0,0.0,2.0,Regular Season
 1627826,Ivica Zubac,1642274,Yves Missi,1,8.9,43.6,4.0,2.0,4.0,0.0,0.0,1.0,0.0,Regular Season
-1629023,P.J. Washington,203507,Giannis Antetokounmpo,1,8.2,43.0,3.0,1.0,4.0,1.0,3.0,1.0,0.0,Regular Season
+201142,Kevin Durant,1630183,Jaden McDaniels,1,9.6,42.7,14.0,5.0,7.0,1.0,3.0,2.0,1.0,Regular Season
 1641706,Brandon Miller,1641731,Bilal Coulibaly,2,10.6,42.7,6.0,2.0,6.0,2.0,4.0,1.0,0.0,Regular Season
-203897,Zach LaVine,1642907,Cedric Coward,2,7.8,42.4,8.0,3.0,10.0,0.0,5.0,1.0,1.0,Regular Season
+203507,Giannis Antetokounmpo,1629023,P.J. Washington,1,8.2,42.5,14.0,6.0,12.0,2.0,3.0,1.0,0.0,Regular Season
 1626157,Karl-Anthony Towns,203954,Joel Embiid,2,8.2,42.4,13.0,5.0,6.0,1.0,2.0,2.0,2.0,Regular Season
+203897,Zach LaVine,1642907,Cedric Coward,2,7.8,42.4,8.0,3.0,10.0,0.0,5.0,1.0,1.0,Regular Season
+1641739,Toumani Camara,1626164,Devin Booker,2,7.0,42.2,3.0,1.0,1.0,1.0,1.0,0.0,1.0,Regular Season
 201142,Kevin Durant,1629652,Luguentz Dort,2,8.6,42.1,10.0,4.0,7.0,1.0,3.0,2.0,1.0,Regular Season
 1630168,Onyeka Okongwu,1628976,Wendell Carter Jr.,1,7.8,42.0,2.0,1.0,5.0,0.0,4.0,2.0,0.0,Regular Season
+203110,Draymond Green,1628976,Wendell Carter Jr.,1,8.2,41.9,2.0,1.0,4.0,0.0,1.0,1.0,1.0,Regular Season
+1629023,P.J. Washington,203507,Giannis Antetokounmpo,1,9.7,41.9,3.0,1.0,4.0,1.0,3.0,1.0,0.0,Regular Season
 1628369,Jayson Tatum,1643410,Caleb Wilson,2,9.0,41.9,11.0,4.0,13.0,1.0,5.0,1.0,0.0,Regular Season
-203507,Giannis Antetokounmpo,1629023,P.J. Washington,1,7.7,41.6,14.0,6.0,12.0,2.0,3.0,1.0,0.0,Regular Season
+1630549,Day'Ron Sharpe,1631217,Moussa Diabaté,2,9.1,41.8,2.0,1.0,2.0,0.0,0.0,2.0,0.0,Regular Season
+1628969,Mikal Bridges,1630178,Tyrese Maxey,2,9.9,41.5,6.0,3.0,8.0,0.0,2.0,1.0,0.0,Regular Season
+1626157,Karl-Anthony Towns,1630188,Jalen Smith,2,8.6,41.4,13.0,5.0,7.0,2.0,3.0,2.0,1.0,Regular Season
 203999,Nikola Jokić,1642852,Derik Queen,2,7.2,41.2,18.0,7.0,14.0,1.0,4.0,2.0,2.0,Regular Season
-1628969,Mikal Bridges,1630178,Tyrese Maxey,2,9.9,40.7,6.0,3.0,8.0,0.0,2.0,1.0,0.0,Regular Season
+1630188,Jalen Smith,1626157,Karl-Anthony Towns,2,8.4,41.2,15.0,6.0,8.0,3.0,5.0,0.0,0.0,Regular Season
 1629627,Zion Williamson,1627783,Pascal Siakam,1,7.0,40.6,9.0,3.0,5.0,1.0,2.0,1.0,1.0,Regular Season
-203999,Nikola Jokić,1628392,Isaiah Hartenstein,1,7.2,40.3,9.0,4.0,8.0,0.0,2.0,2.0,0.0,Regular Season
-1629675,Naz Reid,1628389,Bam Adebayo,1,9.6,40.1,5.0,2.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+201142,Kevin Durant,1628415,Dillon Brooks,1,9.1,40.3,12.0,3.0,6.0,1.0,3.0,2.0,2.0,Regular Season
+1630578,Alperen Sengun,203497,Rudy Gobert,1,9.1,40.3,4.0,0.0,8.0,0.0,1.0,2.0,1.0,Regular Season
+1630643,Jay Huff,1630168,Onyeka Okongwu,1,8.7,40.2,13.0,5.0,7.0,0.0,2.0,1.0,1.0,Regular Season
+1631165,Keon Ellis,1641706,Brandon Miller,2,8.8,40.1,0.0,0.0,2.0,0.0,0.0,0.0,0.0,Regular Season
 1629680,Matisse Thybulle,201939,Stephen Curry,2,8.9,40.1,3.0,1.0,2.0,1.0,2.0,1.0,0.0,Regular Season
-1641706,Brandon Miller,1631165,Keon Ellis,1,7.8,39.9,1.0,0.0,4.0,0.0,4.0,1.0,0.0,Regular Season
-2544,LeBron James,1628384,OG Anunoby,2,10.7,39.4,6.0,2.0,7.0,0.0,2.0,0.0,0.0,Regular Season
+1629675,Naz Reid,1628389,Bam Adebayo,1,9.6,40.1,5.0,2.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+2544,LeBron James,1628384,OG Anunoby,2,10.7,40.0,6.0,2.0,7.0,0.0,2.0,0.0,0.0,Regular Season
+203944,Julius Randle,1627783,Pascal Siakam,2,9.3,40.0,8.0,2.0,6.0,1.0,3.0,3.0,2.0,Regular Season
+1630168,Onyeka Okongwu,1642259,Alex Sarr,2,7.5,39.6,22.0,7.0,9.0,4.0,5.0,1.0,1.0,Regular Season
+1642270,Donovan Clingan,203999,Nikola Jokić,1,7.7,39.2,6.0,3.0,5.0,0.0,0.0,2.0,0.0,Regular Season
 1629655,Daniel Gafford,203991,Clint Capela,2,7.6,39.2,5.0,2.0,2.0,0.0,0.0,1.0,1.0,Regular Season
 1641705,Victor Wembanyama,1642866,Joan Beringer,1,6.0,39.2,18.0,7.0,14.0,2.0,3.0,1.0,1.0,Regular Season
 1642852,Derik Queen,203999,Nikola Jokić,2,8.3,38.9,12.0,6.0,8.0,0.0,1.0,3.0,1.0,Regular Season
-1628983,Shai Gilgeous-Alexander,1627884,Derrick Jones Jr.,1,9.3,38.5,8.0,4.0,10.0,0.0,3.0,0.0,0.0,Regular Season
+1641718,Keyonte George,1642264,Stephon Castle,2,7.9,38.8,6.0,2.0,8.0,0.0,1.0,4.0,0.0,Regular Season
+1642264,Stephon Castle,1642846,Ace Bailey,2,9.4,38.8,5.0,2.0,5.0,1.0,2.0,2.0,0.0,Regular Season
+1642863,Khaman Maluach,1642270,Donovan Clingan,2,7.6,38.6,0.0,0.0,1.0,0.0,0.0,1.0,0.0,Regular Season
+1630168,Onyeka Okongwu,1630643,Jay Huff,1,8.8,38.6,10.0,4.0,7.0,2.0,3.0,0.0,0.0,Regular Season
+1630170,Devin Vassell,1643408,Darryn Peterson,2,8.3,38.6,7.0,2.0,5.0,0.0,3.0,0.0,0.0,Regular Season
+203944,Julius Randle,1628384,OG Anunoby,1,8.5,38.4,11.0,3.0,7.0,0.0,2.0,3.0,2.0,Regular Season
+1628415,Dillon Brooks,203081,Damian Lillard,2,6.9,38.3,8.0,4.0,9.0,0.0,3.0,3.0,0.0,Regular Season
+1631222,Jake LaRavia,1630166,Deni Avdija,2,8.2,38.2,2.0,1.0,1.0,0.0,0.0,0.0,0.0,Regular Season
 1642350,Trevon Brazile,1630180,Saddiq Bey,2,7.4,38.1,6.0,2.0,4.0,1.0,3.0,2.0,1.0,Regular Season
-1628404,Josh Hart,2544,LeBron James,2,9.3,37.8,9.0,3.0,5.0,2.0,4.0,1.0,1.0,Regular Season
-1642844,Dylan Harper,1630228,Jonathan Kuminga,1,6.4,37.8,10.0,4.0,6.0,1.0,2.0,0.0,1.0,Regular Season
+1627783,Pascal Siakam,203944,Julius Randle,2,7.8,38.1,11.0,4.0,6.0,1.0,2.0,1.0,1.0,Regular Season
+1629638,Nickeil Alexander-Walker,1643407,AJ Dybantsa,2,7.7,38.1,3.0,1.0,4.0,1.0,3.0,1.0,0.0,Regular Season
+1642845,VJ Edgecombe,1628973,Jalen Brunson,2,8.2,37.9,6.0,3.0,7.0,0.0,3.0,1.0,0.0,Regular Season
+1628404,Josh Hart,2544,LeBron James,2,9.3,37.9,9.0,3.0,5.0,2.0,4.0,1.0,1.0,Regular Season
 1642266,Ja'Kobe Walter,1630217,Desmond Bane,2,7.8,37.8,3.0,1.0,2.0,1.0,2.0,0.0,0.0,Regular Season
+1628392,Isaiah Hartenstein,1630596,Evan Mobley,2,7.6,37.8,2.0,1.0,4.0,0.0,0.0,0.0,0.0,Regular Season
+1642844,Dylan Harper,1630228,Jonathan Kuminga,1,6.4,37.8,10.0,4.0,6.0,1.0,2.0,0.0,1.0,Regular Season
 1629011,Mitchell Robinson,1630188,Jalen Smith,2,8.4,37.7,6.0,3.0,3.0,0.0,0.0,0.0,0.0,Regular Season
+1641739,Toumani Camara,1629029,Luka Dončić,2,7.4,37.7,9.0,3.0,6.0,3.0,5.0,0.0,0.0,Regular Season
+203484,Kentavious Caldwell-Pope,1629130,Duncan Robinson,2,9.1,37.7,0.0,0.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+203954,Joel Embiid,1630194,Paul Reed,1,7.3,37.7,10.0,3.0,8.0,0.0,2.0,1.0,2.0,Regular Season
+1629627,Zion Williamson,1630228,Jonathan Kuminga,1,9.0,37.7,5.0,2.0,6.0,0.0,0.0,0.0,1.0,Regular Season
 1641705,Victor Wembanyama,1631096,Chet Holmgren,1,7.5,37.6,0.0,0.0,4.0,0.0,1.0,2.0,0.0,Regular Season
-1628976,Wendell Carter Jr.,1642867,Collin Murray-Boyles,2,8.5,37.5,3.0,1.0,3.0,0.0,1.0,1.0,0.0,Regular Season
 1642847,Jeremiah Fears,1643411,Darius Acuff Jr.,1,5.7,37.5,7.0,3.0,6.0,1.0,2.0,2.0,1.0,Regular Season
-1641717,Cason Wallace,1627750,Jamal Murray,1,5.2,37.5,6.0,2.0,4.0,2.0,3.0,0.0,0.0,Regular Season
+1628976,Wendell Carter Jr.,1642867,Collin Murray-Boyles,2,8.5,37.5,3.0,1.0,3.0,0.0,1.0,1.0,0.0,Regular Season
+1642273,Kyshawn George,1643412,Kingston Flemings,2,7.3,37.5,6.0,1.0,2.0,0.0,1.0,3.0,3.0,Regular Season
 1629639,Tyler Herro,1641731,Bilal Coulibaly,1,6.2,37.4,6.0,3.0,6.0,0.0,1.0,0.0,0.0,Regular Season
 201939,Stephen Curry,1629680,Matisse Thybulle,2,6.9,37.4,10.0,3.0,7.0,2.0,4.0,2.0,1.0,Regular Season
+1629060,Rui Hachimura,203507,Giannis Antetokounmpo,1,8.1,37.3,5.0,2.0,7.0,1.0,5.0,0.0,0.0,Regular Season
+2544,LeBron James,201935,James Harden,2,7.7,37.2,2.0,1.0,5.0,0.0,3.0,3.0,0.0,Regular Season
+1629627,Zion Williamson,1629637,Jaxson Hayes,2,8.4,37.2,8.0,1.0,3.0,0.0,0.0,2.0,3.0,Regular Season
 1627734,Domantas Sabonis,1629627,Zion Williamson,1,6.1,37.0,2.0,1.0,1.0,0.0,0.0,1.0,0.0,Regular Season
-1643411,Darius Acuff Jr.,1642847,Jeremiah Fears,1,6.3,36.9,17.0,6.0,11.0,2.0,5.0,3.0,1.0,Regular Season
 1631128,Christian Braun,1630530,Trey Murphy III,2,6.4,36.9,7.0,3.0,3.0,1.0,1.0,0.0,0.0,Regular Season
 1631212,Peyton Watson,1629008,Michael Porter Jr.,1,6.3,36.9,7.0,2.0,6.0,2.0,5.0,1.0,1.0,Regular Season
-1642845,VJ Edgecombe,1628973,Jalen Brunson,2,8.2,36.9,6.0,3.0,7.0,0.0,3.0,1.0,0.0,Regular Season
-1630162,Anthony Edwards,1631212,Peyton Watson,1,8.3,36.7,27.0,12.0,17.0,2.0,6.0,2.0,1.0,Regular Season
-1629008,Michael Porter Jr.,1631212,Peyton Watson,1,6.5,36.7,7.0,3.0,7.0,1.0,4.0,0.0,0.0,Regular Season
+1643411,Darius Acuff Jr.,1642847,Jeremiah Fears,1,6.3,36.9,17.0,6.0,11.0,2.0,5.0,3.0,1.0,Regular Season
 1630543,Isaiah Jackson,1631117,Walker Kessler,2,7.7,36.7,8.0,3.0,5.0,0.0,0.0,1.0,1.0,Regular Season
-203944,Julius Randle,1629675,Naz Reid,1,7.1,36.6,16.0,5.0,8.0,2.0,2.0,1.0,2.0,Regular Season
+1629008,Michael Porter Jr.,1631212,Peyton Watson,1,6.5,36.7,7.0,3.0,7.0,1.0,4.0,0.0,0.0,Regular Season
+1630162,Anthony Edwards,1631212,Peyton Watson,1,8.3,36.7,27.0,12.0,17.0,2.0,6.0,2.0,1.0,Regular Season
+203076,Anthony Davis,1630168,Onyeka Okongwu,1,7.7,36.6,18.0,8.0,15.0,0.0,1.0,1.0,1.0,Regular Season
+1630595,Cade Cunningham,1642883,Sion James,2,8.0,36.6,18.0,8.0,13.0,2.0,5.0,0.0,1.0,Regular Season
 1643408,Darryn Peterson,1629660,Ty Jerome,2,7.5,36.5,10.0,4.0,11.0,2.0,4.0,0.0,1.0,Regular Season
 1630595,Cade Cunningham,1630558,Davion Mitchell,1,7.6,36.4,7.0,3.0,5.0,1.0,2.0,0.0,1.0,Regular Season
+1642270,Donovan Clingan,1642863,Khaman Maluach,2,8.0,36.2,5.0,2.0,8.0,1.0,4.0,0.0,0.0,Regular Season
 1630532,Franz Wagner,1628384,OG Anunoby,1,8.1,36.1,6.0,2.0,5.0,0.0,1.0,0.0,1.0,Regular Season
-1641731,Bilal Coulibaly,1641706,Brandon Miller,2,7.3,35.8,2.0,0.0,4.0,0.0,3.0,0.0,2.0,Regular Season
+203081,Damian Lillard,1629680,Matisse Thybulle,2,7.2,36.1,11.0,3.0,4.0,3.0,3.0,0.0,0.0,Regular Season
+203507,Giannis Antetokounmpo,1629060,Rui Hachimura,1,7.4,36.0,7.0,2.0,4.0,0.0,1.0,1.0,2.0,Regular Season
+1627749,Dejounte Murray,1643408,Darryn Peterson,2,7.4,36.0,11.0,4.0,5.0,1.0,2.0,1.0,1.0,Regular Season
+1641731,Bilal Coulibaly,1641706,Brandon Miller,2,7.3,35.9,2.0,0.0,4.0,0.0,3.0,0.0,2.0,Regular Season
+1628384,OG Anunoby,203944,Julius Randle,1,7.1,35.8,5.0,2.0,3.0,1.0,2.0,1.0,0.0,Regular Season
+1630194,Paul Reed,203954,Joel Embiid,1,6.7,35.8,4.0,2.0,8.0,0.0,0.0,0.0,0.0,Regular Season
+1629655,Daniel Gafford,1641705,Victor Wembanyama,2,9.2,35.7,8.0,4.0,10.0,0.0,0.0,4.0,1.0,Regular Season
+1630168,Onyeka Okongwu,1630549,Day'Ron Sharpe,1,5.9,35.6,8.0,2.0,5.0,1.0,4.0,0.0,1.0,Regular Season
+1642847,Jeremiah Fears,1642377,Jaylen Wells,1,7.7,35.6,6.0,2.0,6.0,0.0,2.0,2.0,1.0,Regular Season
+1630228,Jonathan Kuminga,1629627,Zion Williamson,1,6.6,35.6,6.0,1.0,1.0,1.0,1.0,0.0,2.0,Regular Season
 203471,Dennis Schröder,1630558,Davion Mitchell,1,8.3,35.5,6.0,2.0,4.0,0.0,2.0,2.0,1.0,Regular Season
-1631217,Moussa Diabaté,1630194,Paul Reed,1,8.6,35.4,4.0,1.0,2.0,0.0,0.0,1.0,1.0,Regular Season
 1628369,Jayson Tatum,1628404,Josh Hart,1,9.2,35.4,13.0,6.0,11.0,1.0,4.0,1.0,0.0,Regular Season
 1630578,Alperen Sengun,1629111,Jock Landale,2,7.8,35.3,11.0,4.0,10.0,1.0,2.0,1.0,1.0,Regular Season
-1629627,Zion Williamson,1630173,Precious Achiuwa,1,6.2,35.1,6.0,3.0,4.0,0.0,0.0,1.0,1.0,Regular Season
-1626164,Devin Booker,1631128,Christian Braun,1,7.3,35.1,2.0,1.0,5.0,0.0,1.0,0.0,0.0,Regular Season
+1641824,Matas Buzelis,1628973,Jalen Brunson,2,7.2,35.2,5.0,2.0,6.0,0.0,3.0,2.0,1.0,Regular Season
+1628983,Shai Gilgeous-Alexander,1631128,Christian Braun,1,8.0,35.1,9.0,3.0,12.0,1.0,6.0,0.0,0.0,Regular Season
 1643410,Caleb Wilson,202331,Paul George,2,8.3,35.1,10.0,4.0,7.0,1.0,3.0,0.0,1.0,Regular Season
+1629627,Zion Williamson,1630173,Precious Achiuwa,1,6.2,35.1,6.0,3.0,4.0,0.0,0.0,1.0,1.0,Regular Season
 1630533,Ziaire Williams,1629636,Darius Garland,1,6.1,35.1,9.0,3.0,4.0,0.0,1.0,0.0,1.0,Regular Season
+203484,Kentavious Caldwell-Pope,1628973,Jalen Brunson,2,8.2,35.1,3.0,1.0,4.0,1.0,4.0,0.0,0.0,Regular Season
+2544,LeBron James,1628404,Josh Hart,2,7.4,35.1,7.0,3.0,7.0,1.0,3.0,1.0,1.0,Regular Season
+1626164,Devin Booker,1631128,Christian Braun,1,7.3,35.1,2.0,1.0,5.0,0.0,1.0,0.0,0.0,Regular Season
 1630217,Desmond Bane,1642266,Ja'Kobe Walter,2,8.3,34.9,13.0,3.0,9.0,3.0,7.0,1.0,1.0,Regular Season
-2544,LeBron James,1628404,Josh Hart,2,7.4,34.9,7.0,3.0,7.0,1.0,3.0,1.0,1.0,Regular Season
+1641706,Brandon Miller,1641709,Ausar Thompson,2,9.4,34.9,7.0,3.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+1629628,RJ Barrett,1628398,Kyle Kuzma,1,6.6,34.8,6.0,2.0,5.0,0.0,1.0,0.0,1.0,Regular Season
 1642866,Joan Beringer,1641705,Victor Wembanyama,1,7.0,34.8,3.0,1.0,3.0,0.0,0.0,0.0,1.0,Regular Season
+1627783,Pascal Siakam,1643409,Cameron Boozer,1,6.4,34.8,10.0,4.0,7.0,2.0,4.0,0.0,0.0,Regular Season
 203991,Clint Capela,1629655,Daniel Gafford,2,9.0,34.7,2.0,1.0,3.0,0.0,0.0,1.0,0.0,Regular Season
+1642847,Jeremiah Fears,1641718,Keyonte George,2,6.9,34.6,6.0,1.0,6.0,0.0,3.0,0.0,2.0,Regular Season
 1629130,Duncan Robinson,202691,Klay Thompson,1,6.5,34.5,6.0,2.0,4.0,2.0,3.0,1.0,0.0,Regular Season
-203484,Kentavious Caldwell-Pope,1628973,Jalen Brunson,2,8.2,34.5,3.0,1.0,4.0,1.0,4.0,0.0,0.0,Regular Season
 203897,Zach LaVine,1630529,Herbert Jones,1,5.9,34.5,5.0,1.0,3.0,1.0,3.0,0.0,1.0,Regular Season
+1628415,Dillon Brooks,1642865,Yaxel Lendeborg,2,6.0,34.5,16.0,7.0,8.0,2.0,2.0,1.0,1.0,Regular Season
 1628976,Wendell Carter Jr.,1627751,Jakob Poeltl,2,9.1,34.4,14.0,5.0,10.0,1.0,3.0,0.0,1.0,Regular Season
+1627734,Domantas Sabonis,1631117,Walker Kessler,1,7.2,34.4,11.0,3.0,5.0,0.0,0.0,1.0,4.0,Regular Season
+1628381,John Collins,2544,LeBron James,2,7.2,34.4,4.0,2.0,3.0,0.0,0.0,1.0,0.0,Regular Season
+1629636,Darius Garland,1642266,Ja'Kobe Walter,1,4.3,34.2,4.0,1.0,2.0,0.0,1.0,1.0,0.0,Regular Season
+1626181,Norman Powell,1629013,Landry Shamet,2,8.3,34.2,6.0,3.0,7.0,0.0,4.0,1.0,0.0,Regular Season
 1631128,Christian Braun,201939,Stephen Curry,1,6.9,34.2,2.0,1.0,2.0,0.0,1.0,2.0,0.0,Regular Season
 1630188,Jalen Smith,1629011,Mitchell Robinson,2,7.4,34.0,7.0,2.0,4.0,2.0,3.0,0.0,1.0,Regular Season
-1629675,Naz Reid,203944,Julius Randle,1,8.0,34.0,2.0,1.0,4.0,0.0,2.0,1.0,0.0,Regular Season
+1629130,Duncan Robinson,203484,Kentavious Caldwell-Pope,2,7.4,33.9,7.0,2.0,2.0,1.0,1.0,0.0,0.0,Regular Season
 1642843,Cooper Flagg,1631095,Jabari Smith Jr.,2,6.6,33.9,15.0,6.0,9.0,0.0,1.0,1.0,2.0,Regular Season
-1628976,Wendell Carter Jr.,203497,Rudy Gobert,1,6.3,33.6,12.0,5.0,5.0,2.0,2.0,0.0,0.0,Regular Season
-1629652,Luguentz Dort,201142,Kevin Durant,2,4.9,33.6,5.0,2.0,5.0,0.0,3.0,0.0,1.0,Regular Season
+1630529,Herbert Jones,1641718,Keyonte George,2,8.1,33.8,0.0,0.0,2.0,0.0,0.0,1.0,0.0,Regular Season
+1629006,Josh Okogie,1629640,Keldon Johnson,2,8.6,33.8,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Regular Season
+1630558,Davion Mitchell,1629636,Darius Garland,1,7.5,33.8,5.0,2.0,7.0,0.0,3.0,0.0,1.0,Regular Season
+1629636,Darius Garland,1630558,Davion Mitchell,1,5.9,33.7,6.0,2.0,5.0,2.0,3.0,2.0,0.0,Regular Season
+1627759,Jaylen Brown,1628378,Donovan Mitchell,2,5.8,33.7,10.0,5.0,9.0,0.0,0.0,1.0,0.0,Regular Season
 1631255,Karlo Matković,1627734,Domantas Sabonis,1,5.8,33.6,5.0,2.0,4.0,1.0,3.0,1.0,0.0,Regular Season
+1629652,Luguentz Dort,201142,Kevin Durant,2,4.9,33.6,5.0,2.0,5.0,0.0,3.0,0.0,1.0,Regular Season
+1628976,Wendell Carter Jr.,203497,Rudy Gobert,1,6.3,33.6,12.0,5.0,5.0,2.0,2.0,0.0,0.0,Regular Season
 1627749,Dejounte Murray,1630169,Tyrese Haliburton,1,6.0,33.5,10.0,4.0,6.0,2.0,3.0,1.0,0.0,Regular Season
+1630166,Deni Avdija,1630533,Ziaire Williams,2,7.6,33.5,12.0,4.0,9.0,3.0,5.0,2.0,1.0,Regular Season
 1629111,Jock Landale,1630578,Alperen Sengun,2,5.0,33.4,2.0,1.0,4.0,0.0,3.0,0.0,0.0,Regular Season
-1629630,Ja Morant,1643411,Darius Acuff Jr.,1,5.6,33.4,3.0,1.0,1.0,0.0,0.0,0.0,1.0,Regular Season
-1631165,Keon Ellis,1641706,Brandon Miller,1,7.7,33.4,0.0,0.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1642846,Ace Bailey,1629627,Zion Williamson,2,7.8,33.4,2.0,1.0,5.0,0.0,4.0,1.0,0.0,Regular Season
+1626164,Devin Booker,1642954,Will Richard,2,6.5,33.4,11.0,4.0,9.0,0.0,1.0,1.0,2.0,Regular Season
+1629630,Ja Morant,1643411,Darius Acuff Jr.,1,5.6,33.4,3.0,1.0,2.0,0.0,1.0,0.0,1.0,Regular Season
 201939,Stephen Curry,1631128,Christian Braun,1,6.2,33.3,8.0,2.0,2.0,1.0,1.0,3.0,1.0,Regular Season
 203497,Rudy Gobert,1628976,Wendell Carter Jr.,1,7.2,33.3,7.0,3.0,3.0,0.0,0.0,1.0,0.0,Regular Season
 1628384,OG Anunoby,2544,LeBron James,2,5.7,33.2,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
 201142,Kevin Durant,1629023,P.J. Washington,2,6.4,33.2,16.0,7.0,10.0,0.0,0.0,1.0,1.0,Regular Season
+1628436,Luke Kornet,1627734,Domantas Sabonis,2,7.4,33.2,0.0,0.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1629638,Nickeil Alexander-Walker,1642273,Kyshawn George,2,5.3,33.1,17.0,5.0,11.0,3.0,6.0,0.0,2.0,Regular Season
+1643409,Cameron Boozer,1627783,Pascal Siakam,1,8.3,33.1,8.0,3.0,7.0,2.0,3.0,2.0,0.0,Regular Season
 1630558,Davion Mitchell,203471,Dennis Schröder,1,6.6,33.0,6.0,2.0,3.0,0.0,0.0,2.0,1.0,Regular Season
-1641731,Bilal Coulibaly,1629639,Tyler Herro,1,5.8,32.9,4.0,2.0,4.0,0.0,2.0,0.0,0.0,Regular Season
+1630549,Day'Ron Sharpe,1630168,Onyeka Okongwu,1,7.1,33.0,2.0,0.0,1.0,0.0,1.0,1.0,1.0,Regular Season
 202691,Klay Thompson,1629130,Duncan Robinson,1,5.5,32.9,6.0,2.0,5.0,2.0,5.0,0.0,0.0,Regular Season
+1641731,Bilal Coulibaly,1629639,Tyler Herro,1,5.8,32.9,4.0,2.0,4.0,0.0,2.0,0.0,0.0,Regular Season
+1629013,Landry Shamet,1626181,Norman Powell,2,6.7,32.9,6.0,2.0,3.0,2.0,2.0,0.0,0.0,Regular Season
 203468,CJ McCollum,1641708,Amen Thompson,2,6.1,32.8,4.0,2.0,5.0,0.0,2.0,1.0,0.0,Regular Season
-1627750,Jamal Murray,1641717,Cason Wallace,1,6.3,32.6,0.0,0.0,3.0,0.0,1.0,3.0,0.0,Regular Season
-201939,Stephen Curry,1642377,Jaylen Wells,1,5.9,32.4,8.0,2.0,5.0,1.0,2.0,0.0,1.0,Regular Season
+1642450,Daniss Jenkins,1630178,Tyrese Maxey,2,6.2,32.7,1.0,0.0,3.0,0.0,1.0,0.0,1.0,Regular Season
+203897,Zach LaVine,1628368,De'Aaron Fox,2,7.3,32.7,14.0,4.0,7.0,3.0,4.0,1.0,1.0,Regular Season
+201572,Brook Lopez,1628389,Bam Adebayo,1,5.9,32.7,5.0,2.0,3.0,1.0,1.0,0.0,0.0,Regular Season
+1628970,Miles Bridges,1642865,Yaxel Lendeborg,2,6.2,32.7,11.0,5.0,6.0,1.0,1.0,0.0,1.0,Regular Season
+203484,Kentavious Caldwell-Pope,1628378,Donovan Mitchell,2,7.5,32.6,6.0,2.0,2.0,2.0,2.0,0.0,0.0,Regular Season
+1642865,Yaxel Lendeborg,1630532,Franz Wagner,1,5.8,32.6,7.0,3.0,4.0,1.0,2.0,1.0,0.0,Regular Season
 1629636,Darius Garland,1629680,Matisse Thybulle,2,5.7,32.4,6.0,2.0,4.0,0.0,1.0,3.0,0.0,Regular Season
+1628378,Donovan Mitchell,1627759,Jaylen Brown,2,5.7,32.4,4.0,1.0,6.0,0.0,3.0,1.0,0.0,Regular Season
+201939,Stephen Curry,1642377,Jaylen Wells,1,5.9,32.4,8.0,2.0,5.0,1.0,2.0,0.0,1.0,Regular Season
+1642259,Alex Sarr,1630168,Onyeka Okongwu,2,4.6,32.3,5.0,1.0,4.0,1.0,2.0,1.0,1.0,Regular Season
 201142,Kevin Durant,1629026,Kenrich Williams,1,7.3,32.3,6.0,2.0,5.0,0.0,0.0,0.0,0.0,Regular Season
+203944,Julius Randle,1630552,Jalen Johnson,1,7.2,32.3,4.0,2.0,3.0,0.0,0.0,1.0,0.0,Regular Season
 1631117,Walker Kessler,201572,Brook Lopez,2,7.6,32.2,6.0,3.0,4.0,0.0,0.0,0.0,1.0,Regular Season
-1628384,OG Anunoby,1630532,Franz Wagner,1,5.3,32.1,4.0,1.0,3.0,1.0,2.0,0.0,0.0,Regular Season
 203083,Andre Drummond,203954,Joel Embiid,2,7.6,32.1,4.0,2.0,6.0,0.0,0.0,0.0,0.0,Regular Season
+1628384,OG Anunoby,1630532,Franz Wagner,1,5.3,32.1,4.0,1.0,3.0,1.0,2.0,0.0,0.0,Regular Season
+203507,Giannis Antetokounmpo,1631117,Walker Kessler,1,6.4,32.0,6.0,2.0,8.0,0.0,3.0,0.0,2.0,Regular Season
 1626157,Karl-Anthony Towns,1628976,Wendell Carter Jr.,1,6.9,32.0,10.0,3.0,4.0,0.0,1.0,1.0,2.0,Regular Season
+1642954,Will Richard,1626164,Devin Booker,2,5.6,32.0,3.0,1.0,1.0,1.0,1.0,2.0,0.0,Regular Season
+1630559,Austin Reaves,1642266,Ja'Kobe Walter,1,5.4,32.0,0.0,0.0,4.0,0.0,1.0,1.0,0.0,Regular Season
+1630595,Cade Cunningham,1629731,Dean Wade,2,5.6,32.0,11.0,5.0,10.0,1.0,3.0,1.0,0.0,Regular Season
 1628398,Kyle Kuzma,1629731,Dean Wade,1,5.7,31.9,4.0,2.0,2.0,0.0,0.0,1.0,0.0,Regular Season
+1631117,Walker Kessler,1629057,Robert Williams III,2,5.6,31.9,2.0,1.0,1.0,0.0,0.0,0.0,0.0,Regular Season
 1642846,Ace Bailey,1643409,Cameron Boozer,2,6.0,31.9,13.0,5.0,7.0,3.0,4.0,1.0,0.0,Regular Season
 1630194,Paul Reed,1626157,Karl-Anthony Towns,1,7.1,31.8,12.0,5.0,7.0,1.0,1.0,1.0,1.0,Regular Season
-1626157,Karl-Anthony Towns,1630188,Jalen Smith,1,6.7,31.8,11.0,4.0,6.0,2.0,3.0,1.0,1.0,Regular Season
-1630194,Paul Reed,1631217,Moussa Diabaté,1,7.5,31.7,7.0,2.0,2.0,1.0,1.0,2.0,0.0,Regular Season
+1641718,Keyonte George,1628368,De'Aaron Fox,2,6.7,31.8,12.0,4.0,7.0,3.0,3.0,0.0,1.0,Regular Season
+1626157,Karl-Anthony Towns,1630596,Evan Mobley,1,8.2,31.8,13.0,5.0,11.0,1.0,3.0,0.0,1.0,Regular Season
+1641744,Zach Edey,1628392,Isaiah Hartenstein,1,5.7,31.7,6.0,2.0,4.0,0.0,0.0,1.0,1.0,Regular Season
 1629638,Nickeil Alexander-Walker,1641708,Amen Thompson,2,6.3,31.6,2.0,1.0,3.0,0.0,2.0,0.0,0.0,Regular Season
-1626181,Norman Powell,1641731,Bilal Coulibaly,1,6.4,31.6,3.0,0.0,2.0,0.0,1.0,0.0,1.0,Regular Season
+1642259,Alex Sarr,1629652,Luguentz Dort,2,5.7,31.6,4.0,1.0,1.0,0.0,0.0,0.0,0.0,Regular Season
 203076,Anthony Davis,1629675,Naz Reid,2,6.5,31.6,8.0,1.0,7.0,0.0,1.0,0.0,3.0,Regular Season
+1626181,Norman Powell,1641731,Bilal Coulibaly,1,6.4,31.6,3.0,0.0,2.0,0.0,1.0,0.0,1.0,Regular Season
+1629674,Neemias Queta,1626167,Myles Turner,1,7.3,31.5,8.0,4.0,8.0,0.0,0.0,0.0,0.0,Regular Season
 1629011,Mitchell Robinson,1626157,Karl-Anthony Towns,1,8.0,31.4,0.0,0.0,1.0,0.0,0.0,0.0,0.0,Regular Season
-1629627,Zion Williamson,1628991,Jaren Jackson Jr.,1,6.4,31.2,14.0,5.0,9.0,0.0,1.0,0.0,1.0,Regular Season
-1631094,Paolo Banchero,1630552,Jalen Johnson,1,5.8,31.2,6.0,1.0,1.0,0.0,0.0,1.0,3.0,Regular Season
+1629655,Daniel Gafford,1627734,Domantas Sabonis,1,6.4,31.4,9.0,4.0,4.0,0.0,0.0,0.0,1.0,Regular Season
+1627749,Dejounte Murray,1642846,Ace Bailey,2,6.6,31.3,8.0,1.0,4.0,0.0,2.0,2.0,2.0,Regular Season
+203999,Nikola Jokić,1628392,Isaiah Hartenstein,1,7.2,31.3,9.0,4.0,8.0,0.0,2.0,2.0,0.0,Regular Season
 1628976,Wendell Carter Jr.,1626157,Karl-Anthony Towns,1,6.6,31.2,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1631094,Paolo Banchero,1630552,Jalen Johnson,1,5.8,31.2,6.0,1.0,1.0,0.0,0.0,1.0,3.0,Regular Season
+1629627,Zion Williamson,1628991,Jaren Jackson Jr.,1,6.4,31.2,14.0,5.0,9.0,0.0,1.0,0.0,1.0,Regular Season
+1628378,Donovan Mitchell,1642845,VJ Edgecombe,2,5.6,31.2,6.0,3.0,8.0,0.0,0.0,4.0,0.0,Regular Season
+1626164,Devin Booker,201950,Jrue Holiday,2,4.8,31.2,12.0,5.0,6.0,1.0,2.0,0.0,1.0,Regular Season
 203484,Kentavious Caldwell-Pope,1629639,Tyler Herro,1,6.9,31.1,6.0,2.0,4.0,2.0,2.0,0.0,0.0,Regular Season
 1631095,Jabari Smith Jr.,1631108,Max Christie,2,8.3,31.0,13.0,6.0,7.0,1.0,1.0,2.0,0.0,Regular Season
 203954,Joel Embiid,1626167,Myles Turner,1,6.5,31.0,6.0,3.0,9.0,0.0,3.0,0.0,0.0,Regular Season
-1630178,Tyrese Maxey,1642450,Daniss Jenkins,1,8.0,31.0,9.0,4.0,7.0,1.0,3.0,0.0,0.0,Regular Season
-1627783,Pascal Siakam,1628398,Kyle Kuzma,1,6.6,30.9,9.0,4.0,8.0,1.0,2.0,0.0,0.0,Regular Season
-1630180,Saddiq Bey,1642350,Trevon Brazile,2,5.5,30.9,4.0,1.0,5.0,0.0,3.0,1.0,0.0,Regular Season
 1626157,Karl-Anthony Towns,1630194,Paul Reed,1,6.2,30.9,8.0,3.0,6.0,0.0,2.0,3.0,0.0,Regular Season
+1641708,Amen Thompson,1626164,Devin Booker,1,6.5,30.9,0.0,0.0,7.0,0.0,0.0,0.0,0.0,Regular Season
+1627783,Pascal Siakam,1628398,Kyle Kuzma,1,6.6,30.9,9.0,4.0,8.0,1.0,2.0,0.0,0.0,Regular Season
+1627832,Fred VanVleet,1630224,Jalen Green,1,5.8,30.9,2.0,1.0,2.0,0.0,1.0,2.0,0.0,Regular Season
+1630180,Saddiq Bey,1642350,Trevon Brazile,2,5.5,30.9,4.0,1.0,5.0,0.0,3.0,1.0,0.0,Regular Season
 1630552,Jalen Johnson,1628389,Bam Adebayo,1,5.5,30.8,6.0,2.0,4.0,2.0,3.0,0.0,0.0,Regular Season
 1630552,Jalen Johnson,1631106,Tari Eason,2,6.1,30.8,14.0,4.0,7.0,1.0,3.0,1.0,3.0,Regular Season
-1627884,Derrick Jones Jr.,1630559,Austin Reaves,2,5.1,30.7,5.0,2.0,2.0,1.0,1.0,0.0,0.0,Regular Season
+1630703,Scoot Henderson,1630224,Jalen Green,2,5.5,30.7,6.0,1.0,3.0,1.0,3.0,1.0,2.0,Regular Season
+1641708,Amen Thompson,1630228,Jonathan Kuminga,1,7.1,30.7,2.0,0.0,2.0,0.0,1.0,1.0,1.0,Regular Season
 1630168,Onyeka Okongwu,1630578,Alperen Sengun,2,4.9,30.7,2.0,1.0,5.0,0.0,3.0,0.0,0.0,Regular Season
+1628976,Wendell Carter Jr.,203110,Draymond Green,1,7.0,30.7,9.0,3.0,5.0,3.0,3.0,0.0,0.0,Regular Season
+1627884,Derrick Jones Jr.,1630559,Austin Reaves,2,5.1,30.7,5.0,2.0,2.0,1.0,1.0,0.0,0.0,Regular Season
 1643413,Keaton Wagler,1629656,Quentin Grimes,2,4.9,30.6,5.0,1.0,3.0,1.0,1.0,2.0,1.0,Regular Season
+1642273,Kyshawn George,1629652,Luguentz Dort,2,4.9,30.6,19.0,6.0,8.0,3.0,4.0,0.0,0.0,Regular Season
+1641718,Keyonte George,1627749,Dejounte Murray,2,5.8,30.6,10.0,4.0,7.0,1.0,2.0,0.0,1.0,Regular Season
+1629023,P.J. Washington,1630170,Devin Vassell,2,7.0,30.5,6.0,3.0,6.0,0.0,2.0,0.0,0.0,Regular Season
+1629008,Michael Porter Jr.,1628960,Grayson Allen,2,6.1,30.5,6.0,1.0,5.0,1.0,4.0,1.0,0.0,Regular Season
 1628389,Bam Adebayo,1630168,Onyeka Okongwu,1,6.9,30.5,7.0,2.0,6.0,0.0,1.0,0.0,1.0,Regular Season
 1642377,Jaylen Wells,1643408,Darryn Peterson,2,5.3,30.5,8.0,3.0,5.0,0.0,1.0,0.0,2.0,Regular Season
-1627884,Derrick Jones Jr.,1628983,Shai Gilgeous-Alexander,1,5.7,30.5,6.0,2.0,2.0,2.0,2.0,0.0,0.0,Regular Season
 1631128,Christian Braun,1627749,Dejounte Murray,2,5.8,30.4,7.0,3.0,5.0,1.0,3.0,1.0,0.0,Regular Season
 1642843,Cooper Flagg,1641708,Amen Thompson,2,4.8,30.3,6.0,3.0,5.0,0.0,1.0,1.0,0.0,Regular Season
-1627734,Domantas Sabonis,1641705,Victor Wembanyama,1,6.2,30.1,8.0,4.0,7.0,0.0,0.0,0.0,0.0,Regular Season
-1642264,Stephon Castle,1642846,Ace Bailey,1,7.6,30.1,3.0,1.0,4.0,1.0,2.0,2.0,0.0,Regular Season
+203471,Dennis Schröder,1642450,Daniss Jenkins,2,7.4,30.3,4.0,1.0,3.0,1.0,2.0,1.0,1.0,Regular Season
+203081,Damian Lillard,1628415,Dillon Brooks,2,6.0,30.3,3.0,1.0,4.0,1.0,4.0,1.0,0.0,Regular Season
+1630217,Desmond Bane,1643407,AJ Dybantsa,1,7.0,30.3,6.0,3.0,9.0,0.0,5.0,1.0,0.0,Regular Season
+1630596,Evan Mobley,1643530,Aday Mara,2,6.0,30.3,2.0,1.0,4.0,0.0,2.0,0.0,0.0,Regular Season
+1627734,Domantas Sabonis,1628436,Luke Kornet,2,5.6,30.1,10.0,5.0,6.0,0.0,0.0,1.0,0.0,Regular Season
+1630700,Dyson Daniels,1629027,Trae Young,2,4.7,30.1,2.0,1.0,4.0,0.0,1.0,3.0,0.0,Regular Season
+1630245,Ayo Dosunmu,1642847,Jeremiah Fears,1,7.3,30.1,8.0,3.0,5.0,2.0,4.0,2.0,0.0,Regular Season
 1629029,Luka Dončić,1642846,Ace Bailey,1,5.5,30.1,26.0,10.0,15.0,5.0,8.0,2.0,1.0,Regular Season
+1642852,Derik Queen,1628374,Lauri Markkanen,2,6.5,30.0,8.0,3.0,9.0,0.0,0.0,1.0,0.0,Regular Season
+2544,LeBron James,1628381,John Collins,2,5.2,29.9,11.0,5.0,6.0,1.0,2.0,2.0,0.0,Regular Season
 1628374,Lauri Markkanen,1643409,Cameron Boozer,2,7.0,29.9,5.0,1.0,6.0,1.0,5.0,1.0,0.0,Regular Season
-1629631,De'Andre Hunter,1630530,Trey Murphy III,1,5.1,29.8,11.0,3.0,4.0,1.0,2.0,1.0,2.0,Regular Season
-1630188,Jalen Smith,1626157,Karl-Anthony Towns,1,6.4,29.8,12.0,5.0,7.0,2.0,4.0,0.0,0.0,Regular Season
+1629638,Nickeil Alexander-Walker,1642874,Danny Wolf,1,4.5,29.8,0.0,0.0,2.0,0.0,1.0,1.0,0.0,Regular Season
 1630162,Anthony Edwards,203952,Andrew Wiggins,1,6.2,29.8,12.0,4.0,10.0,4.0,7.0,2.0,0.0,Regular Season
-1642865,Yaxel Lendeborg,1628415,Dillon Brooks,1,5.0,29.7,16.0,5.0,9.0,4.0,6.0,0.0,1.0,Regular Season
+1630596,Evan Mobley,1626157,Karl-Anthony Towns,1,6.8,29.8,10.0,4.0,6.0,1.0,3.0,1.0,1.0,Regular Season
+1629631,De'Andre Hunter,1630530,Trey Murphy III,1,5.1,29.8,11.0,3.0,4.0,1.0,2.0,1.0,2.0,Regular Season
+1627832,Fred VanVleet,1630245,Ayo Dosunmu,1,7.1,29.8,5.0,2.0,4.0,1.0,3.0,2.0,0.0,Regular Season
 1629636,Darius Garland,1631099,Keegan Murray,1,5.4,29.7,8.0,4.0,7.0,0.0,1.0,0.0,0.0,Regular Season
-1628389,Bam Adebayo,203497,Rudy Gobert,1,5.2,29.6,4.0,1.0,4.0,0.0,3.0,1.0,1.0,Regular Season
+1641739,Toumani Camara,1628415,Dillon Brooks,2,6.2,29.7,8.0,2.0,6.0,2.0,5.0,1.0,1.0,Regular Season
+1642270,Donovan Clingan,1641705,Victor Wembanyama,1,7.1,29.6,2.0,1.0,2.0,0.0,1.0,0.0,0.0,Regular Season
 1643408,Darryn Peterson,1630559,Austin Reaves,1,5.5,29.6,0.0,0.0,2.0,0.0,1.0,0.0,0.0,Regular Season
-1629029,Luka Dončić,1642865,Yaxel Lendeborg,2,6.0,29.6,14.0,2.0,8.0,2.0,6.0,3.0,3.0,Regular Season
+1628389,Bam Adebayo,203497,Rudy Gobert,1,5.2,29.6,4.0,1.0,4.0,0.0,3.0,1.0,1.0,Regular Season
 201142,Kevin Durant,1642843,Cooper Flagg,2,7.3,29.6,12.0,4.0,6.0,2.0,4.0,1.0,0.0,Regular Season
+1629029,Luka Dončić,1642865,Yaxel Lendeborg,2,6.0,29.6,14.0,2.0,8.0,2.0,6.0,3.0,3.0,Regular Season
+1626164,Devin Booker,1641708,Amen Thompson,1,6.2,29.5,2.0,1.0,5.0,0.0,2.0,0.0,0.0,Regular Season
+203999,Nikola Jokić,1642270,Donovan Clingan,1,6.9,29.5,15.0,5.0,13.0,1.0,2.0,1.0,2.0,Regular Season
 1630162,Anthony Edwards,1630591,Jalen Suggs,1,6.7,29.5,3.0,1.0,7.0,1.0,3.0,1.0,0.0,Regular Season
+1628983,Shai Gilgeous-Alexander,1642377,Jaylen Wells,1,5.2,29.4,10.0,4.0,6.0,1.0,1.0,2.0,1.0,Regular Season
 203999,Nikola Jokić,203110,Draymond Green,1,5.9,29.4,4.0,2.0,6.0,0.0,2.0,1.0,0.0,Regular Season
+1630166,Deni Avdija,1631222,Jake LaRavia,2,5.4,29.4,5.0,1.0,2.0,0.0,1.0,1.0,2.0,Regular Season
+1628976,Wendell Carter Jr.,203076,Anthony Davis,1,5.8,29.4,4.0,1.0,1.0,0.0,0.0,0.0,0.0,Regular Season
 1630530,Trey Murphy III,1629631,De'Andre Hunter,1,4.2,29.4,5.0,2.0,3.0,1.0,2.0,0.0,0.0,Regular Season
 1630552,Jalen Johnson,201142,Kevin Durant,2,6.1,29.4,8.0,1.0,4.0,1.0,4.0,0.0,2.0,Regular Season
+201142,Kevin Durant,1631248,Baylor Scheierman,1,6.4,29.4,6.0,3.0,4.0,0.0,0.0,3.0,0.0,Regular Season
+1642844,Dylan Harper,1642846,Ace Bailey,2,5.1,29.3,9.0,4.0,5.0,1.0,1.0,1.0,1.0,Regular Season
 1641708,Amen Thompson,1630598,Aaron Wiggins,2,4.5,29.3,5.0,2.0,4.0,0.0,0.0,1.0,1.0,Regular Season
+1642345,Oso Ighodaro,1628976,Wendell Carter Jr.,1,5.8,29.3,2.0,1.0,1.0,0.0,0.0,0.0,0.0,Regular Season
 1630178,Tyrese Maxey,1629614,Andrew Nembhard,1,7.1,29.3,0.0,0.0,2.0,0.0,0.0,2.0,0.0,Regular Season
 203110,Draymond Green,203497,Rudy Gobert,1,5.1,29.2,0.0,0.0,1.0,0.0,0.0,1.0,0.0,Regular Season
-1630595,Cade Cunningham,1628969,Mikal Bridges,1,6.5,29.2,2.0,1.0,3.0,0.0,1.0,0.0,0.0,Regular Season
+1629130,Duncan Robinson,203471,Dennis Schröder,2,7.2,29.2,10.0,3.0,6.0,2.0,5.0,0.0,1.0,Regular Season
 203954,Joel Embiid,203083,Andre Drummond,2,7.4,29.2,10.0,4.0,11.0,0.0,2.0,1.0,1.0,Regular Season
-1641731,Bilal Coulibaly,1626181,Norman Powell,1,5.3,29.1,2.0,1.0,2.0,0.0,1.0,2.0,0.0,Regular Season
+1630595,Cade Cunningham,1628969,Mikal Bridges,1,6.5,29.2,2.0,1.0,3.0,0.0,1.0,0.0,0.0,Regular Season
+1628368,De'Aaron Fox,1641718,Keyonte George,2,5.4,29.2,9.0,3.0,4.0,1.0,1.0,0.0,1.0,Regular Season
+1630168,Onyeka Okongwu,203076,Anthony Davis,1,5.2,29.1,4.0,2.0,2.0,0.0,0.0,2.0,0.0,Regular Season
+1628973,Jalen Brunson,1630581,Josh Giddey,2,6.0,29.1,10.0,4.0,8.0,0.0,1.0,2.0,1.0,Regular Season
 1627751,Jakob Poeltl,1628976,Wendell Carter Jr.,2,8.0,29.1,10.0,5.0,6.0,0.0,0.0,0.0,1.0,Regular Season
-1630700,Dyson Daniels,1630578,Alperen Sengun,2,6.3,29.0,6.0,3.0,5.0,0.0,0.0,0.0,0.0,Regular Season
+1641731,Bilal Coulibaly,1626181,Norman Powell,1,5.3,29.1,2.0,1.0,2.0,0.0,1.0,2.0,0.0,Regular Season
+1642349,Ajay Mitchell,1628378,Donovan Mitchell,2,5.7,29.1,6.0,3.0,8.0,0.0,2.0,0.0,0.0,Regular Season
 1628973,Jalen Brunson,1630591,Jalen Suggs,1,6.2,29.0,4.0,2.0,8.0,0.0,1.0,1.0,1.0,Regular Season
-1643410,Caleb Wilson,1628398,Kyle Kuzma,1,5.5,28.9,5.0,2.0,4.0,1.0,1.0,1.0,0.0,Regular Season
+1630700,Dyson Daniels,1630578,Alperen Sengun,2,6.3,29.0,6.0,3.0,4.0,0.0,0.0,0.0,0.0,Regular Season
+1631117,Walker Kessler,1627734,Domantas Sabonis,1,6.0,29.0,10.0,5.0,6.0,0.0,0.0,0.0,0.0,Regular Season
 1630169,Tyrese Haliburton,1631157,Ryan Rollins,1,5.1,28.9,11.0,4.0,5.0,2.0,3.0,0.0,1.0,Regular Season
-1629029,Luka Dončić,1641739,Toumani Camara,1,5.8,28.8,25.0,8.0,12.0,5.0,8.0,1.0,2.0,Regular Season
+1643410,Caleb Wilson,1628398,Kyle Kuzma,1,5.5,28.9,5.0,2.0,4.0,1.0,1.0,1.0,0.0,Regular Season
+1629614,Andrew Nembhard,1643052,Chaney Johnson,2,5.7,28.9,5.0,2.0,4.0,1.0,2.0,2.0,0.0,Regular Season
+1629027,Trae Young,1642883,Sion James,2,6.2,28.8,12.0,4.0,6.0,2.0,3.0,2.0,0.0,Regular Season
 1627783,Pascal Siakam,1629627,Zion Williamson,1,5.3,28.8,6.0,3.0,7.0,0.0,2.0,0.0,0.0,Regular Season
 1630530,Trey Murphy III,1631128,Christian Braun,2,5.2,28.8,8.0,3.0,4.0,2.0,3.0,0.0,0.0,Regular Season
-1630530,Trey Murphy III,1642350,Trevon Brazile,2,6.0,28.7,2.0,0.0,2.0,0.0,1.0,2.0,1.0,Regular Season
 1627734,Domantas Sabonis,1641744,Zach Edey,1,5.4,28.7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Regular Season
+1630530,Trey Murphy III,1642350,Trevon Brazile,2,6.0,28.7,2.0,0.0,2.0,0.0,1.0,2.0,1.0,Regular Season
 1629639,Tyler Herro,203484,Kentavious Caldwell-Pope,1,4.3,28.7,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
-1628392,Isaiah Hartenstein,203999,Nikola Jokić,1,5.7,28.6,4.0,2.0,6.0,0.0,0.0,2.0,0.0,Regular Season
-1630217,Desmond Bane,1628404,Josh Hart,1,5.4,28.6,2.0,0.0,4.0,0.0,4.0,1.0,0.0,Regular Season
 1643411,Darius Acuff Jr.,1629630,Ja Morant,1,5.0,28.6,8.0,3.0,5.0,0.0,1.0,1.0,2.0,Regular Season
 1629656,Quentin Grimes,1630314,Brandon Williams,2,6.8,28.6,4.0,2.0,4.0,0.0,2.0,0.0,0.0,Regular Season
-1629675,Naz Reid,203076,Anthony Davis,2,6.4,28.5,8.0,3.0,9.0,2.0,6.0,1.0,0.0,Regular Season
+1630217,Desmond Bane,1628404,Josh Hart,1,5.4,28.6,2.0,0.0,4.0,0.0,4.0,1.0,0.0,Regular Season
+1629652,Luguentz Dort,1642273,Kyshawn George,2,5.0,28.5,12.0,4.0,9.0,4.0,7.0,0.0,0.0,Regular Season
+1641717,Cason Wallace,1627750,Jamal Murray,1,5.2,28.5,6.0,2.0,4.0,2.0,3.0,0.0,0.0,Regular Season
 1641718,Keyonte George,1629680,Matisse Thybulle,1,5.9,28.5,5.0,1.0,3.0,0.0,1.0,1.0,1.0,Regular Season
+1629675,Naz Reid,203076,Anthony Davis,2,6.4,28.5,8.0,3.0,9.0,2.0,6.0,1.0,0.0,Regular Season
 1630596,Evan Mobley,203944,Julius Randle,1,5.2,28.5,5.0,2.0,3.0,1.0,1.0,0.0,0.0,Regular Season
 203497,Rudy Gobert,1628389,Bam Adebayo,1,6.2,28.5,1.0,0.0,0.0,0.0,0.0,0.0,1.0,Regular Season
+1627750,Jamal Murray,1641739,Toumani Camara,1,6.1,28.4,8.0,2.0,6.0,2.0,4.0,0.0,1.0,Regular Season
 1631106,Tari Eason,1630598,Aaron Wiggins,2,6.8,28.4,5.0,2.0,4.0,0.0,1.0,0.0,1.0,Regular Season
-1631217,Moussa Diabaté,1630549,Day'Ron Sharpe,1,6.7,28.4,2.0,1.0,2.0,0.0,0.0,2.0,0.0,Regular Season
-1631108,Max Christie,1627832,Fred VanVleet,2,5.3,28.3,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
-1626167,Myles Turner,203954,Joel Embiid,1,4.2,28.3,0.0,0.0,2.0,0.0,0.0,1.0,0.0,Regular Season
 201939,Stephen Curry,1630183,Jaden McDaniels,1,5.8,28.3,25.0,7.0,14.0,5.0,8.0,0.0,3.0,Regular Season
-1629027,Trae Young,1642883,Sion James,2,6.2,28.2,12.0,4.0,6.0,2.0,3.0,2.0,0.0,Regular Season
+1629013,Landry Shamet,1629014,Anfernee Simons,2,5.4,28.3,5.0,2.0,2.0,1.0,1.0,2.0,0.0,Regular Season
+1628378,Donovan Mitchell,1629013,Landry Shamet,1,6.2,28.3,9.0,3.0,7.0,2.0,6.0,4.0,1.0,Regular Season
+203497,Rudy Gobert,1630578,Alperen Sengun,1,7.9,28.3,3.0,1.0,2.0,0.0,0.0,0.0,1.0,Regular Season
+1631108,Max Christie,1627832,Fred VanVleet,2,5.3,28.3,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1628389,Bam Adebayo,201572,Brook Lopez,1,7.0,28.3,18.0,8.0,13.0,0.0,1.0,0.0,1.0,Regular Season
+1626167,Myles Turner,203954,Joel Embiid,1,4.2,28.3,0.0,0.0,2.0,0.0,0.0,1.0,0.0,Regular Season
 1642377,Jaylen Wells,201939,Stephen Curry,1,5.0,28.2,11.0,3.0,5.0,3.0,4.0,0.0,2.0,Regular Season
-1629013,Landry Shamet,1629014,Anfernee Simons,2,5.4,28.2,5.0,2.0,2.0,1.0,1.0,2.0,0.0,Regular Season
-1628384,OG Anunoby,1643410,Caleb Wilson,1,5.8,28.1,5.0,2.0,6.0,1.0,3.0,0.0,0.0,Regular Season
 1630173,Precious Achiuwa,1631255,Karlo Matković,1,5.5,28.1,6.0,3.0,6.0,0.0,1.0,0.0,1.0,Regular Season
-1630559,Austin Reaves,1643408,Darryn Peterson,1,5.2,28.1,9.0,2.0,3.0,1.0,1.0,2.0,2.0,Regular Season
+1629637,Jaxson Hayes,1631255,Karlo Matković,2,6.4,28.1,3.0,1.0,1.0,0.0,0.0,2.0,1.0,Regular Season
+1642345,Oso Ighodaro,1629057,Robert Williams III,2,5.0,28.1,4.0,2.0,3.0,0.0,0.0,0.0,0.0,Regular Season
 1641708,Amen Thompson,1642843,Cooper Flagg,2,7.0,28.1,11.0,4.0,6.0,0.0,1.0,1.0,1.0,Regular Season
-203944,Julius Randle,1630596,Evan Mobley,1,4.9,28.0,5.0,1.0,2.0,0.0,0.0,1.0,2.0,Regular Season
+1630224,Jalen Green,1630703,Scoot Henderson,2,5.3,28.1,8.0,2.0,8.0,2.0,5.0,1.0,1.0,Regular Season
+1627759,Jaylen Brown,1641842,Ronald Holland II,2,6.0,28.1,9.0,4.0,11.0,0.0,3.0,1.0,0.0,Regular Season
+1630559,Austin Reaves,1643408,Darryn Peterson,1,5.2,28.1,9.0,2.0,3.0,1.0,1.0,2.0,2.0,Regular Season
+1629655,Daniel Gafford,1629637,Jaxson Hayes,1,5.2,28.0,4.0,1.0,1.0,0.0,0.0,0.0,1.0,Regular Season
+203497,Rudy Gobert,1626167,Myles Turner,1,4.8,28.0,5.0,2.0,3.0,0.0,1.0,0.0,1.0,Regular Season
+201939,Stephen Curry,1630558,Davion Mitchell,1,5.0,28.0,16.0,5.0,10.0,3.0,7.0,0.0,1.0,Regular Season
 1630596,Evan Mobley,203076,Anthony Davis,1,7.0,28.0,5.0,1.0,3.0,1.0,1.0,1.0,0.0,Regular Season
+203944,Julius Randle,1630596,Evan Mobley,1,4.9,28.0,5.0,1.0,2.0,0.0,0.0,1.0,2.0,Regular Season
+1641771,Jalen Slawson,203468,CJ McCollum,1,5.2,27.9,5.0,1.0,1.0,1.0,1.0,1.0,1.0,Regular Season
+1642849,Nolan Traore,1631245,Quenton Jackson,2,7.1,27.9,13.0,5.0,7.0,3.0,4.0,0.0,0.0,Regular Season
+1627751,Jakob Poeltl,1626167,Myles Turner,1,5.3,27.8,9.0,4.0,5.0,0.0,0.0,1.0,1.0,Regular Season
+1628976,Wendell Carter Jr.,1629674,Neemias Queta,1,6.1,27.8,6.0,2.0,3.0,1.0,2.0,0.0,0.0,Regular Season
+1643530,Aday Mara,1630596,Evan Mobley,2,6.6,27.8,3.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
 1629029,Luka Dončić,1627739,Kris Dunn,1,5.2,27.8,1.0,0.0,6.0,0.0,2.0,3.0,1.0,Regular Season
-1642907,Cedric Coward,1643408,Darryn Peterson,2,6.0,27.6,3.0,1.0,2.0,1.0,1.0,0.0,0.0,Regular Season
-203932,Aaron Gordon,1628970,Miles Bridges,1,6.3,27.6,3.0,1.0,5.0,1.0,2.0,0.0,0.0,Regular Season
+1642266,Ja'Kobe Walter,1630559,Austin Reaves,1,4.7,27.8,6.0,2.0,4.0,2.0,3.0,1.0,0.0,Regular Season
+1630170,Devin Vassell,1643411,Darius Acuff Jr.,2,6.9,27.8,16.0,5.0,7.0,4.0,5.0,0.0,1.0,Regular Season
+1629637,Jaxson Hayes,1642852,Derik Queen,2,5.0,27.7,6.0,2.0,3.0,0.0,0.0,0.0,1.0,Regular Season
+1643567,Emanuel Sharp,1630577,Julian Champagnie,2,4.5,27.7,3.0,1.0,2.0,1.0,2.0,0.0,0.0,Regular Season
+1631212,Peyton Watson,1630178,Tyrese Maxey,2,3.5,27.6,2.0,1.0,2.0,0.0,1.0,1.0,0.0,Regular Season
+1641750,Ryan Kalkbrenner,1630194,Paul Reed,2,6.9,27.6,2.0,0.0,0.0,0.0,0.0,2.0,1.0,Regular Season
+1628976,Wendell Carter Jr.,1642345,Oso Ighodaro,1,4.5,27.6,5.0,1.0,3.0,0.0,0.0,0.0,1.0,Regular Season
 1630183,Jaden McDaniels,201935,James Harden,1,5.8,27.6,4.0,2.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1642865,Yaxel Lendeborg,1628970,Miles Bridges,2,6.0,27.6,2.0,1.0,8.0,0.0,2.0,0.0,0.0,Regular Season
+1642450,Daniss Jenkins,203471,Dennis Schröder,2,6.8,27.6,4.0,2.0,5.0,0.0,2.0,1.0,0.0,Regular Season
 203076,Anthony Davis,1630567,Scottie Barnes,1,5.4,27.6,2.0,1.0,4.0,0.0,1.0,0.0,0.0,Regular Season
+203932,Aaron Gordon,1628970,Miles Bridges,1,6.3,27.6,3.0,1.0,5.0,1.0,2.0,0.0,0.0,Regular Season
+1642907,Cedric Coward,1643408,Darryn Peterson,2,6.0,27.6,3.0,1.0,2.0,1.0,1.0,0.0,0.0,Regular Season
 203471,Dennis Schröder,1629027,Trae Young,2,5.2,27.5,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1630532,Franz Wagner,1641731,Bilal Coulibaly,1,5.5,27.5,2.0,1.0,3.0,0.0,1.0,0.0,0.0,Regular Season
+1629639,Tyler Herro,1642266,Ja'Kobe Walter,1,5.7,27.5,9.0,3.0,5.0,0.0,1.0,1.0,2.0,Regular Season
 1642867,Collin Murray-Boyles,1628976,Wendell Carter Jr.,2,5.3,27.5,8.0,4.0,6.0,0.0,1.0,1.0,0.0,Regular Season
-1630552,Jalen Johnson,1631095,Jabari Smith Jr.,2,4.5,27.4,4.0,1.0,5.0,0.0,2.0,1.0,1.0,Regular Season
+1626181,Norman Powell,1628969,Mikal Bridges,2,5.1,27.5,4.0,1.0,4.0,0.0,1.0,1.0,1.0,Regular Season
+1628415,Dillon Brooks,201142,Kevin Durant,1,5.4,27.5,3.0,1.0,4.0,1.0,4.0,1.0,0.0,Regular Season
 1641708,Amen Thompson,202681,Kyrie Irving,2,4.5,27.4,2.0,1.0,3.0,0.0,0.0,0.0,1.0,Regular Season
-1642273,Kyshawn George,1642883,Sion James,2,6.8,27.3,10.0,4.0,8.0,2.0,4.0,1.0,0.0,Regular Season
-1631170,Jaime Jaquez Jr.,1627759,Jaylen Brown,1,3.9,27.3,3.0,1.0,3.0,0.0,0.0,0.0,1.0,Regular Season
+1630533,Ziaire Williams,1630166,Deni Avdija,2,4.4,27.4,0.0,0.0,1.0,0.0,1.0,1.0,0.0,Regular Season
+203076,Anthony Davis,1628976,Wendell Carter Jr.,1,6.7,27.4,17.0,7.0,9.0,1.0,1.0,0.0,1.0,Regular Season
+1630552,Jalen Johnson,1631095,Jabari Smith Jr.,2,4.5,27.4,4.0,1.0,5.0,0.0,2.0,1.0,1.0,Regular Season
+1630567,Scottie Barnes,1642920,Kobe Sanders,1,3.6,27.4,2.0,1.0,3.0,0.0,1.0,0.0,0.0,Regular Season
 1642863,Khaman Maluach,1643633,Graham Ike,1,5.5,27.3,4.0,1.0,2.0,0.0,1.0,2.0,1.0,Regular Season
+1642273,Kyshawn George,1642883,Sion James,2,6.8,27.3,10.0,4.0,8.0,2.0,4.0,1.0,0.0,Regular Season
+1629008,Michael Porter Jr.,1630700,Dyson Daniels,1,5.4,27.3,9.0,3.0,5.0,3.0,4.0,1.0,0.0,Regular Season
+1629021,Moritz Wagner,1641750,Ryan Kalkbrenner,2,4.6,27.3,7.0,2.0,5.0,1.0,2.0,0.0,1.0,Regular Season
+1642859,Jase Richardson,1629027,Trae Young,1,6.2,27.3,6.0,3.0,3.0,0.0,0.0,0.0,0.0,Regular Season
 1630168,Onyeka Okongwu,1631095,Jabari Smith Jr.,2,5.8,27.3,9.0,3.0,4.0,1.0,1.0,1.0,1.0,Regular Season
+1631170,Jaime Jaquez Jr.,1627759,Jaylen Brown,1,3.9,27.3,3.0,1.0,3.0,0.0,0.0,0.0,1.0,Regular Season
+201950,Jrue Holiday,1626164,Devin Booker,2,6.1,27.3,7.0,2.0,4.0,1.0,3.0,1.0,1.0,Regular Season
+203083,Andre Drummond,1631159,Leonard Miller,2,5.6,27.2,2.0,1.0,5.0,0.0,0.0,0.0,0.0,Regular Season
 202331,Paul George,1628384,OG Anunoby,1,7.1,27.2,3.0,1.0,2.0,1.0,2.0,0.0,0.0,Regular Season
 1643409,Cameron Boozer,1642846,Ace Bailey,2,5.0,27.2,4.0,0.0,3.0,0.0,1.0,0.0,2.0,Regular Season
+1629627,Zion Williamson,1643409,Cameron Boozer,1,5.2,27.2,11.0,5.0,8.0,0.0,0.0,0.0,1.0,Regular Season
+1627749,Dejounte Murray,1641718,Keyonte George,2,3.1,27.1,6.0,3.0,6.0,0.0,1.0,0.0,0.0,Regular Season
+1643409,Cameron Boozer,1629627,Zion Williamson,1,4.7,27.1,8.0,2.0,4.0,2.0,3.0,0.0,1.0,Regular Season
 203897,Zach LaVine,1641739,Toumani Camara,1,5.1,27.1,8.0,2.0,4.0,1.0,2.0,0.0,1.0,Regular Season
+1641750,Ryan Kalkbrenner,1629021,Moritz Wagner,2,5.5,27.1,4.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1642266,Ja'Kobe Walter,1629639,Tyler Herro,1,4.8,27.0,0.0,0.0,3.0,0.0,2.0,0.0,0.0,Regular Season
+1629652,Luguentz Dort,1629027,Trae Young,2,5.8,27.0,0.0,0.0,4.0,0.0,0.0,0.0,0.0,Regular Season
 1642263,Reed Sheppard,1643412,Kingston Flemings,2,6.3,27.0,8.0,3.0,5.0,1.0,2.0,1.0,1.0,Regular Season
+1628386,Jarrett Allen,1643530,Aday Mara,2,5.7,27.0,7.0,2.0,6.0,0.0,0.0,0.0,2.0,Regular Season
+1642843,Cooper Flagg,1642264,Stephon Castle,1,5.8,26.9,4.0,2.0,6.0,0.0,0.0,1.0,0.0,Regular Season
 1642846,Ace Bailey,1629029,Luka Dončić,1,4.9,26.9,11.0,5.0,7.0,1.0,1.0,0.0,0.0,Regular Season
 1630178,Tyrese Maxey,1631157,Ryan Rollins,1,5.0,26.9,5.0,2.0,6.0,1.0,2.0,0.0,0.0,Regular Season
-203935,Marcus Smart,1642349,Ajay Mitchell,1,6.5,26.8,15.0,5.0,5.0,5.0,5.0,0.0,0.0,Regular Season
+1630549,Day'Ron Sharpe,1630643,Jay Huff,2,7.3,26.9,2.0,1.0,3.0,0.0,0.0,0.0,0.0,Regular Season
+1630552,Jalen Johnson,203944,Julius Randle,1,5.8,26.9,6.0,2.0,5.0,0.0,3.0,2.0,0.0,Regular Season
+1627759,Jaylen Brown,201935,James Harden,2,5.3,26.9,5.0,2.0,4.0,1.0,1.0,0.0,0.0,Regular Season
+1630245,Ayo Dosunmu,1627832,Fred VanVleet,1,5.2,26.9,9.0,4.0,6.0,0.0,0.0,0.0,1.0,Regular Season
+1642845,VJ Edgecombe,1628378,Donovan Mitchell,2,4.5,26.8,8.0,3.0,4.0,1.0,1.0,0.0,1.0,Regular Season
 1628973,Jalen Brunson,203484,Kentavious Caldwell-Pope,2,6.0,26.8,6.0,3.0,8.0,0.0,4.0,2.0,0.0,Regular Season
+203935,Marcus Smart,1642349,Ajay Mitchell,1,6.5,26.8,15.0,5.0,5.0,5.0,5.0,0.0,0.0,Regular Season
+1629674,Neemias Queta,1628976,Wendell Carter Jr.,1,6.1,26.8,2.0,1.0,4.0,0.0,1.0,0.0,0.0,Regular Season
 1627739,Kris Dunn,1643411,Darius Acuff Jr.,1,5.7,26.8,3.0,1.0,2.0,1.0,2.0,2.0,0.0,Regular Season
-1631288,Jamal Cain,1642419,Jamison Battle,2,5.1,26.7,4.0,1.0,2.0,0.0,1.0,1.0,1.0,Regular Season
-1642263,Reed Sheppard,203468,CJ McCollum,2,6.2,26.7,6.0,2.0,6.0,2.0,6.0,0.0,0.0,Regular Season
 203999,Nikola Jokić,1642345,Oso Ighodaro,1,5.8,26.7,10.0,5.0,7.0,0.0,0.0,3.0,0.0,Regular Season
 1627884,Derrick Jones Jr.,1629029,Luka Dončić,1,4.4,26.7,2.0,1.0,3.0,0.0,2.0,0.0,0.0,Regular Season
 203954,Joel Embiid,1626204,Larry Nance Jr.,1,7.3,26.7,10.0,5.0,9.0,0.0,2.0,2.0,0.0,Regular Season
+1631288,Jamal Cain,1642419,Jamison Battle,2,5.1,26.7,4.0,1.0,2.0,0.0,1.0,1.0,1.0,Regular Season
+1642272,Jared McCain,1630241,Sam Merrill,2,6.1,26.7,0.0,0.0,2.0,0.0,0.0,1.0,0.0,Regular Season
+1629614,Andrew Nembhard,1642377,Jaylen Wells,1,5.2,26.7,4.0,0.0,4.0,0.0,4.0,0.0,2.0,Regular Season
+1642263,Reed Sheppard,203468,CJ McCollum,2,6.2,26.7,6.0,2.0,6.0,2.0,6.0,0.0,0.0,Regular Season
+1642867,Collin Murray-Boyles,203999,Nikola Jokić,1,4.7,26.7,9.0,4.0,7.0,1.0,2.0,1.0,0.0,Regular Season
 1642863,Khaman Maluach,1628392,Isaiah Hartenstein,1,6.1,26.6,6.0,3.0,5.0,0.0,1.0,1.0,0.0,Regular Season
+1630224,Jalen Green,1642859,Jase Richardson,1,5.0,26.6,2.0,1.0,3.0,0.0,0.0,2.0,0.0,Regular Season
+1630163,LaMelo Ball,1641708,Amen Thompson,1,6.0,26.6,0.0,0.0,1.0,0.0,0.0,1.0,0.0,Regular Season
+203952,Andrew Wiggins,1629029,Luka Dončić,1,5.0,26.6,6.0,2.0,5.0,2.0,4.0,0.0,0.0,Regular Season
 202331,Paul George,1643410,Caleb Wilson,2,5.6,26.6,9.0,4.0,9.0,1.0,4.0,3.0,0.0,Regular Season
 203110,Draymond Green,1643409,Cameron Boozer,1,5.1,26.6,2.0,1.0,1.0,0.0,0.0,1.0,0.0,Regular Season
-1643413,Keaton Wagler,1642349,Ajay Mitchell,1,4.7,26.5,8.0,1.0,2.0,1.0,2.0,3.0,2.0,Regular Season
 1628392,Isaiah Hartenstein,1642863,Khaman Maluach,1,5.3,26.5,6.0,3.0,4.0,0.0,0.0,0.0,0.0,Regular Season
 1631106,Tari Eason,1630552,Jalen Johnson,2,6.0,26.5,2.0,0.0,4.0,0.0,2.0,0.0,0.0,Regular Season
-1626204,Larry Nance Jr.,203954,Joel Embiid,1,5.1,26.4,5.0,2.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+1626167,Myles Turner,1627751,Jakob Poeltl,1,5.8,26.5,0.0,0.0,5.0,0.0,3.0,0.0,0.0,Regular Season
+1626167,Myles Turner,203497,Rudy Gobert,1,6.2,26.4,11.0,4.0,7.0,3.0,5.0,0.0,0.0,Regular Season
+1629029,Luka Dončić,203952,Andrew Wiggins,1,4.8,26.4,14.0,5.0,6.0,2.0,3.0,0.0,2.0,Regular Season
 1641744,Zach Edey,1627734,Domantas Sabonis,1,4.9,26.4,2.0,1.0,4.0,0.0,0.0,0.0,0.0,Regular Season
+1626204,Larry Nance Jr.,203954,Joel Embiid,1,5.1,26.4,5.0,2.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+1629628,RJ Barrett,1627739,Kris Dunn,1,3.8,26.4,3.0,1.0,1.0,0.0,0.0,1.0,1.0,Regular Season
+202331,Paul George,1628398,Kyle Kuzma,1,5.3,26.4,5.0,2.0,3.0,1.0,1.0,0.0,0.0,Regular Season
+201572,Brook Lopez,201143,Al Horford,1,4.8,26.4,2.0,1.0,3.0,0.0,0.0,1.0,0.0,Regular Season
 1630578,Alperen Sengun,1641705,Victor Wembanyama,1,6.2,26.4,9.0,4.0,9.0,0.0,0.0,0.0,1.0,Regular Season
 1630558,Davion Mitchell,1629614,Andrew Nembhard,1,6.3,26.4,10.0,4.0,9.0,2.0,5.0,0.0,0.0,Regular Season
+1626168,Trey Lyles,1630180,Saddiq Bey,1,5.6,26.3,0.0,0.0,1.0,0.0,1.0,1.0,0.0,Regular Season
 202681,Kyrie Irving,1629614,Andrew Nembhard,1,5.2,26.3,8.0,2.0,5.0,2.0,4.0,1.0,1.0,Regular Season
+1631170,Jaime Jaquez Jr.,202331,Paul George,1,5.8,26.3,8.0,3.0,8.0,2.0,2.0,0.0,0.0,Regular Season
 1630532,Franz Wagner,1630183,Jaden McDaniels,1,4.7,26.3,7.0,2.0,4.0,0.0,1.0,1.0,1.0,Regular Season
 1626157,Karl-Anthony Towns,1629011,Mitchell Robinson,1,7.9,26.2,8.0,3.0,5.0,2.0,3.0,0.0,0.0,Regular Season
-1631128,Christian Braun,1626164,Devin Booker,1,3.9,26.2,10.0,3.0,5.0,2.0,2.0,0.0,0.0,Regular Season
-1630169,Tyrese Haliburton,1627749,Dejounte Murray,1,4.6,26.2,2.0,1.0,4.0,0.0,3.0,1.0,0.0,Regular Season
+1630188,Jalen Smith,203954,Joel Embiid,1,4.8,26.2,4.0,2.0,3.0,0.0,0.0,0.0,1.0,Regular Season
 1629029,Luka Dončić,1627884,Derrick Jones Jr.,1,4.6,26.2,5.0,2.0,5.0,0.0,1.0,2.0,1.0,Regular Season
-1630559,Austin Reaves,1629001,De'Anthony Melton,2,6.1,26.1,6.0,2.0,5.0,0.0,1.0,4.0,1.0,Regular Season
-1642848,Tre Johnson,1628960,Grayson Allen,2,4.6,26.1,2.0,1.0,4.0,0.0,3.0,2.0,0.0,Regular Season
+1630169,Tyrese Haliburton,1627749,Dejounte Murray,1,4.6,26.2,2.0,1.0,4.0,0.0,3.0,1.0,0.0,Regular Season
+1631128,Christian Braun,1626164,Devin Booker,1,3.9,26.2,10.0,3.0,5.0,2.0,2.0,0.0,0.0,Regular Season
+1629028,Deandre Ayton,1643544,Zuby Ejiofor,2,5.5,26.2,4.0,2.0,2.0,0.0,0.0,0.0,0.0,Regular Season
+1627884,Derrick Jones Jr.,202691,Klay Thompson,1,5.1,26.1,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
 1643409,Cameron Boozer,1628374,Lauri Markkanen,2,4.2,26.1,0.0,0.0,5.0,0.0,3.0,0.0,0.0,Regular Season
-1631128,Christian Braun,1628983,Shai Gilgeous-Alexander,1,5.0,26.1,2.0,1.0,4.0,0.0,2.0,1.0,0.0,Regular Season
 1629656,Quentin Grimes,1629636,Darius Garland,2,4.8,26.1,3.0,1.0,3.0,1.0,2.0,0.0,0.0,Regular Season
-1629014,Anfernee Simons,1629013,Landry Shamet,2,5.6,26.0,0.0,0.0,2.0,0.0,2.0,0.0,0.0,Regular Season
-1642954,Will Richard,1626164,Devin Booker,1,4.1,26.0,3.0,1.0,1.0,1.0,1.0,2.0,0.0,Regular Season
+1626204,Larry Nance Jr.,1629021,Moritz Wagner,2,4.5,26.1,4.0,1.0,2.0,1.0,2.0,0.0,1.0,Regular Season
+1642848,Tre Johnson,1628960,Grayson Allen,2,4.6,26.1,2.0,1.0,4.0,0.0,3.0,2.0,0.0,Regular Season
+1630559,Austin Reaves,1629001,De'Anthony Melton,2,6.1,26.1,6.0,2.0,5.0,0.0,1.0,4.0,1.0,Regular Season
+1626164,Devin Booker,1627780,Gary Payton II,2,5.7,26.1,8.0,4.0,6.0,0.0,1.0,0.0,0.0,Regular Season
+201935,James Harden,1642845,VJ Edgecombe,2,4.1,26.0,4.0,1.0,4.0,1.0,1.0,0.0,1.0,Regular Season
+1628374,Lauri Markkanen,1629627,Zion Williamson,2,4.4,26.0,8.0,3.0,3.0,2.0,2.0,1.0,0.0,Regular Season
+1630183,Jaden McDaniels,201142,Kevin Durant,1,4.6,26.0,2.0,1.0,2.0,0.0,1.0,0.0,0.0,Regular Season
 1627884,Derrick Jones Jr.,1630163,LaMelo Ball,1,6.7,26.0,3.0,1.0,2.0,1.0,1.0,0.0,0.0,Regular Season
-1630549,Day'Ron Sharpe,1631217,Moussa Diabaté,1,4.9,26.0,2.0,1.0,2.0,0.0,0.0,1.0,0.0,Regular Season
+1629014,Anfernee Simons,1629013,Landry Shamet,2,5.6,26.0,0.0,0.0,2.0,0.0,2.0,0.0,0.0,Regular Season
+1630174,Aaron Nesmith,1629660,Ty Jerome,1,5.2,25.9,4.0,2.0,7.0,0.0,3.0,0.0,0.0,Regular Season
+1630166,Deni Avdija,1629029,Luka Dončić,2,5.6,25.9,0.0,0.0,1.0,0.0,1.0,2.0,0.0,Regular Season
 1643633,Graham Ike,1642863,Khaman Maluach,1,5.2,25.9,8.0,4.0,8.0,0.0,0.0,0.0,0.0,Regular Season
-1628401,Derrick White,1630581,Josh Giddey,2,5.8,25.8,3.0,1.0,1.0,1.0,1.0,1.0,0.0,Regular Season
-1641718,Keyonte George,1642264,Stephon Castle,1,5.5,25.8,6.0,2.0,5.0,0.0,1.0,3.0,0.0,Regular Season
-1630567,Scottie Barnes,203076,Anthony Davis,1,5.0,25.8,6.0,2.0,6.0,0.0,2.0,2.0,0.0,Regular Season
-203952,Andrew Wiggins,1642843,Cooper Flagg,1,4.7,25.8,4.0,2.0,5.0,0.0,2.0,0.0,0.0,Regular Season
+1630193,Immanuel Quickley,1629636,Darius Garland,1,2.5,25.9,2.0,1.0,2.0,0.0,1.0,0.0,0.0,Regular Season
+1630166,Deni Avdija,203932,Aaron Gordon,1,5.0,25.9,8.0,3.0,7.0,0.0,4.0,1.0,1.0,Regular Season
 203471,Dennis Schröder,1642856,Egor Dëmin,1,4.8,25.8,4.0,2.0,3.0,0.0,0.0,0.0,0.0,Regular Season
+1642845,VJ Edgecombe,1629130,Duncan Robinson,1,5.5,25.8,9.0,4.0,5.0,1.0,2.0,0.0,0.0,Regular Season
+1630567,Scottie Barnes,203076,Anthony Davis,1,5.0,25.8,6.0,2.0,6.0,0.0,2.0,2.0,0.0,Regular Season
 1642350,Trevon Brazile,1630530,Trey Murphy III,2,4.9,25.8,4.0,2.0,2.0,0.0,0.0,0.0,0.0,Regular Season
-1629680,Matisse Thybulle,1629060,Rui Hachimura,1,4.2,25.7,10.0,4.0,5.0,2.0,3.0,0.0,0.0,Regular Season
+1628401,Derrick White,1630581,Josh Giddey,2,5.8,25.8,3.0,1.0,1.0,1.0,1.0,1.0,0.0,Regular Season
+1628398,Kyle Kuzma,1629628,RJ Barrett,1,4.9,25.8,7.0,3.0,4.0,1.0,2.0,1.0,0.0,Regular Season
+1629731,Dean Wade,1629130,Duncan Robinson,2,6.0,25.7,1.0,0.0,1.0,0.0,0.0,0.0,0.0,Regular Season
 1642865,Yaxel Lendeborg,1629029,Luka Dončić,2,4.5,25.7,3.0,1.0,3.0,0.0,1.0,1.0,0.0,Regular Season
-1628983,Shai Gilgeous-Alexander,1628415,Dillon Brooks,1,5.0,25.7,14.0,6.0,8.0,0.0,1.0,1.0,1.0,Regular Season
-1643411,Darius Acuff Jr.,1642264,Stephon Castle,1,6.1,25.7,9.0,4.0,11.0,1.0,3.0,2.0,0.0,Regular Season
-1630595,Cade Cunningham,1627759,Jaylen Brown,1,5.8,25.7,2.0,0.0,4.0,0.0,3.0,3.0,0.0,Regular Season
 1627832,Fred VanVleet,203468,CJ McCollum,1,6.1,25.7,0.0,0.0,1.0,0.0,1.0,0.0,0.0,Regular Season
-1629680,Matisse Thybulle,1629636,Darius Garland,2,5.3,25.6,5.0,2.0,3.0,1.0,2.0,0.0,0.0,Regular Season
-1631217,Moussa Diabaté,1642259,Alex Sarr,2,6.8,25.6,2.0,1.0,1.0,0.0,0.0,1.0,0.0,Regular Season
+1629680,Matisse Thybulle,1629060,Rui Hachimura,1,4.2,25.7,10.0,4.0,5.0,2.0,3.0,0.0,0.0,Regular Season
+1628983,Shai Gilgeous-Alexander,1628415,Dillon Brooks,1,5.0,25.7,14.0,6.0,8.0,0.0,1.0,1.0,1.0,Regular Season
+203507,Giannis Antetokounmpo,203110,Draymond Green,1,7.6,25.7,10.0,4.0,9.0,1.0,5.0,0.0,1.0,Regular Season
 1627739,Kris Dunn,1629656,Quentin Grimes,2,4.5,25.6,0.0,0.0,0.0,0.0,0.0,1.0,0.0,Regular Season
-1642920,Kobe Sanders,1630572,Sandro Mamukelashvili,2,3.3,25.5,2.0,0.0,0.0,0.0,0.0,0.0,1.0,Regular Season
+202691,Klay Thompson,1627884,Derrick Jones Jr.,1,6.1,25.6,11.0,4.0,11.0,3.0,9.0,0.0,0.0,Regular Season
+1629680,Matisse Thybulle,1629636,Darius Garland,2,5.3,25.6,5.0,2.0,3.0,1.0,2.0,0.0,0.0,Regular Season
+1627750,Jamal Murray,1641717,Cason Wallace,1,6.3,25.6,0.0,0.0,3.0,0.0,1.0,3.0,0.0,Regular Season
+1631217,Moussa Diabaté,1642259,Alex Sarr,2,6.8,25.6,2.0,1.0,1.0,0.0,0.0,1.0,0.0,Regular Season
+201572,Brook Lopez,1642867,Collin Murray-Boyles,1,3.5,25.6,6.0,2.0,3.0,1.0,1.0,0.0,1.0,Regular Season
+1641775,Jordan Walsh,1626181,Norman Powell,2,5.4,25.5,0.0,0.0,1.0,0.0,1.0,0.0,0.0,Regular Season
+203999,Nikola Jokić,1642863,Khaman Maluach,1,5.0,25.5,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
 1630163,LaMelo Ball,1627884,Derrick Jones Jr.,1,4.7,25.5,2.0,1.0,3.0,0.0,1.0,0.0,0.0,Regular Season
 1628960,Grayson Allen,1642848,Tre Johnson,2,5.9,25.5,5.0,1.0,3.0,1.0,3.0,0.0,0.0,Regular Season
-203999,Nikola Jokić,1642863,Khaman Maluach,1,5.0,25.5,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
-1641775,Jordan Walsh,1626181,Norman Powell,2,5.4,25.5,0.0,0.0,1.0,0.0,1.0,0.0,0.0,Regular Season
-1629023,P.J. Washington,1627783,Pascal Siakam,1,5.6,25.4,3.0,1.0,3.0,1.0,2.0,0.0,0.0,Regular Season
+1642920,Kobe Sanders,1630572,Sandro Mamukelashvili,2,3.3,25.5,2.0,0.0,0.0,0.0,0.0,0.0,1.0,Regular Season
+1631321,Sidy Cissoko,1630572,Sandro Mamukelashvili,2,4.9,25.4,6.0,2.0,5.0,2.0,3.0,1.0,0.0,Regular Season
 1630193,Immanuel Quickley,1642859,Jase Richardson,2,5.2,25.4,3.0,1.0,3.0,1.0,1.0,0.0,0.0,Regular Season
 1627734,Domantas Sabonis,1629057,Robert Williams III,1,4.6,25.4,10.0,5.0,6.0,0.0,0.0,2.0,0.0,Regular Season
 1630178,Tyrese Maxey,203471,Dennis Schröder,1,6.8,25.4,13.0,5.0,8.0,1.0,2.0,0.0,0.0,Regular Season
-203954,Joel Embiid,1642276,Kel'el Ware,1,5.1,25.4,10.0,3.0,7.0,0.0,0.0,0.0,2.0,Regular Season
 1630228,Jonathan Kuminga,203507,Giannis Antetokounmpo,1,6.0,25.4,7.0,3.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+203954,Joel Embiid,1642276,Kel'el Ware,1,5.1,25.4,10.0,3.0,7.0,0.0,0.0,0.0,2.0,Regular Season
+1629023,P.J. Washington,1627783,Pascal Siakam,1,5.6,25.4,3.0,1.0,3.0,1.0,2.0,0.0,0.0,Regular Season
+1642845,VJ Edgecombe,1628404,Josh Hart,2,5.7,25.3,0.0,0.0,2.0,0.0,2.0,0.0,0.0,Regular Season
+1631321,Sidy Cissoko,1630559,Austin Reaves,2,3.8,25.3,2.0,1.0,3.0,0.0,2.0,0.0,0.0,Regular Season
 1629660,Ty Jerome,1630182,Josh Green,1,6.1,25.3,4.0,1.0,4.0,0.0,1.0,1.0,0.0,Regular Season
-1642270,Donovan Clingan,1631117,Walker Kessler,1,4.8,25.3,4.0,1.0,2.0,1.0,1.0,1.0,0.0,Regular Season
 203924,Jerami Grant,1642367,Jonathan Mogbo,2,5.5,25.3,0.0,0.0,3.0,0.0,1.0,1.0,0.0,Regular Season
 1627832,Fred VanVleet,202681,Kyrie Irving,2,7.0,25.3,2.0,1.0,3.0,0.0,1.0,0.0,0.0,Regular Season
-1630166,Deni Avdija,1630533,Ziaire Williams,1,6.1,25.2,11.0,4.0,6.0,3.0,5.0,1.0,0.0,Regular Season
+1628378,Donovan Mitchell,203484,Kentavious Caldwell-Pope,2,4.6,25.3,7.0,2.0,4.0,1.0,2.0,1.0,1.0,Regular Season
 1643411,Darius Acuff Jr.,1627884,Derrick Jones Jr.,1,5.3,25.2,2.0,1.0,7.0,0.0,2.0,0.0,1.0,Regular Season
+1642273,Kyshawn George,1630598,Aaron Wiggins,2,6.0,25.2,11.0,5.0,5.0,1.0,1.0,0.0,0.0,Regular Season
+203952,Andrew Wiggins,1642843,Cooper Flagg,1,5.0,25.2,4.0,2.0,5.0,0.0,2.0,0.0,0.0,Regular Season
+201935,James Harden,1628969,Mikal Bridges,1,5.4,25.2,0.0,0.0,3.0,0.0,1.0,1.0,0.0,Regular Season
 1630530,Trey Murphy III,1627750,Jamal Murray,2,4.3,25.2,3.0,1.0,4.0,1.0,4.0,1.0,0.0,Regular Season
-1642846,Ace Bailey,1642844,Dylan Harper,1,5.5,25.2,4.0,2.0,7.0,0.0,2.0,2.0,0.0,Regular Season
-1643410,Caleb Wilson,1628384,OG Anunoby,1,4.8,25.2,4.0,2.0,4.0,0.0,1.0,0.0,0.0,Regular Season
-1629674,Neemias Queta,1630188,Jalen Smith,2,4.3,25.1,2.0,1.0,3.0,0.0,0.0,0.0,0.0,Regular Season
+2544,LeBron James,1626209,Mario Hezonja,2,5.3,25.2,5.0,1.0,2.0,0.0,0.0,0.0,2.0,Regular Season
+1629001,De'Anthony Melton,1630224,Jalen Green,2,4.5,25.2,5.0,1.0,4.0,0.0,1.0,0.0,2.0,Regular Season
 1642856,Egor Dëmin,1629614,Andrew Nembhard,1,4.4,25.1,0.0,0.0,5.0,0.0,3.0,2.0,0.0,Regular Season
-203944,Julius Randle,202331,Paul George,1,6.5,25.1,6.0,3.0,8.0,0.0,4.0,1.0,0.0,Regular Season
+203897,Zach LaVine,1630170,Devin Vassell,2,4.5,25.1,5.0,2.0,3.0,0.0,1.0,0.0,0.0,Regular Season
+1628983,Shai Gilgeous-Alexander,1626209,Mario Hezonja,2,4.3,25.1,16.0,6.0,11.0,2.0,2.0,0.0,0.0,Regular Season
+1642867,Collin Murray-Boyles,201572,Brook Lopez,1,3.4,25.1,7.0,3.0,7.0,0.0,1.0,2.0,0.0,Regular Season
+1630241,Sam Merrill,1630178,Tyrese Maxey,2,5.3,25.1,2.0,1.0,2.0,0.0,0.0,0.0,0.0,Regular Season
 1629628,RJ Barrett,1630217,Desmond Bane,2,5.5,25.1,3.0,1.0,5.0,0.0,0.0,0.0,1.0,Regular Season
+1630559,Austin Reaves,201950,Jrue Holiday,2,5.5,25.1,8.0,3.0,7.0,0.0,1.0,0.0,0.0,Regular Season
+203944,Julius Randle,202331,Paul George,1,6.5,25.1,6.0,3.0,8.0,0.0,4.0,1.0,0.0,Regular Season
 203497,Rudy Gobert,1628386,Jarrett Allen,1,5.4,25.1,0.0,0.0,4.0,0.0,1.0,0.0,0.0,Regular Season
+1629674,Neemias Queta,1630188,Jalen Smith,2,4.3,25.1,2.0,1.0,3.0,0.0,0.0,0.0,0.0,Regular Season
+1642849,Nolan Traore,203471,Dennis Schröder,2,5.1,25.1,4.0,2.0,2.0,0.0,0.0,1.0,0.0,Regular Season
+1630178,Tyrese Maxey,1641709,Ausar Thompson,1,4.8,25.0,5.0,2.0,3.0,1.0,1.0,1.0,0.0,Regular Season
 1630549,Day'Ron Sharpe,1630194,Paul Reed,1,5.0,25.0,0.0,0.0,1.0,0.0,1.0,2.0,0.0,Regular Season
-201935,James Harden,1643407,AJ Dybantsa,1,5.9,25.0,5.0,2.0,4.0,1.0,2.0,1.0,0.0,Regular Season
-1642259,Alex Sarr,1631217,Moussa Diabaté,2,5.2,25.0,2.0,1.0,1.0,0.0,0.0,2.0,0.0,Regular Season
 1629675,Naz Reid,1630552,Jalen Johnson,1,5.3,25.0,4.0,2.0,7.0,0.0,3.0,0.0,0.0,Regular Season
 1641710,Anthony Black,1629628,RJ Barrett,2,6.1,25.0,7.0,3.0,6.0,1.0,3.0,2.0,0.0,Regular Season
+1642377,Jaylen Wells,1628983,Shai Gilgeous-Alexander,1,3.5,25.0,3.0,1.0,1.0,1.0,1.0,2.0,0.0,Regular Season
+1629130,Duncan Robinson,1630178,Tyrese Maxey,2,4.8,25.0,2.0,1.0,3.0,0.0,2.0,0.0,0.0,Regular Season
+1630559,Austin Reaves,1630703,Scoot Henderson,2,5.5,25.0,3.0,1.0,4.0,1.0,2.0,0.0,0.0,Regular Season
+1642259,Alex Sarr,1631217,Moussa Diabaté,2,5.2,25.0,2.0,1.0,1.0,0.0,0.0,2.0,0.0,Regular Season
+201935,James Harden,1643407,AJ Dybantsa,1,5.9,25.0,5.0,2.0,4.0,1.0,2.0,1.0,0.0,Regular Season
